@@ -14,9 +14,12 @@
 		76FC13481F13BCB8006837DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76FC13471F13BCB8006837DE /* Assets.xcassets */; };
 		76FC134B1F13BCB8006837DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76FC13491F13BCB8006837DE /* LaunchScreen.storyboard */; };
 		76FC13531F13BDBC006837DE /* SearchDevicesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC13521F13BDBC006837DE /* SearchDevicesManager.swift */; };
+		C5EE2E5932C9AD281B3E2163 /* Pods_SymbioteSpike.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EED8F06AD317C89C696A966 /* Pods_SymbioteSpike.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0EED8F06AD317C89C696A966 /* Pods_SymbioteSpike.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SymbioteSpike.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		763327B9AB5CC0D33CAB297E /* Pods-SymbioteSpike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SymbioteSpike.release.xcconfig"; path = "Pods/Target Support Files/Pods-SymbioteSpike/Pods-SymbioteSpike.release.xcconfig"; sourceTree = "<group>"; };
 		76FC133B1F13BCB8006837DE /* SymbioteSpike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SymbioteSpike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76FC133E1F13BCB8006837DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76FC13401F13BCB8006837DE /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		76FC134A1F13BCB8006837DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76FC134C1F13BCB8006837DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76FC13521F13BDBC006837DE /* SearchDevicesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchDevicesManager.swift; sourceTree = "<group>"; };
+		FFAD80D89A7A6E5BFF7D81D6 /* Pods-SymbioteSpike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SymbioteSpike.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SymbioteSpike/Pods-SymbioteSpike.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5EE2E5932C9AD281B3E2163 /* Pods_SymbioteSpike.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2DF7CC931B190BFEE76C6E3A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0EED8F06AD317C89C696A966 /* Pods_SymbioteSpike.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3E86B08E2A4A5B1D72BD2767 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FFAD80D89A7A6E5BFF7D81D6 /* Pods-SymbioteSpike.debug.xcconfig */,
+				763327B9AB5CC0D33CAB297E /* Pods-SymbioteSpike.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		76FC13321F13BCB8006837DE = {
 			isa = PBXGroup;
 			children = (
 				76FC133D1F13BCB8006837DE /* SymbioteSpike */,
 				76FC133C1F13BCB8006837DE /* Products */,
+				3E86B08E2A4A5B1D72BD2767 /* Pods */,
+				2DF7CC931B190BFEE76C6E3A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76FC134F1F13BCB8006837DE /* Build configuration list for PBXNativeTarget "SymbioteSpike" */;
 			buildPhases = (
+				9EE36F280C3F44F60A152BED /* [CP] Check Pods Manifest.lock */,
 				76FC13371F13BCB8006837DE /* Sources */,
 				76FC13381F13BCB8006837DE /* Frameworks */,
 				76FC13391F13BCB8006837DE /* Resources */,
+				4597D240389440983E7035EC /* [CP] Embed Pods Frameworks */,
+				6502AF3B818B7A17D31A4D04 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -137,6 +164,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4597D240389440983E7035EC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SymbioteSpike/Pods-SymbioteSpike-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6502AF3B818B7A17D31A4D04 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SymbioteSpike/Pods-SymbioteSpike-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EE36F280C3F44F60A152BED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		76FC13371F13BCB8006837DE /* Sources */ = {
@@ -269,6 +344,7 @@
 		};
 		76FC13501F13BCB8006837DE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFAD80D89A7A6E5BFF7D81D6 /* Pods-SymbioteSpike.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 65KP3UJJWG;
@@ -282,6 +358,7 @@
 		};
 		76FC13511F13BCB8006837DE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 763327B9AB5CC0D33CAB297E /* Pods-SymbioteSpike.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 65KP3UJJWG;

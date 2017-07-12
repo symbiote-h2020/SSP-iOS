@@ -1,0 +1,8 @@
+platform :ios, '9.0'
+
+target 'SymbioteSpike' do
+  use_frameworks!
+
+  pod 'SwiftyJSON'
+
+end
