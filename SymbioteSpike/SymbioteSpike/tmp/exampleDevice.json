@@ -1,0 +1,20 @@
+"resources":[  
+      {  
+         "platformId":"NXW-symphony-1",
+         "platformName":"Nextworks(roma)",
+         "owner":null,
+         "name":"dimmer service",
+         "id":"593943acb4f8e209390e9425",
+         "description":"dimmer",
+         "locationName":"",
+         "locationLatitude":null,
+         "locationLongitude":null,
+         "locationAltitude":null,
+         "observedProperties":[  
+            ""
+         ],
+         "resourceType":[  
+            "http://www.symbiote-h2020.eu/ontology/core#ActuatingService"
+         ]
+      }
+]
