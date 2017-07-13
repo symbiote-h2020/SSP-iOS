@@ -10,9 +10,9 @@ import Foundation
 import SwiftyJSON
 
 class SearchDevicesManager {
-    
+    var devicesList: [Device] = []
 
-    static func getTestData() {
+    func getTestData() {
 
         let url = URL(string: "https://symbiote-dev.man.poznan.pl:8100/coreInterface/v1/query")
 
@@ -25,14 +25,34 @@ class SearchDevicesManager {
                 print(error)
             }
             else {
-                let dataString = String(data: data!, encoding: String.Encoding.utf8)
-                print(dataString)
+               // let dataString = String(data: data!, encoding: String.Encoding.utf8)
+                 // debug               print(dataString)
+                
+                if let jsonData = data {
+                    let json = JSON(data: jsonData)
+                    self.parseDevicesJson(json)
+                }
+
             }
         }
         
         task.resume()
     }
     
+    
+    func parseDevicesJson(_ dataJson: JSON) {
+        if dataJson["resources"].exists() == false {
+            print("+++++++ wrong json +++++  SearchDevicesManager")
+            return
+        }
+        
+        let jsonArr:[JSON] = dataJson["resources"].arrayValue
+        for childJson in jsonArr {
+            
+            let dev = Device(j: childJson)
+            devicesList.append(dev)
+        }
+    }
     
     
     

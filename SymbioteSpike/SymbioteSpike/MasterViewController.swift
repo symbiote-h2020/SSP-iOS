@@ -35,7 +35,8 @@ class MasterViewController: UITableViewController {
         
         
         
-        SearchDevicesManager.getTestData()
+        let sdm = SearchDevicesManager()        
+        sdm.getTestData()
     }
 
     override func didReceiveMemoryWarning() {
