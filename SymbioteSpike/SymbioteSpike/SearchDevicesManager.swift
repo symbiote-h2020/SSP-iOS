@@ -3,7 +3,7 @@
 //  SymbioteSpike
 //
 //  Created by Konrad Leszczyński on 10/07/2017.
-//  Copyright © 2017 Konrad Leszczyński. All rights reserved.
+//  Copyright © 2017 PSNC. All rights reserved.
 //
 
 import Foundation
@@ -52,6 +52,8 @@ class SearchDevicesManager {
             let dev = Device(j: childJson)
             devicesList.append(dev)
         }
+        
+        NotificationCenter.default.postNotificationName(SymNotificationName.DeviceListLoaded)
     }
     
     
