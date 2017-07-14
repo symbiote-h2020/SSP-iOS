@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "376CE75F3BEEA54A2DEF59E384FDBE80"
+               BlueprintIdentifier = "3E379B6540F4907678B4A712F98ECEA1"
                BuildableName = "Pods_SymbioteSpike.framework"
                BlueprintName = "Pods-SymbioteSpike"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "376CE75F3BEEA54A2DEF59E384FDBE80"
+            BlueprintIdentifier = "3E379B6540F4907678B4A712F98ECEA1"
             BuildableName = "Pods_SymbioteSpike.framework"
             BlueprintName = "Pods-SymbioteSpike"
             ReferencedContainer = "container:Pods.xcodeproj">

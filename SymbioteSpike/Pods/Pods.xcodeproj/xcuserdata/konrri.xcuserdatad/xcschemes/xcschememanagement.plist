@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AsyncSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-SymbioteSpike.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>29578284DBD50BFB46D08C4BCF21F9E9</key>
+		<key>3E379B6540F4907678B4A712F98ECEA1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>376CE75F3BEEA54A2DEF59E384FDBE80</key>
+		<key>7F45F2F21482C3777494ACE42307212D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CB85DA717DF15FC49D1BF9FDD3B6F3CE</key>
 		<dict>
 			<key>primary</key>
 			<true/>

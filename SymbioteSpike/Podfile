@@ -4,5 +4,6 @@ target 'SymbioteSpike' do
   use_frameworks!
 
   pod 'SwiftyJSON'
+  pod 'AsyncSwift'
 
 end
