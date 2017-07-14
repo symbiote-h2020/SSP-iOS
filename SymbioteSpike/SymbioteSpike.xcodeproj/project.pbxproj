@@ -15,6 +15,10 @@
 		76FC134B1F13BCB8006837DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76FC13491F13BCB8006837DE /* LaunchScreen.storyboard */; };
 		76FC13531F13BDBC006837DE /* SearchDevicesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC13521F13BDBC006837DE /* SearchDevicesManager.swift */; };
 		76FF97DC1F176C600009F629 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FF97DB1F176C600009F629 /* Device.swift */; };
+		76FF97DF1F18F5750009F629 /* NotificationCenter+names.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FF97DE1F18F5750009F629 /* NotificationCenter+names.swift */; };
+		76FF97E11F18F5DE0009F629 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FF97E01F18F5DE0009F629 /* Logger.swift */; };
+		76FF97E31F18F6BE0009F629 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FF97E21F18F6BE0009F629 /* Constants.swift */; };
+		76FF97E51F18F8EA0009F629 /* NotificationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FF97E41F18F8EA0009F629 /* NotificationInfo.swift */; };
 		C5EE2E5932C9AD281B3E2163 /* Pods_SymbioteSpike.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EED8F06AD317C89C696A966 /* Pods_SymbioteSpike.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +35,10 @@
 		76FC134C1F13BCB8006837DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76FC13521F13BDBC006837DE /* SearchDevicesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchDevicesManager.swift; sourceTree = "<group>"; };
 		76FF97DB1F176C600009F629 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Device.swift; path = Models/Device.swift; sourceTree = "<group>"; };
+		76FF97DE1F18F5750009F629 /* NotificationCenter+names.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NotificationCenter+names.swift"; path = "Common/NotificationCenter+names.swift"; sourceTree = "<group>"; };
+		76FF97E01F18F5DE0009F629 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Common/Logger.swift; sourceTree = "<group>"; };
+		76FF97E21F18F6BE0009F629 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Common/Constants.swift; sourceTree = "<group>"; };
+		76FF97E41F18F8EA0009F629 /* NotificationInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationInfo.swift; path = Common/NotificationInfo.swift; sourceTree = "<group>"; };
 		FFAD80D89A7A6E5BFF7D81D6 /* Pods-SymbioteSpike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SymbioteSpike.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SymbioteSpike/Pods-SymbioteSpike.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +92,7 @@
 		76FC133D1F13BCB8006837DE /* SymbioteSpike */ = {
 			isa = PBXGroup;
 			children = (
+				76FF97DD1F18F5190009F629 /* Common */,
 				76FF97DA1F176C3D0009F629 /* Models */,
 				76FC133E1F13BCB8006837DE /* AppDelegate.swift */,
 				76FC13401F13BCB8006837DE /* MasterViewController.swift */,
@@ -103,6 +112,17 @@
 				76FF97DB1F176C600009F629 /* Device.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		76FF97DD1F18F5190009F629 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				76FF97DE1F18F5750009F629 /* NotificationCenter+names.swift */,
+				76FF97E01F18F5DE0009F629 /* Logger.swift */,
+				76FF97E21F18F6BE0009F629 /* Constants.swift */,
+				76FF97E41F18F8EA0009F629 /* NotificationInfo.swift */,
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,10 +250,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				76FC13431F13BCB8006837DE /* DetailViewController.swift in Sources */,
+				76FF97E51F18F8EA0009F629 /* NotificationInfo.swift in Sources */,
 				76FC13531F13BDBC006837DE /* SearchDevicesManager.swift in Sources */,
 				76FC13411F13BCB8006837DE /* MasterViewController.swift in Sources */,
 				76FC133F1F13BCB8006837DE /* AppDelegate.swift in Sources */,
+				76FF97E11F18F5DE0009F629 /* Logger.swift in Sources */,
+				76FF97DF1F18F5750009F629 /* NotificationCenter+names.swift in Sources */,
 				76FF97DC1F176C600009F629 /* Device.swift in Sources */,
+				76FF97E31F18F6BE0009F629 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

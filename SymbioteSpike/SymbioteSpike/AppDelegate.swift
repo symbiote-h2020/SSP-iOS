@@ -3,7 +3,7 @@
 //  SymbioteSpike
 //
 //  Created by Konrad Leszczyński on 28/06/2017.
-//  Copyright © 2017 Konrad Leszczyński. All rights reserved.
+//  Copyright © 2017 PSNC. All rights reserved.
 //
 
 import UIKit
