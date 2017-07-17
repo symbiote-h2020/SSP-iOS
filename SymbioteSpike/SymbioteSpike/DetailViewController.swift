@@ -11,13 +11,16 @@ import UIKit
 class DetailViewController: UIViewController {
 
     @IBOutlet weak var detailDescriptionLabel: UILabel!
-
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var platformNameLabel: UILabel!
 
     func configureView() {
         // Update the user interface for the detail item.
-        if let detail = detailItem {
+        if let d = detailItem {
             if let label = detailDescriptionLabel {
-                label.text = detail.description
+                nameLabel.text = d.name
+                platformNameLabel.text = d.platformName
+                label.text = d.deviceDescription
             }
         }
     }

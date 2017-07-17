@@ -16,7 +16,7 @@ class Device {
     var owner: String =  ""
     var name: String = ""
     var id: String = ""
-    var description: String = ""
+    var deviceDescription: String = ""
     //TODO other fields
     
     convenience init(j: JSON)  {
@@ -27,7 +27,7 @@ class Device {
         if j["owner"].exists()          { owner = j["owner"].stringValue }
         if j["name"].exists()           { name = j["name"].stringValue }
         if j["id"].exists()             { id = j["id"].stringValue }
-        if j["description"].exists()    { description = j["description"].stringValue }
+        if j["description"].exists()    { deviceDescription = j["description"].stringValue }
 
     }
     
