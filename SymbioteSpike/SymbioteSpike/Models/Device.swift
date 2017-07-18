@@ -17,7 +17,8 @@ class Device {
     var name: String = ""
     var id: String = ""
     var deviceDescription: String = ""
-    //TODO other fields
+    
+    //location
     
     convenience init(j: JSON)  {
         self.init()
