@@ -14,6 +14,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var platformNameLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var locationLabel: UILabel!
 
     func configureView() {
         // Update the user interface for the detail item.
@@ -26,6 +27,9 @@ class DetailViewController: UIViewController {
             }
             if let dL = descriptionLabel {
                 dL.text = d.deviceDescription
+            }
+            if let lL = locationLabel {
+                lL.text = d.locationName
             }
         }
     }
