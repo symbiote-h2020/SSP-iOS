@@ -18,6 +18,9 @@ class MasterViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.splitViewController?.preferredDisplayMode = UISplitViewControllerDisplayMode.allVisible  //master list always visible on ipad
+        
         // Do any additional setup after loading the view, typically from a nib.
         navigationItem.leftBarButtonItem = editButtonItem
 
