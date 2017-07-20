@@ -71,6 +71,25 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		768B64221F20DD1100EE6D19 /* DataManagers */ = {
+			isa = PBXGroup;
+			children = (
+				76FC13521F13BDBC006837DE /* SearchDevicesManager.swift */,
+			);
+			name = DataManagers;
+			sourceTree = "<group>";
+		};
+		768B64231F20DD2E00EE6D19 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				76FC13401F13BCB8006837DE /* MasterViewController.swift */,
+				76FC13421F13BCB8006837DE /* DetailViewController.swift */,
+				76FC13441F13BCB8006837DE /* Main.storyboard */,
+				76FC13491F13BCB8006837DE /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		76FC13321F13BCB8006837DE = {
 			isa = PBXGroup;
 			children = (
@@ -93,15 +112,12 @@
 			isa = PBXGroup;
 			children = (
 				76FF97DD1F18F5190009F629 /* Common */,
+				768B64221F20DD1100EE6D19 /* DataManagers */,
 				76FF97DA1F176C3D0009F629 /* Models */,
+				768B64231F20DD2E00EE6D19 /* Views */,
 				76FC133E1F13BCB8006837DE /* AppDelegate.swift */,
-				76FC13401F13BCB8006837DE /* MasterViewController.swift */,
-				76FC13421F13BCB8006837DE /* DetailViewController.swift */,
-				76FC13441F13BCB8006837DE /* Main.storyboard */,
 				76FC13471F13BCB8006837DE /* Assets.xcassets */,
-				76FC13491F13BCB8006837DE /* LaunchScreen.storyboard */,
 				76FC134C1F13BCB8006837DE /* Info.plist */,
-				76FC13521F13BDBC006837DE /* SearchDevicesManager.swift */,
 			);
 			path = SymbioteSpike;
 			sourceTree = "<group>";
