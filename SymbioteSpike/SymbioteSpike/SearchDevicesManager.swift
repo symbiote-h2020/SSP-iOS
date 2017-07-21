@@ -23,7 +23,7 @@ class SearchDevicesManager {
         let task = URLSession.shared.dataTask(with: request as URLRequest) { data,response,error in
             if error != nil {
                 print(error)
-                
+                //TODO error alert
             }
             else {
                // let dataString = String(data: data!, encoding: String.Encoding.utf8)

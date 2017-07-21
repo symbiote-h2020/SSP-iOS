@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MasterViewController: UITableViewController {
+class MasterViewController: TableViewControllerWithDrawerMenu {
 
     var detailViewController: DetailViewController? = nil
     var deviceObjects = [Device]()

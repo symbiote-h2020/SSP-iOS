@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		768B64261F220A5900EE6D19 /* DrawerMenuTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B64251F220A5900EE6D19 /* DrawerMenuTableVC.swift */; };
+		768B64281F220ADD00EE6D19 /* ViewControllerWithDrawerMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B64271F220ADD00EE6D19 /* ViewControllerWithDrawerMenu.swift */; };
+		768B642A1F220CEF00EE6D19 /* Drawer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 768B64291F220CEF00EE6D19 /* Drawer.storyboard */; };
+		768B642C1F220D4900EE6D19 /* TableViewControllerWithDrawerMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B642B1F220D4900EE6D19 /* TableViewControllerWithDrawerMenu.swift */; };
 		76FC133F1F13BCB8006837DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC133E1F13BCB8006837DE /* AppDelegate.swift */; };
 		76FC13411F13BCB8006837DE /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC13401F13BCB8006837DE /* MasterViewController.swift */; };
 		76FC13431F13BCB8006837DE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC13421F13BCB8006837DE /* DetailViewController.swift */; };
@@ -25,6 +29,10 @@
 /* Begin PBXFileReference section */
 		0EED8F06AD317C89C696A966 /* Pods_SymbioteSpike.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SymbioteSpike.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		763327B9AB5CC0D33CAB297E /* Pods-SymbioteSpike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SymbioteSpike.release.xcconfig"; path = "Pods/Target Support Files/Pods-SymbioteSpike/Pods-SymbioteSpike.release.xcconfig"; sourceTree = "<group>"; };
+		768B64251F220A5900EE6D19 /* DrawerMenuTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawerMenuTableVC.swift; path = Views/Drawer/DrawerMenuTableVC.swift; sourceTree = "<group>"; };
+		768B64271F220ADD00EE6D19 /* ViewControllerWithDrawerMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllerWithDrawerMenu.swift; path = Views/Drawer/ViewControllerWithDrawerMenu.swift; sourceTree = "<group>"; };
+		768B64291F220CEF00EE6D19 /* Drawer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Drawer.storyboard; path = Views/Drawer/Drawer.storyboard; sourceTree = "<group>"; };
+		768B642B1F220D4900EE6D19 /* TableViewControllerWithDrawerMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewControllerWithDrawerMenu.swift; path = Views/Drawer/TableViewControllerWithDrawerMenu.swift; sourceTree = "<group>"; };
 		76FC133B1F13BCB8006837DE /* SymbioteSpike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SymbioteSpike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76FC133E1F13BCB8006837DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76FC13401F13BCB8006837DE /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -82,12 +90,24 @@
 		768B64231F20DD2E00EE6D19 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				768B64241F22090000EE6D19 /* Drawer */,
 				76FC13401F13BCB8006837DE /* MasterViewController.swift */,
 				76FC13421F13BCB8006837DE /* DetailViewController.swift */,
 				76FC13441F13BCB8006837DE /* Main.storyboard */,
 				76FC13491F13BCB8006837DE /* LaunchScreen.storyboard */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		768B64241F22090000EE6D19 /* Drawer */ = {
+			isa = PBXGroup;
+			children = (
+				768B64251F220A5900EE6D19 /* DrawerMenuTableVC.swift */,
+				768B64271F220ADD00EE6D19 /* ViewControllerWithDrawerMenu.swift */,
+				768B64291F220CEF00EE6D19 /* Drawer.storyboard */,
+				768B642B1F220D4900EE6D19 /* TableViewControllerWithDrawerMenu.swift */,
+			);
+			name = Drawer;
 			sourceTree = "<group>";
 		};
 		76FC13321F13BCB8006837DE = {
@@ -205,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76FC134B1F13BCB8006837DE /* LaunchScreen.storyboard in Resources */,
+				768B642A1F220CEF00EE6D19 /* Drawer.storyboard in Resources */,
 				76FC13481F13BCB8006837DE /* Assets.xcassets in Resources */,
 				76FC13461F13BCB8006837DE /* Main.storyboard in Resources */,
 			);
@@ -274,6 +295,9 @@
 				76FF97DF1F18F5750009F629 /* NotificationCenter+names.swift in Sources */,
 				76FF97DC1F176C600009F629 /* Device.swift in Sources */,
 				76FF97E31F18F6BE0009F629 /* Constants.swift in Sources */,
+				768B64261F220A5900EE6D19 /* DrawerMenuTableVC.swift in Sources */,
+				768B64281F220ADD00EE6D19 /* ViewControllerWithDrawerMenu.swift in Sources */,
+				768B642C1F220D4900EE6D19 /* TableViewControllerWithDrawerMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
