@@ -12,9 +12,12 @@
 		7666B2D61F27716900675435 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7666B2D41F27716900675435 /* Main.storyboard */; };
 		7666B2D81F27716900675435 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7666B2D71F27716900675435 /* Assets.xcassets */; };
 		7666B2DB1F27716900675435 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7666B2D91F27716900675435 /* LaunchScreen.storyboard */; };
+		EEF88BDC63FE38CBD748549B /* Pods_SSPApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B4D6CB0A2C850EEF642ED40 /* Pods_SSPApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E145EF66D1388416029A728 /* Pods-SSPApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSPApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SSPApp/Pods-SSPApp.release.xcconfig"; sourceTree = "<group>"; };
+		3B4D6CB0A2C850EEF642ED40 /* Pods_SSPApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSPApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7666B2CD1F27716900675435 /* SSPApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSPApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7666B2D01F27716900675435 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7666B2D21F27716900675435 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		7666B2D71F27716900675435 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7666B2DA1F27716900675435 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7666B2DC1F27716900675435 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EBCCB6CCEC240CBD7C93E95 /* Pods-SSPApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSPApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SSPApp/Pods-SSPApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEF88BDC63FE38CBD748549B /* Pods_SSPApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				7666B2CF1F27716900675435 /* SSPApp */,
 				7666B2CE1F27716900675435 /* Products */,
+				A9E3D6F10F6F53B96FF1B0AA /* Pods */,
+				B6A084357F55C20DE9CACBA6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = SSPApp;
 			sourceTree = "<group>";
 		};
+		A9E3D6F10F6F53B96FF1B0AA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9EBCCB6CCEC240CBD7C93E95 /* Pods-SSPApp.debug.xcconfig */,
+				0E145EF66D1388416029A728 /* Pods-SSPApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B6A084357F55C20DE9CACBA6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B4D6CB0A2C850EEF642ED40 /* Pods_SSPApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7666B2DF1F27716900675435 /* Build configuration list for PBXNativeTarget "SSPApp" */;
 			buildPhases = (
+				B38BE3E5755EB3DAD5E4D880 /* [CP] Check Pods Manifest.lock */,
 				7666B2C91F27716900675435 /* Sources */,
 				7666B2CA1F27716900675435 /* Frameworks */,
 				7666B2CB1F27716900675435 /* Resources */,
+				1F4557ECC01B98450C9C7A74 /* [CP] Embed Pods Frameworks */,
+				8C42955AEC07FE0BFBA5B013 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F4557ECC01B98450C9C7A74 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SSPApp/Pods-SSPApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C42955AEC07FE0BFBA5B013 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SSPApp/Pods-SSPApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B38BE3E5755EB3DAD5E4D880 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7666B2C91F27716900675435 /* Sources */ = {
@@ -261,6 +336,7 @@
 		};
 		7666B2E01F27716900675435 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EBCCB6CCEC240CBD7C93E95 /* Pods-SSPApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 65KP3UJJWG;
@@ -274,6 +350,7 @@
 		};
 		7666B2E11F27716900675435 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E145EF66D1388416029A728 /* Pods-SSPApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 65KP3UJJWG;

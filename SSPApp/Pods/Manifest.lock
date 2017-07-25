@@ -1,0 +1,23 @@
+PODS:
+  - AsyncSwift (2.0.1)
+  - DrawerController (3.2.1):
+    - DrawerController/Core (= 3.2.1)
+    - DrawerController/DrawerVisualStates (= 3.2.1)
+  - DrawerController/Core (3.2.1)
+  - DrawerController/DrawerVisualStates (3.2.1):
+    - DrawerController/Core
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - AsyncSwift
+  - DrawerController
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  AsyncSwift: 632138e42ead868b53c745fcde9bf733ce1527ad
+  DrawerController: d2f25c567a1786476d74bfe8cde9a5bdd39972a9
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: 42bcd2db3c314d6ae69d2388345c9fa0baba0f78
+
+COCOAPODS: 1.2.0
