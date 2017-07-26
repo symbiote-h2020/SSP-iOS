@@ -7,24 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76162ECC1F2892040043285D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76162ECB1F2892040043285D /* MainViewController.swift */; };
+		76162ED21F28923A0043285D /* Drawer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76162ECE1F28923A0043285D /* Drawer.storyboard */; };
+		76162ED31F28923A0043285D /* DrawerMenuTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76162ECF1F28923A0043285D /* DrawerMenuTableVC.swift */; };
+		76162ED41F28923A0043285D /* TableViewControllerWithDrawerMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76162ED01F28923A0043285D /* TableViewControllerWithDrawerMenu.swift */; };
+		76162ED51F28923A0043285D /* ViewControllerWithDrawerMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76162ED11F28923A0043285D /* ViewControllerWithDrawerMenu.swift */; };
+		76162EDA1F2892530043285D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76162ED71F2892530043285D /* DetailViewController.swift */; };
+		76162EDB1F2892530043285D /* DevicesList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76162ED81F2892530043285D /* DevicesList.storyboard */; };
+		76162EDC1F2892530043285D /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76162ED91F2892530043285D /* MasterViewController.swift */; };
+		76162EDF1F2892B20043285D /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76162EDE1F2892B20043285D /* Device.swift */; };
+		76162EE21F2892F60043285D /* SearchDevicesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76162EE11F2892F60043285D /* SearchDevicesManager.swift */; };
+		76162EE81F2893390043285D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76162EE41F2893390043285D /* Constants.swift */; };
+		76162EE91F2893390043285D /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76162EE51F2893390043285D /* Logger.swift */; };
+		76162EEA1F2893390043285D /* NotificationCenter+names.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76162EE61F2893390043285D /* NotificationCenter+names.swift */; };
+		76162EEB1F2893390043285D /* NotificationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76162EE71F2893390043285D /* NotificationInfo.swift */; };
 		7666B2D11F27716900675435 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7666B2D01F27716900675435 /* AppDelegate.swift */; };
-		7666B2D31F27716900675435 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7666B2D21F27716900675435 /* ViewController.swift */; };
 		7666B2D61F27716900675435 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7666B2D41F27716900675435 /* Main.storyboard */; };
 		7666B2D81F27716900675435 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7666B2D71F27716900675435 /* Assets.xcassets */; };
 		7666B2DB1F27716900675435 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7666B2D91F27716900675435 /* LaunchScreen.storyboard */; };
+		768B56071F28C7AC00E8D075 /* SearchDevices.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 768B56061F28C7AC00E8D075 /* SearchDevices.storyboard */; };
+		768B56091F28C7EA00E8D075 /* SearchDevicesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B56081F28C7EA00E8D075 /* SearchDevicesVC.swift */; };
 		EEF88BDC63FE38CBD748549B /* Pods_SSPApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B4D6CB0A2C850EEF642ED40 /* Pods_SSPApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0E145EF66D1388416029A728 /* Pods-SSPApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSPApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SSPApp/Pods-SSPApp.release.xcconfig"; sourceTree = "<group>"; };
 		3B4D6CB0A2C850EEF642ED40 /* Pods_SSPApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSPApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76162ECB1F2892040043285D /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Views/Main/MainViewController.swift; sourceTree = "<group>"; };
+		76162ECE1F28923A0043285D /* Drawer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Drawer.storyboard; path = Views/Drawer/Drawer.storyboard; sourceTree = "<group>"; };
+		76162ECF1F28923A0043285D /* DrawerMenuTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawerMenuTableVC.swift; path = Views/Drawer/DrawerMenuTableVC.swift; sourceTree = "<group>"; };
+		76162ED01F28923A0043285D /* TableViewControllerWithDrawerMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewControllerWithDrawerMenu.swift; path = Views/Drawer/TableViewControllerWithDrawerMenu.swift; sourceTree = "<group>"; };
+		76162ED11F28923A0043285D /* ViewControllerWithDrawerMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllerWithDrawerMenu.swift; path = Views/Drawer/ViewControllerWithDrawerMenu.swift; sourceTree = "<group>"; };
+		76162ED71F2892530043285D /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = Views/DevicesList/DetailViewController.swift; sourceTree = "<group>"; };
+		76162ED81F2892530043285D /* DevicesList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = DevicesList.storyboard; path = Views/DevicesList/DevicesList.storyboard; sourceTree = "<group>"; };
+		76162ED91F2892530043285D /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterViewController.swift; path = Views/DevicesList/MasterViewController.swift; sourceTree = "<group>"; };
+		76162EDE1F2892B20043285D /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Device.swift; path = Models/Device.swift; sourceTree = "<group>"; };
+		76162EE11F2892F60043285D /* SearchDevicesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchDevicesManager.swift; path = DataManagers/SearchDevicesManager.swift; sourceTree = "<group>"; };
+		76162EE41F2893390043285D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Common/Constants.swift; sourceTree = "<group>"; };
+		76162EE51F2893390043285D /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Common/Logger.swift; sourceTree = "<group>"; };
+		76162EE61F2893390043285D /* NotificationCenter+names.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NotificationCenter+names.swift"; path = "Common/NotificationCenter+names.swift"; sourceTree = "<group>"; };
+		76162EE71F2893390043285D /* NotificationInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationInfo.swift; path = Common/NotificationInfo.swift; sourceTree = "<group>"; };
 		7666B2CD1F27716900675435 /* SSPApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSPApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7666B2D01F27716900675435 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7666B2D21F27716900675435 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7666B2D51F27716900675435 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7666B2D71F27716900675435 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7666B2DA1F27716900675435 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7666B2DC1F27716900675435 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		768B56061F28C7AC00E8D075 /* SearchDevices.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SearchDevices.storyboard; path = Views/SearchDevices/SearchDevices.storyboard; sourceTree = "<group>"; };
+		768B56081F28C7EA00E8D075 /* SearchDevicesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchDevicesVC.swift; path = Views/SearchDevices/SearchDevicesVC.swift; sourceTree = "<group>"; };
 		9EBCCB6CCEC240CBD7C93E95 /* Pods-SSPApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSPApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SSPApp/Pods-SSPApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -40,10 +70,79 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		76162EC81F2780910043285D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				768B56051F28C78100E8D075 /* SearchDevices */,
+				76162ED61F2892410043285D /* DevicesList */,
+				76162ECD1F2892220043285D /* Drawer */,
+				76162EC91F2780A30043285D /* Main */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		76162EC91F2780A30043285D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				76162ECB1F2892040043285D /* MainViewController.swift */,
+				7666B2D41F27716900675435 /* Main.storyboard */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		76162ECD1F2892220043285D /* Drawer */ = {
+			isa = PBXGroup;
+			children = (
+				76162ECE1F28923A0043285D /* Drawer.storyboard */,
+				76162ECF1F28923A0043285D /* DrawerMenuTableVC.swift */,
+				76162ED01F28923A0043285D /* TableViewControllerWithDrawerMenu.swift */,
+				76162ED11F28923A0043285D /* ViewControllerWithDrawerMenu.swift */,
+			);
+			name = Drawer;
+			sourceTree = "<group>";
+		};
+		76162ED61F2892410043285D /* DevicesList */ = {
+			isa = PBXGroup;
+			children = (
+				76162ED71F2892530043285D /* DetailViewController.swift */,
+				76162ED81F2892530043285D /* DevicesList.storyboard */,
+				76162ED91F2892530043285D /* MasterViewController.swift */,
+			);
+			name = DevicesList;
+			sourceTree = "<group>";
+		};
+		76162EDD1F2892A50043285D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				76162EDE1F2892B20043285D /* Device.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		76162EE01F2892E90043285D /* DataManagers */ = {
+			isa = PBXGroup;
+			children = (
+				76162EE11F2892F60043285D /* SearchDevicesManager.swift */,
+			);
+			name = DataManagers;
+			sourceTree = "<group>";
+		};
+		76162EE31F28932C0043285D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				76162EE41F2893390043285D /* Constants.swift */,
+				76162EE51F2893390043285D /* Logger.swift */,
+				76162EE61F2893390043285D /* NotificationCenter+names.swift */,
+				76162EE71F2893390043285D /* NotificationInfo.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
 		7666B2C41F27716900675435 = {
 			isa = PBXGroup;
 			children = (
 				7666B2CF1F27716900675435 /* SSPApp */,
+				768B56011F28A5DC00E8D075 /* Extensions */,
 				7666B2CE1F27716900675435 /* Products */,
 				A9E3D6F10F6F53B96FF1B0AA /* Pods */,
 				B6A084357F55C20DE9CACBA6 /* Frameworks */,
@@ -61,14 +160,32 @@
 		7666B2CF1F27716900675435 /* SSPApp */ = {
 			isa = PBXGroup;
 			children = (
+				76162EE31F28932C0043285D /* Common */,
+				76162EE01F2892E90043285D /* DataManagers */,
+				76162EDD1F2892A50043285D /* Models */,
+				76162EC81F2780910043285D /* Views */,
 				7666B2D01F27716900675435 /* AppDelegate.swift */,
-				7666B2D21F27716900675435 /* ViewController.swift */,
-				7666B2D41F27716900675435 /* Main.storyboard */,
 				7666B2D71F27716900675435 /* Assets.xcassets */,
 				7666B2D91F27716900675435 /* LaunchScreen.storyboard */,
 				7666B2DC1F27716900675435 /* Info.plist */,
 			);
 			path = SSPApp;
+			sourceTree = "<group>";
+		};
+		768B56011F28A5DC00E8D075 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		768B56051F28C78100E8D075 /* SearchDevices */ = {
+			isa = PBXGroup;
+			children = (
+				768B56061F28C7AC00E8D075 /* SearchDevices.storyboard */,
+				768B56081F28C7EA00E8D075 /* SearchDevicesVC.swift */,
+			);
+			name = SearchDevices;
 			sourceTree = "<group>";
 		};
 		A9E3D6F10F6F53B96FF1B0AA /* Pods */ = {
@@ -152,8 +269,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7666B2DB1F27716900675435 /* LaunchScreen.storyboard in Resources */,
+				76162ED21F28923A0043285D /* Drawer.storyboard in Resources */,
 				7666B2D81F27716900675435 /* Assets.xcassets in Resources */,
 				7666B2D61F27716900675435 /* Main.storyboard in Resources */,
+				768B56071F28C7AC00E8D075 /* SearchDevices.storyboard in Resources */,
+				76162EDB1F2892530043285D /* DevicesList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +332,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7666B2D31F27716900675435 /* ViewController.swift in Sources */,
+				76162ED51F28923A0043285D /* ViewControllerWithDrawerMenu.swift in Sources */,
+				76162EE91F2893390043285D /* Logger.swift in Sources */,
 				7666B2D11F27716900675435 /* AppDelegate.swift in Sources */,
+				76162ED31F28923A0043285D /* DrawerMenuTableVC.swift in Sources */,
+				76162EEA1F2893390043285D /* NotificationCenter+names.swift in Sources */,
+				76162EDA1F2892530043285D /* DetailViewController.swift in Sources */,
+				76162ECC1F2892040043285D /* MainViewController.swift in Sources */,
+				76162EE81F2893390043285D /* Constants.swift in Sources */,
+				76162EEB1F2893390043285D /* NotificationInfo.swift in Sources */,
+				76162EE21F2892F60043285D /* SearchDevicesManager.swift in Sources */,
+				76162EDC1F2892530043285D /* MasterViewController.swift in Sources */,
+				76162ED41F28923A0043285D /* TableViewControllerWithDrawerMenu.swift in Sources */,
+				768B56091F28C7EA00E8D075 /* SearchDevicesVC.swift in Sources */,
+				76162EDF1F2892B20043285D /* Device.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +513,7 @@
 				7666B2E11F27716900675435 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

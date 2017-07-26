@@ -10,7 +10,6 @@
 		03FF9FFA4DA7FEE843EC0858D4995782 /* AnimatedMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEA7CCD8CF8B17489CEB97103AF277D /* AnimatedMenuButton.swift */; };
 		1B44F3CDBC3B9C4D5337FB6E1BA4CD37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC5D9C5B838BE747D0154460D02F926 /* Foundation.framework */; };
 		2052960359E8ED9DBBEEA58D733D3B05 /* DrawerController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C5CC27EA4526A16229FC7FD1AF3925 /* DrawerController-dummy.m */; };
-		248A8284604CBBAC4B3D71A8E49122DB /* DrawerSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD95DA4AD221C141AB2D1A347C549DA /* DrawerSegue.swift */; };
 		3BA4763C71F0764DCF4CEEA7A3EBB37F /* Pods-SSPApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BA46ED13496144EEA098C2CA466960 /* Pods-SSPApp-dummy.m */; };
 		43B5D2E5EA8853C7025D640DDD40CE7D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BACC64101FAE4862F8806DB02FC71B0E /* QuartzCore.framework */; };
 		4EB456484D7602FE00B2FBC0EC307DDD /* DrawerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F2E6FED1D8D726A54C2DC32BADF635 /* DrawerController.swift */; };
@@ -54,38 +53,37 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01832284B4AD6D02CFE26C58E37EEEA5 /* Async.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Async.framework; path = AsyncSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		01832284B4AD6D02CFE26C58E37EEEA5 /* Async.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Async.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1438F928DEDAC4BFCA18BE5ADA352D6C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		268BF5D2BC60E5AEE3397B8A738CCCA1 /* DrawerController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DrawerController-umbrella.h"; sourceTree = "<group>"; };
 		2C7FD4BB6DA7878558E5D15A5E7F5DDC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2EA43F4E0C4F6ED6F3D9A90CD6842723 /* AsyncSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AsyncSwift.modulemap; sourceTree = "<group>"; };
+		2EA43F4E0C4F6ED6F3D9A90CD6842723 /* AsyncSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AsyncSwift.modulemap; sourceTree = "<group>"; };
 		33F2E6FED1D8D726A54C2DC32BADF635 /* DrawerController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawerController.swift; path = DrawerController/DrawerController.swift; sourceTree = "<group>"; };
 		38F0447CD5E5DF6D937BF40402B4CBC9 /* DrawerBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawerBarButtonItem.swift; path = DrawerController/DrawerBarButtonItem.swift; sourceTree = "<group>"; };
 		3AC5D9C5B838BE747D0154460D02F926 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		4158CBF971F242B7629A2370DCF9D792 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
 		44F4862805C80B20857830B30B98C3A7 /* Pods-SSPApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SSPApp-acknowledgements.plist"; sourceTree = "<group>"; };
-		4BD95DA4AD221C141AB2D1A347C549DA /* DrawerSegue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawerSegue.swift; path = DrawerController/DrawerSegue.swift; sourceTree = "<group>"; };
-		4C6E4D02A09A3547E594CB7D444A8AE8 /* DrawerController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = DrawerController.modulemap; sourceTree = "<group>"; };
+		4C6E4D02A09A3547E594CB7D444A8AE8 /* DrawerController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = DrawerController.modulemap; sourceTree = "<group>"; };
 		4E937C890093D1B48902827F7A0E50E6 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
-		4F7C8FCFBEB6ED625C29641003614FBB /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		4F7C8FCFBEB6ED625C29641003614FBB /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
 		530DAE4513E69AAB4DBF47C5D577A472 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5310EAF7811F2AD56DF7A645EEF8F98D /* Pods-SSPApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SSPApp-resources.sh"; sourceTree = "<group>"; };
 		54C0419ED4153AADF99D4B12A4C6F7A5 /* Async.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Async.swift; path = Sources/Async.swift; sourceTree = "<group>"; };
 		611A9D24D739C00AC2FAE9857148E7C2 /* Pods-SSPApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SSPApp.release.xcconfig"; sourceTree = "<group>"; };
-		6159F9C5C5DD72EB7BBD84CBF23716B3 /* Pods_SSPApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SSPApp.framework; path = "Pods-SSPApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6159F9C5C5DD72EB7BBD84CBF23716B3 /* Pods_SSPApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSPApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DEA7CCD8CF8B17489CEB97103AF277D /* AnimatedMenuButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedMenuButton.swift; path = DrawerController/AnimatedMenuButton.swift; sourceTree = "<group>"; };
 		75C5CC27EA4526A16229FC7FD1AF3925 /* DrawerController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DrawerController-dummy.m"; sourceTree = "<group>"; };
 		79C866E6FA11A5D4FB8409DDA75A35DE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84DCA6C7DE85F18FDEC048C6693BC7E1 /* Pods-SSPApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SSPApp-umbrella.h"; sourceTree = "<group>"; };
 		850C4616A58F48F313664C1FA3CE2167 /* AsyncSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AsyncSwift-prefix.pch"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9465B71184933376BF38A7E4904957E4 /* Pods-SSPApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SSPApp-frameworks.sh"; sourceTree = "<group>"; };
-		94E6C8C7A580B316B58615B64D4054F7 /* DrawerController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DrawerController.framework; path = DrawerController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9502F8A388FB85A6C776BD4FDEDA36B7 /* Pods-SSPApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SSPApp.modulemap"; sourceTree = "<group>"; };
+		94E6C8C7A580B316B58615B64D4054F7 /* DrawerController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DrawerController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9502F8A388FB85A6C776BD4FDEDA36B7 /* Pods-SSPApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SSPApp.modulemap"; sourceTree = "<group>"; };
 		9E7D95D4F0FDCAC60E7CC428F06EB281 /* DrawerController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DrawerController.xcconfig; sourceTree = "<group>"; };
 		A0CB68830C948D1CF97879EDB9E2066B /* AsyncSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AsyncSwift.xcconfig; sourceTree = "<group>"; };
 		A1C18E613B3ADD85C1639C6F2A7CFBBF /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
-		A6B457374063EAB0FA1B0CDA0A66E19B /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6B457374063EAB0FA1B0CDA0A66E19B /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD1CAC29FAAC2E464BEB04967ADEEC49 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
 		B231307D2A268FC908AC4474B68B1AD9 /* Pods-SSPApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SSPApp.debug.xcconfig"; sourceTree = "<group>"; };
 		B751E8DAA222F2215A0F7F691F8F9173 /* Pods-SSPApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SSPApp-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -159,7 +157,6 @@
 				AD1CAC29FAAC2E464BEB04967ADEEC49 /* SwiftyJSON.swift */,
 				800B45201A2BC851138EA3CB2365F086 /* Support Files */,
 			);
-			name = SwiftyJSON;
 			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
@@ -200,7 +197,6 @@
 			isa = PBXGroup;
 			children = (
 				33F2E6FED1D8D726A54C2DC32BADF635 /* DrawerController.swift */,
-				4BD95DA4AD221C141AB2D1A347C549DA /* DrawerSegue.swift */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -257,7 +253,6 @@
 				9EE076139A2BD8A4682626D731920ECE /* DrawerVisualStates */,
 				637D09F3DFB5C5AF132FD6CD75499E33 /* Support Files */,
 			);
-			name = DrawerController;
 			path = DrawerController;
 			sourceTree = "<group>";
 		};
@@ -298,7 +293,6 @@
 				54C0419ED4153AADF99D4B12A4C6F7A5 /* Async.swift */,
 				FAD5D72BBA86DAA60086AFF6C5241D81 /* Support Files */,
 			);
-			name = AsyncSwift;
 			path = AsyncSwift;
 			sourceTree = "<group>";
 		};
@@ -466,7 +460,6 @@
 				AE7BFE1685A6A6C1F41EEC694EC200E1 /* DrawerBarButtonItem.swift in Sources */,
 				2052960359E8ED9DBBEEA58D733D3B05 /* DrawerController-dummy.m in Sources */,
 				4EB456484D7602FE00B2FBC0EC307DDD /* DrawerController.swift in Sources */,
-				248A8284604CBBAC4B3D71A8E49122DB /* DrawerSegue.swift in Sources */,
 				7BEAF47B6B7767BE499201D1ABCB0480 /* DrawerVisualState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
