@@ -30,10 +30,10 @@ class MainViewController: DrawerController {
         
         // view controllers
         if self.centerViewController == nil {
-            self.centerViewController = SearchDevicesVC.getViewController()
+            self.centerViewController = SearchDevicesVC.getNavigationViewController()
         }
         if self.leftDrawerViewController == nil {
-            self.leftDrawerViewController = DrawerMenuTableVC.getViewController()
+            self.leftDrawerViewController = DrawerMenuTableVC.getNavigationViewController()
         }
         if self.rightDrawerViewController == nil {
             self.rightDrawerViewController = nil

@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Drawer Menu TableVC-->
+        <!--drawer-->
         <scene sceneID="xut-as-omk">
             <objects>
                 <tableViewController storyboardIdentifier="DrawerMenuTableVC" id="j2b-2x-paL" customClass="DrawerMenuTableVC" customModule="SSPApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -32,10 +32,29 @@
                             <outlet property="delegate" destination="j2b-2x-paL" id="Kc3-p7-Sla"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="drawer" id="Mz2-FS-jZV"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nsW-mP-K2E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="433" y="143"/>
+            <point key="canvasLocation" x="1372" y="142.57871064467767"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fAC-mV-Si0">
+            <objects>
+                <navigationController storyboardIdentifier="DrawerMenuNavigationTableVC" automaticallyAdjustsScrollViewInsets="NO" id="Auo-Bq-NZ3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Yxj-0V-HSa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="j2b-2x-paL" kind="relationship" relationship="rootViewController" id="kUh-Bl-AYi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g3k-7w-aff" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="432.80000000000001" y="142.57871064467767"/>
         </scene>
     </scenes>
 </document>

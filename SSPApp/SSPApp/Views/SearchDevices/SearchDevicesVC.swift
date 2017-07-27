@@ -18,11 +18,27 @@ class SearchDevicesVC: ViewControllerWithDrawerMenu {
     }
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    static func getNavigationViewController() -> UIViewController {
+        let storyboard = UIStoryboard(name: "SearchDevices", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "SearchDevicesNavigationVC")
+        return controller
     }
+    
+    
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//
+//        self.title = "zupa"
+//        let navigationBar = navigationController!.navigationBar
+//        navigationBar.tintColor = UIColor.blue
+//        
+//        let leftButton =  UIBarButtonItem(title: "Left Button", style: UIBarButtonItemStyle.plain, target: self, action: nil)
+//        let rightButton = UIBarButtonItem(title: "Right Button", style: UIBarButtonItemStyle.plain, target: self, action: nil)
+//        
+//        navigationItem.leftBarButtonItem = leftButton
+//        navigationItem.rightBarButtonItem = rightButton
+//        // Do any additional setup after loading the view.
+//    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

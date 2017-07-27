@@ -28,4 +28,10 @@ class DrawerMenuTableVC: UITableViewController {
         let controller = storyboard.instantiateViewController(withIdentifier: "DrawerMenuTableVC")
         return controller
     }
+    static func getNavigationViewController() -> UIViewController {
+        let storyboard = UIStoryboard(name: "Drawer", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "DrawerMenuNavigationTableVC")
+        return controller
+    }
+    
 }
