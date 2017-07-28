@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MasterViewController: TableViewControllerWithDrawerMenu {
+class MasterViewController: UITableViewController {
 
     var detailViewController: DetailViewController? = nil
     var deviceObjects = [Device]()
@@ -20,9 +20,6 @@ class MasterViewController: TableViewControllerWithDrawerMenu {
         super.viewDidLoad()
         
         self.splitViewController?.preferredDisplayMode = UISplitViewControllerDisplayMode.allVisible  //master list always visible on ipad
-        
-        // Do any additional setup after loading the view, typically from a nib.
-        navigationItem.leftBarButtonItem = editButtonItem
 
         if let split = splitViewController {
             let controllers = split.viewControllers
@@ -32,13 +29,23 @@ class MasterViewController: TableViewControllerWithDrawerMenu {
         
         NotificationCenter.default.addObserver(self, selector: #selector(notyficationReceived(_:)), name: SymNotificationName.DeviceListLoaded, object: nil)
         sdm.getTestData()
+        
+        addBackButton()
     }
-
-    //TODO
-//    override func viewWillAppear(_ animated: Bool) {
-//        clearsSelectionOnViewWillAppear = splitViewController!.isCollapsed
-//        super.viewWillAppear(animated)        
-//    }
+    
+    func addBackButton() {
+        let backButton = UIButton(type: .custom)
+        //TODO backButton.setImage(UIImage(named: "BackButton.png"), for: .normal) // Image can be downloaded from here below link
+        backButton.setTitle("Back", for: .normal)
+        backButton.setTitleColor(backButton.tintColor, for: .normal) // You can change the TitleColor
+        backButton.addTarget(self, action: #selector(self.backAction(_:)), for: .touchUpInside)
+        
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backButton)
+    }
+    
+    @IBAction func backAction(_ sender: UIButton) {
+        let _ = self.navigationController?.popViewController(animated: true)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -115,5 +122,16 @@ class MasterViewController: TableViewControllerWithDrawerMenu {
         return controller
     }
 
+    static func getNavigationViewController() -> UIViewController {
+        let storyboard = UIStoryboard(name: "DevicesList", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "MasterViewNavigationController")
+        return controller
+    }
+    
+    static func getSplitViewController() -> UIViewController {
+        let storyboard = UIStoryboard(name: "DevicesList", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "SpitViewController")
+        return controller
+    }
 }
 

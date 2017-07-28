@@ -30,6 +30,13 @@ class SearchDevicesVC: ViewControllerWithDrawerMenu {
         // Dispose of any resources that can be recreated.
     }
     
+    //navigate
+    @IBAction func searchButtonTapped(_ sender: Any) {
+        let mvc = MasterViewController.getNavigationViewController()
+        present(mvc, animated: true, completion: nil)
+        //show(mvc, sender: self)
+    }
+    
 
     /*
     // MARK: - Navigation
