@@ -20,11 +20,11 @@ class TableViewControllerWithDrawerMenu : UITableViewController {
     }
     
     func setupLeftMenuButton() {
-        let leftDrawerButton = DrawerBarButtonItem(target: self, action: "leftDrawerButtonPress:")
+        let leftDrawerButton = DrawerBarButtonItem(target: self, action: #selector(leftDrawerButtonPress(_:)))
         self.navigationItem.setLeftBarButton(leftDrawerButton, animated: true)
     }
     
-    func leftDrawerButtonPress(sender: AnyObject?) {
+    func leftDrawerButtonPress(_ sender: AnyObject?) {
         self.evo_drawerController?.toggleDrawerSide(.left, animated: true, completion: nil)
     }
 }
