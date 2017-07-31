@@ -32,9 +32,12 @@ class SearchDevicesVC: ViewControllerWithDrawerMenu {
     
     //navigate
     @IBAction func searchButtonTapped(_ sender: Any) {
-        let mvc = MasterViewController.getNavigationViewController()
-        present(mvc, animated: true, completion: nil)
+        //let mvc = MasterViewController.getNavigationViewController()
+        //present(mvc, animated: true, completion: nil)
         //show(mvc, sender: self)
+       //tak sie sypie navigationController?.pushViewController(mvc, animated: true)
+        let vc = MasterViewController.getViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
     
 
@@ -47,5 +50,7 @@ class SearchDevicesVC: ViewControllerWithDrawerMenu {
         // Pass the selected object to the new view controller.
     }
     */
+
+    
 
 }

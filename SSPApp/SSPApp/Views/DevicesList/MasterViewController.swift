@@ -31,20 +31,21 @@ class MasterViewController: UITableViewController {
         sdm.getTestData()
         
         addBackButton()
+        //
+        //to nie dizła dla split view
     }
     
     func addBackButton() {
-        let backButton = UIButton(type: .custom)
-        //TODO backButton.setImage(UIImage(named: "BackButton.png"), for: .normal) // Image can be downloaded from here below link
-        backButton.setTitle("Back", for: .normal)
-        backButton.setTitleColor(backButton.tintColor, for: .normal) // You can change the TitleColor
-        backButton.addTarget(self, action: #selector(self.backAction(_:)), for: .touchUpInside)
-        
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backButton)
+        let backButton = UIBarButtonItem(title: "back", style: .plain, target: self, action: #selector(backAction(_:)))
+        self.navigationItem.setLeftBarButton(backButton, animated: true)
     }
     
     @IBAction func backAction(_ sender: UIButton) {
         let _ = self.navigationController?.popViewController(animated: true)
+        //let vc = SearchDevicesVC.getNavigationViewController()
+        //present(vc, animated: true, completion: nil)
+        //self.navigationController?.pushViewController(vc, animated: true)
+        //show(vc, sender: self)
     }
 
     override func didReceiveMemoryWarning() {
