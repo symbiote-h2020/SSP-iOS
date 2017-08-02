@@ -13,7 +13,10 @@ class SearchDevicesManager {
     var devicesList: [Device] = []
 
     func getTestData() {
-
+//debug test
+//        self.getBackupTestData()
+//        return
+        
         let url = URL(string: "https://symbiote-dev.man.poznan.pl:8100/coreInterface/v1/query")
 
         let request = NSMutableURLRequest(url: url!)
@@ -24,6 +27,7 @@ class SearchDevicesManager {
             if error != nil {
                 print(error)
                 //TODO error alert
+                self.getBackupTestData()
             }
             else {
                // let dataString = String(data: data!, encoding: String.Encoding.utf8)
@@ -57,6 +61,24 @@ class SearchDevicesManager {
         NotificationCenter.default.postNotificationName(SymNotificationName.DeviceListLoaded)
     }
     
+    
+    //MOTYLA NOGA - czemu to się nie chce sparsować
+    func getBackupTestData() {
+//    //    let str = "{\"a\":[]}"
+//        let str = "\"resources\":[        {           \"platformId\":\"Error device\",         \"platformName\":\"NoDevices found\",         \"owner\":null,         \"name\":\"dimmer service\",       \"id\":\"593943acb4f8e209390e9425\",         \"description\":\"dimmer\",         \"locationName\":\"\" } ]"
+//        
+//        let json = JSON(jsonString: str)
+//        self.parseDevicesJson(json)
+        
+        let dev = Device()
+        dev.id="aa"
+        dev.name="Error"
+        dev.locationName="Not found"
+        dev.platformName=""
+        devicesList.append(dev)
+        
+        NotificationCenter.default.postNotificationName(SymNotificationName.DeviceListLoaded)
+    }
     
     
     

@@ -43,6 +43,67 @@
             </objects>
             <point key="canvasLocation" x="1252" y="234.33283358320841"/>
         </scene>
+        <!--Devices-->
+        <scene sceneID="LvE-8O-jfd">
+            <objects>
+                <viewController storyboardIdentifier="DevicesListVC" title="Devices" id="ODo-pb-JXF" customClass="DevicesListVC" customModule="SSPApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TQ6-hi-2tt"/>
+                        <viewControllerLayoutGuide type="bottom" id="hLj-OJ-IWT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="DevicesListVC" id="1PY-qm-9i1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xfD-Eh-Xjc">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="BBD-gk-xoU">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BBD-gk-xoU" id="RCN-sJ-gzY">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xfD-Eh-Xjc" firstAttribute="top" secondItem="TQ6-hi-2tt" secondAttribute="bottom" id="XsI-pI-paR"/>
+                            <constraint firstItem="hLj-OJ-IWT" firstAttribute="top" secondItem="xfD-Eh-Xjc" secondAttribute="bottom" id="cwi-At-GK4"/>
+                            <constraint firstAttribute="trailing" secondItem="xfD-Eh-Xjc" secondAttribute="trailing" id="lmC-l0-eZr"/>
+                            <constraint firstItem="xfD-Eh-Xjc" firstAttribute="leading" secondItem="1PY-qm-9i1" secondAttribute="leading" id="ncR-TQ-Glg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="xfD-Eh-Xjc" id="fnh-ve-nGx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AHn-ra-X1A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2342" y="235"/>
+        </scene>
+        <!--Device DetailsVC-->
+        <scene sceneID="Qke-8Q-Ett">
+            <objects>
+                <viewController storyboardIdentifier="DeviceDetailsVC" id="ndW-EX-nnb" customClass="DeviceDetailsVC" customModule="SSPApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zkv-Kv-2TP"/>
+                        <viewControllerLayoutGuide type="bottom" id="id3-Ax-nkh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YuY-xf-JbP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.50311612650000004" blue="0.1002855329" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GiN-Ex-fM8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3375" y="236"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="wS9-I3-kWr">
             <objects>

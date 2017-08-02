@@ -36,7 +36,7 @@ class SearchDevicesVC: ViewControllerWithDrawerMenu {
         //present(mvc, animated: true, completion: nil)
         //show(mvc, sender: self)
        //tak sie sypie navigationController?.pushViewController(mvc, animated: true)
-        let vc = MasterViewController.getViewController()
+        let vc = DevicesListVC.getViewController()
         navigationController?.pushViewController(vc, animated: true)
     }
     
