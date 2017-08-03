@@ -50,17 +50,17 @@ class DevicesListVC: UIViewController {
     
     
     //MARK - storybord management
-    static func getViewController() -> UIViewController {
+    static func getViewController() -> DevicesListVC {
         let storyboard = UIStoryboard(name: "SearchDevices", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "DevicesListVC")
-        return controller
+        return controller as! DevicesListVC
     }
     
     
-    static func getNavigationViewController() -> UIViewController {
+    static func getNavigationViewController() -> UINavigationController {
         let storyboard = UIStoryboard(name: "SearchDevices", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "DevicesListVC")
-        return controller
+        return controller as! UINavigationController
     }
     
 }
@@ -87,7 +87,8 @@ extension DevicesListVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
         let vc = DeviceDetailsVC.getViewController()
-        vc.detailItem = nil
+        let deviceObject = deviceObjects[indexPath.row]
+        vc.detailItem = deviceObject
         navigationController?.pushViewController(vc, animated: true)
     }
 }

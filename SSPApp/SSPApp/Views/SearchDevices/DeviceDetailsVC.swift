@@ -60,12 +60,5 @@ class DeviceDetailsVC: UIViewController {
         let controller = storyboard.instantiateViewController(withIdentifier: "DeviceDetailsVC")
         return controller as! DeviceDetailsVC
     }
-    
-    
-    static func getNavigationViewController() -> UIViewController {
-        let storyboard = UIStoryboard(name: "SearchDevices", bundle: nil)
-        let controller = storyboard.instantiateViewController(withIdentifier: "DeviceDetailsVC")
-        return controller
-    }
 
 }

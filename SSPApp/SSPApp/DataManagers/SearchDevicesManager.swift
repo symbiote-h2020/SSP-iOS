@@ -14,8 +14,8 @@ class SearchDevicesManager {
 
     func getTestData() {
 //debug test
-        self.getBackupTestData()
-        return
+//        self.getBackupTestData()
+//        return
         
         
         let url = URL(string: "https://symbiote-dev.man.poznan.pl:8100/coreInterface/v1/query")
@@ -26,13 +26,15 @@ class SearchDevicesManager {
         
         let task = URLSession.shared.dataTask(with: request as URLRequest) { data,response,error in
             if error != nil {
-                print(error)
-                //TODO error alert
+                logError(error.debugDescription)
+
+                let notiInfoObj  = NotificationInfo(type: ErrorType.connection, info: error.debugDescription)
+                NotificationCenter.default.postNotificationName(SymNotificationName.DeviceListLoaded, object: notiInfoObj)
                 self.getBackupTestData()
             }
             else {
-               // let dataString = String(data: data!, encoding: String.Encoding.utf8)
-                 // debug               print(dataString)
+                let dataString = String(data: data!, encoding: String.Encoding.utf8)
+                logVerbose(dataString)
                 
                 if let jsonData = data {
                     let json = JSON(data: jsonData)
@@ -48,7 +50,11 @@ class SearchDevicesManager {
     
     func parseDevicesJson(_ dataJson: JSON) {
         if dataJson["resources"].exists() == false {
-            print("+++++++ wrong json +++++  SearchDevicesManager")
+            logWarn("+++++++ wrong json +++++  SearchDevicesManager dataJson = \(dataJson)")
+            
+            let notiInfoObj  = NotificationInfo(type: ErrorType.wrongResult, info: "wrong json from API")
+            NotificationCenter.default.postNotificationName(SymNotificationName.DeviceListLoaded, object: notiInfoObj)
+            
             return
         }
         
