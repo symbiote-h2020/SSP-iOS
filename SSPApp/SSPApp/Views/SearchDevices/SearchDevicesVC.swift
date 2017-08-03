@@ -11,17 +11,17 @@ import UIKit
 class SearchDevicesVC: ViewControllerWithDrawerMenu {
     
     //MARK - storybord management
-    static func getViewController() -> UIViewController {
+    static func getViewController() -> SearchDevicesVC {
         let storyboard = UIStoryboard(name: "SearchDevices", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "SearchDevicesVC")
-        return controller
+        return controller as! SearchDevicesVC
     }
     
     
-    static func getNavigationViewController() -> UIViewController {
+    static func getNavigationViewController() -> UINavigationController {
         let storyboard = UIStoryboard(name: "SearchDevices", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "SearchDevicesNavigationVC")
-        return controller
+        return controller as! UINavigationController
     }
     
 

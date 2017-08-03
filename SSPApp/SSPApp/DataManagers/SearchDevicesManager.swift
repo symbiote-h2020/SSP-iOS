@@ -10,7 +10,7 @@ import Foundation
 import SwiftyJSON
 
 class SearchDevicesManager {
-    var devicesList: [Device] = []
+    var devicesList: [SmartDevice] = []
 
     func getTestData() {
 //debug test
@@ -25,11 +25,12 @@ class SearchDevicesManager {
         request.setValue("", forHTTPHeaderField: "X-Auth-Token")  //TODO: proper secure token
         
         let task = URLSession.shared.dataTask(with: request as URLRequest) { data,response,error in
-            if error != nil {
+            if let err = error {
                 logError(error.debugDescription)
 
-                let notiInfoObj  = NotificationInfo(type: ErrorType.connection, info: error.debugDescription)
+                let notiInfoObj  = NotificationInfo(type: ErrorType.connection, info: err.localizedDescription)
                 NotificationCenter.default.postNotificationName(SymNotificationName.DeviceListLoaded, object: notiInfoObj)
+
                 self.getBackupTestData()
             }
             else {
@@ -61,7 +62,7 @@ class SearchDevicesManager {
         let jsonArr:[JSON] = dataJson["resources"].arrayValue
         for childJson in jsonArr {
             
-            let dev = Device(j: childJson)
+            let dev = SmartDevice(j: childJson)
             devicesList.append(dev)
         }
         
@@ -77,11 +78,7 @@ class SearchDevicesManager {
 //        let json = JSON(jsonString: str)
 //        self.parseDevicesJson(json)
         
-        let dev = Device()
-        dev.id="aa"
-        dev.name="Error"
-        dev.locationName="Not found"
-        dev.platformName=""
+        let dev = SmartDevice.makeDebugTestDevice()
         devicesList.append(dev)
         
         NotificationCenter.default.postNotificationName(SymNotificationName.DeviceListLoaded)

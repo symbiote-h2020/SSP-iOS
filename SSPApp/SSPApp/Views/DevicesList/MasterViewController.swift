@@ -11,7 +11,7 @@ import UIKit
 class MasterViewController: UITableViewController {
 
     var detailViewController: DetailViewController? = nil
-    var deviceObjects = [Device]()
+    var deviceObjects = [SmartDevice]()
 
     let sdm = SearchDevicesManager()
     

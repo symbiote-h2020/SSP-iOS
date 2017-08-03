@@ -10,7 +10,7 @@ import Foundation
 import SwiftyJSON
 
 
-class Device {
+class SmartDevice {
     var platformId: String = ""
     var platformName: String = ""
     var owner: String =  ""
@@ -57,5 +57,15 @@ class Device {
 
     }
     
+    
+    static func makeDebugTestDevice() -> SmartDevice {
+        let dev = SmartDevice()
+        dev.id="aa"
+        dev.name="Error"
+        dev.locationName="Not found"
+        dev.platformName="No devices"
+        dev.deviceDescription="Debug test device in case of error"
+        return dev
+    }
     
 }

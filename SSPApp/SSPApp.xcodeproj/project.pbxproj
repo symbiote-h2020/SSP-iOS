@@ -15,7 +15,7 @@
 		76162EDA1F2892530043285D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76162ED71F2892530043285D /* DetailViewController.swift */; };
 		76162EDB1F2892530043285D /* DevicesList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76162ED81F2892530043285D /* DevicesList.storyboard */; };
 		76162EDC1F2892530043285D /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76162ED91F2892530043285D /* MasterViewController.swift */; };
-		76162EDF1F2892B20043285D /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76162EDE1F2892B20043285D /* Device.swift */; };
+		76162EDF1F2892B20043285D /* SmartDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76162EDE1F2892B20043285D /* SmartDevice.swift */; };
 		76162EE21F2892F60043285D /* SearchDevicesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76162EE11F2892F60043285D /* SearchDevicesManager.swift */; };
 		76162EE81F2893390043285D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76162EE41F2893390043285D /* Constants.swift */; };
 		76162EE91F2893390043285D /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76162EE51F2893390043285D /* Logger.swift */; };
@@ -43,7 +43,7 @@
 		76162ED71F2892530043285D /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = Views/DevicesList/DetailViewController.swift; sourceTree = "<group>"; };
 		76162ED81F2892530043285D /* DevicesList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = DevicesList.storyboard; path = Views/DevicesList/DevicesList.storyboard; sourceTree = "<group>"; };
 		76162ED91F2892530043285D /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterViewController.swift; path = Views/DevicesList/MasterViewController.swift; sourceTree = "<group>"; };
-		76162EDE1F2892B20043285D /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Device.swift; path = Models/Device.swift; sourceTree = "<group>"; };
+		76162EDE1F2892B20043285D /* SmartDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SmartDevice.swift; path = Models/SmartDevice.swift; sourceTree = "<group>"; };
 		76162EE11F2892F60043285D /* SearchDevicesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchDevicesManager.swift; path = DataManagers/SearchDevicesManager.swift; sourceTree = "<group>"; };
 		76162EE41F2893390043285D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Common/Constants.swift; sourceTree = "<group>"; };
 		76162EE51F2893390043285D /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Common/Logger.swift; sourceTree = "<group>"; };
@@ -118,7 +118,7 @@
 		76162EDD1F2892A50043285D /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				76162EDE1F2892B20043285D /* Device.swift */,
+				76162EDE1F2892B20043285D /* SmartDevice.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -352,7 +352,7 @@
 				76162EDC1F2892530043285D /* MasterViewController.swift in Sources */,
 				76162ED41F28923A0043285D /* TableViewControllerWithDrawerMenu.swift in Sources */,
 				768B56091F28C7EA00E8D075 /* SearchDevicesVC.swift in Sources */,
-				76162EDF1F2892B20043285D /* Device.swift in Sources */,
+				76162EDF1F2892B20043285D /* SmartDevice.swift in Sources */,
 				763138061F30B863007A34E9 /* DeviceDetailsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -12,7 +12,7 @@ class DevicesListVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var detailViewController: DetailViewController? = nil
-    var deviceObjects = [Device]()
+    var deviceObjects = [SmartDevice]()
     
     let sdm = SearchDevicesManager()
     

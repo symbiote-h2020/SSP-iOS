@@ -45,7 +45,7 @@ class DeviceDetailsVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    var detailItem: Device? {
+    var detailItem: SmartDevice? {
         didSet {
             // Update the view.
             configureView()
