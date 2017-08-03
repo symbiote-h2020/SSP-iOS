@@ -14,8 +14,9 @@ class SearchDevicesManager {
 
     func getTestData() {
 //debug test
-//        self.getBackupTestData()
-//        return
+        self.getBackupTestData()
+        return
+        
         
         let url = URL(string: "https://symbiote-dev.man.poznan.pl:8100/coreInterface/v1/query")
 

@@ -87,6 +87,7 @@ extension DevicesListVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
         let vc = DeviceDetailsVC.getViewController()
+        vc.detailItem = nil
         navigationController?.pushViewController(vc, animated: true)
     }
 }
