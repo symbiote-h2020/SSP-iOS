@@ -23,6 +23,7 @@
 		76162EEB1F2893390043285D /* NotificationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76162EE71F2893390043285D /* NotificationInfo.swift */; };
 		763138041F30B4F8007A34E9 /* DevicesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763138031F30B4F7007A34E9 /* DevicesListVC.swift */; };
 		763138061F30B863007A34E9 /* DeviceDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763138051F30B863007A34E9 /* DeviceDetailsVC.swift */; };
+		763138081F34A7F1007A34E9 /* DevicesCombinedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763138071F34A7F1007A34E9 /* DevicesCombinedVC.swift */; };
 		7666B2D11F27716900675435 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7666B2D01F27716900675435 /* AppDelegate.swift */; };
 		7666B2D81F27716900675435 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7666B2D71F27716900675435 /* Assets.xcassets */; };
 		7666B2DB1F27716900675435 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7666B2D91F27716900675435 /* LaunchScreen.storyboard */; };
@@ -51,6 +52,7 @@
 		76162EE71F2893390043285D /* NotificationInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationInfo.swift; path = Common/NotificationInfo.swift; sourceTree = "<group>"; };
 		763138031F30B4F7007A34E9 /* DevicesListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DevicesListVC.swift; path = Views/SearchDevices/DevicesListVC.swift; sourceTree = "<group>"; };
 		763138051F30B863007A34E9 /* DeviceDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeviceDetailsVC.swift; path = Views/SearchDevices/DeviceDetailsVC.swift; sourceTree = "<group>"; };
+		763138071F34A7F1007A34E9 /* DevicesCombinedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DevicesCombinedVC.swift; path = Views/SearchDevices/DevicesCombinedVC.swift; sourceTree = "<group>"; };
 		7666B2CD1F27716900675435 /* SSPApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSPApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7666B2D01F27716900675435 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7666B2D71F27716900675435 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 				768B56081F28C7EA00E8D075 /* SearchDevicesVC.swift */,
 				763138031F30B4F7007A34E9 /* DevicesListVC.swift */,
 				763138051F30B863007A34E9 /* DeviceDetailsVC.swift */,
+				763138071F34A7F1007A34E9 /* DevicesCombinedVC.swift */,
 			);
 			name = SearchDevices;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 				76162ED51F28923A0043285D /* ViewControllerWithDrawerMenu.swift in Sources */,
 				76162EE91F2893390043285D /* Logger.swift in Sources */,
 				7666B2D11F27716900675435 /* AppDelegate.swift in Sources */,
+				763138081F34A7F1007A34E9 /* DevicesCombinedVC.swift in Sources */,
 				76162ED31F28923A0043285D /* DrawerMenuTableVC.swift in Sources */,
 				76162EEA1F2893390043285D /* NotificationCenter+names.swift in Sources */,
 				76162EDA1F2892530043285D /* DetailViewController.swift in Sources */,

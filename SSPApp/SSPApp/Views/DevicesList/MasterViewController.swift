@@ -8,6 +8,7 @@
 
 import UIKit
 
+@available(*, deprecated)
 class MasterViewController: UITableViewController {
 
     var detailViewController: DetailViewController? = nil

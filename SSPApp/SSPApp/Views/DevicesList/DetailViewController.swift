@@ -8,6 +8,7 @@
 
 import UIKit
 
+@available(*, deprecated)
 class DetailViewController: UIViewController {
 
     @IBOutlet weak var detailDescriptionLabel: UILabel!
