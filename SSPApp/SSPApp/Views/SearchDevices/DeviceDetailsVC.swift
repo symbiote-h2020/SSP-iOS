@@ -54,7 +54,11 @@ class DeviceDetailsVC: UIViewController {
     }
     
     func setupGui() {
-        
+        self.view.backgroundColor = SSPColors.background
+        self.nameLabel.backgroundColor = SSPColors.clear
+        self.platformNameLabel.backgroundColor = SSPColors.clear
+        self.descriptionLabel.backgroundColor = SSPColors.clear
+        self.locationLabel.backgroundColor = SSPColors.clear
     }
     
     
