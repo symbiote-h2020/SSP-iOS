@@ -21,6 +21,7 @@
 		76162EE91F2893390043285D /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76162EE51F2893390043285D /* Logger.swift */; };
 		76162EEA1F2893390043285D /* NotificationCenter+names.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76162EE61F2893390043285D /* NotificationCenter+names.swift */; };
 		76162EEB1F2893390043285D /* NotificationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76162EE71F2893390043285D /* NotificationInfo.swift */; };
+		762C4B211F3B2C1E0052E7D3 /* SSPColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762C4B201F3B2C1E0052E7D3 /* SSPColors.swift */; };
 		763138041F30B4F8007A34E9 /* DevicesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763138031F30B4F7007A34E9 /* DevicesListVC.swift */; };
 		763138061F30B863007A34E9 /* DeviceDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763138051F30B863007A34E9 /* DeviceDetailsVC.swift */; };
 		763138081F34A7F1007A34E9 /* DevicesCombinedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763138071F34A7F1007A34E9 /* DevicesCombinedVC.swift */; };
@@ -50,6 +51,7 @@
 		76162EE51F2893390043285D /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Common/Logger.swift; sourceTree = "<group>"; };
 		76162EE61F2893390043285D /* NotificationCenter+names.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NotificationCenter+names.swift"; path = "Common/NotificationCenter+names.swift"; sourceTree = "<group>"; };
 		76162EE71F2893390043285D /* NotificationInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationInfo.swift; path = Common/NotificationInfo.swift; sourceTree = "<group>"; };
+		762C4B201F3B2C1E0052E7D3 /* SSPColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SSPColors.swift; path = Common/SSPColors.swift; sourceTree = "<group>"; };
 		763138031F30B4F7007A34E9 /* DevicesListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DevicesListVC.swift; path = Views/SearchDevices/DevicesListVC.swift; sourceTree = "<group>"; };
 		763138051F30B863007A34E9 /* DeviceDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeviceDetailsVC.swift; path = Views/SearchDevices/DeviceDetailsVC.swift; sourceTree = "<group>"; };
 		763138071F34A7F1007A34E9 /* DevicesCombinedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DevicesCombinedVC.swift; path = Views/SearchDevices/DevicesCombinedVC.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				76162EE51F2893390043285D /* Logger.swift */,
 				76162EE61F2893390043285D /* NotificationCenter+names.swift */,
 				76162EE71F2893390043285D /* NotificationInfo.swift */,
+				762C4B201F3B2C1E0052E7D3 /* SSPColors.swift */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				762C4B211F3B2C1E0052E7D3 /* SSPColors.swift in Sources */,
 				763138041F30B4F8007A34E9 /* DevicesListVC.swift in Sources */,
 				76162ED51F28923A0043285D /* ViewControllerWithDrawerMenu.swift in Sources */,
 				76162EE91F2893390043285D /* Logger.swift in Sources */,

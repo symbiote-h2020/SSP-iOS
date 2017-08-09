@@ -38,6 +38,7 @@ class DeviceDetailsVC: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         configureView()
+        setupGui()
     }
     
     override func didReceiveMemoryWarning() {
@@ -50,6 +51,10 @@ class DeviceDetailsVC: UIViewController {
             // Update the view.
             configureView()
         }
+    }
+    
+    func setupGui() {
+        
     }
     
     

@@ -32,25 +32,7 @@ class SearchDevicesVC: ViewControllerWithDrawerMenu {
     
     //navigate
     @IBAction func searchButtonTapped(_ sender: Any) {
-        //let mvc = MasterViewController.getNavigationViewController()
-        //present(mvc, animated: true, completion: nil)
-        //show(mvc, sender: self)
-       //tak sie sypie navigationController?.pushViewController(mvc, animated: true)
         let vc = DevicesListVC.getViewController()
         navigationController?.pushViewController(vc, animated: true)
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-    
-
 }
