@@ -8,13 +8,17 @@
 
 import UIKit
 
+protocol DevicesListViewControllerDelegate {
+    func childViewControllerDidPressButton(_ childViewController:DevicesListVC)
+}
+
 class DevicesListVC: UIViewController {
+    
     @IBOutlet weak var tableView: UITableView!
-    
     var deviceObjects = [SmartDevice]()
-    
     let sdm = SearchDevicesManager()
-    
+    var devicesListDelegate: DevicesListViewControllerDelegate?
+    var selectedDevice: SmartDevice?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -85,9 +89,16 @@ extension DevicesListVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
-        let vc = DeviceDetailsVC.getViewController()
-        let deviceObject = deviceObjects[indexPath.row]
-        vc.detailItem = deviceObject
-        navigationController?.pushViewController(vc, animated: true)
+        self.selectedDevice = deviceObjects[indexPath.row]
+        
+        if (self.devicesListDelegate == nil) {
+            let vc = DeviceDetailsVC.getViewController()
+            vc.detailItem = selectedDevice
+            navigationController?.pushViewController(vc, animated: true)
+        }
+        else {
+            // delegate not empty - list is embedded with viewController
+            self.devicesListDelegate?.childViewControllerDidPressButton(self)
+        }
     }
 }

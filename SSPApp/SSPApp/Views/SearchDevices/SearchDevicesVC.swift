@@ -32,7 +32,14 @@ class SearchDevicesVC: ViewControllerWithDrawerMenu {
     
     //navigate
     @IBAction func searchButtonTapped(_ sender: Any) {
-        let vc = DevicesListVC.getViewController()
-        navigationController?.pushViewController(vc, animated: true)
+        
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            let vc = DevicesCombinedVC.getViewController()
+            navigationController?.pushViewController(vc, animated: true)
+        }
+        else {
+            let vc = DevicesListVC.getViewController()
+            navigationController?.pushViewController(vc, animated: true)
+        }
     }
 }
