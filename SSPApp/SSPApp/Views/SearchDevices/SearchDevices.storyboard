@@ -30,16 +30,56 @@
                                     <action selector="searchButtonTapped:" destination="MrY-nr-Wr6" eventType="touchUpInside" id="bM4-6r-Hng"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Joq-Oo-xjm">
+                                <rect key="frame" x="16" y="72" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MBF-cd-CHQ">
+                                <rect key="frame" x="16" y="101" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tK1-Pq-9cy">
+                                <rect key="frame" x="16" y="147" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ewz-Uj-bOa">
+                                <rect key="frame" x="16" y="176" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="MBF-cd-CHQ" firstAttribute="trailing" secondItem="Joq-Oo-xjm" secondAttribute="trailing" id="53i-LS-JhD"/>
+                            <constraint firstItem="tK1-Pq-9cy" firstAttribute="top" secondItem="MBF-cd-CHQ" secondAttribute="bottom" constant="16" id="7ky-Ic-wLX"/>
+                            <constraint firstItem="ewz-Uj-bOa" firstAttribute="leading" secondItem="tK1-Pq-9cy" secondAttribute="leading" id="7lW-Yk-e9F"/>
+                            <constraint firstItem="Joq-Oo-xjm" firstAttribute="leading" secondItem="Apk-vR-ybk" secondAttribute="leadingMargin" id="8Do-a7-wN0"/>
+                            <constraint firstItem="ewz-Uj-bOa" firstAttribute="top" secondItem="tK1-Pq-9cy" secondAttribute="bottom" constant="8" id="DhN-Sy-7L9"/>
+                            <constraint firstItem="ewz-Uj-bOa" firstAttribute="trailing" secondItem="tK1-Pq-9cy" secondAttribute="trailing" id="Jr8-x8-gEe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Joq-Oo-xjm" secondAttribute="trailing" id="NiG-6I-FYR"/>
+                            <constraint firstItem="MBF-cd-CHQ" firstAttribute="leading" secondItem="Joq-Oo-xjm" secondAttribute="leading" id="OmC-JB-KdE"/>
+                            <constraint firstItem="tK1-Pq-9cy" firstAttribute="leading" secondItem="Joq-Oo-xjm" secondAttribute="leading" id="UyC-Bf-O7n"/>
                             <constraint firstItem="Wb1-nU-nQV" firstAttribute="top" secondItem="paU-5T-t31" secondAttribute="bottom" constant="200" id="Xwv-R7-3Xn"/>
+                            <constraint firstItem="Joq-Oo-xjm" firstAttribute="top" secondItem="paU-5T-t31" secondAttribute="bottom" constant="8" id="dAt-7n-iau"/>
                             <constraint firstAttribute="trailing" secondItem="Wb1-nU-nQV" secondAttribute="trailing" constant="16" id="iew-Jv-JKM"/>
+                            <constraint firstItem="tK1-Pq-9cy" firstAttribute="trailing" secondItem="Joq-Oo-xjm" secondAttribute="trailing" id="u4B-Gs-m3a"/>
+                            <constraint firstItem="MBF-cd-CHQ" firstAttribute="top" secondItem="Joq-Oo-xjm" secondAttribute="bottom" constant="8" id="vUC-aW-Q73"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Search device" id="A16-wD-IfQ">
                         <barButtonItem key="leftBarButtonItem" title="Item" id="jgq-gq-feg"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="nameTextField" destination="MBF-cd-CHQ" id="9aE-8y-IH7"/>
+                        <outlet property="platformNameTextField" destination="ewz-Uj-bOa" id="Qhn-RH-jn8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eXW-mb-5h7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

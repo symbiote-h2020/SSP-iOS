@@ -10,6 +10,10 @@ import UIKit
 
 class SearchDevicesVC: ViewControllerWithDrawerMenu {
     
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var platformNameTextField: UITextField!
+    
+    
     //MARK - storybord management
     static func getViewController() -> SearchDevicesVC {
         let storyboard = UIStoryboard(name: "SearchDevices", bundle: nil)
