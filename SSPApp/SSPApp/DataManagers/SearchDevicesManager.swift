@@ -13,9 +13,11 @@ class SearchDevicesManager {
     var devicesList: [SmartDevice] = []
 
     func getTestData() {
-//debug test
-        self.getBackupTestData()
-        return
+
+        //debug test
+//        self.getBackupTestData()
+//        return
+        //TODO remove debug function
         
         
         let url = URL(string: "https://symbiote-dev.man.poznan.pl:8100/coreInterface/v1/query")
@@ -55,7 +57,7 @@ class SearchDevicesManager {
             
             let notiInfoObj  = NotificationInfo(type: ErrorType.wrongResult, info: "wrong json from API")
             NotificationCenter.default.postNotificationName(SymNotificationName.DeviceListLoaded, object: notiInfoObj)
-            
+            self.getBackupTestData()
             return
         }
         
