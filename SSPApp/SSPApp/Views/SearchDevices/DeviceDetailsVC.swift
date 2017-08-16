@@ -36,9 +36,10 @@ class DeviceDetailsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
         configureView()
-        setupGui()
+        //for debug porpous and desing I keep colorful layout
+        //setupGui()
     }
     
     override func didReceiveMemoryWarning() {

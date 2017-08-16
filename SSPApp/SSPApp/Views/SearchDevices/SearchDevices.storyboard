@@ -102,10 +102,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="BBD-gk-xoU">
-                                        <rect key="frame" x="0.0" y="28" width="188" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="187" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BBD-gk-xoU" id="RCN-sJ-gzY">
-                                            <rect key="frame" x="0.0" y="0.0" width="188" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="187.5" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -128,10 +128,10 @@
             </objects>
             <point key="canvasLocation" x="2124" y="235"/>
         </scene>
-        <!--Device DetailsVC-->
+        <!--Device details-->
         <scene sceneID="Qke-8Q-Ett">
             <objects>
-                <viewController storyboardIdentifier="DeviceDetailsVC" id="ndW-EX-nnb" customClass="DeviceDetailsVC" customModule="SSPApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DeviceDetailsVC" title="Device details" id="ndW-EX-nnb" customClass="DeviceDetailsVC" customModule="SSPApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Zkv-Kv-2TP"/>
                         <viewControllerLayoutGuide type="bottom" id="id3-Ax-nkh"/>
