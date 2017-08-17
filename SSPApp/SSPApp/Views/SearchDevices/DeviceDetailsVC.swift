@@ -39,7 +39,7 @@ class DeviceDetailsVC: UIViewController {
         
         configureView()
         //for debug porpous and desing I keep colorful layout
-        //setupGui()
+        setupGui()
     }
     
     override func didReceiveMemoryWarning() {
