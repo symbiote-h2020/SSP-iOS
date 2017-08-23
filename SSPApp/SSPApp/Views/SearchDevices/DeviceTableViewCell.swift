@@ -10,6 +10,12 @@ import UIKit
 
 class DeviceTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var platformLabel: UILabel!
+    @IBOutlet weak var typeLabel: UILabel!
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -21,4 +27,11 @@ class DeviceTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    
+    public func setCell(_ d: SmartDevice) {
+        nameLabel.text = d.name
+        platformLabel.text = d.platformName
+        typeLabel.text = d.observedProperties.flatMap({$0}).joined(separator: ",");
+    }
+    
 }

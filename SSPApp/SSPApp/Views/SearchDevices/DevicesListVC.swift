@@ -81,10 +81,11 @@ extension DevicesListVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! DeviceTableViewCell
         
         let object = deviceObjects[indexPath.row]
-        cell.textLabel!.text = object.name
+        //cell.textLabel!.text = object.name
+        cell.setCell(object)
         return cell
     }
     
