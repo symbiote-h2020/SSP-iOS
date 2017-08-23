@@ -71,4 +71,12 @@ class DeviceDetailsVC: UIViewController {
         return controller as! DeviceDetailsVC
     }
 
+    
+    
+    //MARK: - observations
+    @IBAction func showObservations(_ sender: Any) {
+        let om = ObservationsManager()
+        om.getTestData()
+    }
+    
 }

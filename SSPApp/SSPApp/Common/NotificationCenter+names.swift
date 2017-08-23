@@ -12,6 +12,7 @@ import Async
 //use as name for NSNotificationCenter.defaultCenter().postNotificationName
 enum SymNotificationName: String {
     case DeviceListLoaded
+    case ObservationsListLoaded
 }
 
 extension AsyncBlock {
