@@ -10,16 +10,22 @@ import UIKit
 
 class ObservationsVC: UIViewController {
     
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var measurementsTableVie: UITableView!
-    
-    
+    @IBOutlet weak var tableView: UITableView!
+    var obsMam: ObservationsManager = ObservationsManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        tableView.delegate = self
+        tableView.dataSource = self
     }
+    
+    func setObservations(_ om: ObservationsManager) {
+        self.obsMam = om
+    }
+    
+    
     
     
     //MARK - storybord management
@@ -29,13 +35,11 @@ class ObservationsVC: UIViewController {
         return controller as! ObservationsVC
     }
     
-    
     static func getNavigationViewController() -> UINavigationController {
         let storyboard = UIStoryboard(name: "Observations", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "ObservationsNavigatioVC")
         return controller as! UINavigationController
     }
-
 }
 
 
@@ -44,33 +48,28 @@ extension ObservationsVC: UITableViewDataSource, UITableViewDelegate {
     // MARK: - Table View
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return obsMam.observationsByName.keys.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        let ithKey = Array(obsMam.observationsByName.keys)[section]
+        return obsMam.observationsByName[ithKey]?.count ?? 0
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        let ithKey = Array(obsMam.observationsByName.keys)[section]
+        return ithKey
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! DeviceTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! ObservationTableViewCell
         
-        //let object = deviceObjects[indexPath.row]
-        cell.textLabel!.text = "test"
-        //cell.setCell(object)
+        let ithKey = Array(obsMam.observationsByName.keys)[indexPath.section]
+        let object = obsMam.observationsByName[ithKey]?[indexPath.row]
+        if let obs = object {        
+            cell.setCell(obs)
+        }
         return cell
     }
-//
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
-//        self.selectedDevice = deviceObjects[indexPath.row]
-//        
-//        if (self.devicesListDelegate == nil) {
-//            let vc = DeviceDetailsVC.getViewController()
-//            vc.detailItem = selectedDevice
-//            navigationController?.pushViewController(vc, animated: true)
-//        }
-//        else {
-//            // delegate not empty - list is embedded with viewController
-//            self.devicesListDelegate?.childViewControllerDidPressButton(self)
-//        }
-//    }
+
 }

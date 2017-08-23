@@ -12,7 +12,7 @@ import SwiftyJSON
 class ObservationsManager {
     
     var currentObservations: [Observation] = [Observation]()
-    
+    var observationsByName: [String: [Observation]] = [String: [Observation]]()
     
     func getTestData() {
         if let archiveUrl = Bundle.main.URLForResource("observations.json") {
@@ -20,19 +20,25 @@ class ObservationsManager {
                 log("loading test hardcoded data from observations.json")
                 
                 let json = JSON(data: data)
-                parseOservationsJson(json)            }
+                parseOservationsJson(json)
+            }
         }
     }
     
     
     func parseOservationsJson(_ dataJson: JSON) {
-
-        
         let jsonArr:[JSON] = dataJson.arrayValue
         for childJson in jsonArr {
             
-            let dev = Observation(j: childJson)
-            currentObservations.append(dev)
+            let obs = Observation(j: childJson)
+            currentObservations.append(obs)
+            
+            if let name = obs.location?.name {
+                if (observationsByName[name] == nil) {
+                    observationsByName[name] = [Observation]()
+                }
+                self.observationsByName[name]?.append(obs)
+            }
         }
         
         NotificationCenter.default.postNotificationName(SymNotificationName.ObservationsListLoaded)
