@@ -77,6 +77,9 @@ class DeviceDetailsVC: UIViewController {
     @IBAction func showObservations(_ sender: Any) {
         let om = ObservationsManager()
         om.getTestData()
+        
+        let vc = ObservationsVC.getViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
     
 }
