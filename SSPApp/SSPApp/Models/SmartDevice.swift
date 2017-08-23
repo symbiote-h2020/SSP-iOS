@@ -34,7 +34,12 @@ class SmartDevice {
         if j["platformId"].exists()     { platformId = j["platformId"].stringValue }
         if j["platformName"].exists()   { platformName = j["platformName"].stringValue }
         if j["owner"].exists()          { owner = j["owner"].stringValue }
-        if j["name"].exists()           { name = j["name"].stringValue }
+        if j["name"].exists()           { name = j["name"].stringValue
+            //debug
+            if self.name == "A23" {
+                log("json=\(j)")
+            }
+        }
         if j["id"].exists()             { id = j["id"].stringValue }
         if j["description"].exists()    { deviceDescription = j["description"].stringValue }
         
@@ -54,6 +59,8 @@ class SmartDevice {
                 resourceType.append(r.stringValue)
             }
         }
+
+        
 
     }
     

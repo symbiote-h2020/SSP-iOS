@@ -25,6 +25,7 @@
 		763138041F30B4F8007A34E9 /* DevicesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763138031F30B4F7007A34E9 /* DevicesListVC.swift */; };
 		763138061F30B863007A34E9 /* DeviceDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763138051F30B863007A34E9 /* DeviceDetailsVC.swift */; };
 		763138081F34A7F1007A34E9 /* DevicesCombinedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763138071F34A7F1007A34E9 /* DevicesCombinedVC.swift */; };
+		76486BDC1F4D6DC500D9702D /* DeviceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76486BDB1F4D6DC500D9702D /* DeviceTableViewCell.swift */; };
 		7666B2D11F27716900675435 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7666B2D01F27716900675435 /* AppDelegate.swift */; };
 		7666B2D81F27716900675435 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7666B2D71F27716900675435 /* Assets.xcassets */; };
 		7666B2DB1F27716900675435 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7666B2D91F27716900675435 /* LaunchScreen.storyboard */; };
@@ -55,6 +56,7 @@
 		763138031F30B4F7007A34E9 /* DevicesListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DevicesListVC.swift; path = Views/SearchDevices/DevicesListVC.swift; sourceTree = "<group>"; };
 		763138051F30B863007A34E9 /* DeviceDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeviceDetailsVC.swift; path = Views/SearchDevices/DeviceDetailsVC.swift; sourceTree = "<group>"; };
 		763138071F34A7F1007A34E9 /* DevicesCombinedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DevicesCombinedVC.swift; path = Views/SearchDevices/DevicesCombinedVC.swift; sourceTree = "<group>"; };
+		76486BDB1F4D6DC500D9702D /* DeviceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeviceTableViewCell.swift; path = Views/SearchDevices/DeviceTableViewCell.swift; sourceTree = "<group>"; };
 		7666B2CD1F27716900675435 /* SSPApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSPApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7666B2D01F27716900675435 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7666B2D71F27716900675435 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 				763138031F30B4F7007A34E9 /* DevicesListVC.swift */,
 				763138051F30B863007A34E9 /* DeviceDetailsVC.swift */,
 				763138071F34A7F1007A34E9 /* DevicesCombinedVC.swift */,
+				76486BDB1F4D6DC500D9702D /* DeviceTableViewCell.swift */,
 			);
 			name = SearchDevices;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 				76162EDA1F2892530043285D /* DetailViewController.swift in Sources */,
 				76162ECC1F2892040043285D /* MainViewController.swift in Sources */,
 				76162EE81F2893390043285D /* Constants.swift in Sources */,
+				76486BDC1F4D6DC500D9702D /* DeviceTableViewCell.swift in Sources */,
 				76162EEB1F2893390043285D /* NotificationInfo.swift in Sources */,
 				76162EE21F2892F60043285D /* SearchDevicesManager.swift in Sources */,
 				76162EDC1F2892530043285D /* MasterViewController.swift in Sources */,
