@@ -26,6 +26,8 @@
 		763138061F30B863007A34E9 /* DeviceDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763138051F30B863007A34E9 /* DeviceDetailsVC.swift */; };
 		763138081F34A7F1007A34E9 /* DevicesCombinedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763138071F34A7F1007A34E9 /* DevicesCombinedVC.swift */; };
 		76486BDC1F4D6DC500D9702D /* DeviceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76486BDB1F4D6DC500D9702D /* DeviceTableViewCell.swift */; };
+		76486BDF1F4D832D00D9702D /* Observations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76486BDE1F4D832D00D9702D /* Observations.storyboard */; };
+		76486BE11F4D835C00D9702D /* ObservationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76486BE01F4D835C00D9702D /* ObservationsVC.swift */; };
 		7666B2D11F27716900675435 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7666B2D01F27716900675435 /* AppDelegate.swift */; };
 		7666B2D81F27716900675435 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7666B2D71F27716900675435 /* Assets.xcassets */; };
 		7666B2DB1F27716900675435 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7666B2D91F27716900675435 /* LaunchScreen.storyboard */; };
@@ -57,6 +59,8 @@
 		763138051F30B863007A34E9 /* DeviceDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeviceDetailsVC.swift; path = Views/SearchDevices/DeviceDetailsVC.swift; sourceTree = "<group>"; };
 		763138071F34A7F1007A34E9 /* DevicesCombinedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DevicesCombinedVC.swift; path = Views/SearchDevices/DevicesCombinedVC.swift; sourceTree = "<group>"; };
 		76486BDB1F4D6DC500D9702D /* DeviceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeviceTableViewCell.swift; path = Views/SearchDevices/DeviceTableViewCell.swift; sourceTree = "<group>"; };
+		76486BDE1F4D832D00D9702D /* Observations.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Observations.storyboard; path = Views/Observations/Observations.storyboard; sourceTree = "<group>"; };
+		76486BE01F4D835C00D9702D /* ObservationsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObservationsVC.swift; path = Views/Observations/ObservationsVC.swift; sourceTree = "<group>"; };
 		7666B2CD1F27716900675435 /* SSPApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSPApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7666B2D01F27716900675435 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7666B2D71F27716900675435 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -84,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				768B56051F28C78100E8D075 /* SearchDevices */,
+				76486BDD1F4D829500D9702D /* Observations */,
 				76162ED61F2892410043285D /* DevicesList */,
 				76162ECD1F2892220043285D /* Drawer */,
 				76162EC91F2780A30043285D /* Main */,
@@ -147,6 +152,15 @@
 				762C4B201F3B2C1E0052E7D3 /* SSPColors.swift */,
 			);
 			name = Common;
+			sourceTree = "<group>";
+		};
+		76486BDD1F4D829500D9702D /* Observations */ = {
+			isa = PBXGroup;
+			children = (
+				76486BDE1F4D832D00D9702D /* Observations.storyboard */,
+				76486BE01F4D835C00D9702D /* ObservationsVC.swift */,
+			);
+			name = Observations;
 			sourceTree = "<group>";
 		};
 		7666B2C41F27716900675435 = {
@@ -286,6 +300,7 @@
 				7666B2DB1F27716900675435 /* LaunchScreen.storyboard in Resources */,
 				76162ED21F28923A0043285D /* Drawer.storyboard in Resources */,
 				7666B2D81F27716900675435 /* Assets.xcassets in Resources */,
+				76486BDF1F4D832D00D9702D /* Observations.storyboard in Resources */,
 				768B560C1F29D1B200E8D075 /* Main.storyboard in Resources */,
 				768B56071F28C7AC00E8D075 /* SearchDevices.storyboard in Resources */,
 				76162EDB1F2892530043285D /* DevicesList.storyboard in Resources */,
@@ -362,6 +377,7 @@
 				76162EEB1F2893390043285D /* NotificationInfo.swift in Sources */,
 				76162EE21F2892F60043285D /* SearchDevicesManager.swift in Sources */,
 				76162EDC1F2892530043285D /* MasterViewController.swift in Sources */,
+				76486BE11F4D835C00D9702D /* ObservationsVC.swift in Sources */,
 				76162ED41F28923A0043285D /* TableViewControllerWithDrawerMenu.swift in Sources */,
 				768B56091F28C7EA00E8D075 /* SearchDevicesVC.swift in Sources */,
 				76162EDF1F2892B20043285D /* SmartDevice.swift in Sources */,

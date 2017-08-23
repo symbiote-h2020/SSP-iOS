@@ -36,9 +36,9 @@ class SmartDevice {
         if j["owner"].exists()          { owner = j["owner"].stringValue }
         if j["name"].exists()           { name = j["name"].stringValue
             //debug
-            if self.name == "A23" {
-                log("json=\(j)")
-            }
+//            if self.name == "A23" {
+//                log("json=\(j)")
+//            }
         }
         if j["id"].exists()             { id = j["id"].stringValue }
         if j["description"].exists()    { deviceDescription = j["description"].stringValue }

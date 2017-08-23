@@ -1,0 +1,505 @@
+[ {
+  "resourceId" : "599ae719fd21ab1a3a53fcec",
+  "location" : {
+    "description" : "City of Vienna",
+    "latitude" : 45.8,
+    "longitude" : 15.9,
+    "altitude" : 145.0,
+    "name" : "A23"
+  },
+  "resultTime" : "2017-08-22T12:00:00.000+0200",
+  "samplingTime" : "2017-08-22T12:00:00.000+0200",
+  "obsValues" : [ {
+    "value" : "4.6928629875",
+    "obsProperty" : {
+      "label" : "sulphurDioxideConcentration"
+    },
+    "uom" : {
+      "symbol" : "ug/m3",
+      "label" : "microgram per cube meter"
+    }
+  } ]
+}, {
+  "resourceId" : "599ae719fd21ab1a3a53fcec",
+  "location" : {
+    "description" : "City of Vienna",
+    "latitude" : 45.8,
+    "longitude" : 15.9,
+    "altitude" : 145.0,
+    "name" : "A23"
+  },
+  "resultTime" : "2017-08-22T13:00:00.000+0200",
+  "samplingTime" : "2017-08-22T13:00:00.000+0200",
+  "obsValues" : [ {
+    "value" : "4.5071310997",
+    "obsProperty" : {
+      "label" : "sulphurDioxideConcentration"
+    },
+    "uom" : {
+      "symbol" : "ug/m3",
+      "label" : "microgram per cube meter"
+    }
+  } ]
+}, {
+  "resourceId" : "599ae719fd21ab1a3a53fcec",
+  "location" : {
+    "description" : "City of Vienna",
+    "latitude" : 45.8,
+    "longitude" : 15.9,
+    "altitude" : 145.0,
+    "name" : "A23"
+  },
+  "resultTime" : "2017-08-22T14:00:00.000+0200",
+  "samplingTime" : "2017-08-22T14:00:00.000+0200",
+  "obsValues" : [ {
+    "value" : "4.0639858246",
+    "obsProperty" : {
+      "label" : "sulphurDioxideConcentration"
+    },
+    "uom" : {
+      "symbol" : "ug/m3",
+      "label" : "microgram per cube meter"
+    }
+  } ]
+}, {
+  "resourceId" : "599ae719fd21ab1a3a53fcec",
+  "location" : {
+    "description" : "City of Vienna",
+    "latitude" : 45.8,
+    "longitude" : 15.9,
+    "altitude" : 145.0,
+    "name" : "A23"
+  },
+  "resultTime" : "2017-08-22T15:00:00.000+0200",
+  "samplingTime" : "2017-08-22T15:00:00.000+0200",
+  "obsValues" : [ {
+    "value" : "3.8278899193",
+    "obsProperty" : {
+      "label" : "sulphurDioxideConcentration"
+    },
+    "uom" : {
+      "symbol" : "ug/m3",
+      "label" : "microgram per cube meter"
+    }
+  } ]
+}, {
+  "resourceId" : "599ae719fd21ab1a3a53fcec",
+  "location" : {
+    "description" : "City of Vienna",
+    "latitude" : 45.8,
+    "longitude" : 15.9,
+    "altitude" : 145.0,
+    "name" : "A23"
+  },
+  "resultTime" : "2017-08-22T16:00:00.000+0200",
+  "samplingTime" : "2017-08-22T16:00:00.000+0200",
+  "obsValues" : [ {
+    "value" : "3.8557364941",
+    "obsProperty" : {
+      "label" : "sulphurDioxideConcentration"
+    },
+    "uom" : {
+      "symbol" : "ug/m3",
+      "label" : "microgram per cube meter"
+    }
+  } ]
+}, {
+  "resourceId" : "599ae719fd21ab1a3a53fcec",
+  "location" : {
+    "description" : "City of Vienna",
+    "latitude" : 45.8,
+    "longitude" : 15.9,
+    "altitude" : 145.0,
+    "name" : "A23"
+  },
+  "resultTime" : "2017-08-22T17:00:00.000+0200",
+  "samplingTime" : "2017-08-22T17:00:00.000+0200",
+  "obsValues" : [ {
+    "value" : "3.7943143845",
+    "obsProperty" : {
+      "label" : "sulphurDioxideConcentration"
+    },
+    "uom" : {
+      "symbol" : "ug/m3",
+      "label" : "microgram per cube meter"
+    }
+  } ]
+}, {
+  "resourceId" : "599ae719fd21ab1a3a53fcec",
+  "location" : {
+    "description" : "City of Vienna",
+    "latitude" : 45.8,
+    "longitude" : 15.9,
+    "altitude" : 145.0,
+    "name" : "A23"
+  },
+  "resultTime" : "2017-08-22T18:00:00.000+0200",
+  "samplingTime" : "2017-08-22T18:00:00.000+0200",
+  "obsValues" : [ {
+    "value" : "3.9275517464",
+    "obsProperty" : {
+      "label" : "sulphurDioxideConcentration"
+    },
+    "uom" : {
+      "symbol" : "ug/m3",
+      "label" : "microgram per cube meter"
+    }
+  } ]
+}, {
+  "resourceId" : "599ae719fd21ab1a3a53fcec",
+  "location" : {
+    "description" : "City of Vienna",
+    "latitude" : 45.8,
+    "longitude" : 15.9,
+    "altitude" : 145.0,
+    "name" : "A23"
+  },
+  "resultTime" : "2017-08-22T19:00:00.000+0200",
+  "samplingTime" : "2017-08-22T19:00:00.000+0200",
+  "obsValues" : [ {
+    "value" : "3.8316204548",
+    "obsProperty" : {
+      "label" : "sulphurDioxideConcentration"
+    },
+    "uom" : {
+      "symbol" : "ug/m3",
+      "label" : "microgram per cube meter"
+    }
+  } ]
+}, {
+  "resourceId" : "599ae719fd21ab1a3a53fcec",
+  "location" : {
+    "description" : "City of Vienna",
+    "latitude" : 45.8,
+    "longitude" : 15.9,
+    "altitude" : 145.0,
+    "name" : "A23"
+  },
+  "resultTime" : "2017-08-22T20:00:00.000+0200",
+  "samplingTime" : "2017-08-22T20:00:00.000+0200",
+  "obsValues" : [ {
+    "value" : "3.9382100105",
+    "obsProperty" : {
+      "label" : "sulphurDioxideConcentration"
+    },
+    "uom" : {
+      "symbol" : "ug/m3",
+      "label" : "microgram per cube meter"
+    }
+  } ]
+}, {
+  "resourceId" : "599ae719fd21ab1a3a53fcec",
+  "location" : {
+    "description" : "City of Vienna",
+    "latitude" : 45.8,
+    "longitude" : 15.9,
+    "altitude" : 145.0,
+    "name" : "A23"
+  },
+  "resultTime" : "2017-08-22T21:00:00.000+0200",
+  "samplingTime" : "2017-08-22T21:00:00.000+0200",
+  "obsValues" : [ {
+    "value" : "3.8068389893",
+    "obsProperty" : {
+      "label" : "sulphurDioxideConcentration"
+    },
+    "uom" : {
+      "symbol" : "ug/m3",
+      "label" : "microgram per cube meter"
+    }
+  } ]
+}, {
+  "resourceId" : "599ae719fd21ab1a3a53fcec",
+  "location" : {
+    "description" : "City of Vienna",
+    "latitude" : 45.8,
+    "longitude" : 15.9,
+    "altitude" : 145.0,
+    "name" : "A23"
+  },
+  "resultTime" : "2017-08-22T22:00:00.000+0200",
+  "samplingTime" : "2017-08-22T22:00:00.000+0200",
+  "obsValues" : [ {
+    "value" : "3.7484810352",
+    "obsProperty" : {
+      "label" : "sulphurDioxideConcentration"
+    },
+    "uom" : {
+      "symbol" : "ug/m3",
+      "label" : "microgram per cube meter"
+    }
+  } ]
+}, {
+  "resourceId" : "599ae719fd21ab1a3a53fcec",
+  "location" : {
+    "description" : "City of Vienna",
+    "latitude" : 45.8,
+    "longitude" : 15.9,
+    "altitude" : 145.0,
+    "name" : "A23"
+  },
+  "resultTime" : "2017-08-22T23:00:00.000+0200",
+  "samplingTime" : "2017-08-22T23:00:00.000+0200",
+  "obsValues" : [ {
+    "value" : "3.8445444107",
+    "obsProperty" : {
+      "label" : "sulphurDioxideConcentration"
+    },
+    "uom" : {
+      "symbol" : "ug/m3",
+      "label" : "microgram per cube meter"
+    }
+  } ]
+}, {
+  "resourceId" : "599ae719fd21ab1a3a53fcec",
+  "location" : {
+    "description" : "City of Vienna",
+    "latitude" : 45.8,
+    "longitude" : 15.9,
+    "altitude" : 145.0,
+    "name" : "A23"
+  },
+  "resultTime" : "2017-08-23T00:00:00.000+0200",
+  "samplingTime" : "2017-08-23T00:00:00.000+0200",
+  "obsValues" : [ {
+    "value" : "3.8124344349",
+    "obsProperty" : {
+      "label" : "sulphurDioxideConcentration"
+    },
+    "uom" : {
+      "symbol" : "ug/m3",
+      "label" : "microgram per cube meter"
+    }
+  } ]
+}, {
+  "resourceId" : "599ae719fd21ab1a3a53fcec",
+  "location" : {
+    "description" : "City of Vienna",
+    "latitude" : 45.8,
+    "longitude" : 15.9,
+    "altitude" : 145.0,
+    "name" : "A23"
+  },
+  "resultTime" : "2017-08-23T01:00:00.000+0200",
+  "samplingTime" : "2017-08-23T01:00:00.000+0200",
+  "obsValues" : [ {
+    "value" : "3.8802518845",
+    "obsProperty" : {
+      "label" : "sulphurDioxideConcentration"
+    },
+    "uom" : {
+      "symbol" : "ug/m3",
+      "label" : "microgram per cube meter"
+    }
+  } ]
+}, {
+  "resourceId" : "599ae719fd21ab1a3a53fcec",
+  "location" : {
+    "description" : "City of Vienna",
+    "latitude" : 45.8,
+    "longitude" : 15.9,
+    "altitude" : 145.0,
+    "name" : "A23"
+  },
+  "resultTime" : "2017-08-23T02:00:00.000+0200",
+  "samplingTime" : "2017-08-23T02:00:00.000+0200",
+  "obsValues" : [ {
+    "value" : "4.5344438553",
+    "obsProperty" : {
+      "label" : "sulphurDioxideConcentration"
+    },
+    "uom" : {
+      "symbol" : "ug/m3",
+      "label" : "microgram per cube meter"
+    }
+  } ]
+}, {
+  "resourceId" : "599ae719fd21ab1a3a53fcec",
+  "location" : {
+    "description" : "City of Vienna",
+    "latitude" : 45.8,
+    "longitude" : 15.9,
+    "altitude" : 145.0,
+    "name" : "A23"
+  },
+  "resultTime" : "2017-08-23T03:00:00.000+0200",
+  "samplingTime" : "2017-08-23T03:00:00.000+0200",
+  "obsValues" : [ {
+    "value" : "4.9478778839",
+    "obsProperty" : {
+      "label" : "sulphurDioxideConcentration"
+    },
+    "uom" : {
+      "symbol" : "ug/m3",
+      "label" : "microgram per cube meter"
+    }
+  } ]
+}, {
+  "resourceId" : "599ae719fd21ab1a3a53fcec",
+  "location" : {
+    "description" : "City of Vienna",
+    "latitude" : 45.8,
+    "longitude" : 15.9,
+    "altitude" : 145.0,
+    "name" : "A23"
+  },
+  "resultTime" : "2017-08-23T04:00:00.000+0200",
+  "samplingTime" : "2017-08-23T04:00:00.000+0200",
+  "obsValues" : [ {
+    "value" : "4.9638662338",
+    "obsProperty" : {
+      "label" : "sulphurDioxideConcentration"
+    },
+    "uom" : {
+      "symbol" : "ug/m3",
+      "label" : "microgram per cube meter"
+    }
+  } ]
+}, {
+  "resourceId" : "599ae719fd21ab1a3a53fcec",
+  "location" : {
+    "description" : "City of Vienna",
+    "latitude" : 45.8,
+    "longitude" : 15.9,
+    "altitude" : 145.0,
+    "name" : "A23"
+  },
+  "resultTime" : "2017-08-23T05:00:00.000+0200",
+  "samplingTime" : "2017-08-23T05:00:00.000+0200",
+  "obsValues" : [ {
+    "value" : "5.1521291733",
+    "obsProperty" : {
+      "label" : "sulphurDioxideConcentration"
+    },
+    "uom" : {
+      "symbol" : "ug/m3",
+      "label" : "microgram per cube meter"
+    }
+  } ]
+}, {
+  "resourceId" : "599ae719fd21ab1a3a53fcec",
+  "location" : {
+    "description" : "City of Vienna",
+    "latitude" : 45.8,
+    "longitude" : 15.9,
+    "altitude" : 145.0,
+    "name" : "A23"
+  },
+  "resultTime" : "2017-08-23T06:00:00.000+0200",
+  "samplingTime" : "2017-08-23T06:00:00.000+0200",
+  "obsValues" : [ {
+    "value" : "4.9124364853",
+    "obsProperty" : {
+      "label" : "sulphurDioxideConcentration"
+    },
+    "uom" : {
+      "symbol" : "ug/m3",
+      "label" : "microgram per cube meter"
+    }
+  } ]
+}, {
+  "resourceId" : "599ae719fd21ab1a3a53fcec",
+  "location" : {
+    "description" : "City of Vienna",
+    "latitude" : 45.8,
+    "longitude" : 15.9,
+    "altitude" : 145.0,
+    "name" : "A23"
+  },
+  "resultTime" : "2017-08-23T07:00:00.000+0200",
+  "samplingTime" : "2017-08-23T07:00:00.000+0200",
+  "obsValues" : [ {
+    "value" : "5.9927196503",
+    "obsProperty" : {
+      "label" : "sulphurDioxideConcentration"
+    },
+    "uom" : {
+      "symbol" : "ug/m3",
+      "label" : "microgram per cube meter"
+    }
+  } ]
+}, {
+  "resourceId" : "599ae719fd21ab1a3a53fcec",
+  "location" : {
+    "description" : "City of Vienna",
+    "latitude" : 45.8,
+    "longitude" : 15.9,
+    "altitude" : 145.0,
+    "name" : "A23"
+  },
+  "resultTime" : "2017-08-23T08:00:00.000+0200",
+  "samplingTime" : "2017-08-23T08:00:00.000+0200",
+  "obsValues" : [ {
+    "value" : "6.8746137619",
+    "obsProperty" : {
+      "label" : "sulphurDioxideConcentration"
+    },
+    "uom" : {
+      "symbol" : "ug/m3",
+      "label" : "microgram per cube meter"
+    }
+  } ]
+}, {
+  "resourceId" : "599ae719fd21ab1a3a53fcec",
+  "location" : {
+    "description" : "City of Vienna",
+    "latitude" : 45.8,
+    "longitude" : 15.9,
+    "altitude" : 145.0,
+    "name" : "A23"
+  },
+  "resultTime" : "2017-08-23T09:00:00.000+0200",
+  "samplingTime" : "2017-08-23T09:00:00.000+0200",
+  "obsValues" : [ {
+    "value" : "6.0510773659",
+    "obsProperty" : {
+      "label" : "sulphurDioxideConcentration"
+    },
+    "uom" : {
+      "symbol" : "ug/m3",
+      "label" : "microgram per cube meter"
+    }
+  } ]
+}, {
+  "resourceId" : "599ae719fd21ab1a3a53fcec",
+  "location" : {
+    "description" : "City of Vienna",
+    "latitude" : 45.8,
+    "longitude" : 15.9,
+    "altitude" : 145.0,
+    "name" : "A23"
+  },
+  "resultTime" : "2017-08-23T10:00:00.000+0200",
+  "samplingTime" : "2017-08-23T10:00:00.000+0200",
+  "obsValues" : [ {
+    "value" : "5.1591911316",
+    "obsProperty" : {
+      "label" : "sulphurDioxideConcentration"
+    },
+    "uom" : {
+      "symbol" : "ug/m3",
+      "label" : "microgram per cube meter"
+    }
+  } ]
+}, {
+  "resourceId" : "599ae719fd21ab1a3a53fcec",
+  "location" : {
+    "description" : "City of Vienna",
+    "latitude" : 45.8,
+    "longitude" : 15.9,
+    "altitude" : 145.0,
+    "name" : "A23"
+  },
+  "resultTime" : "2017-08-23T11:00:00.000+0200",
+  "samplingTime" : "2017-08-23T11:00:00.000+0200",
+  "obsValues" : [ {
+    "value" : "4.7746696472",
+    "obsProperty" : {
+      "label" : "sulphurDioxideConcentration"
+    },
+    "uom" : {
+      "symbol" : "ug/m3",
+      "label" : "microgram per cube meter"
+    }
+  } ]
+} ]
