@@ -36,8 +36,9 @@ class SearchDevicesManager {
                 self.getBackupTestData()
             }
             else {
-                let dataString = String(data: data!, encoding: String.Encoding.utf8)
-                logVerbose(dataString)
+                //debug
+                //let dataString = String(data: data!, encoding: String.Encoding.utf8)
+                //logVerbose(dataString)
                 
                 if let jsonData = data {
                     let json = JSON(data: jsonData)
