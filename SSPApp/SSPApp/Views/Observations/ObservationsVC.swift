@@ -66,7 +66,7 @@ extension ObservationsVC: UITableViewDataSource, UITableViewDelegate {
         
         let ithKey = Array(obsMam.observationsByName.keys)[indexPath.section]
         let object = obsMam.observationsByName[ithKey]?[indexPath.row]
-        if let obs = object {        
+        if let obs = object {
             cell.setCell(obs)
         }
         return cell
