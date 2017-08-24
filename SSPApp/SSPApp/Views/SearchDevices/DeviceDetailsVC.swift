@@ -83,4 +83,14 @@ class DeviceDetailsVC: UIViewController {
         navigationController?.pushViewController(vc, animated: true)
     }
     
+    
+    @IBAction func chartButtonTapped(_ sender: Any) {
+        let om = ObservationsManager()
+        om.getTestData()
+        
+        let vc = ObservationsChartVC.getViewController()
+        vc.setObservations(om)
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }

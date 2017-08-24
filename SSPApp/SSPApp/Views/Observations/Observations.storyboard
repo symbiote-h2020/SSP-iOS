@@ -54,7 +54,7 @@
             </objects>
             <point key="canvasLocation" x="1124" y="149.77511244377811"/>
         </scene>
-        <!--Observations ChartVC-->
+        <!--Observations chart-->
         <scene sceneID="URW-D6-aa7">
             <objects>
                 <viewController storyboardIdentifier="ObservationsChartVC" id="3Vx-Rr-OLx" customClass="ObservationsChartVC" customModule="SSPApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -62,12 +62,15 @@
                         <viewControllerLayoutGuide type="top" id="QHb-h2-Dzb"/>
                         <viewControllerLayoutGuide type="bottom" id="eYl-CA-FME"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="hY8-iH-yEm">
+                    <view key="view" contentMode="scaleToFill" id="hY8-iH-yEm" customClass="LineChartView" customModule="Charts">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="MJR-aY-4NO"/>
+                    <navigationItem key="navigationItem" title="Observations chart" id="MJR-aY-4NO"/>
+                    <connections>
+                        <outlet property="chartView" destination="hY8-iH-yEm" id="hdl-X6-3Bn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PpR-94-W9A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
