@@ -9,7 +9,11 @@
 import UIKit
 
 
+
+
 class DrawerMenuTableVC: UITableViewController {
+    
+    let options: [DrawerOption] = [.Search, .Observations, .Chart]
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -34,4 +38,35 @@ class DrawerMenuTableVC: UITableViewController {
         return controller
     }
     
+
+    // MARK: - Table View
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return options.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        cell.textLabel?.text = String(describing: options[indexPath.row])
+        return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let menuItem = options[indexPath.row]
+        if menuItem == .Search {
+            let nvc = SearchDevicesVC.getNavigationViewController()
+            self.evo_drawerController?.setCenter(nvc, withCloseAnimation: true, completion: nil)
+        }
+        else if menuItem == .Observations {
+            let nvc = ObservationsVC.getNavigationViewController()
+            self.evo_drawerController?.setCenter(nvc, withCloseAnimation: true, completion: nil)
+        }
+        else if menuItem == .Chart {
+            let nvc = ObservationsChartVC.getNavigationViewController()
+            self.evo_drawerController?.setCenter(nvc, withCloseAnimation: true, completion: nil)
+        }
+    }
 }

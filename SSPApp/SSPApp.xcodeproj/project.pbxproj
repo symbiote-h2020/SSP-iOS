@@ -35,6 +35,9 @@
 		76486BEC1F4D9E0000D9702D /* ObservationValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76486BEB1F4D9E0000D9702D /* ObservationValue.swift */; };
 		76486BEE1F4DCD2B00D9702D /* ObservationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76486BED1F4DCD2B00D9702D /* ObservationTableViewCell.swift */; };
 		76486BF01F4EBA5B00D9702D /* ObservationsChartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76486BEF1F4EBA5B00D9702D /* ObservationsChartVC.swift */; };
+		76486BF31F4EEAF800D9702D /* DateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76486BF21F4EEAF800D9702D /* DateTime.swift */; };
+		76486BF51F4EED9600D9702D /* DrawerOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76486BF41F4EED9600D9702D /* DrawerOption.swift */; };
+		76486BF71F4EEE6B00D9702D /* NavigationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76486BF61F4EEE6B00D9702D /* NavigationProtocol.swift */; };
 		7666B2D11F27716900675435 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7666B2D01F27716900675435 /* AppDelegate.swift */; };
 		7666B2D81F27716900675435 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7666B2D71F27716900675435 /* Assets.xcassets */; };
 		7666B2DB1F27716900675435 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7666B2D91F27716900675435 /* LaunchScreen.storyboard */; };
@@ -75,6 +78,9 @@
 		76486BEB1F4D9E0000D9702D /* ObservationValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObservationValue.swift; path = Models/ObservationValue.swift; sourceTree = "<group>"; };
 		76486BED1F4DCD2B00D9702D /* ObservationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObservationTableViewCell.swift; path = Views/Observations/ObservationTableViewCell.swift; sourceTree = "<group>"; };
 		76486BEF1F4EBA5B00D9702D /* ObservationsChartVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObservationsChartVC.swift; path = Views/Observations/ObservationsChartVC.swift; sourceTree = "<group>"; };
+		76486BF21F4EEAF800D9702D /* DateTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateTime.swift; path = Common/DateTime.swift; sourceTree = "<group>"; };
+		76486BF41F4EED9600D9702D /* DrawerOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawerOption.swift; path = Views/Drawer/DrawerOption.swift; sourceTree = "<group>"; };
+		76486BF61F4EEE6B00D9702D /* NavigationProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationProtocol.swift; path = Views/Drawer/NavigationProtocol.swift; sourceTree = "<group>"; };
 		7666B2CD1F27716900675435 /* SSPApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSPApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7666B2D01F27716900675435 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7666B2D71F27716900675435 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -126,6 +132,8 @@
 				76162ECF1F28923A0043285D /* DrawerMenuTableVC.swift */,
 				76162ED01F28923A0043285D /* TableViewControllerWithDrawerMenu.swift */,
 				76162ED11F28923A0043285D /* ViewControllerWithDrawerMenu.swift */,
+				76486BF41F4EED9600D9702D /* DrawerOption.swift */,
+				76486BF61F4EEE6B00D9702D /* NavigationProtocol.swift */,
 			);
 			name = Drawer;
 			sourceTree = "<group>";
@@ -168,6 +176,7 @@
 				76162EE61F2893390043285D /* NotificationCenter+names.swift */,
 				76162EE71F2893390043285D /* NotificationInfo.swift */,
 				762C4B201F3B2C1E0052E7D3 /* SSPColors.swift */,
+				76486BF21F4EEAF800D9702D /* DateTime.swift */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -408,6 +417,8 @@
 				76162EDA1F2892530043285D /* DetailViewController.swift in Sources */,
 				76162ECC1F2892040043285D /* MainViewController.swift in Sources */,
 				76486BE31F4D84BF00D9702D /* Observation.swift in Sources */,
+				76486BF31F4EEAF800D9702D /* DateTime.swift in Sources */,
+				76486BF71F4EEE6B00D9702D /* NavigationProtocol.swift in Sources */,
 				76162EE81F2893390043285D /* Constants.swift in Sources */,
 				76486BDC1F4D6DC500D9702D /* DeviceTableViewCell.swift in Sources */,
 				76162EEB1F2893390043285D /* NotificationInfo.swift in Sources */,
@@ -418,6 +429,7 @@
 				768B56091F28C7EA00E8D075 /* SearchDevicesVC.swift in Sources */,
 				76162EDF1F2892B20043285D /* SmartDevice.swift in Sources */,
 				763138061F30B863007A34E9 /* DeviceDetailsVC.swift in Sources */,
+				76486BF51F4EED9600D9702D /* DrawerOption.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
