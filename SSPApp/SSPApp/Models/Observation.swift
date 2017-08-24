@@ -14,6 +14,7 @@ class Observation {
     var resourceId: String = ""
     var resultTime: String = ""  //TODO parse time to DateTime
     var samplingTime: String = ""
+    var time = DateTime()
     
     var location: ObservationLocation?
     var values: [ObservationValue] = [ObservationValue]()
@@ -24,7 +25,10 @@ class Observation {
         
         
         if j["resourceId"].exists()     { resourceId = j["resourceId"].stringValue }
-        if j["resultTime"].exists()     { resultTime = j["resultTime"].stringValue }
+        if j["resultTime"].exists()     {
+            resultTime = j["resultTime"].stringValue
+            time = DateTime(fromString: resultTime)
+        }
         if j["samplingTime"].exists()     { samplingTime = j["samplingTime"].stringValue }
         
         if j["location"].exists()     {
