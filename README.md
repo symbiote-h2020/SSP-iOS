@@ -4,7 +4,20 @@
 ### Screenshots:
 
 <br/>
-Getting data from the cloud perspective<br/>
+<br/>
+
+Observation chart
+
+
+![Screenshot compact List](/Screenshots/chart.png)
+
+<br/>
+<br/>
+
+
+Getting data from the cloud perspective
+<br/>
+
 ![Screenshot Crude List](/Screenshots/crudeList.png)
 
 <br/>
