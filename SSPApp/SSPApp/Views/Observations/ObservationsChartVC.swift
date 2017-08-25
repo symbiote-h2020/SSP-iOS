@@ -68,6 +68,9 @@ class ObservationsChartVC: UIViewController {
                 items.append(entry)
                 index += 1.0
             }
+    
+            //TODO not only first, but allow many charts types
+            let dataLabel = valuesArr.first?.values.first?.propertyLabel ?? ""
             
             // value formatter
             let nf = NumberFormatter()
@@ -77,7 +80,7 @@ class ObservationsChartVC: UIViewController {
             nf.decimalSeparator = "."
             
             // chart data
-            let dataSet = LineChartDataSet(values: items, label: "Data")
+            let dataSet = LineChartDataSet(values: items, label: dataLabel)
             dataSet.drawValuesEnabled = true
             dataSet.valueFormatter = DefaultValueFormatter(formatter: nf)
             //dataSet.setColor(WFIColors.windSpeedChart)
@@ -105,64 +108,12 @@ class ObservationsChartVC: UIViewController {
             
             // this must be last
             chartView.centerViewTo(xValue: 0, yValue: 0, axis: .left)
-           // chartView.setVisibleXRange(minXRange: 7, maxXRange: 7)
-            
-        }
-        
-        /*  //with lots of view manipulation
-            
-            // configure axis
-            let xAxis = chartView.xAxis
-            xAxis.labelPosition = .bottom
-            xAxis.drawGridLinesEnabled = false
-            xAxis.valueFormatter = IndexAxisValueFormatter(values: labels)
-            xAxis.labelCount = labels.count
-            xAxis.labelRotationAngle = -90.0
-            xAxis.granularity = 1.0
-            
-            let yAxis = chartView.leftAxis
-            yAxis.drawAxisLineEnabled = true
-            yAxis.drawGridLinesEnabled = true
-            yAxis.granularityEnabled = true
-            
-    //        let line = ChartLimitLine(limit: 5.0)
-    //        //line.lineColor = WFIColors.windLineColor
-    //        yAxis.addLimitLine(line)
-            
-            chartView.rightAxis.enabled = false
-            
-    //chartView.extraBottomOffset = 10.0
-            
-            let legend = chartView.legend
-            legend.form = .line
-            legend.horizontalAlignment = .center
-            legend.verticalAlignment = .top
-            legend.orientation = .vertical
-            legend.drawInside = false
-            legend.formSize = 30.0
-            
-            // configure chart
-    //        chartView.chartDescription?.enabled = false
-    //        chartView.legend.enabled = false
-    //        chartView.drawGridBackgroundEnabled = false
-    //        chartView.pinchZoomEnabled = false
-    //        chartView.doubleTapToZoomEnabled = false
-    //        chartView.scaleXEnabled = false
-    //        chartView.scaleYEnabled = false
-    //        
-    //        chartView.highlightPerTapEnabled = false
-    //        chartView.highlightPerDragEnabled = false
-            
-            chartView.isHidden = false
-            chartView.data = data
-            chartView.notifyDataSetChanged()
-            chartView.setNeedsDisplay()
-            
-            // this must be last
-            chartView.centerViewTo(xValue: 0, yValue: 0, axis: .left)
-            chartView.setVisibleXRange(minXRange: 7, maxXRange: 7)
-        }
- */
+           
+            //TODO not only first, but filter by unit
+            let unitsLabel = valuesArr.first?.values.first?.unitLabel ?? ""
+            let unitSymbol = valuesArr.first?.values.first?.unitSymbol ?? ""
+            chartView.chartDescription?.text = "\(unitsLabel) [\(unitSymbol)]"
+        }        
     }
 
 }
