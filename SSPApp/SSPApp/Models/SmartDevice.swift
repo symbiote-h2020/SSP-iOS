@@ -17,6 +17,7 @@ class SmartDevice {
     var name: String = ""
     var id: String = ""
     var deviceDescription: String = ""
+    var status: String = ""
     
     //location
     var locationName: String = ""
@@ -42,6 +43,7 @@ class SmartDevice {
         }
         if j["id"].exists()             { id = j["id"].stringValue }
         if j["description"].exists()    { deviceDescription = j["description"].stringValue }
+        if j["status"].exists()         { status = j["status"].stringValue }
         
         //location
         if j["locationName"].exists()           { locationName = j["locationName"].stringValue }
