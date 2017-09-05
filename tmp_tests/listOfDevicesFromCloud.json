@@ -1,0 +1,1791 @@
+{
+    "resources": [
+        {
+            "platformId": "AIT-openUwedat",
+            "platformName": "AIT-openUwedat",
+            "owner": null,
+            "name": "KE",
+            "id": "599ae54efd21ab1a3a53fcb7",
+            "description": "Fixed air quality station",
+            "locationName": "KE",
+            "locationLatitude": 48.156642,
+            "locationLongitude": 16.4755138,
+            "locationAltitude": 125,
+            "observedProperties": [
+                "nitrogen dioxide concentration"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "test1Plat",
+            "platformName": "Test platform 1",
+            "owner": null,
+            "name": "stationary device service 1",
+            "id": "5925ade8b80b283bd9eb3cd1",
+            "description": "This is stationary device service 1",
+            "locationName": "",
+            "locationLatitude": null,
+            "locationLongitude": null,
+            "locationAltitude": null,
+            "observedProperties": [
+                ""
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#ActuatingService"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "poznanPlatform",
+            "platformName": "PoznanPlatform",
+            "owner": null,
+            "name": "TestSensor-PSNC",
+            "id": "595e33cc1b60370c4e1f6c7f",
+            "description": "This is a test sensor",
+            "locationName": "Poznan",
+            "locationLatitude": 52.40179,
+            "locationLongitude": 16.960144,
+            "locationAltitude": 20,
+            "observedProperties": [
+                "temperature",
+                "humidity"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "test1Plat",
+            "platformName": "Test platform 1",
+            "owner": null,
+            "name": "Stationary device 1",
+            "id": "5925ade8b80b283bd9eb3cd0",
+            "description": "This is stationary device 1",
+            "locationName": "Paris",
+            "locationLatitude": 48.864716,
+            "locationLongitude": 2.349014,
+            "locationAltitude": 15,
+            "observedProperties": [
+                "temperature"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor",
+                "http://www.symbiote-h2020.eu/ontology/core#Actuator"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "AIT-openUwedat",
+            "platformName": "AIT-openUwedat",
+            "owner": null,
+            "name": "KE",
+            "id": "599ae71cfd21ab1a3a53fcfa",
+            "description": "Fixed air quality station",
+            "locationName": "KE",
+            "locationLatitude": 48.156642,
+            "locationLongitude": 16.4755138,
+            "locationAltitude": 125,
+            "observedProperties": [
+                "sulphur dioxide concentration"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "NXW-symphony-1",
+            "platformName": "Nextworks(roma)",
+            "owner": null,
+            "name": "sensor sensor",
+            "id": "593943afb4f8e209390e942f",
+            "description": "sensor",
+            "locationName": "Pisa",
+            "locationLatitude": 43.6732994,
+            "locationLongitude": 10.34831059999999,
+            "locationAltitude": 15,
+            "observedProperties": [
+                "power"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "AIT-openUwedat",
+            "platformName": "AIT-openUwedat",
+            "owner": null,
+            "name": "GAUD",
+            "id": "599ae71bfd21ab1a3a53fcf2",
+            "description": "Fixed air quality station",
+            "locationName": "GAUD",
+            "locationLatitude": 48.186904,
+            "locationLongitude": 16.339498,
+            "locationAltitude": 179,
+            "observedProperties": [
+                "nitrogen dioxide concentration"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "AIT-openUwedat",
+            "platformName": "AIT-openUwedat",
+            "owner": null,
+            "name": "LAA",
+            "id": "599ae71bfd21ab1a3a53fcf6",
+            "description": "Fixed air quality station",
+            "locationName": "LAA",
+            "locationLatitude": 48.1607235,
+            "locationLongitude": 16.3906138,
+            "locationAltitude": 251,
+            "observedProperties": [
+                "ozone concentration"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "AIT-openUwedat",
+            "platformName": "AIT-openUwedat",
+            "owner": null,
+            "name": "MBA",
+            "id": "599ae71bfd21ab1a3a53fcf4",
+            "description": "Fixed air quality station",
+            "locationName": "MBA",
+            "locationLatitude": 48.1883725,
+            "locationLongitude": 16.3000202777778,
+            "locationAltitude": 180,
+            "observedProperties": [
+                "nitrogen dioxide concentration"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "AIT-openUwedat",
+            "platformName": "AIT-openUwedat",
+            "owner": null,
+            "name": "FLO",
+            "id": "599ae715fd21ab1a3a53fcd9",
+            "description": "Fixed air quality station",
+            "locationName": "FLO",
+            "locationLatitude": 48.2609904,
+            "locationLongitude": 16.394629,
+            "locationAltitude": 164,
+            "observedProperties": [
+                "Particulate matter <10um (aerosol) concentration"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "NXW-symphony-1",
+            "platformName": "Nextworks(roma)",
+            "owner": null,
+            "name": "dimmer rgb service",
+            "id": "593943aab4f8e209390e9421",
+            "description": "rgb light",
+            "locationName": "",
+            "locationLatitude": null,
+            "locationLongitude": null,
+            "locationAltitude": null,
+            "observedProperties": [
+                ""
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#ActuatingService"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "UNIZG-symbiote-1",
+            "platformName": "OpenIoT at FER",
+            "owner": null,
+            "name": "FER32TKS7722",
+            "id": "5936682d25d5cf090c847d5a",
+            "description": "Virtual sensor based on the MGRS cell",
+            "locationName": "Geneva",
+            "locationLatitude": 46.215003967285156,
+            "locationLongitude": 6.108796119689941,
+            "locationAltitude": 215,
+            "observedProperties": [
+                "temperature",
+                "nitrogen dioxide concentration",
+                "carbon monoxide concentration",
+                "humidity",
+                "atmospheric pressure"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "NXW-symphony-1",
+            "platformName": "Nextworks(roma)",
+            "owner": null,
+            "name": "dimmer rgb sensor",
+            "id": "593943aab4f8e209390e9422",
+            "description": "rgb light",
+            "locationName": "Pisa",
+            "locationLatitude": 43.6732994,
+            "locationLongitude": 10.34831059999999,
+            "locationAltitude": 15,
+            "observedProperties": [
+                "luminous efficacy",
+                "luminous intensity",
+                "luminous flux",
+                "luminous exposure"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "UNIZG-symbiote-1",
+            "platformName": "OpenIoT at FER",
+            "owner": null,
+            "name": "FER32TKS7921",
+            "id": "5936682d25d5cf090c847d5c",
+            "description": "Virtual sensor based on the MGRS cell",
+            "locationName": "Geneva",
+            "locationLatitude": 46.206668853759766,
+            "locationLongitude": 6.13516092300415,
+            "locationAltitude": 215,
+            "observedProperties": [
+                "temperature",
+                "nitrogen dioxide concentration",
+                "carbon monoxide concentration",
+                "humidity",
+                "atmospheric pressure"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "UNIZG-symbiote-1",
+            "platformName": "OpenIoT at FER",
+            "owner": null,
+            "name": "FER32TKS7922",
+            "id": "5936682d25d5cf090c847d5e",
+            "description": "Virtual sensor based on the MGRS cell",
+            "locationName": "Geneva",
+            "locationLatitude": 46.21565628051758,
+            "locationLongitude": 6.134693145751953,
+            "locationAltitude": 215,
+            "observedProperties": [
+                "temperature",
+                "nitrogen dioxide concentration",
+                "carbon monoxide concentration",
+                "humidity",
+                "atmospheric pressure"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "AIT-openUwedat",
+            "platformName": "AIT-openUwedat",
+            "owner": null,
+            "name": "AKC",
+            "id": "599ae711fd21ab1a3a53fcc9",
+            "description": "Fixed air quality station",
+            "locationName": "AKC",
+            "locationLatitude": 48.219513,
+            "locationLongitude": 16.3463248,
+            "locationAltitude": 199,
+            "observedProperties": [
+                "Particulate matter <10um (aerosol) concentration"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "NXW-symphony-1",
+            "platformName": "Nextworks(roma)",
+            "owner": null,
+            "name": "dimmer rgb actuator",
+            "id": "593943aab4f8e209390e9420",
+            "description": "rgb light",
+            "locationName": "",
+            "locationLatitude": null,
+            "locationLongitude": null,
+            "locationAltitude": null,
+            "observedProperties": [
+                ""
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#Actuator"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "AIT-openUwedat",
+            "platformName": "AIT-openUwedat",
+            "owner": null,
+            "name": "A23",
+            "id": "599ae719fd21ab1a3a53fcec",
+            "description": "Fixed air quality station",
+            "locationName": "A23",
+            "locationLatitude": 48.243237,
+            "locationLongitude": 16.383134,
+            "locationAltitude": 162,
+            "observedProperties": [
+                "sulphur dioxide concentration"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "AIT-openUwedat",
+            "platformName": "AIT-openUwedat",
+            "owner": null,
+            "name": "STAD",
+            "id": "599ae719fd21ab1a3a53fcea",
+            "description": "Fixed air quality station",
+            "locationName": "STAD",
+            "locationLatitude": 48.2267875,
+            "locationLongitude": 16.4553026,
+            "locationAltitude": 159,
+            "observedProperties": [
+                "nitrogen dioxide concentration"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "AIT-openUwedat",
+            "platformName": "AIT-openUwedat",
+            "owner": null,
+            "name": "STEF",
+            "id": "599ae711fd21ab1a3a53fccd",
+            "description": "Fixed air quality station",
+            "locationName": "STEF",
+            "locationLatitude": 48.208253,
+            "locationLongitude": 16.3724584,
+            "locationAltitude": 172,
+            "observedProperties": [
+                "ozone concentration"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "AIT-openUwedat",
+            "platformName": "AIT-openUwedat",
+            "owner": null,
+            "name": "STEF",
+            "id": "599ae711fd21ab1a3a53fccb",
+            "description": "Fixed air quality station",
+            "locationName": "STEF",
+            "locationLatitude": 48.208253,
+            "locationLongitude": 16.3724584,
+            "locationAltitude": 172,
+            "observedProperties": [
+                "nitrogen dioxide concentration"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "NXW-symphony-1",
+            "platformName": "Nextworks(roma)",
+            "owner": null,
+            "name": "sensor sensor",
+            "id": "593943b1b4f8e209390e9431",
+            "description": "sensor",
+            "locationName": "Pisa",
+            "locationLatitude": 43.6732994,
+            "locationLongitude": 10.34831059999999,
+            "locationAltitude": 15,
+            "observedProperties": [
+                "power"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "NXW-symphony-1",
+            "platformName": "Nextworks(roma)",
+            "owner": null,
+            "name": "dimmer actuator",
+            "id": "5939440eb4f8e209390e9439",
+            "description": "dimmer",
+            "locationName": "",
+            "locationLatitude": null,
+            "locationLongitude": null,
+            "locationAltitude": null,
+            "observedProperties": [
+                ""
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#Actuator"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "AIT-openUwedat",
+            "platformName": "AIT-openUwedat",
+            "owner": null,
+            "name": "ZA",
+            "id": "599ae70efd21ab1a3a53fcbf",
+            "description": "Fixed air quality station",
+            "locationName": "ZA",
+            "locationLatitude": 48.250101,
+            "locationLongitude": 16.3543688,
+            "locationAltitude": 200,
+            "observedProperties": [
+                "nitrogen dioxide concentration"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "AIT-openUwedat",
+            "platformName": "AIT-openUwedat",
+            "owner": null,
+            "name": "TAB",
+            "id": "599ae71dfd21ab1a3a53fcfd",
+            "description": "Fixed air quality station",
+            "locationName": "TAB",
+            "locationLatitude": 48.216677,
+            "locationLongitude": 16.3803028,
+            "locationAltitude": 162,
+            "observedProperties": [
+                "carbon monoxide concentration"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "AIT-openUwedat",
+            "platformName": "AIT-openUwedat",
+            "owner": null,
+            "name": "JAEG",
+            "id": "599ae70ffd21ab1a3a53fcc1",
+            "description": "Fixed air quality station",
+            "locationName": "JAEG",
+            "locationLatitude": 48.2701583333333,
+            "locationLongitude": 16.2972633333333,
+            "locationAltitude": 200,
+            "observedProperties": [
+                "nitrogen dioxide concentration"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "AIT-openUwedat",
+            "platformName": "AIT-openUwedat",
+            "owner": null,
+            "name": "JAEG",
+            "id": "599ae71dfd21ab1a3a53fcfe",
+            "description": "Fixed air quality station",
+            "locationName": "JAEG",
+            "locationLatitude": 48.2701583333333,
+            "locationLongitude": 16.2972633333333,
+            "locationAltitude": 200,
+            "observedProperties": [
+                "nitrogen monoxide concentration"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "NXW-symphony-1",
+            "platformName": "Nextworks(roma)",
+            "owner": null,
+            "name": "sensor sensor",
+            "id": "593943b1b4f8e209390e9433",
+            "description": "sensor",
+            "locationName": "Pisa",
+            "locationLatitude": 43.6732994,
+            "locationLongitude": 10.34831059999999,
+            "locationAltitude": 15,
+            "observedProperties": [
+                "power"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "AIT-openUwedat",
+            "platformName": "AIT-openUwedat",
+            "owner": null,
+            "name": "STAD",
+            "id": "599ae70efd21ab1a3a53fcbd",
+            "description": "Fixed air quality station",
+            "locationName": "STAD",
+            "locationLatitude": 48.2267875,
+            "locationLongitude": 16.4553026,
+            "locationAltitude": 159,
+            "observedProperties": [
+                "particulate matter <2.5um (aerosol) concentration"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "AIT-openUwedat",
+            "platformName": "AIT-openUwedat",
+            "owner": null,
+            "name": "A23",
+            "id": "599ae70ffd21ab1a3a53fcc3",
+            "description": "Fixed air quality station",
+            "locationName": "A23",
+            "locationLatitude": 48.243237,
+            "locationLongitude": 16.383134,
+            "locationAltitude": 162,
+            "observedProperties": [
+                "carbon monoxide concentration"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "AIT-openUwedat",
+            "platformName": "AIT-openUwedat",
+            "owner": null,
+            "name": "AKC",
+            "id": "599ae71dfd21ab1a3a53fcfc",
+            "description": "Fixed air quality station",
+            "locationName": "AKC",
+            "locationLatitude": 48.219513,
+            "locationLongitude": 16.3463248,
+            "locationAltitude": 199,
+            "observedProperties": [
+                "nitrogen dioxide concentration"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "AIT-openUwedat",
+            "platformName": "AIT-openUwedat",
+            "owner": null,
+            "name": "JAEG",
+            "id": "599ae716fd21ab1a3a53fce0",
+            "description": "Fixed air quality station",
+            "locationName": "JAEG",
+            "locationLatitude": 48.2701583333333,
+            "locationLongitude": 16.2972633333333,
+            "locationAltitude": 200,
+            "observedProperties": [
+                "sulphur dioxide concentration"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "UNIZG-symbiote-1",
+            "platformName": "OpenIoT at FER",
+            "owner": null,
+            "name": "FER33TWL7171",
+            "id": "595b89961b60370c4e1f6c74",
+            "description": "Virtual sensor based on the MGRS cell",
+            "locationName": "Zagreb",
+            "locationLatitude": 45.788909912109375,
+            "locationLongitude": 15.913463592529297,
+            "locationAltitude": 215,
+            "observedProperties": [
+                "temperature",
+                "nitrogen dioxide concentration",
+                "carbon monoxide concentration",
+                "humidity",
+                "atmospheric pressure"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "UNIZG-symbiote-1",
+            "platformName": "OpenIoT at FER",
+            "owner": null,
+            "name": "FER32TKS7922",
+            "id": "595b89961b60370c4e1f6c73",
+            "description": "Virtual sensor based on the MGRS cell",
+            "locationName": "Geneva",
+            "locationLatitude": 46.21565628051758,
+            "locationLongitude": 6.134693145751953,
+            "locationAltitude": 215,
+            "observedProperties": [
+                "temperature",
+                "nitrogen dioxide concentration",
+                "carbon monoxide concentration",
+                "humidity",
+                "atmospheric pressure"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "AIT-openUwedat",
+            "platformName": "AIT-openUwedat",
+            "owner": null,
+            "name": "JAEG",
+            "id": "599ae716fd21ab1a3a53fce1",
+            "description": "Fixed air quality station",
+            "locationName": "JAEG",
+            "locationLatitude": 48.2701583333333,
+            "locationLongitude": 16.2972633333333,
+            "locationAltitude": 200,
+            "observedProperties": [
+                "ozone concentration"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "AIT-openUwedat",
+            "platformName": "AIT-openUwedat",
+            "owner": null,
+            "name": "KEND",
+            "id": "599ae716fd21ab1a3a53fcde",
+            "description": "Fixed air quality station",
+            "locationName": "KEND",
+            "locationLatitude": 48.2047616,
+            "locationLongitude": 16.3102269,
+            "locationAltitude": 236,
+            "observedProperties": [
+                "nitrogen dioxide concentration"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "UNIZG-symbiote-2",
+            "platformName": "FER_OpenHAB",
+            "owner": null,
+            "name": "Waspmote",
+            "id": "59428c22b4f8e209390e9471",
+            "description": "Waspmote board with temperature and luminosity sensor.",
+            "locationName": "",
+            "locationLatitude": null,
+            "locationLongitude": null,
+            "locationAltitude": null,
+            "observedProperties": [
+                ""
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "AIT-openUwedat",
+            "platformName": "AIT-openUwedat",
+            "owner": null,
+            "name": "BELG",
+            "id": "599ae719fd21ab1a3a53fce8",
+            "description": "Fixed air quality station",
+            "locationName": "BELG",
+            "locationLatitude": 48.174296,
+            "locationLongitude": 16.36148,
+            "locationAltitude": 218,
+            "observedProperties": [
+                "Particulate matter <10um (aerosol) concentration"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "AIT-openUwedat",
+            "platformName": "AIT-openUwedat",
+            "owner": null,
+            "name": "A23",
+            "id": "599ae714fd21ab1a3a53fcd5",
+            "description": "Fixed air quality station",
+            "locationName": "A23",
+            "locationLatitude": 48.243237,
+            "locationLongitude": 16.383134,
+            "locationAltitude": 162,
+            "observedProperties": [
+                "nitrogen dioxide concentration"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "NXW-symphony-1",
+            "platformName": "Nextworks(roma)",
+            "owner": null,
+            "name": "sensor sensor",
+            "id": "593943aeb4f8e209390e942d",
+            "description": "sensor",
+            "locationName": "Pisa",
+            "locationLatitude": 43.6732994,
+            "locationLongitude": 10.34831059999999,
+            "locationAltitude": 15,
+            "observedProperties": [
+                "power"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "AIT-openUwedat",
+            "platformName": "AIT-openUwedat",
+            "owner": null,
+            "name": "LAA",
+            "id": "599ae714fd21ab1a3a53fcd7",
+            "description": "Fixed air quality station",
+            "locationName": "LAA",
+            "locationLatitude": 48.1607235,
+            "locationLongitude": 16.3906138,
+            "locationAltitude": 251,
+            "observedProperties": [
+                "Particulate matter <10um (aerosol) concentration"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "AIT-openUwedat",
+            "platformName": "AIT-openUwedat",
+            "owner": null,
+            "name": "KE",
+            "id": "599ae714fd21ab1a3a53fcd6",
+            "description": "Fixed air quality station",
+            "locationName": "KE",
+            "locationLatitude": 48.156642,
+            "locationLongitude": 16.4755138,
+            "locationAltitude": 125,
+            "observedProperties": [
+                "Particulate matter <10um (aerosol) concentration"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "NXW-symphony-1",
+            "platformName": "Nextworks(roma)",
+            "owner": null,
+            "name": "dimmer service",
+            "id": "593943acb4f8e209390e9425",
+            "description": "dimmer",
+            "locationName": "",
+            "locationLatitude": null,
+            "locationLongitude": null,
+            "locationAltitude": null,
+            "observedProperties": [
+                ""
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#ActuatingService"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "NXW-symphony-1",
+            "platformName": "Nextworks(roma)",
+            "owner": null,
+            "name": "dimmer sensor",
+            "id": "593943acb4f8e209390e9426",
+            "description": "dimmer",
+            "locationName": "Pisa",
+            "locationLatitude": 43.6732994,
+            "locationLongitude": 10.34831059999999,
+            "locationAltitude": 15,
+            "observedProperties": [
+                "quantity of light"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "NXW-symphony-1",
+            "platformName": "Nextworks(roma)",
+            "owner": null,
+            "name": "curtain service",
+            "id": "593943adb4f8e209390e942a",
+            "description": "curtain",
+            "locationName": "",
+            "locationLatitude": null,
+            "locationLongitude": null,
+            "locationAltitude": null,
+            "observedProperties": [
+                ""
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#ActuatingService"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "test1Plat",
+            "platformName": "Test platform 1",
+            "owner": null,
+            "name": "Stationary 1",
+            "id": "5925aab3b80b283bd9eb3cc9",
+            "description": "This is stationary 1",
+            "locationName": "Rnd123",
+            "locationLatitude": 45.864716,
+            "locationLongitude": 15.349014,
+            "locationAltitude": 35,
+            "observedProperties": [
+                "temperature",
+                "humidity"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "NXW-symphony-1",
+            "platformName": "Nextworks(roma)",
+            "owner": null,
+            "name": "curtain sensor",
+            "id": "593943adb4f8e209390e942b",
+            "description": "curtain",
+            "locationName": "Pisa",
+            "locationLatitude": 43.6732994,
+            "locationLongitude": 10.34831059999999,
+            "locationAltitude": 15,
+            "observedProperties": [
+                "quantity of light"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "NXW-symphony-1",
+            "platformName": "Nextworks(roma)",
+            "owner": null,
+            "name": "sensor sensor",
+            "id": "593943b2b4f8e209390e9435",
+            "description": "sensor",
+            "locationName": "Pisa",
+            "locationLatitude": 43.6732994,
+            "locationLongitude": 10.34831059999999,
+            "locationAltitude": 15,
+            "observedProperties": [
+                "power"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "UNIZG-symbiote-3",
+            "platformName": "FER_NodeRED",
+            "owner": null,
+            "name": "Philips HUE",
+            "id": "594051e5b4f8e209390e9464",
+            "description": "Philips HUE lighting system.",
+            "locationName": "",
+            "locationLatitude": null,
+            "locationLongitude": null,
+            "locationAltitude": null,
+            "observedProperties": [
+                ""
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "AIT-openUwedat",
+            "platformName": "AIT-openUwedat",
+            "owner": null,
+            "name": "LOB",
+            "id": "599ae713fd21ab1a3a53fcd3",
+            "description": "Fixed air quality station",
+            "locationName": "LOB",
+            "locationLatitude": 48.162198,
+            "locationLongitude": 16.5258382,
+            "locationAltitude": 155,
+            "observedProperties": [
+                "nitrogen monoxide concentration"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "NXW-symphony-1",
+            "platformName": "Nextworks(roma)",
+            "owner": null,
+            "name": "dimmer service",
+            "id": "5939440eb4f8e209390e943b",
+            "description": "dimmer",
+            "locationName": "",
+            "locationLatitude": null,
+            "locationLongitude": null,
+            "locationAltitude": null,
+            "observedProperties": [
+                ""
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#ActuatingService"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "NXW-symphony-1",
+            "platformName": "Nextworks(roma)",
+            "owner": null,
+            "name": "dimmer sensor",
+            "id": "5939440eb4f8e209390e943c",
+            "description": "dimmer",
+            "locationName": "Pisa",
+            "locationLatitude": 43.6732994,
+            "locationLongitude": 10.34831059999999,
+            "locationAltitude": 15,
+            "observedProperties": [
+                "quantity of light"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "AIT-openUwedat",
+            "platformName": "AIT-openUwedat",
+            "owner": null,
+            "name": "SCHA",
+            "id": "599ae713fd21ab1a3a53fcd1",
+            "description": "Fixed air quality station",
+            "locationName": "SCHA",
+            "locationLatitude": 48.2362756,
+            "locationLongitude": 16.2990855,
+            "locationAltitude": 319,
+            "observedProperties": [
+                "Particulate matter <10um (aerosol) concentration"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "UNIZG-symbiote-1",
+            "platformName": "OpenIoT at FER",
+            "owner": null,
+            "name": "FER32TKS7921",
+            "id": "595b89961b60370c4e1f6c72",
+            "description": "Virtual sensor based on the MGRS cell",
+            "locationName": "Geneva",
+            "locationLatitude": 46.206668853759766,
+            "locationLongitude": 6.13516092300415,
+            "locationAltitude": 215,
+            "observedProperties": [
+                "temperature",
+                "nitrogen dioxide concentration",
+                "carbon monoxide concentration",
+                "humidity",
+                "atmospheric pressure"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "test1Plat",
+            "platformName": "Test platform 1",
+            "owner": null,
+            "name": "Stationary 1_xx",
+            "id": "597f0c0288f1703fddcb4762",
+            "description": "This is stationary 1_xx",
+            "locationName": "SomeLocation",
+            "locationLatitude": 25.864716,
+            "locationLongitude": 5.349014,
+            "locationAltitude": 35,
+            "observedProperties": [
+                "temperature",
+                "humidity"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "UNIZG-symbiote-1",
+            "platformName": "OpenIoT at FER",
+            "owner": null,
+            "name": "FER33UXU3208",
+            "id": "595b89961b60370c4e1f6c70",
+            "description": "Virtual sensor based on the MGRS cell",
+            "locationName": "Poznan",
+            "locationLatitude": 52.40629196166992,
+            "locationLongitude": 16.940492630004883,
+            "locationAltitude": 215,
+            "observedProperties": [
+                "temperature",
+                "nitrogen dioxide concentration",
+                "carbon monoxide concentration",
+                "humidity",
+                "atmospheric pressure"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "AIT-openUwedat",
+            "platformName": "AIT-openUwedat",
+            "owner": null,
+            "name": "LOB",
+            "id": "599ae71efd21ab1a3a53fd00",
+            "description": "Fixed air quality station",
+            "locationName": "LOB",
+            "locationLatitude": 48.162198,
+            "locationLongitude": 16.5258382,
+            "locationAltitude": 155,
+            "observedProperties": [
+                "Particulate matter <10um (aerosol) concentration"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "AIT-openUwedat",
+            "platformName": "AIT-openUwedat",
+            "owner": null,
+            "name": "ZA",
+            "id": "599ae71afd21ab1a3a53fcee",
+            "description": "Fixed air quality station",
+            "locationName": "ZA",
+            "locationLatitude": 48.250101,
+            "locationLongitude": 16.3543688,
+            "locationAltitude": 200,
+            "observedProperties": [
+                "sulphur dioxide concentration"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "AIT-openUwedat",
+            "platformName": "AIT-openUwedat",
+            "owner": null,
+            "name": "GAUD",
+            "id": "599ae71efd21ab1a3a53fd02",
+            "description": "Fixed air quality station",
+            "locationName": "GAUD",
+            "locationLatitude": 48.186904,
+            "locationLongitude": 16.339498,
+            "locationAltitude": 179,
+            "observedProperties": [
+                "Particulate matter <10um (aerosol) concentration"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "AIT-openUwedat",
+            "platformName": "AIT-openUwedat",
+            "owner": null,
+            "name": "SCHA",
+            "id": "599ae71efd21ab1a3a53fd04",
+            "description": "Fixed air quality station",
+            "locationName": "SCHA",
+            "locationLatitude": 48.2362756,
+            "locationLongitude": 16.2990855,
+            "locationAltitude": 319,
+            "observedProperties": [
+                "sulphur dioxide concentration"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "AIT-openUwedat",
+            "platformName": "AIT-openUwedat",
+            "owner": null,
+            "name": "SCHA",
+            "id": "599ae71afd21ab1a3a53fcef",
+            "description": "Fixed air quality station",
+            "locationName": "SCHA",
+            "locationLatitude": 48.2362756,
+            "locationLongitude": 16.2990855,
+            "locationAltitude": 319,
+            "observedProperties": [
+                "nitrogen dioxide concentration"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "NXW-symphony-1",
+            "platformName": "Nextworks(roma)",
+            "owner": null,
+            "name": "sensor sensor",
+            "id": "593943b5b4f8e209390e9437",
+            "description": "sensor",
+            "locationName": "Pisa",
+            "locationLatitude": 43.6732994,
+            "locationLongitude": 10.34831059999999,
+            "locationAltitude": 15,
+            "observedProperties": [
+                "power"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "AIT-openUwedat",
+            "platformName": "AIT-openUwedat",
+            "owner": null,
+            "name": "LOB",
+            "id": "599ae717fd21ab1a3a53fce2",
+            "description": "Fixed air quality station",
+            "locationName": "LOB",
+            "locationLatitude": 48.162198,
+            "locationLongitude": 16.5258382,
+            "locationAltitude": 155,
+            "observedProperties": [
+                "nitrogen dioxide concentration"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "AIT-openUwedat",
+            "platformName": "AIT-openUwedat",
+            "owner": null,
+            "name": "ZA",
+            "id": "599ae717fd21ab1a3a53fce3",
+            "description": "Fixed air quality station",
+            "locationName": "ZA",
+            "locationLatitude": 48.250101,
+            "locationLongitude": 16.3543688,
+            "locationAltitude": 200,
+            "observedProperties": [
+                "ozone concentration"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "AIT-openUwedat",
+            "platformName": "AIT-openUwedat",
+            "owner": null,
+            "name": "FLO",
+            "id": "599ae70dfd21ab1a3a53fcb9",
+            "description": "Fixed air quality station",
+            "locationName": "FLO",
+            "locationLatitude": 48.2609904,
+            "locationLongitude": 16.394629,
+            "locationAltitude": 164,
+            "observedProperties": [
+                "nitrogen dioxide concentration"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "AIT-openUwedat",
+            "platformName": "AIT-openUwedat",
+            "owner": null,
+            "name": "KEND",
+            "id": "599ae71cfd21ab1a3a53fcf7",
+            "description": "Fixed air quality station",
+            "locationName": "KEND",
+            "locationLatitude": 48.2047616,
+            "locationLongitude": 16.3102269,
+            "locationAltitude": 236,
+            "observedProperties": [
+                "particulate matter <2.5um (aerosol) concentration"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "UNIZG-symbiote-1",
+            "platformName": "OpenIoT at FER",
+            "owner": null,
+            "name": "FER33TWL4337",
+            "id": "5926a601b80b283bd9eb3cd4",
+            "description": "Virtual sensor based on the MGRS cell",
+            "locationName": "Karlovac",
+            "locationLatitude": 45.485202789307,
+            "locationLongitude": 15.550243377686,
+            "locationAltitude": 215,
+            "observedProperties": [
+                "temperature",
+                "nitrogen dioxide concentration",
+                "carbon monoxide concentration",
+                "humidity",
+                "atmospheric pressure"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "AIT-openUwedat",
+            "platformName": "AIT-openUwedat",
+            "owner": null,
+            "name": "TAB",
+            "id": "599ae71cfd21ab1a3a53fcf9",
+            "description": "Fixed air quality station",
+            "locationName": "TAB",
+            "locationLatitude": 48.216677,
+            "locationLongitude": 16.3803028,
+            "locationAltitude": 162,
+            "observedProperties": [
+                "Particulate matter <10um (aerosol) concentration"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "test1Plat",
+            "platformName": "Test platform 1",
+            "owner": null,
+            "name": "Actuator 1",
+            "id": "5925aab8b80b283bd9eb3ccb",
+            "description": "This is actuator 1",
+            "locationName": "",
+            "locationLatitude": null,
+            "locationLongitude": null,
+            "locationAltitude": null,
+            "observedProperties": [
+                ""
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#Actuator"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "NXW-symphony-1",
+            "platformName": "Nextworks(roma)",
+            "owner": null,
+            "name": "dimmer rgb actuator",
+            "id": "593943aab4f8e209390e941b",
+            "description": "RGBw Wall",
+            "locationName": "",
+            "locationLatitude": null,
+            "locationLongitude": null,
+            "locationAltitude": null,
+            "observedProperties": [
+                ""
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#Actuator"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "UNIZG-symbiote-1",
+            "platformName": "OpenIoT at FER",
+            "owner": null,
+            "name": "FER33TWL7171",
+            "id": "5936682d25d5cf090c847d60",
+            "description": "Virtual sensor based on the MGRS cell",
+            "locationName": "Zagreb",
+            "locationLatitude": 45.788909912109375,
+            "locationLongitude": 15.913463592529297,
+            "locationAltitude": 215,
+            "observedProperties": [
+                "temperature",
+                "nitrogen dioxide concentration",
+                "carbon monoxide concentration",
+                "humidity",
+                "atmospheric pressure"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "UNIZG-symbiote-1",
+            "platformName": "OpenIoT at FER",
+            "owner": null,
+            "name": "FER33TWL7573",
+            "id": "5936682d25d5cf090c847d62",
+            "description": "Virtual sensor based on the MGRS cell",
+            "locationName": "Zagreb",
+            "locationLatitude": 45.80648422241211,
+            "locationLongitude": 15.965229988098145,
+            "locationAltitude": 215,
+            "observedProperties": [
+                "temperature",
+                "nitrogen dioxide concentration",
+                "carbon monoxide concentration",
+                "humidity",
+                "atmospheric pressure"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "UNIZG-symbiote-3",
+            "platformName": "FER_NodeRED",
+            "owner": null,
+            "name": "Philips HUE",
+            "id": "595152211b60370c4e1f6c64",
+            "description": "Philips HUE lighting system.",
+            "locationName": "",
+            "locationLatitude": null,
+            "locationLongitude": null,
+            "locationAltitude": null,
+            "observedProperties": [
+                ""
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "AIT-openUwedat",
+            "platformName": "AIT-openUwedat",
+            "owner": null,
+            "name": "STAD",
+            "id": "599ae710fd21ab1a3a53fcc8",
+            "description": "Fixed air quality station",
+            "locationName": "STAD",
+            "locationLatitude": 48.2267875,
+            "locationLongitude": 16.4553026,
+            "locationAltitude": 159,
+            "observedProperties": [
+                "sulphur dioxide concentration"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "test1Plat",
+            "platformName": "Test platform 1",
+            "owner": null,
+            "name": "Actuating Service 1",
+            "id": "5925aab8b80b283bd9eb3ccd",
+            "description": "This is actuating service 1",
+            "locationName": "",
+            "locationLatitude": null,
+            "locationLongitude": null,
+            "locationAltitude": null,
+            "observedProperties": [
+                ""
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#ActuatingService"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "NXW-symphony-1",
+            "platformName": "Nextworks(roma)",
+            "owner": null,
+            "name": "dimmer rgb service",
+            "id": "593943aab4f8e209390e941d",
+            "description": "RGBw Wall",
+            "locationName": "",
+            "locationLatitude": null,
+            "locationLongitude": null,
+            "locationAltitude": null,
+            "observedProperties": [
+                ""
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#ActuatingService"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "NXW-symphony-1",
+            "platformName": "Nextworks(roma)",
+            "owner": null,
+            "name": "dimmer rgb sensor",
+            "id": "593943aab4f8e209390e941e",
+            "description": "RGBw Wall",
+            "locationName": "Pisa",
+            "locationLatitude": 43.6732994,
+            "locationLongitude": 10.34831059999999,
+            "locationAltitude": 15,
+            "observedProperties": [
+                "luminous efficacy",
+                "luminous intensity",
+                "luminous flux",
+                "luminous exposure"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "AIT-openUwedat",
+            "platformName": "AIT-openUwedat",
+            "owner": null,
+            "name": "BELG",
+            "id": "599ae715fd21ab1a3a53fcdc",
+            "description": "Fixed air quality station",
+            "locationName": "BELG",
+            "locationLatitude": 48.174296,
+            "locationLongitude": 16.36148,
+            "locationAltitude": 218,
+            "observedProperties": [
+                "nitrogen dioxide concentration"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "AIT-openUwedat",
+            "platformName": "AIT-openUwedat",
+            "owner": null,
+            "name": "KEND",
+            "id": "599ae715fd21ab1a3a53fcda",
+            "description": "Fixed air quality station",
+            "locationName": "KEND",
+            "locationLatitude": 48.2047616,
+            "locationLongitude": 16.3102269,
+            "locationAltitude": 236,
+            "observedProperties": [
+                "Particulate matter <10um (aerosol) concentration"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "NXW-symphony-1",
+            "platformName": "Nextworks(roma)",
+            "owner": null,
+            "name": "curtain actuator",
+            "id": "593943adb4f8e209390e9428",
+            "description": "curtain",
+            "locationName": "",
+            "locationLatitude": null,
+            "locationLongitude": null,
+            "locationAltitude": null,
+            "observedProperties": [
+                ""
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#Actuator"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "AIT-openUwedat",
+            "platformName": "AIT-openUwedat",
+            "owner": null,
+            "name": "TAB",
+            "id": "599ae710fd21ab1a3a53fcc6",
+            "description": "Fixed air quality station",
+            "locationName": "TAB",
+            "locationLatitude": 48.216677,
+            "locationLongitude": 16.3803028,
+            "locationAltitude": 162,
+            "observedProperties": [
+                "nitrogen dioxide concentration"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "AIT-openUwedat",
+            "platformName": "AIT-openUwedat",
+            "owner": null,
+            "name": "STEF",
+            "id": "599ae710fd21ab1a3a53fcc5",
+            "description": "Fixed air quality station",
+            "locationName": "STEF",
+            "locationLatitude": 48.208253,
+            "locationLongitude": 16.3724584,
+            "locationAltitude": 172,
+            "observedProperties": [
+                "sulphur dioxide concentration"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "NXW-symphony-1",
+            "platformName": "Nextworks(roma)",
+            "owner": null,
+            "name": "dimmer actuator",
+            "id": "593943abb4f8e209390e9423",
+            "description": "dimmer",
+            "locationName": "",
+            "locationLatitude": null,
+            "locationLongitude": null,
+            "locationAltitude": null,
+            "observedProperties": [
+                ""
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#Actuator"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "UNIZG-symbiote-1",
+            "platformName": "OpenIoT at FER",
+            "owner": null,
+            "name": "FER33TWL7572",
+            "id": "593126ee25d5cf090c847d54",
+            "description": "Virtual sensor based on the MGRS cell",
+            "locationName": "Zagreb",
+            "locationLatitude": 45.797485351562,
+            "locationLongitude": 15.965074539185,
+            "locationAltitude": 215,
+            "observedProperties": [
+                "temperature",
+                "nitrogen dioxide concentration",
+                "carbon monoxide concentration",
+                "humidity",
+                "atmospheric pressure"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "AIT-openUwedat",
+            "platformName": "AIT-openUwedat",
+            "owner": null,
+            "name": "MBA",
+            "id": "599ae718fd21ab1a3a53fce5",
+            "description": "Fixed air quality station",
+            "locationName": "MBA",
+            "locationLatitude": 48.1883725,
+            "locationLongitude": 16.3000202777778,
+            "locationAltitude": 180,
+            "observedProperties": [
+                "carbon monoxide concentration"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "AIT-openUwedat",
+            "platformName": "AIT-openUwedat",
+            "owner": null,
+            "name": "LOB",
+            "id": "599ae718fd21ab1a3a53fce7",
+            "description": "Fixed air quality station",
+            "locationName": "LOB",
+            "locationLatitude": 48.162198,
+            "locationLongitude": 16.5258382,
+            "locationAltitude": 155,
+            "observedProperties": [
+                "ozone concentration"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "AIT-openUwedat",
+            "platformName": "AIT-openUwedat",
+            "owner": null,
+            "name": "STEF",
+            "id": "599ae70dfd21ab1a3a53fcbb",
+            "description": "Fixed air quality station",
+            "locationName": "STEF",
+            "locationLatitude": 48.208253,
+            "locationLongitude": 16.3724584,
+            "locationAltitude": 172,
+            "observedProperties": [
+                "nitrogen monoxide concentration"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "UNIZG-symbiote-1",
+            "platformName": "OpenIoT at FER",
+            "owner": null,
+            "name": "FER33UXP0142",
+            "id": "5926a634b80b283bd9eb3cd7",
+            "description": "Virtual sensor based on the MGRS cell",
+            "locationName": "Vienna",
+            "locationLatitude": 48.223178863525,
+            "locationLongitude": 16.359859466553,
+            "locationAltitude": 215,
+            "observedProperties": [
+                "temperature",
+                "nitrogen dioxide concentration",
+                "carbon monoxide concentration",
+                "humidity",
+                "atmospheric pressure"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "AIT-openUwedat",
+            "platformName": "AIT-openUwedat",
+            "owner": null,
+            "name": "LIES",
+            "id": "599ae718fd21ab1a3a53fce4",
+            "description": "Fixed air quality station",
+            "locationName": "LIES",
+            "locationLatitude": 48.2295081,
+            "locationLongitude": 16.3614531,
+            "locationAltitude": 211,
+            "observedProperties": [
+                "nitrogen dioxide concentration"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "AIT-openUwedat",
+            "platformName": "AIT-openUwedat",
+            "owner": null,
+            "name": "LIES",
+            "id": "599ae712fd21ab1a3a53fccf",
+            "description": "Fixed air quality station",
+            "locationName": "LIES",
+            "locationLatitude": 48.2295081,
+            "locationLongitude": 16.3614531,
+            "locationAltitude": 211,
+            "observedProperties": [
+                "Particulate matter <10um (aerosol) concentration"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        },
+        {
+            "platformId": "AIT-openUwedat",
+            "platformName": "AIT-openUwedat",
+            "owner": null,
+            "name": "STAD",
+            "id": "599ae71afd21ab1a3a53fcf0",
+            "description": "Fixed air quality station",
+            "locationName": "STAD",
+            "locationLatitude": 48.2267875,
+            "locationLongitude": 16.4553026,
+            "locationAltitude": 159,
+            "observedProperties": [
+                "Particulate matter <10um (aerosol) concentration"
+            ],
+            "resourceType": [
+                "http://www.symbiote-h2020.eu/ontology/core#StationarySensor"
+            ],
+            "ranking": null
+        }
+    ]
+}

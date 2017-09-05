@@ -22,4 +22,7 @@ class SSPColors {
     static let foregroundTextColor         = UIColor.black
     static let subtleTextColor             = UIColor.gray
     static let clear                       = UIColor.clear    // reference for clear color
+    
+    static let yes                         = UIColor.green
+    static let no                          = UIColor.red
 }

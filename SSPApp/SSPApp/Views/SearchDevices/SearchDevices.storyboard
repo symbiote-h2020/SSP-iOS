@@ -114,34 +114,34 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="platform" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgv-BZ-RYW">
-                                                    <rect key="frame" x="8" y="26" width="171.5" height="18"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ncg-yA-4YR">
-                                                    <rect key="frame" x="8" y="44" width="171.5" height="21"/>
+                                                    <rect key="frame" x="8" y="47.5" width="171.5" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="offline" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Upu-cL-Mx7">
+                                                    <rect key="frame" x="8" y="26.5" width="171.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="dgv-BZ-RYW" firstAttribute="top" secondItem="JKE-Xx-pRE" secondAttribute="bottom" id="4sS-bP-y0k"/>
+                                                <constraint firstItem="Upu-cL-Mx7" firstAttribute="top" secondItem="JKE-Xx-pRE" secondAttribute="bottom" id="4p2-4A-5p9"/>
+                                                <constraint firstItem="Upu-cL-Mx7" firstAttribute="trailing" secondItem="JKE-Xx-pRE" secondAttribute="trailing" id="57p-Yo-7pH"/>
+                                                <constraint firstItem="Upu-cL-Mx7" firstAttribute="leading" secondItem="JKE-Xx-pRE" secondAttribute="leading" id="F4X-Jm-eZ9"/>
                                                 <constraint firstItem="JKE-Xx-pRE" firstAttribute="top" secondItem="RCN-sJ-gzY" secondAttribute="top" id="LfH-MH-bUn"/>
                                                 <constraint firstAttribute="trailing" secondItem="JKE-Xx-pRE" secondAttribute="trailing" constant="8" id="Qxy-yr-Xji"/>
                                                 <constraint firstItem="JKE-Xx-pRE" firstAttribute="leading" secondItem="RCN-sJ-gzY" secondAttribute="leading" constant="8" id="SCF-Ia-Kbh"/>
-                                                <constraint firstItem="ncg-yA-4YR" firstAttribute="top" secondItem="dgv-BZ-RYW" secondAttribute="bottom" id="US0-hY-Ahb"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="ncg-yA-4YR" secondAttribute="trailing" id="Ucq-uc-m2c"/>
-                                                <constraint firstItem="dgv-BZ-RYW" firstAttribute="leading" secondItem="RCN-sJ-gzY" secondAttribute="leadingMargin" id="fLI-hc-joj"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="dgv-BZ-RYW" secondAttribute="trailing" id="j1o-vY-8T5"/>
+                                                <constraint firstItem="ncg-yA-4YR" firstAttribute="top" secondItem="Upu-cL-Mx7" secondAttribute="bottom" id="jja-yO-MfA"/>
                                                 <constraint firstItem="ncg-yA-4YR" firstAttribute="leading" secondItem="RCN-sJ-gzY" secondAttribute="leadingMargin" id="sPH-uN-19w"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="nameLabel" destination="JKE-Xx-pRE" id="WmX-WV-bh6"/>
-                                            <outlet property="platformLabel" destination="dgv-BZ-RYW" id="PCT-gB-64q"/>
+                                            <outlet property="statusLabel" destination="Upu-cL-Mx7" id="Y1z-3b-gmd"/>
                                             <outlet property="typeLabel" destination="ncg-yA-4YR" id="uux-2A-eJ7"/>
                                         </connections>
                                     </tableViewCell>

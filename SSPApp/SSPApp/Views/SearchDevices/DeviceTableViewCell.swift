@@ -11,7 +11,9 @@ import UIKit
 class DeviceTableViewCell: UITableViewCell {
 
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var platformLabel: UILabel!
+    
+    @IBOutlet weak var statusLabel: UILabel!
+    //@IBOutlet weak var platformLabel: UILabel!
     @IBOutlet weak var typeLabel: UILabel!
     
     
@@ -30,7 +32,14 @@ class DeviceTableViewCell: UITableViewCell {
     
     public func setCell(_ d: SmartDevice) {
         nameLabel.text = d.name
-        platformLabel.text = d.platformName
+        statusLabel.text = d.status
+        if (d.status.uppercased() == "ONLINE") {
+            statusLabel.textColor = SSPColors.yes
+        }
+        else {
+            statusLabel.textColor = SSPColors.no
+        }
+        //platformLabel.text = d.platformName
         typeLabel.text = d.observedProperties.flatMap({$0}).joined(separator: ",");
     }
     
