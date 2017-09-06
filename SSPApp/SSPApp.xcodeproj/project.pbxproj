@@ -41,6 +41,9 @@
 		7666B2D11F27716900675435 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7666B2D01F27716900675435 /* AppDelegate.swift */; };
 		7666B2D81F27716900675435 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7666B2D71F27716900675435 /* Assets.xcassets */; };
 		7666B2DB1F27716900675435 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7666B2D91F27716900675435 /* LaunchScreen.storyboard */; };
+		767A91EB1F60357B006BEACC /* Actuators.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 767A91EA1F60357B006BEACC /* Actuators.storyboard */; };
+		767A91ED1F60359E006BEACC /* ActuatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767A91EC1F60359E006BEACC /* ActuatorVC.swift */; };
+		767A91EF1F6035B2006BEACC /* Actuator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767A91EE1F6035B2006BEACC /* Actuator.swift */; };
 		768B56071F28C7AC00E8D075 /* SearchDevices.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 768B56061F28C7AC00E8D075 /* SearchDevices.storyboard */; };
 		768B56091F28C7EA00E8D075 /* SearchDevicesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B56081F28C7EA00E8D075 /* SearchDevicesVC.swift */; };
 		768B560C1F29D1B200E8D075 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 768B560B1F29D1B200E8D075 /* Main.storyboard */; };
@@ -86,6 +89,9 @@
 		7666B2D71F27716900675435 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7666B2DA1F27716900675435 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7666B2DC1F27716900675435 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		767A91EA1F60357B006BEACC /* Actuators.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Actuators.storyboard; path = Views/Actuators/Actuators.storyboard; sourceTree = "<group>"; };
+		767A91EC1F60359E006BEACC /* ActuatorVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActuatorVC.swift; path = Views/Actuators/ActuatorVC.swift; sourceTree = "<group>"; };
+		767A91EE1F6035B2006BEACC /* Actuator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Actuator.swift; path = Models/Actuator.swift; sourceTree = "<group>"; };
 		768B56061F28C7AC00E8D075 /* SearchDevices.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SearchDevices.storyboard; path = Views/SearchDevices/SearchDevices.storyboard; sourceTree = "<group>"; };
 		768B56081F28C7EA00E8D075 /* SearchDevicesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchDevicesVC.swift; path = Views/SearchDevices/SearchDevicesVC.swift; sourceTree = "<group>"; };
 		768B560B1F29D1B200E8D075 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Views/Main/Main.storyboard; sourceTree = "<group>"; };
@@ -107,6 +113,7 @@
 		76162EC81F2780910043285D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				767A91E91F603544006BEACC /* Actuators */,
 				768B56051F28C78100E8D075 /* SearchDevices */,
 				76486BDD1F4D829500D9702D /* Observations */,
 				76162ED61F2892410043285D /* DevicesList */,
@@ -155,6 +162,7 @@
 				76486BE21F4D84BF00D9702D /* Observation.swift */,
 				76486BE91F4D9DEA00D9702D /* ObservationLocation.swift */,
 				76486BEB1F4D9E0000D9702D /* ObservationValue.swift */,
+				767A91EE1F6035B2006BEACC /* Actuator.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -233,6 +241,15 @@
 				7666B2DC1F27716900675435 /* Info.plist */,
 			);
 			path = SSPApp;
+			sourceTree = "<group>";
+		};
+		767A91E91F603544006BEACC /* Actuators */ = {
+			isa = PBXGroup;
+			children = (
+				767A91EA1F60357B006BEACC /* Actuators.storyboard */,
+				767A91EC1F60359E006BEACC /* ActuatorVC.swift */,
+			);
+			name = Actuators;
 			sourceTree = "<group>";
 		};
 		768B56011F28A5DC00E8D075 /* Extensions */ = {
@@ -337,6 +354,7 @@
 			files = (
 				76486BE81F4D979200D9702D /* observations.json in Resources */,
 				7666B2DB1F27716900675435 /* LaunchScreen.storyboard in Resources */,
+				767A91EB1F60357B006BEACC /* Actuators.storyboard in Resources */,
 				76162ED21F28923A0043285D /* Drawer.storyboard in Resources */,
 				7666B2D81F27716900675435 /* Assets.xcassets in Resources */,
 				76486BDF1F4D832D00D9702D /* Observations.storyboard in Resources */,
@@ -402,12 +420,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				762C4B211F3B2C1E0052E7D3 /* SSPColors.swift in Sources */,
+				767A91EF1F6035B2006BEACC /* Actuator.swift in Sources */,
 				76486BEE1F4DCD2B00D9702D /* ObservationTableViewCell.swift in Sources */,
 				763138041F30B4F8007A34E9 /* DevicesListVC.swift in Sources */,
 				76162ED51F28923A0043285D /* ViewControllerWithDrawerMenu.swift in Sources */,
 				76486BF01F4EBA5B00D9702D /* ObservationsChartVC.swift in Sources */,
 				76162EE91F2893390043285D /* Logger.swift in Sources */,
 				76486BEA1F4D9DEA00D9702D /* ObservationLocation.swift in Sources */,
+				767A91ED1F60359E006BEACC /* ActuatorVC.swift in Sources */,
 				76486BE51F4D84CF00D9702D /* ObservationsManager.swift in Sources */,
 				7666B2D11F27716900675435 /* AppDelegate.swift in Sources */,
 				763138081F34A7F1007A34E9 /* DevicesCombinedVC.swift in Sources */,
