@@ -10,6 +10,7 @@ import UIKit
 
 class DeviceDetailsVC: UIViewController {
 
+    
 
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var platformNameLabel: UILabel!
@@ -76,7 +77,7 @@ class DeviceDetailsVC: UIViewController {
     //MARK: - observations
     @IBAction func showObservations(_ sender: Any) {
         let om = ObservationsManager()
-        om.getTestData()
+        om.getObservations(forDeviceId: detailItem?.id)
         
         let vc = ObservationsVC.getViewController()
         vc.setObservations(om)
@@ -86,7 +87,7 @@ class DeviceDetailsVC: UIViewController {
     
     @IBAction func chartButtonTapped(_ sender: Any) {
         let om = ObservationsManager()
-        om.getTestData()
+        om.getObservations(forDeviceId: detailItem?.id)
         
         let vc = ObservationsChartVC.getViewController()
         vc.setObservations(om)

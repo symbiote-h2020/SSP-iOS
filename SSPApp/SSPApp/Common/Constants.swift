@@ -12,4 +12,6 @@ import Foundation
 final class Constants {
     static let isDebug: Bool                                        = _isDebugAssertConfiguration()
     static let isVerboseLogging: Bool                               = true  //TODO: zrobić zaawansowaną konfigurację jak w loggerze microsoftowym
+    
+    static let restApiUrl: String  = "http://217.72.97.9:8080"
 }

@@ -53,8 +53,8 @@ class ObservationsChartVC: UIViewController {
         var items: [ChartDataEntry] = []
         
         
-        let ithKey = Array(obsMam.observationsByName.keys)[0]
-        if let valuesArr = obsMam.observationsByName[ithKey] {
+        let ithKey = Array(obsMam.observationsByLocation.keys)[0]
+        if let valuesArr = obsMam.observationsByLocation[ithKey] {
             
             // fill items
             var index: Double = 0

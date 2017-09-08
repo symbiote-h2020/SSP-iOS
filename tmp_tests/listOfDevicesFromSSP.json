@@ -1,0 +1,16 @@
+{
+    "resources": [
+        {
+            "id": "5ccf7f34081200010203040506070809",
+            "name": "sym-Agent Test1",
+            "description": "Temperature, Humidity and Relé",
+            "url": "http://10.20.30.3:80",
+            "status": "ONLINE",
+            "observesProperty": [
+                "temperature",
+                "humidity",
+                "rele"
+            ]
+        }
+    ]
+}

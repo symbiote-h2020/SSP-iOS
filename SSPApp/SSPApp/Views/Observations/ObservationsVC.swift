@@ -16,6 +16,11 @@ class ObservationsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // Debug test
+        if obsMam.currentObservations.count == 0 {
+            obsMam.getTestData()
+        }
+        
         // Do any additional setup after loading the view.
         tableView.delegate = self
         tableView.dataSource = self
@@ -48,24 +53,24 @@ extension ObservationsVC: UITableViewDataSource, UITableViewDelegate {
     // MARK: - Table View
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return obsMam.observationsByName.keys.count
+        return obsMam.observationsByLocation.keys.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let ithKey = Array(obsMam.observationsByName.keys)[section]
-        return obsMam.observationsByName[ithKey]?.count ?? 0
+        let ithKey = Array(obsMam.observationsByLocation.keys)[section]
+        return obsMam.observationsByLocation[ithKey]?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        let ithKey = Array(obsMam.observationsByName.keys)[section]
+        let ithKey = Array(obsMam.observationsByLocation.keys)[section]
         return ithKey
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! ObservationTableViewCell
         
-        let ithKey = Array(obsMam.observationsByName.keys)[indexPath.section]
-        let object = obsMam.observationsByName[ithKey]?[indexPath.row]
+        let ithKey = Array(obsMam.observationsByLocation.keys)[indexPath.section]
+        let object = obsMam.observationsByLocation[ithKey]?[indexPath.row]
         if let obs = object {
             cell.setCell(obs)
         }

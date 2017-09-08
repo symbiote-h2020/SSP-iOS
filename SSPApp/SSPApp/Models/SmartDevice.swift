@@ -55,7 +55,13 @@ class SmartDevice {
             for oP in j["observedProperties"].arrayValue {
                 observedProperties.append(oP.stringValue)
             }
+        } else if j["observesProperty"].exists() {              //I'm not sure about the naming convention so I'll parse both
+            for oP in j["observesProperty"].arrayValue {
+                observedProperties.append(oP.stringValue)
+            }
         }
+        
+        
         if j["resourceType"].exists() {
             for r in j["resourceType"].arrayValue {
                 resourceType.append(r.stringValue)

@@ -52,7 +52,7 @@ class SearchDevicesManager {
     }
     
     func getResourceList() {
-        let url = URL(string: "http://217.72.97.9:8080/innkeeper/list_resources")
+        let url = URL(string: Constants.restApiUrl + "/innkeeper/list_resources")
         let request = NSMutableURLRequest(url: url!)
         request.httpMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
@@ -76,6 +76,8 @@ class SearchDevicesManager {
                 let status = (response as! HTTPURLResponse).statusCode
                 if (status >= 400) {
                     logError("response status: \(status)")
+                    let notiInfoObj  = NotificationInfo(type: ErrorType.connection, info: "response status: \(status)")
+                    NotificationCenter.default.postNotificationName(SymNotificationName.DeviceListLoaded, object: notiInfoObj)
                 }
                 //debug
                 let dataString = String(data: data!, encoding: String.Encoding.utf8)

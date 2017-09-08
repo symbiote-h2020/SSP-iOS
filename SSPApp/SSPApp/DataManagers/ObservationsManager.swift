@@ -12,17 +12,52 @@ import SwiftyJSON
 class ObservationsManager {
     
     var currentObservations: [Observation] = [Observation]()
-    var observationsByName: [String: [Observation]] = [String: [Observation]]()
+    var observationsByLocation: [String: [Observation]] = [String: [Observation]]()
     
     func getTestData() {
-        if let archiveUrl = Bundle.main.URLForResource("observations.json") {
+        if let archiveUrl = Bundle.main.URLForResource("observationsFromSSP.json") {
             if let data = try? Data(contentsOf: archiveUrl) {
-                log("loading test hardcoded data from observations.json")
+                logWarn("loading test hardcoded data from test file")
                 
                 let json = JSON(data: data)
                 parseOservationsJson(json)
             }
         }
+    }
+    
+    func getObservations(forDeviceId: String!) {
+        let url = URL(string: Constants.restApiUrl + "/rap/Sensor/" + forDeviceId)
+        let request = NSMutableURLRequest(url: url!)
+        request.httpMethod = "GET"
+        
+        let task = URLSession.shared.dataTask(with: request as URLRequest) { data,response,error in
+            if let err = error {
+                logError(error.debugDescription)
+                
+                let notiInfoObj  = NotificationInfo(type: ErrorType.connection, info: err.localizedDescription)
+                NotificationCenter.default.postNotificationName(SymNotificationName.ObservationsListLoaded, object: notiInfoObj)
+            }
+            else {
+                let status = (response as! HTTPURLResponse).statusCode
+                if (status >= 400) {
+                    logError("response status: \(status)")
+                    let notiInfoObj  = NotificationInfo(type: ErrorType.connection, info: "response status: \(status)")
+                    NotificationCenter.default.postNotificationName(SymNotificationName.ObservationsListLoaded, object: notiInfoObj)
+                }
+                //debug
+                let dataString = String(data: data!, encoding: String.Encoding.utf8)
+                logVerbose(dataString)
+                
+                
+                if let jsonData = data {
+                    let json = JSON(data: jsonData)
+                    self.parseOservationsJson(json)
+                }
+                
+            }
+        }
+        
+        task.resume()
     }
     
     
@@ -33,19 +68,18 @@ class ObservationsManager {
             let obs = Observation(j: childJson)
             currentObservations.append(obs)
             
-            if let name = obs.location?.name {
-                if (observationsByName[name] == nil) {
-                    observationsByName[name] = [Observation]()
-                }
-                self.observationsByName[name]?.append(obs)
+            let location = obs.location?.name ?? "unknown location"
+            if (observationsByLocation[location] == nil) {
+                observationsByLocation[location] = [Observation]()
             }
+            self.observationsByLocation[location]?.append(obs)
         }
         
         NotificationCenter.default.postNotificationName(SymNotificationName.ObservationsListLoaded)
     }
 }
 
-
+/// helpers use for reading test data from file
 extension Bundle {
     
     func pathForResource(_ name: String?) -> String? {
