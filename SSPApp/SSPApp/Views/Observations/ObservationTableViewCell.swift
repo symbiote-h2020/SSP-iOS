@@ -23,7 +23,8 @@ class ObservationTableViewCell: UITableViewCell {
     
     
     func setCell(_ ob: Observation) {
-        self.textLabel!.text = ob.values[0].valueString
+        //self.textLabel!.text = ob.values[0].valueString
+        self.textLabel!.text = ob.valuesCombined
     }
 
 }

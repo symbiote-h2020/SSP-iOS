@@ -19,6 +19,8 @@ class Observation {
     var location: ObservationLocation?
     var values: [ObservationValue] = [ObservationValue]()
     
+    var valuesCombined: String = ""
+    
     
     convenience init(j: JSON)  {
         self.init()
@@ -42,6 +44,13 @@ class Observation {
                 let obsV = ObservationValue(j: childJson)
                 values.append(obsV)
             }
+            combineValues()
+        }
+    }
+    
+    func combineValues() {
+        for v in values {
+            valuesCombined += v.valueString + "; "
         }
     }
 }
