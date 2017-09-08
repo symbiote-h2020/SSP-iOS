@@ -12,7 +12,7 @@ protocol DevicesListViewControllerDelegate {
     func childViewControllerDidPressButton(_ childViewController:DevicesListVC)
 }
 
-class DevicesListVC: UIViewController {
+class DevicesListVC: ViewControllerWithDrawerMenu {
     
     @IBOutlet weak var tableView: UITableView!
     var deviceObjects = [SmartDevice]()
@@ -22,6 +22,13 @@ class DevicesListVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.title = "Devices List"
+        
+        // Debug test
+        if sdm.devicesList.count == 0 {
+            sdm.getBackupTestData()
+        }
         
         
         tableView.delegate = self
@@ -62,7 +69,7 @@ class DevicesListVC: UIViewController {
     
     static func getNavigationViewController() -> UINavigationController {
         let storyboard = UIStoryboard(name: "SearchDevices", bundle: nil)
-        let controller = storyboard.instantiateViewController(withIdentifier: "DevicesListVC")
+        let controller = storyboard.instantiateViewController(withIdentifier: "DevicesListNavigationVC")
         return controller as! UINavigationController
     }
     

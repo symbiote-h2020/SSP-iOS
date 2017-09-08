@@ -125,6 +125,8 @@ class SearchDevicesManager {
 //        let json = JSON(jsonString: str)
 //        self.parseDevicesJson(json)
         
+        logWarn("+++  no devices found getting debug test data +++")
+        
         let dev = SmartDevice.makeDebugTestDevice()
         devicesList.append(dev)
         

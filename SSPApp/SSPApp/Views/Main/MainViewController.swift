@@ -30,7 +30,12 @@ class MainViewController: DrawerController {
         
         // view controllers
         if self.centerViewController == nil {
-            self.centerViewController = SearchDevicesVC.getNavigationViewController()
+            if UIDevice.current.userInterfaceIdiom == .pad {
+                self.centerViewController = DevicesCombinedVC.getNavigationViewController()
+            }
+            else {
+                self.centerViewController = DevicesListVC.getNavigationViewController()
+            }
         }
         if self.leftDrawerViewController == nil {
             self.leftDrawerViewController = DrawerMenuTableVC.getNavigationViewController()

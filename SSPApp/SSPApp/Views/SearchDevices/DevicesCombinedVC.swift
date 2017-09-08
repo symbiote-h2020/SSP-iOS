@@ -8,26 +8,20 @@
 
 import UIKit
 
-class DevicesCombinedVC: UIViewController, DevicesListViewControllerDelegate {
+class DevicesCombinedVC: ViewControllerWithDrawerMenu, DevicesListViewControllerDelegate {
 
     var detailsEmbeddedViewController: DeviceDetailsVC!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.title = "Devices List and details"
         // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-
-    static func getViewController() -> DevicesCombinedVC {
-        let storyboard = UIStoryboard(name: "SearchDevices", bundle: nil)
-        let controller = storyboard.instantiateViewController(withIdentifier: "DevicesCombinedVC")
-        return controller as! DevicesCombinedVC
     }
     
     
@@ -49,14 +43,18 @@ class DevicesCombinedVC: UIViewController, DevicesListViewControllerDelegate {
         detailsEmbeddedViewController.detailItem = childViewController.selectedDevice
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    //MARK - storybord management
+    static func getViewController() -> DevicesCombinedVC {
+        let storyboard = UIStoryboard(name: "SearchDevices", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "DevicesCombinedVC")
+        return controller as! DevicesCombinedVC
     }
-    */
+    
+    
+    static func getNavigationViewController() -> UINavigationController {
+        let storyboard = UIStoryboard(name: "SearchDevices", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "DevicesCombinedNavigationVC")
+        return controller as! UINavigationController
+    }
 
 }

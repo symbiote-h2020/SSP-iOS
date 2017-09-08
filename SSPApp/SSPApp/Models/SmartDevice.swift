@@ -80,6 +80,8 @@ class SmartDevice {
         dev.locationName="Not found"
         dev.platformName="No devices"
         dev.deviceDescription="Debug test device in case of error"
+        dev.status = "TEST"
+        dev.observedProperties.append("debug data")
         return dev
     }
     
