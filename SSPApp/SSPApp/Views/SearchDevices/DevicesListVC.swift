@@ -28,7 +28,7 @@ class DevicesListVC: UIViewController {
         tableView.dataSource = self
     
         NotificationCenter.default.addObserver(self, selector: #selector(notyficationReceived(_:)), name: SymNotificationName.DeviceListLoaded, object: nil)
-        sdm.getTestData()
+        sdm.getResourceList()
     }
     
     

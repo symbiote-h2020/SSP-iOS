@@ -12,7 +12,7 @@ import SwiftyJSON
 class SearchDevicesManager {
     var devicesList: [SmartDevice] = []
 
-    func getTestData() {
+    func getTestDataFromCloud() {
 
         //debug test
 //        self.getBackupTestData()
@@ -20,8 +20,8 @@ class SearchDevicesManager {
         //TODO remove debug function
         
         
-        let url = URL(string: "https://symbiote-dev.man.poznan.pl:8100/coreInterface/v1/query")
-
+        let url = URL(string: "https://symbiote-dev.man.poznan.pl:8100/coreInterface/v1/query") //debug - data from
+        
         let request = NSMutableURLRequest(url: url!)
         request.httpMethod = "GET"
         request.setValue("", forHTTPHeaderField: "X-Auth-Token")  //TODO: proper secure token
@@ -45,6 +45,48 @@ class SearchDevicesManager {
                     self.parseDevicesJson(json)
                 }
 
+            }
+        }
+        
+        task.resume()
+    }
+    
+    func getResourceList() {
+        let url = URL(string: "http://217.72.97.9:8080/innkeeper/list_resources")
+        let request = NSMutableURLRequest(url: url!)
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        //adding request body
+        let json: [String: Any] = ["id": "appId"]
+        let jsonData = try? JSONSerialization.data(withJSONObject: json)
+        request.httpBody = jsonData
+        
+        
+        let task = URLSession.shared.dataTask(with: request as URLRequest) { data,response,error in
+            if let err = error {
+                logError(error.debugDescription)
+                
+                let notiInfoObj  = NotificationInfo(type: ErrorType.connection, info: err.localizedDescription)
+                NotificationCenter.default.postNotificationName(SymNotificationName.DeviceListLoaded, object: notiInfoObj)
+                
+                self.getBackupTestData()
+            }
+            else {
+                let status = (response as! HTTPURLResponse).statusCode
+                if (status >= 400) {
+                    logError("response status: \(status)")
+                }
+                //debug
+                let dataString = String(data: data!, encoding: String.Encoding.utf8)
+                logVerbose(dataString)
+                
+                
+                if let jsonData = data {
+                    let json = JSON(data: jsonData)
+                    self.parseDevicesJson(json)
+                }
+                
             }
         }
         

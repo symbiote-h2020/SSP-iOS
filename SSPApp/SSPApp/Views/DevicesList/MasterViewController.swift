@@ -29,7 +29,7 @@ class MasterViewController: UITableViewController {
         
         
         NotificationCenter.default.addObserver(self, selector: #selector(notyficationReceived(_:)), name: SymNotificationName.DeviceListLoaded, object: nil)
-        sdm.getTestData()
+        sdm.getBackupTestData()
         
         addBackButton()
         //
