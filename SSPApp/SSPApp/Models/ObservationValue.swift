@@ -26,6 +26,16 @@ class ObservationValue {
             if let dVal = Double(valueString) {
                 self.valueDouble = dVal
             }
+            else {  //in case value is with unit like "30.5 %" we must remove leters first
+                let text2 = valueString.replacingOccurrences(of: ",", with: ".")   //decimal point has different formats
+                let decimals = Set("0123456789.".characters)
+                let filtered = String( text2.characters.filter{decimals.contains($0)} )
+                if filtered != "" {
+                    if let dVal = Double(filtered) {
+                        self.valueDouble = dVal
+                    }
+                }
+            }
         }
         
         if j["uom"].exists() {
