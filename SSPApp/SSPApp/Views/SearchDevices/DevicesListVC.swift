@@ -26,9 +26,9 @@ class DevicesListVC: ViewControllerWithDrawerMenu {
         self.title = "Devices List"
         
         // Debug test
-        if sdm.devicesList.count == 0 {
-            sdm.getBackupTestData()
-        }
+//        if sdm.devicesList.count == 0 {
+//            sdm.getBackupTestData()
+//        }
         
         
         tableView.delegate = self

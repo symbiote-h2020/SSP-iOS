@@ -33,7 +33,7 @@ extension AsyncBlock {
 extension NotificationCenter {
     
     func postNotificationName(_ aName: SymNotificationName, object: Any? = nil, userInfo: [AnyHashable: Any]? = nil) {
-        logVerbose("[NSNotificationCenter] Sending notification: \(aName.rawValue), object: \(String(describing: object)), userInfo: \(String(describing: userInfo))")
+        //logVerbose("[NSNotificationCenter] Sending notification: \(aName.rawValue), object: \(String(describing: object)), userInfo: \(String(describing: userInfo))")
    
         // always in main thread
         Async.mainNowOrAsync {

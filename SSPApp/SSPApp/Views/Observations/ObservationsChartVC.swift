@@ -18,16 +18,28 @@ class ObservationsChartVC: UIViewController {
         super.viewDidLoad()
 
         // Debug test
-        if obsMam.currentObservations.count == 0 {
-            obsMam.getTestData()
-        }
+//        if obsMam.currentObservations.count == 0 {
+//            obsMam.getTestData()
+//        }
         
+        NotificationCenter.default.addObserver(self, selector: #selector(notyficationReceived(_:)), name: SymNotificationName.ObservationsListLoaded, object: nil)
+
         updateData()
     }
     
 
     func setObservations(_ om: ObservationsManager) {
         self.obsMam = om
+    }
+    
+    func notyficationReceived(_ notification: Notification) {
+        let notInfo = NotificationInfo(object: notification.object as AnyObject?)
+        if notInfo.errorType == .noErrorSuccessfulFinish {
+            self.updateData()
+        }
+        else {
+            notInfo.showProblemAlert()
+        }
     }
     
     //MARK - storybord management
@@ -47,6 +59,10 @@ class ObservationsChartVC: UIViewController {
     
     
     func updateData() {
+        if obsMam.observationsByLocation.keys.count == 0 { //data not loaded yet
+            return
+        }
+        
         
         // labels and items
         var labels: [String] = []

@@ -17,20 +17,31 @@ class ObservationsVC: UIViewController {
         super.viewDidLoad()
 
         // Debug test
-        if obsMam.currentObservations.count == 0 {
-            obsMam.getTestData()
-        }
+//        if obsMam.currentObservations.count == 0 {
+//            obsMam.getTestData()
+//        }
         
         // Do any additional setup after loading the view.
         tableView.delegate = self
         tableView.dataSource = self
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(notyficationReceived(_:)), name: SymNotificationName.ObservationsListLoaded, object: nil)
     }
     
     func setObservations(_ om: ObservationsManager) {
         self.obsMam = om
     }
     
-    
+    //MARK - data management
+    func notyficationReceived(_ notification: Notification) {
+        let notInfo = NotificationInfo(object: notification.object as AnyObject?)
+        if notInfo.errorType == .noErrorSuccessfulFinish {
+            tableView.reloadData()
+        }
+        else {
+            notInfo.showProblemAlert()
+        }
+    }
     
     
     //MARK - storybord management
