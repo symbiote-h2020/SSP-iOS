@@ -10,10 +10,15 @@ import UIKit
 
 class ActuatorVC: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    
+    var valuesList: [String] = ["test value", "second value" ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        tableView.delegate = self
+        tableView.dataSource = self
     }
 
     //MARK - storybord management
@@ -29,4 +34,27 @@ class ActuatorVC: UIViewController {
         return controller as! UINavigationController
     }
 
+}
+
+
+// MARK: UITableViewDataSource, UITableViewDelegate
+extension ActuatorVC: UITableViewDataSource, UITableViewDelegate {
+    // MARK: - Table View
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return valuesList.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! ActuatorTableViewCell
+        
+        let object = valuesList[indexPath.row]
+        cell.setCell(object)
+        return cell
+    }
+    
 }

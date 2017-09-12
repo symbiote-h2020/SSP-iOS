@@ -12,7 +12,7 @@
         <!--Actuator-->
         <scene sceneID="F8c-HU-PSw">
             <objects>
-                <viewController storyboardIdentifier="ActuatorVC" title="Actuator" id="UMO-Vo-QVy" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ActuatorVC" title="Actuator" id="UMO-Vo-QVy" customClass="ActuatorVC" customModule="SSPApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="49f-um-dcd"/>
                         <viewControllerLayoutGuide type="bottom" id="YXm-EC-nj9"/>
@@ -20,9 +20,57 @@
                     <view key="view" contentMode="scaleToFill" id="rGl-ks-JUo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kLf-ur-eS1">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="597"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="TPt-Wm-usi" customClass="ActuatorTableViewCell" customModule="SSPApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TPt-Wm-usi" id="plf-P6-834">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="bPx-HP-Vn4">
+                                                    <rect key="frame" x="117" y="8" width="118" height="31"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </slider>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZwD-VY-VFG">
+                                                    <rect key="frame" x="8" y="13" width="42" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="ZwD-VY-VFG" id="Tnq-aM-VPM"/>
+                                            <outlet property="slider" destination="bPx-HP-Vn4" id="hCr-Z1-R4Y"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gpB-4l-a05">
+                                <rect key="frame" x="167" y="617" width="40" height="30"/>
+                                <state key="normal" title="Apply"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YXm-EC-nj9" firstAttribute="top" secondItem="gpB-4l-a05" secondAttribute="bottom" constant="20" id="14c-hY-Ap3"/>
+                            <constraint firstItem="gpB-4l-a05" firstAttribute="top" secondItem="kLf-ur-eS1" secondAttribute="bottom" constant="20" id="9Jr-Oz-MQ8"/>
+                            <constraint firstItem="kLf-ur-eS1" firstAttribute="leading" secondItem="rGl-ks-JUo" secondAttribute="leading" id="dRn-j9-dz5"/>
+                            <constraint firstItem="gpB-4l-a05" firstAttribute="centerX" secondItem="rGl-ks-JUo" secondAttribute="centerX" id="g51-aZ-naB"/>
+                            <constraint firstItem="kLf-ur-eS1" firstAttribute="top" secondItem="rGl-ks-JUo" secondAttribute="top" id="tBs-zy-eLp"/>
+                            <constraint firstAttribute="trailing" secondItem="kLf-ur-eS1" secondAttribute="trailing" id="ur3-wC-z5R"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="eC7-9T-bb0"/>
+                    <connections>
+                        <outlet property="tableView" destination="kLf-ur-eS1" id="9qG-kF-GgX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YbW-mb-rnH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

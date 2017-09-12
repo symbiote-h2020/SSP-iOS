@@ -47,6 +47,7 @@
 		767A91F31F62DEEA006BEACC /* observationsFromSSP.json in Resources */ = {isa = PBXBuildFile; fileRef = 767A91F01F62DEEA006BEACC /* observationsFromSSP.json */; };
 		767A91F41F62DEEA006BEACC /* listOfDevicesFromSSP.json in Resources */ = {isa = PBXBuildFile; fileRef = 767A91F11F62DEEA006BEACC /* listOfDevicesFromSSP.json */; };
 		767A91F51F62DEEA006BEACC /* listOfDevicesFromCloud.json in Resources */ = {isa = PBXBuildFile; fileRef = 767A91F21F62DEEA006BEACC /* listOfDevicesFromCloud.json */; };
+		767A91F71F682255006BEACC /* ActuatorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767A91F61F682255006BEACC /* ActuatorTableViewCell.swift */; };
 		768B56071F28C7AC00E8D075 /* SearchDevices.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 768B56061F28C7AC00E8D075 /* SearchDevices.storyboard */; };
 		768B56091F28C7EA00E8D075 /* SearchDevicesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B56081F28C7EA00E8D075 /* SearchDevicesVC.swift */; };
 		768B560C1F29D1B200E8D075 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 768B560B1F29D1B200E8D075 /* Main.storyboard */; };
@@ -98,6 +99,7 @@
 		767A91F01F62DEEA006BEACC /* observationsFromSSP.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = observationsFromSSP.json; path = ../../tmp_tests/observationsFromSSP.json; sourceTree = "<group>"; };
 		767A91F11F62DEEA006BEACC /* listOfDevicesFromSSP.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = listOfDevicesFromSSP.json; path = ../../tmp_tests/listOfDevicesFromSSP.json; sourceTree = "<group>"; };
 		767A91F21F62DEEA006BEACC /* listOfDevicesFromCloud.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = listOfDevicesFromCloud.json; path = ../../tmp_tests/listOfDevicesFromCloud.json; sourceTree = "<group>"; };
+		767A91F61F682255006BEACC /* ActuatorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActuatorTableViewCell.swift; path = Views/Actuators/ActuatorTableViewCell.swift; sourceTree = "<group>"; };
 		768B56061F28C7AC00E8D075 /* SearchDevices.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SearchDevices.storyboard; path = Views/SearchDevices/SearchDevices.storyboard; sourceTree = "<group>"; };
 		768B56081F28C7EA00E8D075 /* SearchDevicesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchDevicesVC.swift; path = Views/SearchDevices/SearchDevicesVC.swift; sourceTree = "<group>"; };
 		768B560B1F29D1B200E8D075 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Views/Main/Main.storyboard; sourceTree = "<group>"; };
@@ -257,6 +259,7 @@
 			children = (
 				767A91EA1F60357B006BEACC /* Actuators.storyboard */,
 				767A91EC1F60359E006BEACC /* ActuatorVC.swift */,
+				767A91F61F682255006BEACC /* ActuatorTableViewCell.swift */,
 			);
 			name = Actuators;
 			sourceTree = "<group>";
@@ -459,6 +462,7 @@
 				76486BE11F4D835C00D9702D /* ObservationsVC.swift in Sources */,
 				76162ED41F28923A0043285D /* TableViewControllerWithDrawerMenu.swift in Sources */,
 				768B56091F28C7EA00E8D075 /* SearchDevicesVC.swift in Sources */,
+				767A91F71F682255006BEACC /* ActuatorTableViewCell.swift in Sources */,
 				76162EDF1F2892B20043285D /* SmartDevice.swift in Sources */,
 				763138061F30B863007A34E9 /* DeviceDetailsVC.swift in Sources */,
 				76486BF51F4EED9600D9702D /* DrawerOption.swift in Sources */,
