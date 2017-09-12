@@ -16,20 +16,17 @@ class ActuatorVC: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    //MARK - storybord management
+    static func getViewController() -> ActuatorVC {
+        let storyboard = UIStoryboard(name: "Actuators", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "ActuatorVC")
+        return controller as! ActuatorVC
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    static func getNavigationViewController() -> UINavigationController {
+        let storyboard = UIStoryboard(name: "Actuators", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "ActuatorNavigationVC")
+        return controller as! UINavigationController
     }
-    */
 
 }

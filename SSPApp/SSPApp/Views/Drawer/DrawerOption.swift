@@ -16,6 +16,6 @@ enum DrawerOption: Int {
     case Search
     case Observations
     case Chart
-    
-    static let count = 3
+    case Actuator
+
 }

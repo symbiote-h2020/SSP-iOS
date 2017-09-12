@@ -40,6 +40,7 @@ class ObservationsManager {
             else {
                 let status = (response as! HTTPURLResponse).statusCode
                 if (status >= 400) {
+                    self.getTestData()
                     logError("response status: \(status)")
                     let notiInfoObj  = NotificationInfo(type: ErrorType.connection, info: "response status: \(status)")
                     NotificationCenter.default.postNotificationName(SymNotificationName.ObservationsListLoaded, object: notiInfoObj)

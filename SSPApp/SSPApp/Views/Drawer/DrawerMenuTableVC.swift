@@ -13,7 +13,7 @@ import UIKit
 
 class DrawerMenuTableVC: UITableViewController {
     
-    let options: [DrawerOption] = [.Search, .Observations, .Chart]
+    let options: [DrawerOption] = [.Search, .Observations, .Chart, .Actuator]
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -66,6 +66,10 @@ class DrawerMenuTableVC: UITableViewController {
         }
         else if menuItem == .Chart {
             let nvc = ObservationsChartVC.getNavigationViewController()
+            self.evo_drawerController?.setCenter(nvc, withCloseAnimation: true, completion: nil)
+        }
+        else if menuItem == .Actuator {
+            let nvc = ActuatorVC.getNavigationViewController()
             self.evo_drawerController?.setCenter(nvc, withCloseAnimation: true, completion: nil)
         }
     }

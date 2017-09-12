@@ -113,7 +113,14 @@ class SearchDevicesManager {
             devicesList.append(dev)
         }
         
-        NotificationCenter.default.postNotificationName(SymNotificationName.DeviceListLoaded)
+        if devicesList.count == 0 {
+            getBackupTestData()
+            let notiInfoObj  = NotificationInfo(type: ErrorType.emptySet, info: "No devices found")
+            NotificationCenter.default.postNotificationName(SymNotificationName.DeviceListLoaded, object: notiInfoObj)
+        }
+        else {
+            NotificationCenter.default.postNotificationName(SymNotificationName.DeviceListLoaded)
+        }
     }
     
     
