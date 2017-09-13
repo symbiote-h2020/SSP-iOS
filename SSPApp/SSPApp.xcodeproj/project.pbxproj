@@ -48,6 +48,7 @@
 		767A91F41F62DEEA006BEACC /* listOfDevicesFromSSP.json in Resources */ = {isa = PBXBuildFile; fileRef = 767A91F11F62DEEA006BEACC /* listOfDevicesFromSSP.json */; };
 		767A91F51F62DEEA006BEACC /* listOfDevicesFromCloud.json in Resources */ = {isa = PBXBuildFile; fileRef = 767A91F21F62DEEA006BEACC /* listOfDevicesFromCloud.json */; };
 		767A91F71F682255006BEACC /* ActuatorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767A91F61F682255006BEACC /* ActuatorTableViewCell.swift */; };
+		767A91F91F6969E2006BEACC /* ActuatorsValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767A91F81F6969E2006BEACC /* ActuatorsValue.swift */; };
 		768B56071F28C7AC00E8D075 /* SearchDevices.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 768B56061F28C7AC00E8D075 /* SearchDevices.storyboard */; };
 		768B56091F28C7EA00E8D075 /* SearchDevicesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B56081F28C7EA00E8D075 /* SearchDevicesVC.swift */; };
 		768B560C1F29D1B200E8D075 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 768B560B1F29D1B200E8D075 /* Main.storyboard */; };
@@ -100,6 +101,7 @@
 		767A91F11F62DEEA006BEACC /* listOfDevicesFromSSP.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = listOfDevicesFromSSP.json; path = ../../tmp_tests/listOfDevicesFromSSP.json; sourceTree = "<group>"; };
 		767A91F21F62DEEA006BEACC /* listOfDevicesFromCloud.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = listOfDevicesFromCloud.json; path = ../../tmp_tests/listOfDevicesFromCloud.json; sourceTree = "<group>"; };
 		767A91F61F682255006BEACC /* ActuatorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActuatorTableViewCell.swift; path = Views/Actuators/ActuatorTableViewCell.swift; sourceTree = "<group>"; };
+		767A91F81F6969E2006BEACC /* ActuatorsValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActuatorsValue.swift; path = Models/ActuatorsValue.swift; sourceTree = "<group>"; };
 		768B56061F28C7AC00E8D075 /* SearchDevices.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SearchDevices.storyboard; path = Views/SearchDevices/SearchDevices.storyboard; sourceTree = "<group>"; };
 		768B56081F28C7EA00E8D075 /* SearchDevicesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchDevicesVC.swift; path = Views/SearchDevices/SearchDevicesVC.swift; sourceTree = "<group>"; };
 		768B560B1F29D1B200E8D075 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Views/Main/Main.storyboard; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				76486BE91F4D9DEA00D9702D /* ObservationLocation.swift */,
 				76486BEB1F4D9E0000D9702D /* ObservationValue.swift */,
 				767A91EE1F6035B2006BEACC /* Actuator.swift */,
+				767A91F81F6969E2006BEACC /* ActuatorsValue.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -437,6 +440,7 @@
 				762C4B211F3B2C1E0052E7D3 /* SSPColors.swift in Sources */,
 				767A91EF1F6035B2006BEACC /* Actuator.swift in Sources */,
 				76486BEE1F4DCD2B00D9702D /* ObservationTableViewCell.swift in Sources */,
+				767A91F91F6969E2006BEACC /* ActuatorsValue.swift in Sources */,
 				763138041F30B4F8007A34E9 /* DevicesListVC.swift in Sources */,
 				76162ED51F28923A0043285D /* ViewControllerWithDrawerMenu.swift in Sources */,
 				76486BF01F4EBA5B00D9702D /* ObservationsChartVC.swift in Sources */,

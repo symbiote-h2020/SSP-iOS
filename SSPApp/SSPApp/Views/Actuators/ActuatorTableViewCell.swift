@@ -12,6 +12,7 @@ class ActuatorTableViewCell: UITableViewCell {
 
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var slider: UISlider!
+    @IBOutlet weak var valueLabel: UILabel!
 
     
     override func awakeFromNib() {
