@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -345,7 +345,7 @@
 				};
 			};
 			buildConfigurationList = 7666B2C81F27716900675435 /* Build configuration list for PBXProject "SSPApp" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -587,10 +587,10 @@
 			baseConfigurationReference = 9EBCCB6CCEC240CBD7C93E95 /* Pods-SSPApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = W9AYBK7AF4;
+				DEVELOPMENT_TEAM = 65KP3UJJWG;
 				INFOPLIST_FILE = SSPApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = pl.psnc.SSPApp;
+				PRODUCT_BUNDLE_IDENTIFIER = pl.psnc.ssp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -601,10 +601,10 @@
 			baseConfigurationReference = 0E145EF66D1388416029A728 /* Pods-SSPApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = W9AYBK7AF4;
+				DEVELOPMENT_TEAM = 65KP3UJJWG;
 				INFOPLIST_FILE = SSPApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = pl.psnc.SSPApp;
+				PRODUCT_BUNDLE_IDENTIFIER = pl.psnc.ssp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
