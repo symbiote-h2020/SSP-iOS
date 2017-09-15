@@ -38,6 +38,7 @@
 		76486BF31F4EEAF800D9702D /* DateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76486BF21F4EEAF800D9702D /* DateTime.swift */; };
 		76486BF51F4EED9600D9702D /* DrawerOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76486BF41F4EED9600D9702D /* DrawerOption.swift */; };
 		76486BF71F4EEE6B00D9702D /* NavigationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76486BF61F4EEE6B00D9702D /* NavigationProtocol.swift */; };
+		7653D2AE1F6BF897004B3235 /* ActuatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7653D2AD1F6BF897004B3235 /* ActuatorManager.swift */; };
 		7666B2D11F27716900675435 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7666B2D01F27716900675435 /* AppDelegate.swift */; };
 		7666B2D81F27716900675435 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7666B2D71F27716900675435 /* Assets.xcassets */; };
 		7666B2DB1F27716900675435 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7666B2D91F27716900675435 /* LaunchScreen.storyboard */; };
@@ -89,6 +90,7 @@
 		76486BF21F4EEAF800D9702D /* DateTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateTime.swift; path = Common/DateTime.swift; sourceTree = "<group>"; };
 		76486BF41F4EED9600D9702D /* DrawerOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawerOption.swift; path = Views/Drawer/DrawerOption.swift; sourceTree = "<group>"; };
 		76486BF61F4EEE6B00D9702D /* NavigationProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationProtocol.swift; path = Views/Drawer/NavigationProtocol.swift; sourceTree = "<group>"; };
+		7653D2AD1F6BF897004B3235 /* ActuatorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActuatorManager.swift; path = DataManagers/ActuatorManager.swift; sourceTree = "<group>"; };
 		7666B2CD1F27716900675435 /* SSPApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSPApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7666B2D01F27716900675435 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7666B2D71F27716900675435 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 			children = (
 				76162EE11F2892F60043285D /* SearchDevicesManager.swift */,
 				76486BE41F4D84CF00D9702D /* ObservationsManager.swift */,
+				7653D2AD1F6BF897004B3235 /* ActuatorManager.swift */,
 			);
 			name = DataManagers;
 			sourceTree = "<group>";
@@ -447,6 +450,7 @@
 				76162EE91F2893390043285D /* Logger.swift in Sources */,
 				76486BEA1F4D9DEA00D9702D /* ObservationLocation.swift in Sources */,
 				767A91ED1F60359E006BEACC /* ActuatorVC.swift in Sources */,
+				7653D2AE1F6BF897004B3235 /* ActuatorManager.swift in Sources */,
 				76486BE51F4D84CF00D9702D /* ObservationsManager.swift in Sources */,
 				7666B2D11F27716900675435 /* AppDelegate.swift in Sources */,
 				763138081F34A7F1007A34E9 /* DevicesCombinedVC.swift in Sources */,

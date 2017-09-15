@@ -13,6 +13,7 @@ import Async
 enum SymNotificationName: String {
     case DeviceListLoaded
     case ObservationsListLoaded
+    case ActuatorAction
 }
 
 extension AsyncBlock {
