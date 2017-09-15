@@ -9,13 +9,19 @@
 import UIKit
 
 class DeviceDetailsVC: UIViewController {
-
-    
-
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var platformNameLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var statusLabel: UILabel!
+    @IBOutlet weak var observesPropertiesLabel: UILabel!
+    
+    var detailItem: SmartDevice? {
+        didSet {
+            // Update the view.
+            configureView()
+        }
+    }
     
     func configureView() {
         // Update the user interface for the detail item.
@@ -31,6 +37,18 @@ class DeviceDetailsVC: UIViewController {
             }
             if let lL = locationLabel {
                 lL.text = d.locationName
+            }
+            if let sL = statusLabel {
+                sL.text = d.status
+                if (d.status.uppercased() == "ONLINE") {
+                    statusLabel.textColor = SSPColors.yes
+                }
+                else {
+                    statusLabel.textColor = SSPColors.no
+                }
+            }
+            if let opL = observesPropertiesLabel {
+                opL.text = d.observedProperties.flatMap({$0}).joined(separator: ",");
             }
         }
     }
@@ -48,12 +66,7 @@ class DeviceDetailsVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    var detailItem: SmartDevice? {
-        didSet {
-            // Update the view.
-            configureView()
-        }
-    }
+
     
     func setupGui() {
         self.view.backgroundColor = SSPColors.background
@@ -74,7 +87,7 @@ class DeviceDetailsVC: UIViewController {
 
     
     
-    //MARK: - observations
+    //MARK: - actions buttons
     @IBAction func showObservations(_ sender: Any) {
         let om = ObservationsManager()
         om.getObservations(forDeviceId: detailItem?.id)
@@ -91,6 +104,12 @@ class DeviceDetailsVC: UIViewController {
         
         let vc = ObservationsChartVC.getViewController()
         vc.setObservations(om)
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @IBAction func actuateButtonTapped(_ sender: Any) {
+        let vc = ActuatorVC.getViewController()
+        vc.setSmartDevice(detailItem)
         navigationController?.pushViewController(vc, animated: true)
     }
     

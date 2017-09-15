@@ -33,6 +33,15 @@ class ActuatorVC: UIViewController {
         let controller = storyboard.instantiateViewController(withIdentifier: "ActuatorNavigationVC")
         return controller as! UINavigationController
     }
+    
+    func setSmartDevice(_ device: SmartDevice?) {
+        if let sdev = device {
+            logVerbose("accturator for device \(sdev.id)")
+        }
+        else {
+            logError("++++ Smart device for actuatorVC is nil")
+        }
+    }
 
 }
 
