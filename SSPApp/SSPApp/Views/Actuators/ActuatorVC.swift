@@ -10,7 +10,7 @@ import UIKit
 
 class ActuatorVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
-    var valuesList: [String] = ["test value", "second value" ]
+    var valuesList: [ActuatorsValue] = [ActuatorsValue]()
     var theDevice: SmartDevice? = nil
     
     override func viewDidLoad() {
@@ -19,7 +19,11 @@ class ActuatorVC: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
+        tableView.tableFooterView = UIView()
+        
         NotificationCenter.default.addObserver(self, selector: #selector(notyficationReceived(_:)), name: SymNotificationName.ActuatorAction, object: nil)
+        
+        prepareValuesList()
     }
 
     func notyficationReceived(_ notification: Notification) {
@@ -28,6 +32,19 @@ class ActuatorVC: UIViewController {
         
         notInfo.showProblemAlert()
     }
+    
+    func prepareValuesList() {
+        let r = ActuatorsValue()
+        let g = ActuatorsValue()
+        let b = ActuatorsValue()
+        r.name = "RED"
+        g.name = "GREEN"
+        b.name = "BLUE"
+        valuesList.append(r)
+        valuesList.append(g)
+        valuesList.append(b)
+    }
+    
     
     //MARK - storybord management
     static func getViewController() -> ActuatorVC {

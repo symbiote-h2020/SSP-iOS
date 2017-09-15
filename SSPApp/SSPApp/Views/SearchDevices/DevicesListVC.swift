@@ -34,6 +34,8 @@ class DevicesListVC: ViewControllerWithDrawerMenu {
         tableView.delegate = self
         tableView.dataSource = self
     
+        tableView.tableFooterView = UIView()
+        
         NotificationCenter.default.addObserver(self, selector: #selector(notyficationReceived(_:)), name: SymNotificationName.DeviceListLoaded, object: nil)
         sdm.getResourceList()
     }

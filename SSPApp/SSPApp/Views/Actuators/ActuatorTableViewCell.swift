@@ -26,8 +26,16 @@ class ActuatorTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setCell(_ str: String) {
-        nameLabel.text = str
+    func setCell(_ av: ActuatorsValue) {
+        nameLabel.text = av.name
+        slider.minimumValue = av.minValue
+        slider.maximumValue = av.maxValue
+        slider.value = av.value
+        valueLabel.text = String(format: "%.1f",av.value)
     }
 
+    @IBAction func sliderValueChanged(_ sender: Any) {
+        let val = slider.value
+        valueLabel.text = String(format: "%.1f", val)
+    }
 }

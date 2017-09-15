@@ -11,6 +11,8 @@ import Foundation
 
 class ActuatorsValue {
     var name: String = "red"
-    var value: Double = 255.0
+    var value: Float = 100.0
+    var maxValue: Float = 255.0
+    var minValue: Float = 0.0
     
 }
