@@ -11,13 +11,15 @@ import SwiftyJSON
 
 class ActuatorManager {
     
-    func sendRequest(_ smartDeviceId: String) {
+    func sendRequest(_ smartDeviceId: String, valuesList: [ActuatorsValue]) {
         let url = URL(string: Constants.restApiUrl + "/rap/Actuator/" + smartDeviceId)
         let request = NSMutableURLRequest(url: url!)
         request.httpMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         
         //adding request body
+        //TODO  buildJsonFromValues
+        
         let json: [String: Any] = ["id": "appId"]
         let jsonData = try? JSONSerialization.data(withJSONObject: json)
         request.httpBody = jsonData
@@ -51,4 +53,5 @@ class ActuatorManager {
         task.resume()
     }
     
+   // private func buildJsonFromValues
 }

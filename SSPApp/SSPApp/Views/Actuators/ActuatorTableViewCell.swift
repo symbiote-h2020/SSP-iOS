@@ -10,6 +10,8 @@ import UIKit
 
 class ActuatorTableViewCell: UITableViewCell {
 
+    var theValue: ActuatorsValue?
+    
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var valueLabel: UILabel!
@@ -27,6 +29,7 @@ class ActuatorTableViewCell: UITableViewCell {
     }
     
     func setCell(_ av: ActuatorsValue) {
+        theValue = av
         nameLabel.text = av.name
         slider.minimumValue = av.minValue
         slider.maximumValue = av.maxValue
@@ -37,5 +40,6 @@ class ActuatorTableViewCell: UITableViewCell {
     @IBAction func sliderValueChanged(_ sender: Any) {
         let val = slider.value
         valueLabel.text = String(format: "%.1f", val)
+        theValue?.value = val
     }
 }
