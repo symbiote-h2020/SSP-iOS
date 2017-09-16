@@ -59,6 +59,12 @@ class NotificationInfo  {
 
 // utils
 extension NotificationInfo {
+    func showOkAlert() {
+        let alertController = UIAlertController(title: "OK", message: self.infoText, preferredStyle: .alert)
+        let defaultAction = UIAlertAction(title: "ok", style: .default, handler: nil)
+        alertController.addAction(defaultAction)
+        UIApplication.shared.keyWindow?.rootViewController?.present(alertController, animated: true, completion: nil)
+    }
     
     func showProblemAlert() {
         let alertController = UIAlertController(title: "error", message: self.infoText, preferredStyle: .alert)

@@ -18,12 +18,19 @@ class ActuatorManager {
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         
         //adding request body
-        //TODO  buildJsonFromValues
+        let dict = buildActionsDict(valuesList)
         
-        let json: [String: Any] = ["id": "appId"]
+        let json: [String: Any] = [
+            "id": smartDeviceId,
+            "action" : dict
+            ]
         let jsonData = try? JSONSerialization.data(withJSONObject: json)
         request.httpBody = jsonData
         
+        //debug
+        let dataString = String(data: jsonData!, encoding: String.Encoding.utf8)
+        logVerbose("sending actuator json: \n" + dataString!)
+
         
         let task = URLSession.shared.dataTask(with: request as URLRequest) { data,response,error in
             if let err = error {
@@ -53,5 +60,13 @@ class ActuatorManager {
         task.resume()
     }
     
-   // private func buildJsonFromValues
+    private func buildActionsDict(_ valuesList: [ActuatorsValue]) -> [String: Int] {
+        var retDict = [String: Int]()
+        
+        for v in valuesList {
+            retDict[v.name] = v.value
+        }
+        
+        return retDict
+    }
 }

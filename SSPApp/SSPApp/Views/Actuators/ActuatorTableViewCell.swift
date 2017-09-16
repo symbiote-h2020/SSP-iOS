@@ -31,15 +31,15 @@ class ActuatorTableViewCell: UITableViewCell {
     func setCell(_ av: ActuatorsValue) {
         theValue = av
         nameLabel.text = av.name
-        slider.minimumValue = av.minValue
-        slider.maximumValue = av.maxValue
-        slider.value = av.value
-        valueLabel.text = String(format: "%.1f",av.value)
+        slider.minimumValue = Float(av.minValue)
+        slider.maximumValue = Float(av.maxValue)
+        slider.value = Float(av.value)
+        valueLabel.text = String(av.value)
     }
 
     @IBAction func sliderValueChanged(_ sender: Any) {
-        let val = slider.value
-        valueLabel.text = String(format: "%.1f", val)
+        let val = Int(slider.value)
+        valueLabel.text = String(val)
         theValue?.value = val
     }
 }

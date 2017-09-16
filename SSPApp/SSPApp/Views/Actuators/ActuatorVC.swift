@@ -30,10 +30,23 @@ class ActuatorVC: UIViewController {
         let notInfo = NotificationInfo(object: notification.object as AnyObject?)
         log("ActuatorVC notification = \(notInfo.infoText)")
         
-        notInfo.showProblemAlert()
+        if notInfo.errorType == .noErrorSuccessfulFinish {
+            notInfo.showOkAlert()
+        }
+        else {
+            notInfo.showProblemAlert()
+        }
     }
     
     func prepareValuesList() {
+        if let d = theDevice {
+            for op in d.observedProperties {
+                let av = ActuatorsValue()
+                av.name = op
+                valuesList.append(av)
+            }
+        }
+        /* hardcoded debug test
         let r = ActuatorsValue()
         let g = ActuatorsValue()
         let b = ActuatorsValue()
@@ -43,6 +56,7 @@ class ActuatorVC: UIViewController {
         valuesList.append(r)
         valuesList.append(g)
         valuesList.append(b)
+         */
     }
     
     
