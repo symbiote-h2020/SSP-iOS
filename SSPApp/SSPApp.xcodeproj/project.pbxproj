@@ -53,6 +53,8 @@
 		768B56071F28C7AC00E8D075 /* SearchDevices.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 768B56061F28C7AC00E8D075 /* SearchDevices.storyboard */; };
 		768B56091F28C7EA00E8D075 /* SearchDevicesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B56081F28C7EA00E8D075 /* SearchDevicesVC.swift */; };
 		768B560C1F29D1B200E8D075 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 768B560B1F29D1B200E8D075 /* Main.storyboard */; };
+		769C82651F70DF4100139A9C /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 769C82641F70DF4100139A9C /* Settings.storyboard */; };
+		769C82671F70DF5B00139A9C /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769C82661F70DF5B00139A9C /* SettingsVC.swift */; };
 		EEF88BDC63FE38CBD748549B /* Pods_SSPApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B4D6CB0A2C850EEF642ED40 /* Pods_SSPApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -107,6 +109,8 @@
 		768B56061F28C7AC00E8D075 /* SearchDevices.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SearchDevices.storyboard; path = Views/SearchDevices/SearchDevices.storyboard; sourceTree = "<group>"; };
 		768B56081F28C7EA00E8D075 /* SearchDevicesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchDevicesVC.swift; path = Views/SearchDevices/SearchDevicesVC.swift; sourceTree = "<group>"; };
 		768B560B1F29D1B200E8D075 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Views/Main/Main.storyboard; sourceTree = "<group>"; };
+		769C82641F70DF4100139A9C /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Settings.storyboard; path = Views/Settings/Settings.storyboard; sourceTree = "<group>"; };
+		769C82661F70DF5B00139A9C /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsVC.swift; path = Views/Settings/SettingsVC.swift; sourceTree = "<group>"; };
 		9EBCCB6CCEC240CBD7C93E95 /* Pods-SSPApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSPApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SSPApp/Pods-SSPApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,6 +135,7 @@
 				76162ED61F2892410043285D /* DevicesList */,
 				76162ECD1F2892220043285D /* Drawer */,
 				76162EC91F2780A30043285D /* Main */,
+				769C82631F70DEDF00139A9C /* Settings */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -290,6 +295,15 @@
 			name = SearchDevices;
 			sourceTree = "<group>";
 		};
+		769C82631F70DEDF00139A9C /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				769C82641F70DF4100139A9C /* Settings.storyboard */,
+				769C82661F70DF5B00139A9C /* SettingsVC.swift */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
 		A9E3D6F10F6F53B96FF1B0AA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -381,6 +395,7 @@
 				768B560C1F29D1B200E8D075 /* Main.storyboard in Resources */,
 				768B56071F28C7AC00E8D075 /* SearchDevices.storyboard in Resources */,
 				767A91F51F62DEEA006BEACC /* listOfDevicesFromCloud.json in Resources */,
+				769C82651F70DF4100139A9C /* Settings.storyboard in Resources */,
 				76162EDB1F2892530043285D /* DevicesList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,6 +489,7 @@
 				76162EDF1F2892B20043285D /* SmartDevice.swift in Sources */,
 				763138061F30B863007A34E9 /* DeviceDetailsVC.swift in Sources */,
 				76486BF51F4EED9600D9702D /* DrawerOption.swift in Sources */,
+				769C82671F70DF5B00139A9C /* SettingsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

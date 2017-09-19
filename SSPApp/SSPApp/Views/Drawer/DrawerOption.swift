@@ -13,6 +13,8 @@ import UIKit
 
 
 enum DrawerOption: Int {
+    case DevicesList
+    case Settings
     case Search
     case Observations
     case Chart

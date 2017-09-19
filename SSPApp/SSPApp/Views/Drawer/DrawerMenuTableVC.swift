@@ -13,7 +13,7 @@ import UIKit
 
 class DrawerMenuTableVC: UITableViewController {
     
-    let options: [DrawerOption] = [.Search, .Observations, .Chart, .Actuator]
+    let options: [DrawerOption] = [.DevicesList, .Settings] //debug, .Search, .Observations, .Chart, .Actuator]
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -56,7 +56,15 @@ class DrawerMenuTableVC: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let menuItem = options[indexPath.row]
-        if menuItem == .Search {
+        if menuItem == .DevicesList {
+            let nvc = DevicesListVC.getNavigationViewController()
+            self.evo_drawerController?.setCenter(nvc, withCloseAnimation: true, completion: nil)
+        }
+        else if menuItem == .Settings {
+            let nvc = SettingsVC.getNavigationViewController()
+            self.evo_drawerController?.setCenter(nvc, withCloseAnimation: true, completion: nil)
+        }
+        else if menuItem == .Search {
             let nvc = SearchDevicesVC.getNavigationViewController()
             self.evo_drawerController?.setCenter(nvc, withCloseAnimation: true, completion: nil)
         }
