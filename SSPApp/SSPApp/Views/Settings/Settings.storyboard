@@ -35,9 +35,9 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UqZ-SE-n4J">
-                                <rect key="frame" x="156" y="594" width="62" height="41"/>
+                                <rect key="frame" x="160.5" y="594" width="53" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Apply"/>
+                                <state key="normal" title="Save"/>
                                 <connections>
                                     <action selector="applyButtonTapped:" destination="8jj-ap-Q7c" eventType="touchUpInside" id="dcZ-cd-dmb"/>
                                 </connections>

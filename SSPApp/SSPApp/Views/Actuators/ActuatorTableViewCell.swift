@@ -15,7 +15,7 @@ class ActuatorTableViewCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var valueLabel: UILabel!
-
+    @IBOutlet weak var valueSwitch: UISwitch!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -31,15 +31,61 @@ class ActuatorTableViewCell: UITableViewCell {
     func setCell(_ av: ActuatorsValue) {
         theValue = av
         nameLabel.text = av.name
-        slider.minimumValue = Float(av.minValue)
-        slider.maximumValue = Float(av.maxValue)
-        slider.value = Float(av.value)
-        valueLabel.text = String(av.value)
+        if av.name == "rele" || av.name == "relay" {
+            setOnOffType()
+        }
+        else {
+            setRangeType()
+        }
+        
+
     }
 
+    func setOnOffType() {
+        if let av = theValue {
+            slider.isHidden = true
+            valueLabel.isHidden = true
+            valueSwitch.isHidden = false
+            
+            
+            av.maxValue = 1
+            av.minValue = 0
+            av.value = 0
+        }
+    }
+    
+    func setRangeType() {
+        if let av = theValue {
+            slider.isHidden = false
+            valueLabel.isHidden = false
+            valueSwitch.isHidden = true
+            
+            
+            slider.minimumValue = Float(av.minValue)
+            slider.maximumValue = Float(av.maxValue)
+            slider.value = Float(av.value)
+            valueLabel.text = String(av.value)
+        }
+    }
+    
+    
     @IBAction func sliderValueChanged(_ sender: Any) {
         let val = Int(slider.value)
         valueLabel.text = String(val)
         theValue?.value = val
     }
+    
+    
+    @IBAction func valueSwitchChanged(_ sender: Any) {
+        var val = 0
+        
+        if valueSwitch.isOn {
+            val = 1
+        }
+        
+        valueLabel.text = String(val)
+        theValue?.value = val
+
+    }
+    
 }

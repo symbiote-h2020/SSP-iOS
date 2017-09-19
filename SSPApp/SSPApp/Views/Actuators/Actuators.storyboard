@@ -30,7 +30,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TPt-Wm-usi" id="plf-P6-834">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="bPx-HP-Vn4">
@@ -51,11 +51,19 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iiw-ug-kjW">
+                                                    <rect key="frame" x="310" y="16" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="valueSwitchChanged:" destination="TPt-Wm-usi" eventType="valueChanged" id="tSH-4G-abO"/>
+                                                    </connections>
+                                                </switch>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailingMargin" secondItem="NVn-jj-NYY" secondAttribute="trailing" constant="8" id="7hK-nx-vm3"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="bPx-HP-Vn4" secondAttribute="trailing" constant="8" id="KmC-a1-OkS"/>
+                                                <constraint firstItem="Iiw-ug-kjW" firstAttribute="top" secondItem="plf-P6-834" secondAttribute="top" constant="16" id="Vwn-Lc-NZT"/>
                                                 <constraint firstItem="ZwD-VY-VFG" firstAttribute="leading" secondItem="plf-P6-834" secondAttribute="leadingMargin" constant="8" id="Yeh-dp-wSM"/>
+                                                <constraint firstAttribute="trailing" secondItem="Iiw-ug-kjW" secondAttribute="trailing" constant="16" id="du3-tf-F42"/>
                                                 <constraint firstItem="ZwD-VY-VFG" firstAttribute="top" secondItem="NVn-jj-NYY" secondAttribute="top" id="haI-nx-zzZ"/>
                                                 <constraint firstItem="bPx-HP-Vn4" firstAttribute="leading" secondItem="plf-P6-834" secondAttribute="leadingMargin" constant="8" id="iLj-KI-Myp"/>
                                                 <constraint firstItem="bPx-HP-Vn4" firstAttribute="bottom" secondItem="plf-P6-834" secondAttribute="bottomMargin" id="iyc-MY-mXr"/>
@@ -66,6 +74,7 @@
                                             <outlet property="nameLabel" destination="ZwD-VY-VFG" id="Tnq-aM-VPM"/>
                                             <outlet property="slider" destination="bPx-HP-Vn4" id="hCr-Z1-R4Y"/>
                                             <outlet property="valueLabel" destination="NVn-jj-NYY" id="elL-fo-jXA"/>
+                                            <outlet property="valueSwitch" destination="Iiw-ug-kjW" id="4Ib-Hk-iHh"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
