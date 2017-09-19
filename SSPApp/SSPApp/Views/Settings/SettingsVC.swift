@@ -26,6 +26,9 @@ class SettingsVC: ViewControllerWithDrawerMenu {
         
         if notInfo.errorType == .noErrorSuccessfulFinish {
             notInfo.showOkAlert()
+            
+            //debug - close app
+            exit(0);
         }
         else {
             notInfo.showProblemAlert()

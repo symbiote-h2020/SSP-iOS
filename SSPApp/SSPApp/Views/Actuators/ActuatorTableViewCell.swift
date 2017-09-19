@@ -37,8 +37,6 @@ class ActuatorTableViewCell: UITableViewCell {
         else {
             setRangeType()
         }
-        
-
     }
 
     func setOnOffType() {
