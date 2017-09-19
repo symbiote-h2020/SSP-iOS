@@ -9,6 +9,39 @@
 import UIKit
 
 class SettingsVC: ViewControllerWithDrawerMenu {
+    
+    @IBOutlet weak var endpointUrlTextField: UITextField!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        endpointUrlTextField.text = Constants.restApiUrl
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(notyficationReceived(_:)), name: SymNotificationName.Settings, object: nil)
+    }
+    
+    func notyficationReceived(_ notification: Notification) {
+        let notInfo = NotificationInfo(object: notification.object as AnyObject?)
+        log("SettingsVC notification = \(notInfo.infoText)")
+        
+        if notInfo.errorType == .noErrorSuccessfulFinish {
+            notInfo.showOkAlert()
+        }
+        else {
+            notInfo.showProblemAlert()
+        }
+    }
+    
+    
+    
+    
+    @IBAction func applyButtonTapped(_ sender: Any) {
+        let stMan = SettingsManager()
+        stMan.allSettings.restApiUrl = endpointUrlTextField.text!
+        stMan.saveSettings()
+    }
+    
+    
     //MARK - storybord management
     static func getViewController() -> SettingsVC {
         let storyboard = UIStoryboard(name: "Settings", bundle: nil)

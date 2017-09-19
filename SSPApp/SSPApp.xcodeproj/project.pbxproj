@@ -55,6 +55,8 @@
 		768B560C1F29D1B200E8D075 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 768B560B1F29D1B200E8D075 /* Main.storyboard */; };
 		769C82651F70DF4100139A9C /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 769C82641F70DF4100139A9C /* Settings.storyboard */; };
 		769C82671F70DF5B00139A9C /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769C82661F70DF5B00139A9C /* SettingsVC.swift */; };
+		769C82691F70E20D00139A9C /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769C82681F70E20D00139A9C /* SettingsManager.swift */; };
+		769C826B1F70E2DE00139A9C /* GlobalSettingsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769C826A1F70E2DE00139A9C /* GlobalSettingsContainer.swift */; };
 		EEF88BDC63FE38CBD748549B /* Pods_SSPApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B4D6CB0A2C850EEF642ED40 /* Pods_SSPApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -111,6 +113,8 @@
 		768B560B1F29D1B200E8D075 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Views/Main/Main.storyboard; sourceTree = "<group>"; };
 		769C82641F70DF4100139A9C /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Settings.storyboard; path = Views/Settings/Settings.storyboard; sourceTree = "<group>"; };
 		769C82661F70DF5B00139A9C /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsVC.swift; path = Views/Settings/SettingsVC.swift; sourceTree = "<group>"; };
+		769C82681F70E20D00139A9C /* SettingsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsManager.swift; path = DataManagers/SettingsManager.swift; sourceTree = "<group>"; };
+		769C826A1F70E2DE00139A9C /* GlobalSettingsContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobalSettingsContainer.swift; path = Models/GlobalSettingsContainer.swift; sourceTree = "<group>"; };
 		9EBCCB6CCEC240CBD7C93E95 /* Pods-SSPApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSPApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SSPApp/Pods-SSPApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -181,6 +185,7 @@
 				76486BEB1F4D9E0000D9702D /* ObservationValue.swift */,
 				767A91EE1F6035B2006BEACC /* Actuator.swift */,
 				767A91F81F6969E2006BEACC /* ActuatorsValue.swift */,
+				769C826A1F70E2DE00139A9C /* GlobalSettingsContainer.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -191,6 +196,7 @@
 				76162EE11F2892F60043285D /* SearchDevicesManager.swift */,
 				76486BE41F4D84CF00D9702D /* ObservationsManager.swift */,
 				7653D2AD1F6BF897004B3235 /* ActuatorManager.swift */,
+				769C82681F70E20D00139A9C /* SettingsManager.swift */,
 			);
 			name = DataManagers;
 			sourceTree = "<group>";
@@ -463,6 +469,7 @@
 				76162ED51F28923A0043285D /* ViewControllerWithDrawerMenu.swift in Sources */,
 				76486BF01F4EBA5B00D9702D /* ObservationsChartVC.swift in Sources */,
 				76162EE91F2893390043285D /* Logger.swift in Sources */,
+				769C82691F70E20D00139A9C /* SettingsManager.swift in Sources */,
 				76486BEA1F4D9DEA00D9702D /* ObservationLocation.swift in Sources */,
 				767A91ED1F60359E006BEACC /* ActuatorVC.swift in Sources */,
 				7653D2AE1F6BF897004B3235 /* ActuatorManager.swift in Sources */,
@@ -487,6 +494,7 @@
 				768B56091F28C7EA00E8D075 /* SearchDevicesVC.swift in Sources */,
 				767A91F71F682255006BEACC /* ActuatorTableViewCell.swift in Sources */,
 				76162EDF1F2892B20043285D /* SmartDevice.swift in Sources */,
+				769C826B1F70E2DE00139A9C /* GlobalSettingsContainer.swift in Sources */,
 				763138061F30B863007A34E9 /* DeviceDetailsVC.swift in Sources */,
 				76486BF51F4EED9600D9702D /* DrawerOption.swift in Sources */,
 				769C82671F70DF5B00139A9C /* SettingsVC.swift in Sources */,
