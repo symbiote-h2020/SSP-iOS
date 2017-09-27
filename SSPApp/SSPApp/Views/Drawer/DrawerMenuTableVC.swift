@@ -57,8 +57,14 @@ class DrawerMenuTableVC: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let menuItem = options[indexPath.row]
         if menuItem == .DevicesList {
-            let nvc = DevicesListVC.getNavigationViewController()
-            self.evo_drawerController?.setCenter(nvc, withCloseAnimation: true, completion: nil)
+            if UIDevice.current.userInterfaceIdiom == .pad {
+                let nvc = DevicesCombinedVC.getNavigationViewController()
+                self.evo_drawerController?.setCenter(nvc, withCloseAnimation: true, completion: nil)
+            }
+            else {
+                let nvc = DevicesListVC.getNavigationViewController()
+                self.evo_drawerController?.setCenter(nvc, withCloseAnimation: true, completion: nil)
+            }
         }
         else if menuItem == .Settings {
             let nvc = SettingsVC.getNavigationViewController()
