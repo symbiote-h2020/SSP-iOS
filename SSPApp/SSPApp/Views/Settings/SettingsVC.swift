@@ -17,6 +17,10 @@ class SettingsVC: ViewControllerWithDrawerMenu {
         
         endpointUrlTextField.text = Constants.restApiUrl
         
+        //hiding keyboard
+        endpointUrlTextField.delegate = self
+        self.hideKeyboardWhenTappedAround()
+        
         NotificationCenter.default.addObserver(self, selector: #selector(notyficationReceived(_:)), name: SymNotificationName.Settings, object: nil)
     }
     
@@ -29,6 +33,7 @@ class SettingsVC: ViewControllerWithDrawerMenu {
             
             //debug - close app
             exit(0);
+            //TODO: proper refresment of list
         }
         else {
             notInfo.showProblemAlert()
@@ -60,4 +65,12 @@ class SettingsVC: ViewControllerWithDrawerMenu {
     }
     
 
+}
+
+//MARK - hiding keyboard
+extension SettingsVC: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return true
+    }
 }

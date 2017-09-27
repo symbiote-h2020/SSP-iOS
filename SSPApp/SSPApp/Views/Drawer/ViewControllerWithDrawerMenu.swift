@@ -27,4 +27,16 @@ class ViewControllerWithDrawerMenu : UIViewController {
     func leftDrawerButtonPress(_ sender: AnyObject?) {
         self.evo_drawerController?.toggleDrawerSide(.left, animated: true, completion: nil)
     }
+    
+    
+    //MARK - keyboard hiding, when press outside textField
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewControllerWithDrawerMenu.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    func dismissKeyboard() {
+        view.endEditing(true)
+    }
 }
