@@ -1,10 +1,22 @@
-platform :ios, '9.0'
+#platform :ios, '9.0'
+use_frameworks!
+workspace 'SymAgent'
 
-target 'SSPApp' do
-  use_frameworks!
+
+# shared pods
+pod 'SwiftyJSON'
+
+# SymAgent
+target :SymAgent do
+    project 'SymAgent/SymAgent.xcodeproj'
+end
+
+
+#the app
+target :SSPApp do
+  project 'SSPApp.xcodeproj'
 
   pod 'Charts'
-  pod 'SwiftyJSON'
   pod 'AsyncSwift'
   pod 'DrawerController'
 end
