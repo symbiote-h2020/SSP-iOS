@@ -10,26 +10,26 @@ import Foundation
 import SwiftyJSON
 
 
-class SmartDevice {
-    var platformId: String = ""
-    var platformName: String = ""
-    var owner: String =  ""
-    var name: String = ""
-    var id: String = ""
-    var deviceDescription: String = ""
-    var status: String = ""
+public class SmartDevice {
+    public var platformId: String = ""
+    public var platformName: String = ""
+    public var owner: String =  ""
+    public var name: String = ""
+    public var id: String = ""
+    public var deviceDescription: String = ""
+    public var status: String = ""
     
     //location
-    var locationName: String = ""
-    var locationLatitude: String = ""
-    var locationLongitude: String = ""
-    var locationAltitude: String = ""
+    public var locationName: String = ""
+    public var locationLatitude: String = ""
+    public var locationLongitude: String = ""
+    public var locationAltitude: String = ""
     
     //array
-    var observedProperties: [String] = [String]()
-    var resourceType: [String] = [String]()
+    public var observedProperties: [String] = [String]()
+    public var resourceType: [String] = [String]()
     
-    convenience init(j: JSON)  {
+    public convenience init(j: JSON)  {
         self.init()
         
         if j["platformId"].exists()     { platformId = j["platformId"].stringValue }
@@ -73,7 +73,7 @@ class SmartDevice {
     }
     
     
-    static func makeDebugTestDevice() -> SmartDevice {
+    public static func makeDebugTestDevice() -> SmartDevice {
         let dev = SmartDevice()
         dev.id="aa"
         dev.name="Error"

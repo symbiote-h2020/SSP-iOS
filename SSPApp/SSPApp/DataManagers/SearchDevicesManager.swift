@@ -8,6 +8,7 @@
 
 import Foundation
 import SwiftyJSON
+import SymAgent
 
 class SearchDevicesManager {
     var devicesList: [SmartDevice] = []

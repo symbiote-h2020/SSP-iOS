@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SymAgent
 
 class DeviceTableViewCell: UITableViewCell {
 

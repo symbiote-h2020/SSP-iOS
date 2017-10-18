@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SymAgent
 
 class DeviceDetailsVC: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!

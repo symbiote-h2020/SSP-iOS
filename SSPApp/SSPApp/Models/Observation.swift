@@ -9,20 +9,20 @@
 import Foundation
 import SwiftyJSON
 
-class Observation {
+public class Observation {
     
-    var resourceId: String = ""
-    var resultTime: String = ""  //TODO parse time to DateTime
-    var samplingTime: String = ""
-    var time = DateTime()
+    public var resourceId: String = ""
+    public var resultTime: String = ""  //TODO parse time to DateTime
+    public var samplingTime: String = ""
+    public var time = DateTime()
     
-    var location: ObservationLocation?
-    var values: [ObservationValue] = [ObservationValue]()
+    public var location: ObservationLocation?
+    public var values: [ObservationValue] = [ObservationValue]()
     
-    var valuesCombined: String = ""
+    public var valuesCombined: String = ""
     
     
-    convenience init(j: JSON)  {
+    public convenience init(j: JSON)  {
         self.init()
         
         
@@ -48,7 +48,7 @@ class Observation {
         }
     }
     
-    func combineValues() {
+    public func combineValues() {
         for v in values {
             valuesCombined += v.valueString + "; "
         }

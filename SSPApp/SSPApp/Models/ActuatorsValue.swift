@@ -9,10 +9,12 @@
 import Foundation
 
 
-class ActuatorsValue {
-    var name: String = "red"
-    var value: Int = 100
-    var maxValue: Int = 255
-    var minValue: Int = 0
+public class ActuatorsValue {
+    public init() {}
+    
+    public var name: String = "red"
+    public var value: Int = 100
+    public var maxValue: Int = 255
+    public var minValue: Int = 0
     
 }

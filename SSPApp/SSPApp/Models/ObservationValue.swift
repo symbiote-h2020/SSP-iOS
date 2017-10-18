@@ -9,16 +9,16 @@
 import Foundation
 import SwiftyJSON
 
-class ObservationValue {
-    var valueString: String = ""
-    var valueDouble: Double = 0.0
+public class ObservationValue {
+    public var valueString: String = ""
+    public var valueDouble: Double = 0.0
     
-    var unitLabel: String = ""
-    var unitSymbol: String = ""
-    var propertyLabel: String = ""
+    public var unitLabel: String = ""
+    public var unitSymbol: String = ""
+    public var propertyLabel: String = ""
 
     
-    convenience init(j: JSON)  {
+    public convenience init(j: JSON)  {
         self.init()
         
         if j["value"].exists()     {

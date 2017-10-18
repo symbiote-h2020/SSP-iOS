@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SymAgent
 
 class SettingsManager {
     var allSettings: GlobalSettingsContainer = GlobalSettingsContainer()

@@ -7,13 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C3C24674B67B705EA0329FB /* Pods_SymAgent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D931D50813761836BED51380 /* Pods_SymAgent.framework */; };
+		7605A2031F9731360096964F /* SmartDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A1FB1F9731360096964F /* SmartDevice.swift */; };
+		7605A2041F9731360096964F /* Observation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A1FC1F9731360096964F /* Observation.swift */; };
+		7605A2051F9731360096964F /* ObservationLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A1FD1F9731360096964F /* ObservationLocation.swift */; };
+		7605A2061F9731360096964F /* ObservationValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A1FE1F9731360096964F /* ObservationValue.swift */; };
+		7605A2071F9731360096964F /* Actuator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A1FF1F9731360096964F /* Actuator.swift */; };
+		7605A2081F9731360096964F /* ActuatorsValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A2001F9731360096964F /* ActuatorsValue.swift */; };
+		7605A2091F9731360096964F /* GlobalSettingsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A2011F9731360096964F /* GlobalSettingsContainer.swift */; };
+		7605A20E1F9731D70096964F /* DateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A20D1F9731D70096964F /* DateTime.swift */; };
+		7605A2121F97320D0096964F /* Pods_SymAgent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7605A2111F97320D0096964F /* Pods_SymAgent.framework */; };
 		76D2D60C1F91040F00677088 /* SymAgent.h in Headers */ = {isa = PBXBuildFile; fileRef = 76D2D60A1F91040F00677088 /* SymAgent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5393E6A206BF946C65EBFB59 /* Pods-SymAgent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SymAgent.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-SymAgent/Pods-SymAgent.debug.xcconfig"; sourceTree = "<group>"; };
+		7605A1FB1F9731360096964F /* SmartDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SmartDevice.swift; path = Models/SmartDevice.swift; sourceTree = "<group>"; };
+		7605A1FC1F9731360096964F /* Observation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Observation.swift; path = Models/Observation.swift; sourceTree = "<group>"; };
+		7605A1FD1F9731360096964F /* ObservationLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObservationLocation.swift; path = Models/ObservationLocation.swift; sourceTree = "<group>"; };
+		7605A1FE1F9731360096964F /* ObservationValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObservationValue.swift; path = Models/ObservationValue.swift; sourceTree = "<group>"; };
+		7605A1FF1F9731360096964F /* Actuator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Actuator.swift; path = Models/Actuator.swift; sourceTree = "<group>"; };
+		7605A2001F9731360096964F /* ActuatorsValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActuatorsValue.swift; path = Models/ActuatorsValue.swift; sourceTree = "<group>"; };
+		7605A2011F9731360096964F /* GlobalSettingsContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobalSettingsContainer.swift; path = Models/GlobalSettingsContainer.swift; sourceTree = "<group>"; };
+		7605A20B1F9731670096964F /* Pods_SSPApp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_SSPApp.framework; path = "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/Pods/../build/Debug-iphoneos/Pods_SSPApp.framework"; sourceTree = "<absolute>"; };
+		7605A20D1F9731D70096964F /* DateTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateTime.swift; path = ../../SSPApp/Common/DateTime.swift; sourceTree = "<group>"; };
+		7605A20F1F9731FF0096964F /* Pods_SymAgent.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_SymAgent.framework; path = "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/Pods/../build/Debug-iphoneos/Pods_SymAgent.framework"; sourceTree = "<absolute>"; };
+		7605A2111F97320D0096964F /* Pods_SymAgent.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_SymAgent.framework; path = "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/Pods/../build/Debug-iphoneos/Pods_SymAgent.framework"; sourceTree = "<absolute>"; };
 		76D2D6071F91040F00677088 /* SymAgent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SymAgent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76D2D60A1F91040F00677088 /* SymAgent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SymAgent.h; sourceTree = "<group>"; };
 		76D2D60B1F91040F00677088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A89819C700AD39101CE5BF33 /* Pods-SymAgent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SymAgent.release.xcconfig"; path = "../Pods/Target Support Files/Pods-SymAgent/Pods-SymAgent.release.xcconfig"; sourceTree = "<group>"; };
+		D931D50813761836BED51380 /* Pods_SymAgent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SymAgent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,17 +45,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7605A2121F97320D0096964F /* Pods_SymAgent.framework in Frameworks */,
+				6C3C24674B67B705EA0329FB /* Pods_SymAgent.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7605A2021F9731360096964F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7605A1FB1F9731360096964F /* SmartDevice.swift */,
+				7605A1FC1F9731360096964F /* Observation.swift */,
+				7605A1FD1F9731360096964F /* ObservationLocation.swift */,
+				7605A1FE1F9731360096964F /* ObservationValue.swift */,
+				7605A1FF1F9731360096964F /* Actuator.swift */,
+				7605A2001F9731360096964F /* ActuatorsValue.swift */,
+				7605A2011F9731360096964F /* GlobalSettingsContainer.swift */,
+			);
+			name = Models;
+			path = ../../SSPApp;
+			sourceTree = "<group>";
+		};
+		7605A20A1F9731660096964F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7605A2111F97320D0096964F /* Pods_SymAgent.framework */,
+				7605A20F1F9731FF0096964F /* Pods_SymAgent.framework */,
+				7605A20B1F9731670096964F /* Pods_SSPApp.framework */,
+				D931D50813761836BED51380 /* Pods_SymAgent.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		76D2D5FD1F91040F00677088 = {
 			isa = PBXGroup;
 			children = (
 				76D2D6091F91040F00677088 /* SymAgent */,
 				76D2D6081F91040F00677088 /* Products */,
+				7605A20A1F9731660096964F /* Frameworks */,
+				DBC52B6720968ED3813878FB /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,10 +100,21 @@
 		76D2D6091F91040F00677088 /* SymAgent */ = {
 			isa = PBXGroup;
 			children = (
+				7605A2021F9731360096964F /* Models */,
+				7605A20D1F9731D70096964F /* DateTime.swift */,
 				76D2D60A1F91040F00677088 /* SymAgent.h */,
 				76D2D60B1F91040F00677088 /* Info.plist */,
 			);
 			path = SymAgent;
+			sourceTree = "<group>";
+		};
+		DBC52B6720968ED3813878FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5393E6A206BF946C65EBFB59 /* Pods-SymAgent.debug.xcconfig */,
+				A89819C700AD39101CE5BF33 /* Pods-SymAgent.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,10 +135,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76D2D60F1F91040F00677088 /* Build configuration list for PBXNativeTarget "SymAgent" */;
 			buildPhases = (
+				CCE3E2955E4D8E5B07CE288A /* [CP] Check Pods Manifest.lock */,
 				76D2D6021F91040F00677088 /* Sources */,
 				76D2D6031F91040F00677088 /* Frameworks */,
 				76D2D6041F91040F00677088 /* Headers */,
 				76D2D6051F91040F00677088 /* Resources */,
+				6EA9F4DAB20EB7389A7B55C7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,11 +194,52 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6EA9F4DAB20EB7389A7B55C7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-SymAgent/Pods-SymAgent-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCE3E2955E4D8E5B07CE288A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		76D2D6021F91040F00677088 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7605A2081F9731360096964F /* ActuatorsValue.swift in Sources */,
+				7605A2041F9731360096964F /* Observation.swift in Sources */,
+				7605A2051F9731360096964F /* ObservationLocation.swift in Sources */,
+				7605A2061F9731360096964F /* ObservationValue.swift in Sources */,
+				7605A2031F9731360096964F /* SmartDevice.swift in Sources */,
+				7605A2071F9731360096964F /* Actuator.swift in Sources */,
+				7605A20E1F9731D70096964F /* DateTime.swift in Sources */,
+				7605A2091F9731360096964F /* GlobalSettingsContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +349,7 @@
 		};
 		76D2D6101F91040F00677088 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5393E6A206BF946C65EBFB59 /* Pods-SymAgent.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -250,6 +359,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SymAgent/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.psnc.SymAgent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -260,6 +370,7 @@
 		};
 		76D2D6111F91040F00677088 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A89819C700AD39101CE5BF33 /* Pods-SymAgent.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -269,6 +380,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SymAgent/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.psnc.SymAgent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -296,6 +408,7 @@
 				76D2D6111F91040F00677088 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

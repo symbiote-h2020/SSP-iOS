@@ -12,16 +12,16 @@ private struct Keys {
     static let restApiUrl: String = "restApiUrl"
 }
 
-final class GlobalSettingsContainer: NSObject, NSCoding {
+public final class GlobalSettingsContainer: NSObject, NSCoding {
 
-    var restApiUrl: String = "http"
+    public var restApiUrl: String = "http"
     
     
-    @objc func encode(with aCoder: NSCoder) {
+    @objc public func encode(with aCoder: NSCoder) {
         aCoder.encode(self.restApiUrl, forKey: Keys.restApiUrl)
     }
     
-    @objc convenience init?(coder aDecoder: NSCoder) {
+    @objc convenience public init?(coder aDecoder: NSCoder) {
         self.init()
         self.restApiUrl = aDecoder.decodeObject(forKey: Keys.restApiUrl) as! String
     }

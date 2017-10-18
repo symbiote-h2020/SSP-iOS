@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SymAgent
 
 class ActuatorVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!

@@ -9,14 +9,14 @@
 import Foundation
 import SwiftyJSON
 
-class ObservationLocation {
-    var name: String = "unknown location"
-    var description: String = ""
-    var latitude: Double = 0.0
-    var longitude: Double = 0.0
-    var altitude: Double = 0.0
+public class ObservationLocation {
+    public var name: String = "unknown location"
+    public var description: String = ""
+    public var latitude: Double = 0.0
+    public var longitude: Double = 0.0
+    public var altitude: Double = 0.0
     
-    convenience init(j: JSON)  {
+    public convenience init(j: JSON)  {
         self.init()
      
         if j["name"].exists()     { name = j["name"].stringValue }
