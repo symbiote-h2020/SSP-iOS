@@ -8,31 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		6C3C24674B67B705EA0329FB /* Pods_SymAgent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D931D50813761836BED51380 /* Pods_SymAgent.framework */; };
-		7605A2031F9731360096964F /* SmartDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A1FB1F9731360096964F /* SmartDevice.swift */; };
-		7605A2041F9731360096964F /* Observation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A1FC1F9731360096964F /* Observation.swift */; };
-		7605A2051F9731360096964F /* ObservationLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A1FD1F9731360096964F /* ObservationLocation.swift */; };
-		7605A2061F9731360096964F /* ObservationValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A1FE1F9731360096964F /* ObservationValue.swift */; };
-		7605A2071F9731360096964F /* Actuator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A1FF1F9731360096964F /* Actuator.swift */; };
-		7605A2081F9731360096964F /* ActuatorsValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A2001F9731360096964F /* ActuatorsValue.swift */; };
-		7605A2091F9731360096964F /* GlobalSettingsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A2011F9731360096964F /* GlobalSettingsContainer.swift */; };
-		7605A20E1F9731D70096964F /* DateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A20D1F9731D70096964F /* DateTime.swift */; };
 		7605A2121F97320D0096964F /* Pods_SymAgent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7605A2111F97320D0096964F /* Pods_SymAgent.framework */; };
+		7605A21D1F9784760096964F /* Actuator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A2161F9784760096964F /* Actuator.swift */; };
+		7605A21E1F9784760096964F /* ActuatorsValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A2171F9784760096964F /* ActuatorsValue.swift */; };
+		7605A21F1F9784760096964F /* GlobalSettingsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A2181F9784760096964F /* GlobalSettingsContainer.swift */; };
+		7605A2201F9784760096964F /* Observation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A2191F9784760096964F /* Observation.swift */; };
+		7605A2211F9784760096964F /* ObservationLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A21A1F9784760096964F /* ObservationLocation.swift */; };
+		7605A2221F9784760096964F /* ObservationValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A21B1F9784760096964F /* ObservationValue.swift */; };
+		7605A2231F9784760096964F /* SmartDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A21C1F9784760096964F /* SmartDevice.swift */; };
+		7605A2261F9785420096964F /* DateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A2251F9785420096964F /* DateTime.swift */; };
 		76D2D60C1F91040F00677088 /* SymAgent.h in Headers */ = {isa = PBXBuildFile; fileRef = 76D2D60A1F91040F00677088 /* SymAgent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5393E6A206BF946C65EBFB59 /* Pods-SymAgent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SymAgent.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-SymAgent/Pods-SymAgent.debug.xcconfig"; sourceTree = "<group>"; };
-		7605A1FB1F9731360096964F /* SmartDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SmartDevice.swift; path = Models/SmartDevice.swift; sourceTree = "<group>"; };
-		7605A1FC1F9731360096964F /* Observation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Observation.swift; path = Models/Observation.swift; sourceTree = "<group>"; };
-		7605A1FD1F9731360096964F /* ObservationLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObservationLocation.swift; path = Models/ObservationLocation.swift; sourceTree = "<group>"; };
-		7605A1FE1F9731360096964F /* ObservationValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObservationValue.swift; path = Models/ObservationValue.swift; sourceTree = "<group>"; };
-		7605A1FF1F9731360096964F /* Actuator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Actuator.swift; path = Models/Actuator.swift; sourceTree = "<group>"; };
-		7605A2001F9731360096964F /* ActuatorsValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActuatorsValue.swift; path = Models/ActuatorsValue.swift; sourceTree = "<group>"; };
-		7605A2011F9731360096964F /* GlobalSettingsContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobalSettingsContainer.swift; path = Models/GlobalSettingsContainer.swift; sourceTree = "<group>"; };
 		7605A20B1F9731670096964F /* Pods_SSPApp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_SSPApp.framework; path = "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/Pods/../build/Debug-iphoneos/Pods_SSPApp.framework"; sourceTree = "<absolute>"; };
-		7605A20D1F9731D70096964F /* DateTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateTime.swift; path = ../../SSPApp/Common/DateTime.swift; sourceTree = "<group>"; };
 		7605A20F1F9731FF0096964F /* Pods_SymAgent.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_SymAgent.framework; path = "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/Pods/../build/Debug-iphoneos/Pods_SymAgent.framework"; sourceTree = "<absolute>"; };
 		7605A2111F97320D0096964F /* Pods_SymAgent.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_SymAgent.framework; path = "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/Pods/../build/Debug-iphoneos/Pods_SymAgent.framework"; sourceTree = "<absolute>"; };
+		7605A2161F9784760096964F /* Actuator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Actuator.swift; path = Models/Actuator.swift; sourceTree = SOURCE_ROOT; };
+		7605A2171F9784760096964F /* ActuatorsValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActuatorsValue.swift; path = Models/ActuatorsValue.swift; sourceTree = SOURCE_ROOT; };
+		7605A2181F9784760096964F /* GlobalSettingsContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobalSettingsContainer.swift; path = Models/GlobalSettingsContainer.swift; sourceTree = SOURCE_ROOT; };
+		7605A2191F9784760096964F /* Observation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Observation.swift; path = Models/Observation.swift; sourceTree = SOURCE_ROOT; };
+		7605A21A1F9784760096964F /* ObservationLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObservationLocation.swift; path = Models/ObservationLocation.swift; sourceTree = SOURCE_ROOT; };
+		7605A21B1F9784760096964F /* ObservationValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObservationValue.swift; path = Models/ObservationValue.swift; sourceTree = SOURCE_ROOT; };
+		7605A21C1F9784760096964F /* SmartDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SmartDevice.swift; path = Models/SmartDevice.swift; sourceTree = SOURCE_ROOT; };
+		7605A2251F9785420096964F /* DateTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateTime.swift; path = Common/DateTime.swift; sourceTree = SOURCE_ROOT; };
 		76D2D6071F91040F00677088 /* SymAgent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SymAgent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76D2D60A1F91040F00677088 /* SymAgent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SymAgent.h; sourceTree = "<group>"; };
 		76D2D60B1F91040F00677088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,13 +56,13 @@
 		7605A2021F9731360096964F /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				7605A1FB1F9731360096964F /* SmartDevice.swift */,
-				7605A1FC1F9731360096964F /* Observation.swift */,
-				7605A1FD1F9731360096964F /* ObservationLocation.swift */,
-				7605A1FE1F9731360096964F /* ObservationValue.swift */,
-				7605A1FF1F9731360096964F /* Actuator.swift */,
-				7605A2001F9731360096964F /* ActuatorsValue.swift */,
-				7605A2011F9731360096964F /* GlobalSettingsContainer.swift */,
+				7605A2161F9784760096964F /* Actuator.swift */,
+				7605A2171F9784760096964F /* ActuatorsValue.swift */,
+				7605A2181F9784760096964F /* GlobalSettingsContainer.swift */,
+				7605A2191F9784760096964F /* Observation.swift */,
+				7605A21A1F9784760096964F /* ObservationLocation.swift */,
+				7605A21B1F9784760096964F /* ObservationValue.swift */,
+				7605A21C1F9784760096964F /* SmartDevice.swift */,
 			);
 			name = Models;
 			path = ../../SSPApp;
@@ -77,6 +77,14 @@
 				D931D50813761836BED51380 /* Pods_SymAgent.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7605A2241F97851F0096964F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				7605A2251F9785420096964F /* DateTime.swift */,
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 		76D2D5FD1F91040F00677088 = {
@@ -100,8 +108,8 @@
 		76D2D6091F91040F00677088 /* SymAgent */ = {
 			isa = PBXGroup;
 			children = (
+				7605A2241F97851F0096964F /* Common */,
 				7605A2021F9731360096964F /* Models */,
-				7605A20D1F9731D70096964F /* DateTime.swift */,
 				76D2D60A1F91040F00677088 /* SymAgent.h */,
 				76D2D60B1F91040F00677088 /* Info.plist */,
 			);
@@ -232,14 +240,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7605A2081F9731360096964F /* ActuatorsValue.swift in Sources */,
-				7605A2041F9731360096964F /* Observation.swift in Sources */,
-				7605A2051F9731360096964F /* ObservationLocation.swift in Sources */,
-				7605A2061F9731360096964F /* ObservationValue.swift in Sources */,
-				7605A2031F9731360096964F /* SmartDevice.swift in Sources */,
-				7605A2071F9731360096964F /* Actuator.swift in Sources */,
-				7605A20E1F9731D70096964F /* DateTime.swift in Sources */,
-				7605A2091F9731360096964F /* GlobalSettingsContainer.swift in Sources */,
+				7605A21E1F9784760096964F /* ActuatorsValue.swift in Sources */,
+				7605A2211F9784760096964F /* ObservationLocation.swift in Sources */,
+				7605A2221F9784760096964F /* ObservationValue.swift in Sources */,
+				7605A2231F9784760096964F /* SmartDevice.swift in Sources */,
+				7605A21F1F9784760096964F /* GlobalSettingsContainer.swift in Sources */,
+				7605A21D1F9784760096964F /* Actuator.swift in Sources */,
+				7605A2261F9785420096964F /* DateTime.swift in Sources */,
+				7605A2201F9784760096964F /* Observation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
