@@ -8,14 +8,14 @@
 
 import Foundation
 import SwiftyJSON
-import SymAgent
 
-class ObservationsManager {
+public class ObservationsManager {
+    public init() {}
     
-    var currentObservations: [Observation] = [Observation]()
-    var observationsByLocation: [String: [Observation]] = [String: [Observation]]()
+    public var currentObservations: [Observation] = [Observation]()
+    public var observationsByLocation: [String: [Observation]] = [String: [Observation]]()
     
-    func getTestData() {
+    public func getTestData() {
         if let archiveUrl = Bundle.main.URLForResource("observationsFromSSP.json") {
             if let data = try? Data(contentsOf: archiveUrl) {
                 logWarn("loading test hardcoded data from test file")
@@ -26,7 +26,7 @@ class ObservationsManager {
         }
     }
     
-    func getObservations(forDeviceId: String!) {
+    public func getObservations(forDeviceId: String!) {
         let url = URL(string: Constants.restApiUrl + "/rap/Sensor/" + forDeviceId)
         let request = NSMutableURLRequest(url: url!)
         request.httpMethod = "GET"
@@ -63,7 +63,7 @@ class ObservationsManager {
     }
     
     
-    func parseOservationsJson(_ dataJson: JSON) {
+    public func parseOservationsJson(_ dataJson: JSON) {
         let jsonArr:[JSON] = dataJson.arrayValue
         for childJson in jsonArr {
             

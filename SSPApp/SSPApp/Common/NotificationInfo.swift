@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-enum ErrorType {
+public enum ErrorType {
     case noErrorSuccessfulFinish
     
     case unspecyfied
@@ -27,21 +27,17 @@ enum ErrorType {
 }
 
 // errors are passed via notifications
-class NotificationInfo  {
-    var errorType: ErrorType = ErrorType.unspecyfied
-    var infoText: String = ""
-    var object: AnyObject?
+public class NotificationInfo  {
+    public var errorType: ErrorType = ErrorType.unspecyfied
+    public var infoText: String = ""
+    public var object: AnyObject?
     
-//    var description: String {
-//        return objectToString(self)
-//    }
-    
-    init(type: ErrorType = .unspecyfied, info: String = "") {
+    public init(type: ErrorType = .unspecyfied, info: String = "") {
         self.errorType = type
         self.infoText = info
     }
     
-    convenience init(object: AnyObject?) {
+    public convenience init(object: AnyObject?) {
         if let obj = object as? NotificationInfo {
             self.init(type: obj.errorType, info: obj.infoText)
             self.object = obj.object
@@ -51,29 +47,29 @@ class NotificationInfo  {
         }
     }
     
-    convenience init(notification: Notification?) {
+    public convenience init(notification: Notification?) {
         self.init(object: notification?.object as AnyObject?)
     }
     
 }
 
 // utils
-extension NotificationInfo {
-    func showOkAlert() {
+public extension NotificationInfo {
+    public func showOkAlert() {
         let alertController = UIAlertController(title: "OK", message: self.infoText, preferredStyle: .alert)
         let defaultAction = UIAlertAction(title: "ok", style: .default, handler: nil)
         alertController.addAction(defaultAction)
         UIApplication.shared.keyWindow?.rootViewController?.present(alertController, animated: true, completion: nil)
     }
     
-    func showProblemAlert() {
+    public func showProblemAlert() {
         let alertController = UIAlertController(title: "error", message: self.infoText, preferredStyle: .alert)
         let defaultAction = UIAlertAction(title: "ok", style: .default, handler: nil)
         alertController.addAction(defaultAction)
         UIApplication.shared.keyWindow?.rootViewController?.present(alertController, animated: true, completion: nil)
     }
     
-    func postAsNotification(_ name: SymNotificationName, userInfo: [AnyHashable: Any]? = nil) {
+    public func postAsNotification(_ name: SymNotificationName, userInfo: [AnyHashable: Any]? = nil) {
         NotificationCenter.default.postNotificationName(name, object: self, userInfo: userInfo)
     }
     

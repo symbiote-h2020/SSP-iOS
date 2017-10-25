@@ -17,6 +17,15 @@
 		7605A2221F9784760096964F /* ObservationValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A21B1F9784760096964F /* ObservationValue.swift */; };
 		7605A2231F9784760096964F /* SmartDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A21C1F9784760096964F /* SmartDevice.swift */; };
 		7605A2261F9785420096964F /* DateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A2251F9785420096964F /* DateTime.swift */; };
+		7605A22C1FA0C76C0096964F /* SearchDevicesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A2271FA0C76C0096964F /* SearchDevicesManager.swift */; };
+		7605A22D1FA0C76C0096964F /* ObservationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A2281FA0C76C0096964F /* ObservationsManager.swift */; };
+		7605A22E1FA0C76C0096964F /* ActuatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A2291FA0C76C0096964F /* ActuatorManager.swift */; };
+		7605A22F1FA0C76C0096964F /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A22A1FA0C76C0096964F /* SettingsManager.swift */; };
+		7605A2311FA0C7A00096964F /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A2301FA0C7A00096964F /* Logger.swift */; };
+		7605A2361FA0C7C80096964F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A2321FA0C7C80096964F /* Constants.swift */; };
+		7605A2371FA0C7C80096964F /* NotificationCenter+names.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A2331FA0C7C80096964F /* NotificationCenter+names.swift */; };
+		7605A2381FA0C7C80096964F /* NotificationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A2341FA0C7C80096964F /* NotificationInfo.swift */; };
+		7605A2391FA0C7C80096964F /* SSPColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A2351FA0C7C80096964F /* SSPColors.swift */; };
 		76D2D60C1F91040F00677088 /* SymAgent.h in Headers */ = {isa = PBXBuildFile; fileRef = 76D2D60A1F91040F00677088 /* SymAgent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -33,6 +42,15 @@
 		7605A21B1F9784760096964F /* ObservationValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObservationValue.swift; path = Models/ObservationValue.swift; sourceTree = SOURCE_ROOT; };
 		7605A21C1F9784760096964F /* SmartDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SmartDevice.swift; path = Models/SmartDevice.swift; sourceTree = SOURCE_ROOT; };
 		7605A2251F9785420096964F /* DateTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateTime.swift; path = Common/DateTime.swift; sourceTree = SOURCE_ROOT; };
+		7605A2271FA0C76C0096964F /* SearchDevicesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchDevicesManager.swift; path = DataManagers/SearchDevicesManager.swift; sourceTree = "<group>"; };
+		7605A2281FA0C76C0096964F /* ObservationsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObservationsManager.swift; path = DataManagers/ObservationsManager.swift; sourceTree = "<group>"; };
+		7605A2291FA0C76C0096964F /* ActuatorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActuatorManager.swift; path = DataManagers/ActuatorManager.swift; sourceTree = "<group>"; };
+		7605A22A1FA0C76C0096964F /* SettingsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsManager.swift; path = DataManagers/SettingsManager.swift; sourceTree = "<group>"; };
+		7605A2301FA0C7A00096964F /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = ../../SSPApp/Common/Logger.swift; sourceTree = "<group>"; };
+		7605A2321FA0C7C80096964F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = ../../SSPApp/Common/Constants.swift; sourceTree = "<group>"; };
+		7605A2331FA0C7C80096964F /* NotificationCenter+names.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NotificationCenter+names.swift"; path = "../../SSPApp/Common/NotificationCenter+names.swift"; sourceTree = "<group>"; };
+		7605A2341FA0C7C80096964F /* NotificationInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationInfo.swift; path = ../../SSPApp/Common/NotificationInfo.swift; sourceTree = "<group>"; };
+		7605A2351FA0C7C80096964F /* SSPColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SSPColors.swift; path = ../../SSPApp/Common/SSPColors.swift; sourceTree = "<group>"; };
 		76D2D6071F91040F00677088 /* SymAgent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SymAgent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76D2D60A1F91040F00677088 /* SymAgent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SymAgent.h; sourceTree = "<group>"; };
 		76D2D60B1F91040F00677088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -83,8 +101,25 @@
 			isa = PBXGroup;
 			children = (
 				7605A2251F9785420096964F /* DateTime.swift */,
+				7605A2301FA0C7A00096964F /* Logger.swift */,
+				7605A2321FA0C7C80096964F /* Constants.swift */,
+				7605A2331FA0C7C80096964F /* NotificationCenter+names.swift */,
+				7605A2341FA0C7C80096964F /* NotificationInfo.swift */,
+				7605A2351FA0C7C80096964F /* SSPColors.swift */,
 			);
 			name = Common;
+			sourceTree = "<group>";
+		};
+		7605A22B1FA0C76C0096964F /* DataManagers */ = {
+			isa = PBXGroup;
+			children = (
+				7605A2271FA0C76C0096964F /* SearchDevicesManager.swift */,
+				7605A2281FA0C76C0096964F /* ObservationsManager.swift */,
+				7605A2291FA0C76C0096964F /* ActuatorManager.swift */,
+				7605A22A1FA0C76C0096964F /* SettingsManager.swift */,
+			);
+			name = DataManagers;
+			path = ../../SSPApp;
 			sourceTree = "<group>";
 		};
 		76D2D5FD1F91040F00677088 = {
@@ -110,6 +145,7 @@
 			children = (
 				7605A2241F97851F0096964F /* Common */,
 				7605A2021F9731360096964F /* Models */,
+				7605A22B1FA0C76C0096964F /* DataManagers */,
 				76D2D60A1F91040F00677088 /* SymAgent.h */,
 				76D2D60B1F91040F00677088 /* Info.plist */,
 			);
@@ -240,12 +276,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7605A22D1FA0C76C0096964F /* ObservationsManager.swift in Sources */,
 				7605A21E1F9784760096964F /* ActuatorsValue.swift in Sources */,
 				7605A2211F9784760096964F /* ObservationLocation.swift in Sources */,
 				7605A2221F9784760096964F /* ObservationValue.swift in Sources */,
+				7605A2381FA0C7C80096964F /* NotificationInfo.swift in Sources */,
 				7605A2231F9784760096964F /* SmartDevice.swift in Sources */,
 				7605A21F1F9784760096964F /* GlobalSettingsContainer.swift in Sources */,
+				7605A22E1FA0C76C0096964F /* ActuatorManager.swift in Sources */,
+				7605A2371FA0C7C80096964F /* NotificationCenter+names.swift in Sources */,
+				7605A22C1FA0C76C0096964F /* SearchDevicesManager.swift in Sources */,
+				7605A22F1FA0C76C0096964F /* SettingsManager.swift in Sources */,
+				7605A2311FA0C7A00096964F /* Logger.swift in Sources */,
 				7605A21D1F9784760096964F /* Actuator.swift in Sources */,
+				7605A2361FA0C7C80096964F /* Constants.swift in Sources */,
+				7605A2391FA0C7C80096964F /* SSPColors.swift in Sources */,
 				7605A2261F9785420096964F /* DateTime.swift in Sources */,
 				7605A2201F9784760096964F /* Observation.swift in Sources */,
 			);

@@ -8,19 +8,15 @@
 
 import Foundation
 import SwiftyJSON
-import SymAgent
 
-class SearchDevicesManager {
-    var devicesList: [SmartDevice] = []
 
-    func getTestDataFromCloud() {
+public class SearchDevicesManager {
+    
+    public var devicesList: [SmartDevice] = []
 
-        //debug test
-//        self.getBackupTestData()
-//        return
-        //TODO remove debug function
-        
-        
+    public init() {}
+    
+    public func getTestDataFromCloud() {
         let url = URL(string: "https://symbiote-dev.man.poznan.pl:8100/coreInterface/v1/query") //debug - data from
         
         let request = NSMutableURLRequest(url: url!)
@@ -52,7 +48,7 @@ class SearchDevicesManager {
         task.resume()
     }
     
-    func getResourceList() {
+    public func getResourceList() {
         let url = URL(string: Constants.restApiUrl + "/innkeeper/list_resources")
         let request = NSMutableURLRequest(url: url!)
         request.httpMethod = "POST"
@@ -97,7 +93,7 @@ class SearchDevicesManager {
     }
     
     
-    func parseDevicesJson(_ dataJson: JSON) {
+    public func parseDevicesJson(_ dataJson: JSON) {
         if dataJson["resources"].exists() == false {
             logWarn("+++++++ wrong json +++++  SearchDevicesManager dataJson = \(dataJson)")
             
@@ -126,7 +122,7 @@ class SearchDevicesManager {
     
     
     //MOTYLA NOGA - czemu to się nie chce sparsować
-    func getBackupTestData() {
+    public func getBackupTestData() {
 //    //    let str = "{\"a\":[]}"
 //        let str = "\"resources\":[        {           \"platformId\":\"Error device\",         \"platformName\":\"NoDevices found\",         \"owner\":null,         \"name\":\"dimmer service\",       \"id\":\"593943acb4f8e209390e9425\",         \"description\":\"dimmer\",         \"locationName\":\"\" } ]"
 //        

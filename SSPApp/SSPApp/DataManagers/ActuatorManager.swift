@@ -8,11 +8,12 @@
 
 import Foundation
 import SwiftyJSON
-import SymAgent
 
-class ActuatorManager {
+
+public class ActuatorManager {
+    public init() {}
     
-    func sendRequest(_ smartDeviceId: String, valuesList: [ActuatorsValue]) {
+    public func sendRequest(_ smartDeviceId: String, valuesList: [ActuatorsValue]) {
         let url = URL(string: Constants.restApiUrl + "/rap/Actuator/" + smartDeviceId)
         let request = NSMutableURLRequest(url: url!)
         request.httpMethod = "POST"

@@ -9,19 +9,19 @@
 import Foundation
 
 
-func logVerbose(_ text: String?) {
+public func logVerbose(_ text: String?) {
     if Constants.isDebug && Constants.isVerboseLogging {
         logText("_L v_ ", text: text)
     }
 }
 
-func log(_ text: String?) {
+public func log(_ text: String?) {
     if Constants.isDebug {
         logText("_LOG_ ", text: text)
     }
 }
 
-func logTime(_ text: String?) {
+public func logTime(_ text: String?) {
     if let t = text {
         let d = Date()
         let df = DateFormatter()
@@ -32,13 +32,13 @@ func logTime(_ text: String?) {
     }
 }
 
-func logWarn(_ text: String?) {
+public func logWarn(_ text: String?) {
     if Constants.isDebug {
         logText("__WARN __ ", text: text)
     }
 }
 
-func logError(_ text: String?) {
+public func logError(_ text: String?) {
     logText("==  __ERROR__ == ", text: text)
 }
 

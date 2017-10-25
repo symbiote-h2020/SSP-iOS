@@ -7,12 +7,14 @@
 //
 
 import Foundation
-import SymAgent
 
-class SettingsManager {
-    var allSettings: GlobalSettingsContainer = GlobalSettingsContainer()
+
+public class SettingsManager {
+    public var allSettings: GlobalSettingsContainer = GlobalSettingsContainer()
     
-    var archiveUrl: String {
+    public init() {}
+    
+    public var archiveUrl: String {
         //1 - manager lets you examine contents of a files and folders in your app; creates a directory to where we are saving it
         let manager = FileManager.default
         //2 - this returns an array of urls from our documentDirectory and we take the first path
@@ -22,7 +24,7 @@ class SettingsManager {
         return (url!.appendingPathComponent("Data").path)
     }
     
-    func loadSettings() {
+    public func loadSettings() {
         log("[GlobalSettingsManager] Reading file\n +++\(archiveUrl)")
         let isFileExist = FileManager.default.fileExists(atPath: archiveUrl)
         if (isFileExist) {
@@ -42,7 +44,7 @@ class SettingsManager {
         }
     }
     
-    func saveSettings() {
+    public func saveSettings() {
         log("[GlobalSettingsManager] Saving file\n +++\(archiveUrl)")
         let success = NSKeyedArchiver.archiveRootObject(allSettings, toFile: archiveUrl)
         if success {
@@ -56,8 +58,6 @@ class SettingsManager {
             let notiInfoObj  = NotificationInfo(type: ErrorType.unspecyfied, info: "Cannot save settings")
             NotificationCenter.default.postNotificationName(SymNotificationName.Settings, object: notiInfoObj)
         }
-        
-        
     }
     
 }

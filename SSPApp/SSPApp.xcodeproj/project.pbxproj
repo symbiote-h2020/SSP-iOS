@@ -17,25 +17,17 @@
 		76162EDA1F2892530043285D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76162ED71F2892530043285D /* DetailViewController.swift */; };
 		76162EDB1F2892530043285D /* DevicesList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76162ED81F2892530043285D /* DevicesList.storyboard */; };
 		76162EDC1F2892530043285D /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76162ED91F2892530043285D /* MasterViewController.swift */; };
-		76162EE21F2892F60043285D /* SearchDevicesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76162EE11F2892F60043285D /* SearchDevicesManager.swift */; };
-		76162EE81F2893390043285D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76162EE41F2893390043285D /* Constants.swift */; };
-		76162EE91F2893390043285D /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76162EE51F2893390043285D /* Logger.swift */; };
-		76162EEA1F2893390043285D /* NotificationCenter+names.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76162EE61F2893390043285D /* NotificationCenter+names.swift */; };
-		76162EEB1F2893390043285D /* NotificationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76162EE71F2893390043285D /* NotificationInfo.swift */; };
-		762C4B211F3B2C1E0052E7D3 /* SSPColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762C4B201F3B2C1E0052E7D3 /* SSPColors.swift */; };
 		763138041F30B4F8007A34E9 /* DevicesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763138031F30B4F7007A34E9 /* DevicesListVC.swift */; };
 		763138061F30B863007A34E9 /* DeviceDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763138051F30B863007A34E9 /* DeviceDetailsVC.swift */; };
 		763138081F34A7F1007A34E9 /* DevicesCombinedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763138071F34A7F1007A34E9 /* DevicesCombinedVC.swift */; };
 		76486BDC1F4D6DC500D9702D /* DeviceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76486BDB1F4D6DC500D9702D /* DeviceTableViewCell.swift */; };
 		76486BDF1F4D832D00D9702D /* Observations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76486BDE1F4D832D00D9702D /* Observations.storyboard */; };
 		76486BE11F4D835C00D9702D /* ObservationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76486BE01F4D835C00D9702D /* ObservationsVC.swift */; };
-		76486BE51F4D84CF00D9702D /* ObservationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76486BE41F4D84CF00D9702D /* ObservationsManager.swift */; };
 		76486BE81F4D979200D9702D /* observations.json in Resources */ = {isa = PBXBuildFile; fileRef = 76486BE71F4D979200D9702D /* observations.json */; };
 		76486BEE1F4DCD2B00D9702D /* ObservationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76486BED1F4DCD2B00D9702D /* ObservationTableViewCell.swift */; };
 		76486BF01F4EBA5B00D9702D /* ObservationsChartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76486BEF1F4EBA5B00D9702D /* ObservationsChartVC.swift */; };
 		76486BF51F4EED9600D9702D /* DrawerOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76486BF41F4EED9600D9702D /* DrawerOption.swift */; };
 		76486BF71F4EEE6B00D9702D /* NavigationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76486BF61F4EEE6B00D9702D /* NavigationProtocol.swift */; };
-		7653D2AE1F6BF897004B3235 /* ActuatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7653D2AD1F6BF897004B3235 /* ActuatorManager.swift */; };
 		7666B2D11F27716900675435 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7666B2D01F27716900675435 /* AppDelegate.swift */; };
 		7666B2D81F27716900675435 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7666B2D71F27716900675435 /* Assets.xcassets */; };
 		7666B2DB1F27716900675435 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7666B2D91F27716900675435 /* LaunchScreen.storyboard */; };
@@ -50,7 +42,6 @@
 		768B560C1F29D1B200E8D075 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 768B560B1F29D1B200E8D075 /* Main.storyboard */; };
 		769C82651F70DF4100139A9C /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 769C82641F70DF4100139A9C /* Settings.storyboard */; };
 		769C82671F70DF5B00139A9C /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769C82661F70DF5B00139A9C /* SettingsVC.swift */; };
-		769C82691F70E20D00139A9C /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769C82681F70E20D00139A9C /* SettingsManager.swift */; };
 		EEF88BDC63FE38CBD748549B /* Pods_SSPApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B4D6CB0A2C850EEF642ED40 /* Pods_SSPApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,25 +70,17 @@
 		76162ED71F2892530043285D /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = Views/DevicesList/DetailViewController.swift; sourceTree = "<group>"; };
 		76162ED81F2892530043285D /* DevicesList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = DevicesList.storyboard; path = Views/DevicesList/DevicesList.storyboard; sourceTree = "<group>"; };
 		76162ED91F2892530043285D /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterViewController.swift; path = Views/DevicesList/MasterViewController.swift; sourceTree = "<group>"; };
-		76162EE11F2892F60043285D /* SearchDevicesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchDevicesManager.swift; path = DataManagers/SearchDevicesManager.swift; sourceTree = "<group>"; };
-		76162EE41F2893390043285D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Common/Constants.swift; sourceTree = "<group>"; };
-		76162EE51F2893390043285D /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Common/Logger.swift; sourceTree = "<group>"; };
-		76162EE61F2893390043285D /* NotificationCenter+names.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NotificationCenter+names.swift"; path = "Common/NotificationCenter+names.swift"; sourceTree = "<group>"; };
-		76162EE71F2893390043285D /* NotificationInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationInfo.swift; path = Common/NotificationInfo.swift; sourceTree = "<group>"; };
-		762C4B201F3B2C1E0052E7D3 /* SSPColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SSPColors.swift; path = Common/SSPColors.swift; sourceTree = "<group>"; };
 		763138031F30B4F7007A34E9 /* DevicesListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DevicesListVC.swift; path = Views/SearchDevices/DevicesListVC.swift; sourceTree = "<group>"; };
 		763138051F30B863007A34E9 /* DeviceDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeviceDetailsVC.swift; path = Views/SearchDevices/DeviceDetailsVC.swift; sourceTree = "<group>"; };
 		763138071F34A7F1007A34E9 /* DevicesCombinedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DevicesCombinedVC.swift; path = Views/SearchDevices/DevicesCombinedVC.swift; sourceTree = "<group>"; };
 		76486BDB1F4D6DC500D9702D /* DeviceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeviceTableViewCell.swift; path = Views/SearchDevices/DeviceTableViewCell.swift; sourceTree = "<group>"; };
 		76486BDE1F4D832D00D9702D /* Observations.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Observations.storyboard; path = Views/Observations/Observations.storyboard; sourceTree = "<group>"; };
 		76486BE01F4D835C00D9702D /* ObservationsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObservationsVC.swift; path = Views/Observations/ObservationsVC.swift; sourceTree = "<group>"; };
-		76486BE41F4D84CF00D9702D /* ObservationsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObservationsManager.swift; path = DataManagers/ObservationsManager.swift; sourceTree = "<group>"; };
 		76486BE71F4D979200D9702D /* observations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = observations.json; path = ../../tmp_tests/observations.json; sourceTree = "<group>"; };
 		76486BED1F4DCD2B00D9702D /* ObservationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObservationTableViewCell.swift; path = Views/Observations/ObservationTableViewCell.swift; sourceTree = "<group>"; };
 		76486BEF1F4EBA5B00D9702D /* ObservationsChartVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObservationsChartVC.swift; path = Views/Observations/ObservationsChartVC.swift; sourceTree = "<group>"; };
 		76486BF41F4EED9600D9702D /* DrawerOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawerOption.swift; path = Views/Drawer/DrawerOption.swift; sourceTree = "<group>"; };
 		76486BF61F4EEE6B00D9702D /* NavigationProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationProtocol.swift; path = Views/Drawer/NavigationProtocol.swift; sourceTree = "<group>"; };
-		7653D2AD1F6BF897004B3235 /* ActuatorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActuatorManager.swift; path = DataManagers/ActuatorManager.swift; sourceTree = "<group>"; };
 		7666B2CD1F27716900675435 /* SSPApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSPApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7666B2D01F27716900675435 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7666B2D71F27716900675435 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -114,7 +97,6 @@
 		768B560B1F29D1B200E8D075 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Views/Main/Main.storyboard; sourceTree = "<group>"; };
 		769C82641F70DF4100139A9C /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Settings.storyboard; path = Views/Settings/Settings.storyboard; sourceTree = "<group>"; };
 		769C82661F70DF5B00139A9C /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsVC.swift; path = Views/Settings/SettingsVC.swift; sourceTree = "<group>"; };
-		769C82681F70E20D00139A9C /* SettingsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsManager.swift; path = DataManagers/SettingsManager.swift; sourceTree = "<group>"; };
 		76D2D6121F91042900677088 /* SymAgent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SymAgent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EBCCB6CCEC240CBD7C93E95 /* Pods-SSPApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSPApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SSPApp/Pods-SSPApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -178,29 +160,6 @@
 			name = DevicesList;
 			sourceTree = "<group>";
 		};
-		76162EE01F2892E90043285D /* DataManagers */ = {
-			isa = PBXGroup;
-			children = (
-				76162EE11F2892F60043285D /* SearchDevicesManager.swift */,
-				76486BE41F4D84CF00D9702D /* ObservationsManager.swift */,
-				7653D2AD1F6BF897004B3235 /* ActuatorManager.swift */,
-				769C82681F70E20D00139A9C /* SettingsManager.swift */,
-			);
-			name = DataManagers;
-			sourceTree = "<group>";
-		};
-		76162EE31F28932C0043285D /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				76162EE41F2893390043285D /* Constants.swift */,
-				76162EE51F2893390043285D /* Logger.swift */,
-				76162EE61F2893390043285D /* NotificationCenter+names.swift */,
-				76162EE71F2893390043285D /* NotificationInfo.swift */,
-				762C4B201F3B2C1E0052E7D3 /* SSPColors.swift */,
-			);
-			name = Common;
-			sourceTree = "<group>";
-		};
 		76486BDD1F4D829500D9702D /* Observations */ = {
 			isa = PBXGroup;
 			children = (
@@ -247,8 +206,6 @@
 			isa = PBXGroup;
 			children = (
 				76486BE61F4D977200D9702D /* assets */,
-				76162EE31F28932C0043285D /* Common */,
-				76162EE01F2892E90043285D /* DataManagers */,
 				76162EC81F2780910043285D /* Views */,
 				7666B2D01F27716900675435 /* AppDelegate.swift */,
 				7666B2D71F27716900675435 /* Assets.xcassets */,
@@ -449,27 +406,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				762C4B211F3B2C1E0052E7D3 /* SSPColors.swift in Sources */,
 				76486BEE1F4DCD2B00D9702D /* ObservationTableViewCell.swift in Sources */,
 				763138041F30B4F8007A34E9 /* DevicesListVC.swift in Sources */,
 				76162ED51F28923A0043285D /* ViewControllerWithDrawerMenu.swift in Sources */,
 				76486BF01F4EBA5B00D9702D /* ObservationsChartVC.swift in Sources */,
-				76162EE91F2893390043285D /* Logger.swift in Sources */,
-				769C82691F70E20D00139A9C /* SettingsManager.swift in Sources */,
 				767A91ED1F60359E006BEACC /* ActuatorVC.swift in Sources */,
-				7653D2AE1F6BF897004B3235 /* ActuatorManager.swift in Sources */,
-				76486BE51F4D84CF00D9702D /* ObservationsManager.swift in Sources */,
 				7666B2D11F27716900675435 /* AppDelegate.swift in Sources */,
 				763138081F34A7F1007A34E9 /* DevicesCombinedVC.swift in Sources */,
 				76162ED31F28923A0043285D /* DrawerMenuTableVC.swift in Sources */,
-				76162EEA1F2893390043285D /* NotificationCenter+names.swift in Sources */,
 				76162EDA1F2892530043285D /* DetailViewController.swift in Sources */,
 				76162ECC1F2892040043285D /* MainViewController.swift in Sources */,
 				76486BF71F4EEE6B00D9702D /* NavigationProtocol.swift in Sources */,
-				76162EE81F2893390043285D /* Constants.swift in Sources */,
 				76486BDC1F4D6DC500D9702D /* DeviceTableViewCell.swift in Sources */,
-				76162EEB1F2893390043285D /* NotificationInfo.swift in Sources */,
-				76162EE21F2892F60043285D /* SearchDevicesManager.swift in Sources */,
 				76162EDC1F2892530043285D /* MasterViewController.swift in Sources */,
 				76486BE11F4D835C00D9702D /* ObservationsVC.swift in Sources */,
 				76162ED41F28923A0043285D /* TableViewControllerWithDrawerMenu.swift in Sources */,

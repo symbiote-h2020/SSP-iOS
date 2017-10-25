@@ -8,6 +8,7 @@
 
 import UIKit
 import DrawerController
+import SymAgent
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
