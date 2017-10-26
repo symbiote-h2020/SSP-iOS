@@ -21,11 +21,11 @@
 		7605A22D1FA0C76C0096964F /* ObservationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A2281FA0C76C0096964F /* ObservationsManager.swift */; };
 		7605A22E1FA0C76C0096964F /* ActuatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A2291FA0C76C0096964F /* ActuatorManager.swift */; };
 		7605A22F1FA0C76C0096964F /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A22A1FA0C76C0096964F /* SettingsManager.swift */; };
-		7605A2311FA0C7A00096964F /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A2301FA0C7A00096964F /* Logger.swift */; };
-		7605A2361FA0C7C80096964F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A2321FA0C7C80096964F /* Constants.swift */; };
-		7605A2371FA0C7C80096964F /* NotificationCenter+names.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A2331FA0C7C80096964F /* NotificationCenter+names.swift */; };
-		7605A2381FA0C7C80096964F /* NotificationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A2341FA0C7C80096964F /* NotificationInfo.swift */; };
-		7605A2391FA0C7C80096964F /* SSPColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A2351FA0C7C80096964F /* SSPColors.swift */; };
+		76D2AE261FA1D65B00DB8ACD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D2AE211FA1D65B00DB8ACD /* Constants.swift */; };
+		76D2AE271FA1D65B00DB8ACD /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D2AE221FA1D65B00DB8ACD /* Logger.swift */; };
+		76D2AE281FA1D65B00DB8ACD /* NotificationCenter+names.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D2AE231FA1D65B00DB8ACD /* NotificationCenter+names.swift */; };
+		76D2AE291FA1D65B00DB8ACD /* NotificationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D2AE241FA1D65B00DB8ACD /* NotificationInfo.swift */; };
+		76D2AE2A1FA1D65B00DB8ACD /* SSPColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D2AE251FA1D65B00DB8ACD /* SSPColors.swift */; };
 		76D2D60C1F91040F00677088 /* SymAgent.h in Headers */ = {isa = PBXBuildFile; fileRef = 76D2D60A1F91040F00677088 /* SymAgent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -46,11 +46,11 @@
 		7605A2281FA0C76C0096964F /* ObservationsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObservationsManager.swift; path = DataManagers/ObservationsManager.swift; sourceTree = "<group>"; };
 		7605A2291FA0C76C0096964F /* ActuatorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActuatorManager.swift; path = DataManagers/ActuatorManager.swift; sourceTree = "<group>"; };
 		7605A22A1FA0C76C0096964F /* SettingsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsManager.swift; path = DataManagers/SettingsManager.swift; sourceTree = "<group>"; };
-		7605A2301FA0C7A00096964F /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = ../../SSPApp/Common/Logger.swift; sourceTree = "<group>"; };
-		7605A2321FA0C7C80096964F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = ../../SSPApp/Common/Constants.swift; sourceTree = "<group>"; };
-		7605A2331FA0C7C80096964F /* NotificationCenter+names.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NotificationCenter+names.swift"; path = "../../SSPApp/Common/NotificationCenter+names.swift"; sourceTree = "<group>"; };
-		7605A2341FA0C7C80096964F /* NotificationInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationInfo.swift; path = ../../SSPApp/Common/NotificationInfo.swift; sourceTree = "<group>"; };
-		7605A2351FA0C7C80096964F /* SSPColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SSPColors.swift; path = ../../SSPApp/Common/SSPColors.swift; sourceTree = "<group>"; };
+		76D2AE211FA1D65B00DB8ACD /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Common/Constants.swift; sourceTree = SOURCE_ROOT; };
+		76D2AE221FA1D65B00DB8ACD /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Common/Logger.swift; sourceTree = SOURCE_ROOT; };
+		76D2AE231FA1D65B00DB8ACD /* NotificationCenter+names.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NotificationCenter+names.swift"; path = "Common/NotificationCenter+names.swift"; sourceTree = SOURCE_ROOT; };
+		76D2AE241FA1D65B00DB8ACD /* NotificationInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationInfo.swift; path = Common/NotificationInfo.swift; sourceTree = SOURCE_ROOT; };
+		76D2AE251FA1D65B00DB8ACD /* SSPColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SSPColors.swift; path = Common/SSPColors.swift; sourceTree = SOURCE_ROOT; };
 		76D2D6071F91040F00677088 /* SymAgent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SymAgent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76D2D60A1F91040F00677088 /* SymAgent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SymAgent.h; sourceTree = "<group>"; };
 		76D2D60B1F91040F00677088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -101,11 +101,11 @@
 			isa = PBXGroup;
 			children = (
 				7605A2251F9785420096964F /* DateTime.swift */,
-				7605A2301FA0C7A00096964F /* Logger.swift */,
-				7605A2321FA0C7C80096964F /* Constants.swift */,
-				7605A2331FA0C7C80096964F /* NotificationCenter+names.swift */,
-				7605A2341FA0C7C80096964F /* NotificationInfo.swift */,
-				7605A2351FA0C7C80096964F /* SSPColors.swift */,
+				76D2AE211FA1D65B00DB8ACD /* Constants.swift */,
+				76D2AE221FA1D65B00DB8ACD /* Logger.swift */,
+				76D2AE231FA1D65B00DB8ACD /* NotificationCenter+names.swift */,
+				76D2AE241FA1D65B00DB8ACD /* NotificationInfo.swift */,
+				76D2AE251FA1D65B00DB8ACD /* SSPColors.swift */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -276,23 +276,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76D2AE271FA1D65B00DB8ACD /* Logger.swift in Sources */,
+				76D2AE291FA1D65B00DB8ACD /* NotificationInfo.swift in Sources */,
 				7605A22D1FA0C76C0096964F /* ObservationsManager.swift in Sources */,
 				7605A21E1F9784760096964F /* ActuatorsValue.swift in Sources */,
 				7605A2211F9784760096964F /* ObservationLocation.swift in Sources */,
 				7605A2221F9784760096964F /* ObservationValue.swift in Sources */,
-				7605A2381FA0C7C80096964F /* NotificationInfo.swift in Sources */,
 				7605A2231F9784760096964F /* SmartDevice.swift in Sources */,
 				7605A21F1F9784760096964F /* GlobalSettingsContainer.swift in Sources */,
 				7605A22E1FA0C76C0096964F /* ActuatorManager.swift in Sources */,
-				7605A2371FA0C7C80096964F /* NotificationCenter+names.swift in Sources */,
 				7605A22C1FA0C76C0096964F /* SearchDevicesManager.swift in Sources */,
 				7605A22F1FA0C76C0096964F /* SettingsManager.swift in Sources */,
-				7605A2311FA0C7A00096964F /* Logger.swift in Sources */,
+				76D2AE281FA1D65B00DB8ACD /* NotificationCenter+names.swift in Sources */,
+				76D2AE2A1FA1D65B00DB8ACD /* SSPColors.swift in Sources */,
 				7605A21D1F9784760096964F /* Actuator.swift in Sources */,
-				7605A2361FA0C7C80096964F /* Constants.swift in Sources */,
-				7605A2391FA0C7C80096964F /* SSPColors.swift in Sources */,
 				7605A2261F9785420096964F /* DateTime.swift in Sources */,
 				7605A2201F9784760096964F /* Observation.swift in Sources */,
+				76D2AE261FA1D65B00DB8ACD /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
