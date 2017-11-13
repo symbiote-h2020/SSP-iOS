@@ -1,0 +1,6 @@
+framework module Pods_SSP_SpikeSolution_SSID {
+  umbrella header "Pods-SSP_SpikeSolution_SSID-umbrella.h"
+
+  export *
+  module * { export * }
+}

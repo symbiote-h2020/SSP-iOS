@@ -12,9 +12,14 @@
 		763215571FAB55E300577B21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 763215551FAB55E300577B21 /* Main.storyboard */; };
 		763215591FAB55E300577B21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 763215581FAB55E300577B21 /* Assets.xcassets */; };
 		7632155C1FAB55E300577B21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7632155A1FAB55E300577B21 /* LaunchScreen.storyboard */; };
+		76607DC01FB43E2D009FEA0C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 76607DBF1FB43E2D009FEA0C /* Podfile */; };
+		7666A2BF1FB9D17600085E85 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7666A2BE1FB9D17600085E85 /* NetworkExtension.framework */; };
+		A68507F87B146C987E9AEA80 /* Pods_SSP_SpikeSolution_SSID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 199CB2438EC18CE6251D8FB0 /* Pods_SSP_SpikeSolution_SSID.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A4F4A9C16C322EB44D00694 /* Pods-SSP_SpikeSolution_SSID.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSP_SpikeSolution_SSID.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SSP_SpikeSolution_SSID/Pods-SSP_SpikeSolution_SSID.debug.xcconfig"; sourceTree = "<group>"; };
+		199CB2438EC18CE6251D8FB0 /* Pods_SSP_SpikeSolution_SSID.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSP_SpikeSolution_SSID.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7632154E1FAB55E300577B21 /* SSP_SpikeSolution_SSID.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSP_SpikeSolution_SSID.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		763215511FAB55E300577B21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		763215531FAB55E300577B21 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,11 @@
 		763215581FAB55E300577B21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7632155B1FAB55E300577B21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7632155D1FAB55E300577B21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76482C651FB43EFE0065D602 /* Reachability.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Reachability.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76607DBF1FB43E2D009FEA0C /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7666A2BE1FB9D17600085E85 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		7666A2C01FB9D17600085E85 /* SSP_SpikeSolution_SSID.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SSP_SpikeSolution_SSID.entitlements; sourceTree = "<group>"; };
+		86DB638EEF5A1C2863C6261C /* Pods-SSP_SpikeSolution_SSID.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSP_SpikeSolution_SSID.release.xcconfig"; path = "Pods/Target Support Files/Pods-SSP_SpikeSolution_SSID/Pods-SSP_SpikeSolution_SSID.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A68507F87B146C987E9AEA80 /* Pods_SSP_SpikeSolution_SSID.framework in Frameworks */,
+				7666A2BF1FB9D17600085E85 /* NetworkExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		123C6B5FE73CFD7E37CF4B7A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A4F4A9C16C322EB44D00694 /* Pods-SSP_SpikeSolution_SSID.debug.xcconfig */,
+				86DB638EEF5A1C2863C6261C /* Pods-SSP_SpikeSolution_SSID.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		763215451FAB55E300577B21 = {
 			isa = PBXGroup;
 			children = (
+				76607DBF1FB43E2D009FEA0C /* Podfile */,
 				763215501FAB55E300577B21 /* SSP_SpikeSolution_SSID */,
 				7632154F1FAB55E300577B21 /* Products */,
+				123C6B5FE73CFD7E37CF4B7A /* Pods */,
+				775BAFD70E5DCF03E32B73D9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +78,7 @@
 		763215501FAB55E300577B21 /* SSP_SpikeSolution_SSID */ = {
 			isa = PBXGroup;
 			children = (
+				7666A2C01FB9D17600085E85 /* SSP_SpikeSolution_SSID.entitlements */,
 				763215511FAB55E300577B21 /* AppDelegate.swift */,
 				763215531FAB55E300577B21 /* ViewController.swift */,
 				763215551FAB55E300577B21 /* Main.storyboard */,
@@ -64,6 +89,16 @@
 			path = SSP_SpikeSolution_SSID;
 			sourceTree = "<group>";
 		};
+		775BAFD70E5DCF03E32B73D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7666A2BE1FB9D17600085E85 /* NetworkExtension.framework */,
+				76482C651FB43EFE0065D602 /* Reachability.framework */,
+				199CB2438EC18CE6251D8FB0 /* Pods_SSP_SpikeSolution_SSID.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +106,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 763215601FAB55E300577B21 /* Build configuration list for PBXNativeTarget "SSP_SpikeSolution_SSID" */;
 			buildPhases = (
+				7046D766B5D2D4FFFE318C85 /* [CP] Check Pods Manifest.lock */,
 				7632154A1FAB55E300577B21 /* Sources */,
 				7632154B1FAB55E300577B21 /* Frameworks */,
 				7632154C1FAB55E300577B21 /* Resources */,
+				5CC3478DBA567FC10E1894A3 /* [CP] Embed Pods Frameworks */,
+				63B9C4E78B395C60B909B9C6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -98,6 +136,14 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 65KP3UJJWG;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HotspotConfiguration = {
+								enabled = 1;
+							};
+							com.apple.NetworkExtensions.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -126,11 +172,60 @@
 			files = (
 				7632155C1FAB55E300577B21 /* LaunchScreen.storyboard in Resources */,
 				763215591FAB55E300577B21 /* Assets.xcassets in Resources */,
+				76607DC01FB43E2D009FEA0C /* Podfile in Resources */,
 				763215571FAB55E300577B21 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5CC3478DBA567FC10E1894A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SSP_SpikeSolution_SSID/Pods-SSP_SpikeSolution_SSID-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63B9C4E78B395C60B909B9C6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SSP_SpikeSolution_SSID/Pods-SSP_SpikeSolution_SSID-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7046D766B5D2D4FFFE318C85 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7632154A1FAB55E300577B21 /* Sources */ = {
@@ -261,11 +356,13 @@
 		};
 		763215611FAB55E300577B21 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A4F4A9C16C322EB44D00694 /* Pods-SSP_SpikeSolution_SSID.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SSP_SpikeSolution_SSID/SSP_SpikeSolution_SSID.entitlements;
 				DEVELOPMENT_TEAM = 65KP3UJJWG;
 				INFOPLIST_FILE = SSP_SpikeSolution_SSID/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "pl.psnc.SSP-SpikeSolution-SSID";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -275,11 +372,13 @@
 		};
 		763215621FAB55E300577B21 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86DB638EEF5A1C2863C6261C /* Pods-SSP_SpikeSolution_SSID.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SSP_SpikeSolution_SSID/SSP_SpikeSolution_SSID.entitlements;
 				DEVELOPMENT_TEAM = 65KP3UJJWG;
 				INFOPLIST_FILE = SSP_SpikeSolution_SSID/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "pl.psnc.SSP-SpikeSolution-SSID";
 				PRODUCT_NAME = "$(TARGET_NAME)";
