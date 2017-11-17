@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DADDEFCE3070FE41781EAE3532A2E58B"
+               BlueprintIdentifier = "66038F3F346CD3D57A89F17CE1A39C20"
                BuildableName = "Pods_SSP_SpikeSolution_SSID.framework"
                BlueprintName = "Pods-SSP_SpikeSolution_SSID"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DADDEFCE3070FE41781EAE3532A2E58B"
+            BlueprintIdentifier = "66038F3F346CD3D57A89F17CE1A39C20"
             BuildableName = "Pods_SSP_SpikeSolution_SSID.framework"
             BlueprintName = "Pods-SSP_SpikeSolution_SSID"
             ReferencedContainer = "container:Pods.xcodeproj">

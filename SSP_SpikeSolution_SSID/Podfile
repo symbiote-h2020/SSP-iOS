@@ -2,4 +2,5 @@ use_frameworks!
 
 target :SSP_SpikeSolution_SSID do
     pod 'ReachabilitySwift'
+    pod 'SensingKit'
 end

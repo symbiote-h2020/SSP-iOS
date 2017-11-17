@@ -14,6 +14,7 @@
 		7632155C1FAB55E300577B21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7632155A1FAB55E300577B21 /* LaunchScreen.storyboard */; };
 		76607DC01FB43E2D009FEA0C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 76607DBF1FB43E2D009FEA0C /* Podfile */; };
 		7666A2BF1FB9D17600085E85 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7666A2BE1FB9D17600085E85 /* NetworkExtension.framework */; };
+		7666A2C11FBEE75900085E85 /* SensingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7666A2C21FBEE75900085E85 /* SensingKit.framework */; };
 		A68507F87B146C987E9AEA80 /* Pods_SSP_SpikeSolution_SSID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 199CB2438EC18CE6251D8FB0 /* Pods_SSP_SpikeSolution_SSID.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		76607DBF1FB43E2D009FEA0C /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		7666A2BE1FB9D17600085E85 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
 		7666A2C01FB9D17600085E85 /* SSP_SpikeSolution_SSID.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SSP_SpikeSolution_SSID.entitlements; sourceTree = "<group>"; };
+		7666A2C21FBEE75900085E85 /* SensingKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SensingKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86DB638EEF5A1C2863C6261C /* Pods-SSP_SpikeSolution_SSID.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSP_SpikeSolution_SSID.release.xcconfig"; path = "Pods/Target Support Files/Pods-SSP_SpikeSolution_SSID/Pods-SSP_SpikeSolution_SSID.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -39,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7666A2C11FBEE75900085E85 /* SensingKit.framework in Frameworks */,
 				A68507F87B146C987E9AEA80 /* Pods_SSP_SpikeSolution_SSID.framework in Frameworks */,
 				7666A2BF1FB9D17600085E85 /* NetworkExtension.framework in Frameworks */,
 			);
@@ -92,6 +95,7 @@
 		775BAFD70E5DCF03E32B73D9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7666A2C21FBEE75900085E85 /* SensingKit.framework */,
 				7666A2BE1FB9D17600085E85 /* NetworkExtension.framework */,
 				76482C651FB43EFE0065D602 /* Reachability.framework */,
 				199CB2438EC18CE6251D8FB0 /* Pods_SSP_SpikeSolution_SSID.framework */,

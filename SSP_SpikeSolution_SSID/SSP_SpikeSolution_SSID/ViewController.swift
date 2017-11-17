@@ -9,7 +9,9 @@
 import UIKit
 import SystemConfiguration
 import SystemConfiguration.CaptiveNetwork
-import NetworkExtension
+//import NetworkExtension
+
+import SensingKit
 
 class ViewController: UIViewController {
     //MARK: - backgroundTask
@@ -149,10 +151,10 @@ class ViewController: UIViewController {
     
     @IBAction func getWiFiTapped(_ sender: Any) {
         //printCurrentWifiInfo()
-        //getInterfaces()
+        getInterfaces()
         //getSSID()
         //getWithNetworkHelper()
-        connectToKonferencjaWiFi()
+        //connectToKonferencjaWiFi()
     }
     
     
@@ -180,7 +182,7 @@ class ViewController: UIViewController {
     }
     
     /// może to - polaczenie po zmianie statusu http://jayeshkawli.ghost.io/ios-checking-the-network-status-swift/
-    
+/*
     func connectToKonferencjaWiFi() {
         let WiFiConfig = NEHotspotConfiguration(ssid: "konferencja",
                                                 passphrase: "DF25sf@$T2",
@@ -224,6 +226,89 @@ class ViewController: UIViewController {
 //            response.deliver()
 //        }
     }
+  */
+    
+    
+    
+    
+    
+    
+    
+    
+    //MARK: ------------   SensingKit
+    //https://github.com/SensingKit/SensingKit-iOS/blob/master/README.md
+    let sensingKit = SensingKitLib.shared()
+    
+    @IBAction func readSensorDataTapped(_ sender: Any) {
+        readSensorsData() 
+    }
+    
+    func readSensorsData() {
+        do {
+            
+
+            
+            
+            if sensingKit.isSensorAvailable(SKSensorType.Battery) {
+                print("sensingKit.isSensorAvailable(SKSensorType.Battery)= \(sensingKit.isSensorAvailable(SKSensorType.Battery))")
+            }
+            
+            do {
+                try sensingKit.register(SKSensorType.Battery)
+                try sensingKit.register(SKSensorType.Accelerometer)
+            }
+            catch {
+                print("register Battery error: \(error)")
+            }
+            
+            try sensingKit.subscribe(to: SKSensorType.Battery, withHandler: { (sensorType, sensorData, error) in
+                
+                if (error == nil) {
+                    let batteryData = sensorData as! SKBatteryData
+                    print("Battery Level: \(batteryData)")
+                }
+                else {
+                    print("Battery error: \(error)")
+                }
+            })
+        }
+        catch {
+            NSLog("cannot subscribe battery")
+        }
+        
+
+        do {
+            
+            
+            try sensingKit.subscribe(to: SKSensorType.Accelerometer, withHandler: { (sensorType, sensorData, error) in
+                
+                if (error == nil) {
+                    let batteryData = sensorData as! SKAccelerometerData
+                    print("SKAccelerometer Level: \(batteryData)")
+                }
+                else {
+                    print("SKAccelerometer error: \(error)")
+                }
+            })
+        }
+        catch {
+            NSLog("cannot subscribe ")
+        }
+        
+        
+        
+        
+        // Start
+        do {
+            try sensingKit.startContinuousSensing(with: SKSensorType.Battery)
+            try sensingKit.startContinuousSensing(with: SKSensorType.Accelerometer)
+        }
+        catch {
+            // Handle error
+            NSLog("Handle error - star sensing")
+        }
+    }
+    
     
 }
 
