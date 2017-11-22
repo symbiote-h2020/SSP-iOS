@@ -10,6 +10,9 @@ import UIKit
 import SystemConfiguration
 import SystemConfiguration.CaptiveNetwork
 //import NetworkExtension
+import AVFoundation
+import CoreAudio
+import Foundation
 
 import SensingKit
 
@@ -28,6 +31,43 @@ class ViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(reinstateBackgroundTask), name: NSNotification.Name.UIApplicationDidBecomeActive, object: nil)
         
 //        startCounting()
+        makeMenu()
+        
+        initDecibel()
+    }
+    
+    func makeMenu() {
+        let button1 = UIBarButtonItem(image: UIImage(named: "Menu"), style: .plain, target: self, action: #selector(ViewController.menuBarButtonTapped))
+        self.navigationItem.rightBarButtonItem  = button1
+        
+
+    }
+    
+    func menuBarButtonTapped(_ sender: AnyObject) {
+        guard let button = sender as? UIBarButtonItem else {
+            return
+        }
+        
+        let menuAlertController = UIAlertController(title: "menu", message: "", preferredStyle: .actionSheet)
+        menuAlertController.modalPresentationStyle = .popover
+        
+        
+        let reloadAction = UIAlertAction(title: "b", style: .default) { action in
+
+        }
+        menuAlertController.addAction(reloadAction)
+        
+        let infoAction = UIAlertAction(title: "a", style: .default) { action in
+            
+        }
+        menuAlertController.addAction(infoAction)
+        
+        
+        
+        if let presenter = menuAlertController.popoverPresentationController {
+            presenter.barButtonItem = button
+        }
+        present(menuAlertController, animated: true, completion: nil)
     }
     
     deinit {
@@ -157,6 +197,9 @@ class ViewController: UIViewController {
         //connectToKonferencjaWiFi()
     }
     
+    @IBAction func barButtonTapped(_ sender: Any) {
+        makeMenu()
+    }
     
     func getSSID() -> String? {
         
@@ -323,5 +366,63 @@ class ViewController: UIViewController {
     }
     
     
+    
+    //MARK: decibel meter
+    var recorder: AVAudioRecorder!
+    var levelTimer = Timer()
+    
+    let LEVEL_THRESHOLD: Float = -10.0
+    
+    func initDecibel() {
+
+        
+        let documents = URL(fileURLWithPath: NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)[0])
+        let url = documents.appendingPathComponent("record.caf")
+        
+        let recordSettings: [String: Any] = [
+            AVFormatIDKey:              kAudioFormatAppleIMA4,
+            AVSampleRateKey:            44100.0,
+            AVNumberOfChannelsKey:      2,
+            AVEncoderBitRateKey:        12800,
+            AVLinearPCMBitDepthKey:     16,
+            AVEncoderAudioQualityKey:   AVAudioQuality.max.rawValue
+        ]
+        
+        let audioSession = AVAudioSession.sharedInstance()
+        do {
+            try audioSession.setCategory(AVAudioSessionCategoryPlayAndRecord)
+            try audioSession.setActive(true)
+            try recorder = AVAudioRecorder(url:url, settings: recordSettings)
+            
+        } catch {
+            return
+        }
+        
+        recorder.prepareToRecord()
+        recorder.isMeteringEnabled = true
+        recorder.record()
+        
+        levelTimer = Timer.scheduledTimer(timeInterval: 0.02, target: self, selector: #selector(levelTimerCallback), userInfo: nil, repeats: true)
+        
+    }
+    
+    @objc func levelTimerCallback() {
+        recorder.updateMeters()
+        
+        let level = recorder.averagePower(forChannel: 0)
+        let isLoud = level > LEVEL_THRESHOLD
+        
+        print("sound level = \(level) dB")
+        // do whatever you want with isLoud
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+
+    
+
 }
 
