@@ -402,7 +402,7 @@ class ViewController: UIViewController {
         recorder.isMeteringEnabled = true
         recorder.record()
         
-        levelTimer = Timer.scheduledTimer(timeInterval: 0.02, target: self, selector: #selector(levelTimerCallback), userInfo: nil, repeats: true)
+        levelTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(levelTimerCallback), userInfo: nil, repeats: true)
         
     }
     
@@ -411,6 +411,7 @@ class ViewController: UIViewController {
         
         let level = recorder.averagePower(forChannel: 0)
         let isLoud = level > LEVEL_THRESHOLD
+        
         
         print("sound level = \(level) dB")
         // do whatever you want with isLoud

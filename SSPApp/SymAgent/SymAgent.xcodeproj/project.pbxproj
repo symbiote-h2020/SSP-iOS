@@ -21,6 +21,8 @@
 		7605A22D1FA0C76C0096964F /* ObservationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A2281FA0C76C0096964F /* ObservationsManager.swift */; };
 		7605A22E1FA0C76C0096964F /* ActuatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A2291FA0C76C0096964F /* ActuatorManager.swift */; };
 		7605A22F1FA0C76C0096964F /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A22A1FA0C76C0096964F /* SettingsManager.swift */; };
+		760E43281FD1A7AD00F6320E /* Magnetometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760E43271FD1A7AD00F6320E /* Magnetometer.swift */; };
+		760E432A1FD1A7D300F6320E /* SoundLevelMeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760E43291FD1A7D300F6320E /* SoundLevelMeter.swift */; };
 		76D2AE261FA1D65B00DB8ACD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D2AE211FA1D65B00DB8ACD /* Constants.swift */; };
 		76D2AE271FA1D65B00DB8ACD /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D2AE221FA1D65B00DB8ACD /* Logger.swift */; };
 		76D2AE281FA1D65B00DB8ACD /* NotificationCenter+names.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D2AE231FA1D65B00DB8ACD /* NotificationCenter+names.swift */; };
@@ -46,6 +48,8 @@
 		7605A2281FA0C76C0096964F /* ObservationsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObservationsManager.swift; path = DataManagers/ObservationsManager.swift; sourceTree = "<group>"; };
 		7605A2291FA0C76C0096964F /* ActuatorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActuatorManager.swift; path = DataManagers/ActuatorManager.swift; sourceTree = "<group>"; };
 		7605A22A1FA0C76C0096964F /* SettingsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsManager.swift; path = DataManagers/SettingsManager.swift; sourceTree = "<group>"; };
+		760E43271FD1A7AD00F6320E /* Magnetometer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magnetometer.swift; sourceTree = "<group>"; };
+		760E43291FD1A7D300F6320E /* SoundLevelMeter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundLevelMeter.swift; sourceTree = "<group>"; };
 		76D2AE211FA1D65B00DB8ACD /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Common/Constants.swift; sourceTree = SOURCE_ROOT; };
 		76D2AE221FA1D65B00DB8ACD /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Common/Logger.swift; sourceTree = SOURCE_ROOT; };
 		76D2AE231FA1D65B00DB8ACD /* NotificationCenter+names.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NotificationCenter+names.swift"; path = "Common/NotificationCenter+names.swift"; sourceTree = SOURCE_ROOT; };
@@ -122,6 +126,15 @@
 			path = ../../SSPApp;
 			sourceTree = "<group>";
 		};
+		760E43261FD1A78E00F6320E /* Sensors */ = {
+			isa = PBXGroup;
+			children = (
+				760E43271FD1A7AD00F6320E /* Magnetometer.swift */,
+				760E43291FD1A7D300F6320E /* SoundLevelMeter.swift */,
+			);
+			path = Sensors;
+			sourceTree = "<group>";
+		};
 		76D2D5FD1F91040F00677088 = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +159,7 @@
 				7605A2241F97851F0096964F /* Common */,
 				7605A2021F9731360096964F /* Models */,
 				7605A22B1FA0C76C0096964F /* DataManagers */,
+				760E43261FD1A78E00F6320E /* Sensors */,
 				76D2D60A1F91040F00677088 /* SymAgent.h */,
 				76D2D60B1F91040F00677088 /* Info.plist */,
 			);
@@ -280,9 +294,11 @@
 				76D2AE291FA1D65B00DB8ACD /* NotificationInfo.swift in Sources */,
 				7605A22D1FA0C76C0096964F /* ObservationsManager.swift in Sources */,
 				7605A21E1F9784760096964F /* ActuatorsValue.swift in Sources */,
+				760E432A1FD1A7D300F6320E /* SoundLevelMeter.swift in Sources */,
 				7605A2211F9784760096964F /* ObservationLocation.swift in Sources */,
 				7605A2221F9784760096964F /* ObservationValue.swift in Sources */,
 				7605A2231F9784760096964F /* SmartDevice.swift in Sources */,
+				760E43281FD1A7AD00F6320E /* Magnetometer.swift in Sources */,
 				7605A21F1F9784760096964F /* GlobalSettingsContainer.swift in Sources */,
 				7605A22E1FA0C76C0096964F /* ActuatorManager.swift in Sources */,
 				7605A22C1FA0C76C0096964F /* SearchDevicesManager.swift in Sources */,
