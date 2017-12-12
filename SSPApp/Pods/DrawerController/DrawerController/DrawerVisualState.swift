@@ -1,4 +1,4 @@
-// Copyright (c) 2017 evolved.io (http://evolved.io)
+// Copyright (c) 2014 evolved.io (http://evolved.io)
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -82,13 +82,13 @@ public struct DrawerVisualState {
                 anchorPoint = CGPoint(x: 1.0, y: 0.5)
                 maxDrawerWidth = max(drawerController.maximumLeftDrawerWidth, drawerController.visibleLeftDrawerWidth)
                 xOffset = -(maxDrawerWidth / 2) + maxDrawerWidth * percentVisible
-                angle = -CGFloat(Double.pi / 2) + percentVisible * CGFloat(Double.pi / 2)
+                angle = -CGFloat(M_PI_2) + percentVisible * CGFloat(M_PI_2)
             } else {
                 sideDrawerViewController = drawerController.rightDrawerViewController
                 anchorPoint = CGPoint(x: 0.0, y: 0.5)
                 maxDrawerWidth = max(drawerController.maximumRightDrawerWidth, drawerController.visibleRightDrawerWidth)
                 xOffset = (maxDrawerWidth / 2) - maxDrawerWidth * percentVisible
-                angle = CGFloat(Double.pi / 2) - percentVisible * CGFloat(Double.pi / 2)
+                angle = CGFloat(M_PI_2) - percentVisible * CGFloat(M_PI_2)
             }
             
             sideDrawerViewController?.view.layer.anchorPoint = anchorPoint

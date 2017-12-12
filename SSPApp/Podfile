@@ -6,10 +6,12 @@ workspace 'SymAgent'
 # shared pods
 pod 'SwiftyJSON'
 pod 'AsyncSwift'
+pod 'SensingKit'
 
 # SymAgent
 target :SymAgent do
     project 'SymAgent/SymAgent.xcodeproj'
+    
 end
 
 
@@ -17,6 +19,6 @@ end
 target :SSPApp do
   project 'SSPApp.xcodeproj'
 
-  pod 'Charts'
-  pod 'DrawerController'
+  pod 'Charts', '3.0.2'
+  pod 'DrawerController', '3.0.0'
 end

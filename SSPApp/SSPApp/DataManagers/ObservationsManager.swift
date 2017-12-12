@@ -20,8 +20,12 @@ public class ObservationsManager {
             if let data = try? Data(contentsOf: archiveUrl) {
                 logWarn("loading test hardcoded data from test file")
                 
-                let json = JSON(data: data)
-                parseOservationsJson(json)
+                do {
+                    let json = try JSON(data: data)
+                    parseOservationsJson(json)
+                } catch {
+                    logError("getTestData json")
+                }
             }
         }
     }
@@ -52,8 +56,12 @@ public class ObservationsManager {
                 
                 
                 if let jsonData = data {
-                    let json = JSON(data: jsonData)
-                    self.parseOservationsJson(json)
+                    do {
+                        let json = try JSON(data: jsonData)
+                        self.parseOservationsJson(json)
+                    } catch {
+                        logError("getObservations json")
+                    }
                 }
                 
             }

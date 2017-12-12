@@ -1,4 +1,4 @@
-// Copyright (c) 2017 evolved.io (http://evolved.io)
+// Copyright (c) 2014 evolved.io (http://evolved.io)
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -62,16 +62,9 @@ public extension UIViewController {
 private func bounceKeyFrameAnimation(forDistance distance: CGFloat, on view: UIView) -> CAKeyframeAnimation {
     let factors: [CGFloat] = [0, 32, 60, 83, 100, 114, 124, 128, 128, 124, 114, 100, 83, 60, 32, 0, 24, 42, 54, 62, 64, 62, 54, 42, 24, 0, 18, 28, 32, 28, 18, 0]
     
-    let values = factors.map { x -> NSNumber in
-        // This could be refactored as `NSNumber(value: Float(x / 128 * distance + view.bounds.midX))`
-        // but unfortunately that would require 400ms+ more compile time
-        var value = x
-        value /= 128
-        value *= distance
-        value += view.bounds.midX
-
-        return NSNumber(value: Float(value))
-    }
+    let values = factors.map({ x in
+        NSNumber(value: Float(x / 128 * distance + view.bounds.midX) as Float)
+    })
     
     let animation = CAKeyframeAnimation(keyPath: "position.x")
     animation.repeatCount = 1
@@ -333,7 +326,6 @@ open class DrawerController: UIViewController, UIGestureRecognizerDelegate {
     }
     
     open var animationVelocity = DrawerDefaultAnimationVelocity
-    open var minimumAnimationDuration = DrawerMinimumAnimationDuration
     fileprivate var animatingDrawer: Bool = false {
         didSet {
             self.view.isUserInteractionEnabled = !self.animatingDrawer
@@ -516,28 +508,20 @@ open class DrawerController: UIViewController, UIGestureRecognizerDelegate {
     open override func decodeRestorableState(with coder: NSCoder) {
         super.decodeRestorableState(with: coder)
         
-        if self.leftDrawerViewController == nil {
-            if let leftDrawerViewController = coder.decodeObject(forKey: DrawerLeftDrawerKey) as? UIViewController {
-                self.leftDrawerViewController = leftDrawerViewController
-            }
+        if let leftDrawerViewController: AnyObject = coder.decodeObject(forKey: DrawerLeftDrawerKey) as AnyObject? {
+            self.leftDrawerViewController = leftDrawerViewController as? UIViewController
         }
         
-        if self.rightDrawerViewController == nil {
-            if let rightDrawerViewController = coder.decodeObject(forKey: DrawerRightDrawerKey) as? UIViewController {
-                self.rightDrawerViewController = rightDrawerViewController
-            }
+        if let rightDrawerViewController: AnyObject = coder.decodeObject(forKey: DrawerRightDrawerKey) as AnyObject? {
+            self.rightDrawerViewController = rightDrawerViewController as? UIViewController
         }
         
-        if self.centerViewController == nil {
-            if let centerViewController = coder.decodeObject(forKey: DrawerCenterKey) as? UIViewController {
-                self.centerViewController = centerViewController
-            }
+        if let centerViewController: AnyObject = coder.decodeObject(forKey: DrawerCenterKey) as AnyObject? {
+            self.centerViewController = centerViewController as? UIViewController
         }
         
         if let openSide = DrawerSide(rawValue: coder.decodeInteger(forKey: DrawerOpenSideKey)) {
-            if openSide != .none {
-                self.openDrawerSide(openSide, animated: false, completion: nil)
-            }
+            self.openSide = openSide
         }
     }
     
@@ -743,7 +727,7 @@ open class DrawerController: UIViewController, UIGestureRecognizerDelegate {
     }
     
     fileprivate func animationDuration(forAnimationDistance distance: CGFloat) -> TimeInterval {
-        return TimeInterval(max(distance / self.animationVelocity, minimumAnimationDuration))
+        return TimeInterval(max(distance / self.animationVelocity, DrawerMinimumAnimationDuration))
     }
     
     // MARK: - Size Methods
@@ -1260,7 +1244,7 @@ open class DrawerController: UIViewController, UIGestureRecognizerDelegate {
                 }
                 
                 let distance = abs(oldFrame.minX - newFrame.origin.x)
-                let duration: TimeInterval = animated ? TimeInterval(max(distance / abs(velocity), minimumAnimationDuration)) : 0.0
+                let duration: TimeInterval = animated ? TimeInterval(max(distance / abs(velocity), DrawerMinimumAnimationDuration)) : 0.0
                 
                 UIView.animate(withDuration: duration, delay: 0.0, usingSpringWithDamping: self.drawerDampingFactor, initialSpringVelocity: velocity / distance, options: options, animations: { () -> Void in
                     self.setNeedsStatusBarAppearanceUpdate()
@@ -1301,7 +1285,7 @@ open class DrawerController: UIViewController, UIGestureRecognizerDelegate {
             let newFrame = self.childControllerContainerView.bounds
             
             let distance = abs(self.centerContainerView.frame.minX)
-            let duration: TimeInterval = animated ? TimeInterval(max(distance / abs(velocity), minimumAnimationDuration)) : 0.0
+            let duration: TimeInterval = animated ? TimeInterval(max(distance / abs(velocity), DrawerMinimumAnimationDuration)) : 0.0
             
             let leftDrawerVisible = self.centerContainerView.frame.minX > 0
             let rightDrawerVisible = self.centerContainerView.frame.minX < 0
@@ -1398,22 +1382,6 @@ open class DrawerController: UIViewController, UIGestureRecognizerDelegate {
         return false
     }
     
-    override open var shouldAutorotate: Bool {
-        if let controller = centerViewController {
-            return controller.shouldAutorotate
-        }
-
-        return super.shouldAutorotate
-    }
-
-    open override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        if let controller = centerViewController {
-            return controller.supportedInterfaceOrientations
-        }
-
-        return super.supportedInterfaceOrientations
-    }
-
     // MARK: - Rotation
     
     open override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
@@ -1576,4 +1544,3 @@ open class DrawerController: UIViewController, UIGestureRecognizerDelegate {
         return rightBezelRect.contains(point) && self.isPointContained(withinCenterViewContentRect: point)
     }
 }
-

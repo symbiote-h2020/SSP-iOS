@@ -1,4 +1,4 @@
-// Copyright (c) 2017 evolved.io (http://evolved.io)
+// Copyright (c) 2014 evolved.io (http://evolved.io)
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -28,22 +28,17 @@ open class DrawerBarButtonItem: UIBarButtonItem {
     // MARK: - Initializers
     
     public override init() {
-        self.menuButton = AnimatedMenuButton(frame: CGRect(x: 0, y: 0, width: 26, height: 26))
+        self.menuButton = AnimatedMenuButton(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
         super.init()
         self.customView = self.menuButton
     }
-    
+
     public convenience init(target: AnyObject?, action: Selector) {
         self.init(target: target, action: action, menuIconColor: UIColor.gray)
     }
-    
+
     public convenience init(target: AnyObject?, action: Selector, menuIconColor: UIColor) {
-        self.init(target: target, action: action, menuIconColor: menuIconColor, animatable: true)
-    }
-    
-    public convenience init(target: AnyObject?, action: Selector, menuIconColor: UIColor, animatable: Bool) {
-        let menuButton = AnimatedMenuButton(frame: CGRect(x: 0, y: 0, width: 26, height: 26), strokeColor: menuIconColor)
-        menuButton.animatable = animatable
+        let menuButton = AnimatedMenuButton(frame: CGRect(x: 0, y: 0, width: 30, height: 30), strokeColor: menuIconColor)
         menuButton.addTarget(target, action: action, for: UIControlEvents.touchUpInside)
         self.init(customView: menuButton)
         
@@ -51,7 +46,7 @@ open class DrawerBarButtonItem: UIBarButtonItem {
     }
     
     public required init?(coder aDecoder: NSCoder) {
-        self.menuButton = AnimatedMenuButton(frame: CGRect(x: 0, y: 0, width: 26, height: 26))
+        self.menuButton = AnimatedMenuButton(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
         super.init(coder: aDecoder)
         self.customView = self.menuButton
     }

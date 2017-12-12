@@ -16,7 +16,7 @@ This is currently a work in progress and has not been thoroughly tested. Use at 
 platform :ios, '8.0'
 use_frameworks!
 
-pod 'DrawerController', '~> 3.2'
+pod 'DrawerController', '~> 1.0'
 ````
 
 #### [Carthage](https://github.com/Carthage/Carthage)

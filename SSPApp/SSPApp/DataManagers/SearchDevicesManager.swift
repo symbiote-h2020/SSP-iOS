@@ -38,8 +38,12 @@ public class SearchDevicesManager {
 //                logVerbose(dataString)
                 
                 if let jsonData = data {
-                    let json = JSON(data: jsonData)
-                    self.parseDevicesJson(json)
+                    do {
+                        let json = try JSON(data: jsonData)
+                        self.parseDevicesJson(json)
+                    } catch {
+                        logError("getTestDataFromCloud json")
+                    }
                 }
 
             }
@@ -82,8 +86,12 @@ public class SearchDevicesManager {
                 
                 
                 if let jsonData = data {
-                    let json = JSON(data: jsonData)
-                    self.parseDevicesJson(json)
+                    do {
+                        let json = try JSON(data: jsonData)
+                        self.parseDevicesJson(json)
+                    } catch {
+                        logError("getResourceList json")
+                    }
                 }
                 
             }

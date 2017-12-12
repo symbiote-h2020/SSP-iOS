@@ -1,28 +1,31 @@
 PODS:
-  - AsyncSwift (2.0.1)
+  - AsyncSwift (2.0.4)
   - Charts (3.0.2):
     - Charts/Core (= 3.0.2)
   - Charts/Core (3.0.2)
-  - DrawerController (3.2.1):
-    - DrawerController/Core (= 3.2.1)
-    - DrawerController/DrawerVisualStates (= 3.2.1)
-  - DrawerController/Core (3.2.1)
-  - DrawerController/DrawerVisualStates (3.2.1):
+  - DrawerController (3.0.0):
+    - DrawerController/Core (= 3.0.0)
+    - DrawerController/DrawerVisualStates (= 3.0.0)
+  - DrawerController/Core (3.0.0)
+  - DrawerController/DrawerVisualStates (3.0.0):
     - DrawerController/Core
-  - SwiftyJSON (3.1.4)
+  - SensingKit (0.5.0)
+  - SwiftyJSON (4.0.0)
 
 DEPENDENCIES:
   - AsyncSwift
-  - Charts
-  - DrawerController
+  - Charts (= 3.0.2)
+  - DrawerController (= 3.0.0)
+  - SensingKit
   - SwiftyJSON
 
 SPEC CHECKSUMS:
-  AsyncSwift: 632138e42ead868b53c745fcde9bf733ce1527ad
+  AsyncSwift: 65775a7b32e740609b24969ece3de58723b9dc3e
   Charts: 236d6ccdd0ce6feae151d89e829a7397381a21fd
-  DrawerController: d2f25c567a1786476d74bfe8cde9a5bdd39972a9
-  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  DrawerController: 5e859c5dbeae3cea20981eb5ff2aa16eb946dff9
+  SensingKit: eb203c70bb941d5a376c381776a61de54d2aa15b
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: b92e1091b0dba2135dac88d0131ada8260baadd0
+PODFILE CHECKSUM: 5ac198b734e9714940fe246bb81cbff79f533167
 
 COCOAPODS: 1.2.0
