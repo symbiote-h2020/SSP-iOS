@@ -24,6 +24,7 @@
 		760E43281FD1A7AD00F6320E /* Magnetometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760E43271FD1A7AD00F6320E /* Magnetometer.swift */; };
 		760E432A1FD1A7D300F6320E /* SoundLevelMeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760E43291FD1A7D300F6320E /* SoundLevelMeter.swift */; };
 		7613D67A1FE41A2B003568D2 /* AbstractInnkeeperConntector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7613D6791FE41A2B003568D2 /* AbstractInnkeeperConntector.swift */; };
+		763310DA1FF6694C00B71734 /* HttpMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763310D91FF6694C00B71734 /* HttpMessage.swift */; };
 		76D2AE261FA1D65B00DB8ACD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D2AE211FA1D65B00DB8ACD /* Constants.swift */; };
 		76D2AE271FA1D65B00DB8ACD /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D2AE221FA1D65B00DB8ACD /* Logger.swift */; };
 		76D2AE281FA1D65B00DB8ACD /* NotificationCenter+names.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D2AE231FA1D65B00DB8ACD /* NotificationCenter+names.swift */; };
@@ -52,6 +53,7 @@
 		760E43271FD1A7AD00F6320E /* Magnetometer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magnetometer.swift; sourceTree = "<group>"; };
 		760E43291FD1A7D300F6320E /* SoundLevelMeter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundLevelMeter.swift; sourceTree = "<group>"; };
 		7613D6791FE41A2B003568D2 /* AbstractInnkeeperConntector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractInnkeeperConntector.swift; sourceTree = "<group>"; };
+		763310D91FF6694C00B71734 /* HttpMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMessage.swift; sourceTree = "<group>"; };
 		76D2AE211FA1D65B00DB8ACD /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Common/Constants.swift; sourceTree = SOURCE_ROOT; };
 		76D2AE221FA1D65B00DB8ACD /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Common/Logger.swift; sourceTree = SOURCE_ROOT; };
 		76D2AE231FA1D65B00DB8ACD /* NotificationCenter+names.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NotificationCenter+names.swift"; path = "Common/NotificationCenter+names.swift"; sourceTree = SOURCE_ROOT; };
@@ -140,9 +142,18 @@
 		7613D6781FE415F0003568D2 /* SensorsDataSender */ = {
 			isa = PBXGroup;
 			children = (
+				763310D81FF668F800B71734 /* RequestsModels */,
 				7613D6791FE41A2B003568D2 /* AbstractInnkeeperConntector.swift */,
 			);
 			path = SensorsDataSender;
+			sourceTree = "<group>";
+		};
+		763310D81FF668F800B71734 /* RequestsModels */ = {
+			isa = PBXGroup;
+			children = (
+				763310D91FF6694C00B71734 /* HttpMessage.swift */,
+			);
+			path = RequestsModels;
 			sourceTree = "<group>";
 		};
 		76D2D5FD1F91040F00677088 = {
@@ -319,6 +330,7 @@
 				76D2AE2A1FA1D65B00DB8ACD /* SSPColors.swift in Sources */,
 				7605A21D1F9784760096964F /* Actuator.swift in Sources */,
 				7605A2261F9785420096964F /* DateTime.swift in Sources */,
+				763310DA1FF6694C00B71734 /* HttpMessage.swift in Sources */,
 				7605A2201F9784760096964F /* Observation.swift in Sources */,
 				76D2AE261FA1D65B00DB8ACD /* Constants.swift in Sources */,
 			);
