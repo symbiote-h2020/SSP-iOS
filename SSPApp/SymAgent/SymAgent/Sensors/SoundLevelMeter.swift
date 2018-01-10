@@ -60,11 +60,9 @@ class SoundLevelMeter {
         recorder.updateMeters()
         
         let level = recorder.averagePower(forChannel: 0)
-        let isLoud = level > LEVEL_THRESHOLD
+       // let isLoud = level > LEVEL_THRESHOLD
         
-        
-        print("sound level = \(level) dB")
-        // do whatever you want with isLoud
+        log("sound level = \(level) dB")
     }
     
 }
