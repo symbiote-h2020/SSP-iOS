@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+
+class MagnetometerMessage : HttpMessage {
+    
+    
+    ///body according to https://colab.intracom-telecom.com/display/SYM/Interface+SDEV+symbIoTe-Agent
+    override func setBody() {
+        // ?
+    }
+    
+}

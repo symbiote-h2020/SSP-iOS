@@ -13,6 +13,8 @@ class HttpMessage {
     var httpMethod = "POST"
     var request: URLRequest
     
+    
+    
     init(_ strUrl: String) {
         let url = URL(string: strUrl)!
         self.request = URLRequest(url: url)
@@ -21,7 +23,8 @@ class HttpMessage {
     }
     
     ///must be overriten
-    func setJson() {
+    ///body according to https://colab.intracom-telecom.com/display/SYM/Interface+SDEV+symbIoTe-Agent
+    func setBody() {
         preconditionFailure("setJson method must be overridden")
     }
     
