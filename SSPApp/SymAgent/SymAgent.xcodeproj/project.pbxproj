@@ -25,6 +25,8 @@
 		760E432A1FD1A7D300F6320E /* SoundLevelMeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760E43291FD1A7D300F6320E /* SoundLevelMeter.swift */; };
 		7613D67A1FE41A2B003568D2 /* AbstractInnkeeperConntector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7613D6791FE41A2B003568D2 /* AbstractInnkeeperConntector.swift */; };
 		763310DA1FF6694C00B71734 /* HttpMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763310D91FF6694C00B71734 /* HttpMessage.swift */; };
+		76965F9C200CE70500613785 /* SoundLevelMeterMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76965F9B200CE70500613785 /* SoundLevelMeterMessage.swift */; };
+		76965F9E200CE71800613785 /* MagnetometerMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76965F9D200CE71800613785 /* MagnetometerMessage.swift */; };
 		76D2AE261FA1D65B00DB8ACD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D2AE211FA1D65B00DB8ACD /* Constants.swift */; };
 		76D2AE271FA1D65B00DB8ACD /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D2AE221FA1D65B00DB8ACD /* Logger.swift */; };
 		76D2AE281FA1D65B00DB8ACD /* NotificationCenter+names.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D2AE231FA1D65B00DB8ACD /* NotificationCenter+names.swift */; };
@@ -54,6 +56,8 @@
 		760E43291FD1A7D300F6320E /* SoundLevelMeter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundLevelMeter.swift; sourceTree = "<group>"; };
 		7613D6791FE41A2B003568D2 /* AbstractInnkeeperConntector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractInnkeeperConntector.swift; sourceTree = "<group>"; };
 		763310D91FF6694C00B71734 /* HttpMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMessage.swift; sourceTree = "<group>"; };
+		76965F9B200CE70500613785 /* SoundLevelMeterMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundLevelMeterMessage.swift; sourceTree = "<group>"; };
+		76965F9D200CE71800613785 /* MagnetometerMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnetometerMessage.swift; sourceTree = "<group>"; };
 		76D2AE211FA1D65B00DB8ACD /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Common/Constants.swift; sourceTree = SOURCE_ROOT; };
 		76D2AE221FA1D65B00DB8ACD /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Common/Logger.swift; sourceTree = SOURCE_ROOT; };
 		76D2AE231FA1D65B00DB8ACD /* NotificationCenter+names.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NotificationCenter+names.swift"; path = "Common/NotificationCenter+names.swift"; sourceTree = SOURCE_ROOT; };
@@ -152,6 +156,8 @@
 			isa = PBXGroup;
 			children = (
 				763310D91FF6694C00B71734 /* HttpMessage.swift */,
+				76965F9B200CE70500613785 /* SoundLevelMeterMessage.swift */,
+				76965F9D200CE71800613785 /* MagnetometerMessage.swift */,
 			);
 			path = RequestsModels;
 			sourceTree = "<group>";
@@ -314,6 +320,7 @@
 			files = (
 				76D2AE271FA1D65B00DB8ACD /* Logger.swift in Sources */,
 				76D2AE291FA1D65B00DB8ACD /* NotificationInfo.swift in Sources */,
+				76965F9C200CE70500613785 /* SoundLevelMeterMessage.swift in Sources */,
 				7605A22D1FA0C76C0096964F /* ObservationsManager.swift in Sources */,
 				7605A21E1F9784760096964F /* ActuatorsValue.swift in Sources */,
 				7613D67A1FE41A2B003568D2 /* AbstractInnkeeperConntector.swift in Sources */,
@@ -324,6 +331,7 @@
 				760E43281FD1A7AD00F6320E /* Magnetometer.swift in Sources */,
 				7605A21F1F9784760096964F /* GlobalSettingsContainer.swift in Sources */,
 				7605A22E1FA0C76C0096964F /* ActuatorManager.swift in Sources */,
+				76965F9E200CE71800613785 /* MagnetometerMessage.swift in Sources */,
 				7605A22C1FA0C76C0096964F /* SearchDevicesManager.swift in Sources */,
 				7605A22F1FA0C76C0096964F /* SettingsManager.swift in Sources */,
 				76D2AE281FA1D65B00DB8ACD /* NotificationCenter+names.swift in Sources */,
