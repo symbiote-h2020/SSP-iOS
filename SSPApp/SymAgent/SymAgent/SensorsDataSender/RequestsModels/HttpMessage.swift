@@ -13,8 +13,6 @@ class HttpMessage {
     var httpMethod = "POST"
     var request: URLRequest
     
-    
-    
     init(_ strUrl: String) {
         let url = URL(string: strUrl)!
         self.request = URLRequest(url: url)
