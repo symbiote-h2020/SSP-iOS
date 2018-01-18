@@ -7,6 +7,8 @@ workspace 'SymAgent'
 pod 'SwiftyJSON'
 pod 'AsyncSwift'
 pod 'SensingKit'
+pod 'RxSwift',    '~> 4.0'
+pod 'RxCocoa',    '~> 4.0'
 
 # SymAgent
 target :SymAgent do
