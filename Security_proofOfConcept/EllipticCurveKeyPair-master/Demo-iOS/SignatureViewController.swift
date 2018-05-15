@@ -194,18 +194,6 @@ class SignatureViewController: UIViewController {
 }
 
 
-public class TestCSR {
-    
-    private var publicKey: SecKey?
-    private var privateKey: SecKey?
-    private var keyBlockSize: Int?
-    private var publicKeyBits: Data?
-    
-    let tagPublic = "com.csr.public"
-    let tagPrivate = "com.csr.private"
-    let keyAlgorithm = KeyAlgorithm.ec(signatureType: .sha256)
-    
 
-}
 
 

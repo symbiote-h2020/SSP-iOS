@@ -53,9 +53,10 @@ public class SearchDevicesManager {
     }
     
     public func getResourceList() {
-        let url = URL(string: Constants.restApiUrl + "/innkeeper/list_resources")
+        //let url = URL(string: Constants.restApiUrl + "/innkeeper/list_resources")
+                let url = URL(string: "http://217.72.97.9:8080/innkeeper/public_resources/") //debug - data from
         let request = NSMutableURLRequest(url: url!)
-        request.httpMethod = "POST"
+        request.httpMethod = "GET" //post for core
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         
         //adding request body
@@ -102,16 +103,17 @@ public class SearchDevicesManager {
     
     
     public func parseDevicesJson(_ dataJson: JSON) {
-        if dataJson["resources"].exists() == false {
-            logWarn("+++++++ wrong json +++++  SearchDevicesManager dataJson = \(dataJson)")
-            
-            let notiInfoObj  = NotificationInfo(type: ErrorType.wrongResult, info: "wrong json from API")
-            NotificationCenter.default.postNotificationName(SymNotificationName.DeviceListLoaded, object: notiInfoObj)
-            self.getBackupTestData()
-            return
-        }
+//        if dataJson["resources"].exists() == false {
+//            logWarn("+++++++ wrong json +++++  SearchDevicesManager dataJson = \(dataJson)")
+//
+//            let notiInfoObj  = NotificationInfo(type: ErrorType.wrongResult, info: "wrong json from API")
+//            NotificationCenter.default.postNotificationName(SymNotificationName.DeviceListLoaded, object: notiInfoObj)
+//            self.getBackupTestData()
+//            return
+//        }
         
-        let jsonArr:[JSON] = dataJson["resources"].arrayValue
+        //let jsonArr:[JSON] = dataJson["resources"].arrayValue
+        let jsonArr:[JSON] = dataJson.arrayValue
         for childJson in jsonArr {
             
             let dev = SmartDevice(j: childJson)
