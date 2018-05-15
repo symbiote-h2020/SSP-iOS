@@ -116,7 +116,7 @@ public class SearchDevicesManager {
         let jsonArr:[JSON] = dataJson.arrayValue
         for childJson in jsonArr {
             
-            let dev = SmartDevice(j: childJson)
+            let dev = SmartDevice(childJson)
             devicesList.append(dev)
         }
         

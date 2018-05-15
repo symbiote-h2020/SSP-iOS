@@ -9,8 +9,10 @@
 import Foundation
 import SwiftyJSON
 
-
-public class SmartDevice {
+/**
+ Smart device for core's has different JSON structure
+ */
+public class CoresSmartDevice {
     public var platformId: String = ""
     public var platformName: String = ""
     public var owner: String =  ""
