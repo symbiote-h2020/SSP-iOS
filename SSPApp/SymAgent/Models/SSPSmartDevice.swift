@@ -31,11 +31,29 @@ public class SmartDevice {
     public var observedProperties: [String] = [String]()
     public var resourceType: [String] = [String]()
     
+    //not common with the core APIs JOSN
+    public var internalIdResource: String = "" //": "5c:cf:7f:3a:6b:76",
+    public var sspIdResource: String = "" //": "1",
+    public var sspIdParent: String = "" // ": "0",
+    public var symIdParent: String = "" //": "",
+    
+    
     public convenience init(_ resourceJson: JSON)  {
         self.init()
         
+        
+        if resourceJson["internalIdResource"].exists() {
+            internalIdResource = resourceJson["internalIdResource"].stringValue
+        }
+        
         var j: JSON = JSON()
-        if resourceJson["resource"].exists()  { j = resourceJson["resource"]}
+        if resourceJson["resource"].exists()  {
+            j = resourceJson["resource"]
+        }
+        else {
+            name = "Error - unexpected JSON"
+            return
+        }
         
         
         if j["platformId"].exists()     { platformId = j["platformId"].stringValue }

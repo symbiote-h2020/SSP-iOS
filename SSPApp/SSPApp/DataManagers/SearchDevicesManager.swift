@@ -53,10 +53,9 @@ public class SearchDevicesManager {
     }
     
     public func getResourceList() {
-        //let url = URL(string: Constants.restApiUrl + "/innkeeper/list_resources")
-                let url = URL(string: "http://217.72.97.9:8080/innkeeper/public_resources/") //debug - data from
+        let url = URL(string: Constants.restApiUrl + "/innkeeper/public_resources/")
         let request = NSMutableURLRequest(url: url!)
-        request.httpMethod = "GET" //post for core
+        request.httpMethod = "GET" //POST for core
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         
         //adding request body
@@ -103,16 +102,6 @@ public class SearchDevicesManager {
     
     
     public func parseDevicesJson(_ dataJson: JSON) {
-//        if dataJson["resources"].exists() == false {
-//            logWarn("+++++++ wrong json +++++  SearchDevicesManager dataJson = \(dataJson)")
-//
-//            let notiInfoObj  = NotificationInfo(type: ErrorType.wrongResult, info: "wrong json from API")
-//            NotificationCenter.default.postNotificationName(SymNotificationName.DeviceListLoaded, object: notiInfoObj)
-//            self.getBackupTestData()
-//            return
-//        }
-        
-        //let jsonArr:[JSON] = dataJson["resources"].arrayValue
         let jsonArr:[JSON] = dataJson.arrayValue
         for childJson in jsonArr {
             
@@ -131,14 +120,7 @@ public class SearchDevicesManager {
     }
     
     
-    //MOTYLA NOGA - czemu to się nie chce sparsować
     public func getBackupTestData() {
-//    //    let str = "{\"a\":[]}"
-//        let str = "\"resources\":[        {           \"platformId\":\"Error device\",         \"platformName\":\"NoDevices found\",         \"owner\":null,         \"name\":\"dimmer service\",       \"id\":\"593943acb4f8e209390e9425\",         \"description\":\"dimmer\",         \"locationName\":\"\" } ]"
-//        
-//        let json = JSON(jsonString: str)
-//        self.parseDevicesJson(json)
-        
         logWarn("+++  no devices found getting debug test data +++")
         
         let dev = SmartDevice.makeDebugTestDevice()

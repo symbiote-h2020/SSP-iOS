@@ -31,7 +31,7 @@ public class ObservationsManager {
     }
     
     public func getObservations(forDeviceId: String!) {
-        let url = URL(string: Constants.restApiUrl + "/rap/Sensor/" + forDeviceId)
+        let url = URL(string: Constants.restApiUrl + "/rap/Sensor('" + forDeviceId + "')/Observations?$top=1")
         let request = NSMutableURLRequest(url: url!)
         request.httpMethod = "GET"
         
