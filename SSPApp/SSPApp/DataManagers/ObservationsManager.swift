@@ -34,6 +34,9 @@ public class ObservationsManager {
         let url = URL(string: Constants.restApiUrl + "/rap/Sensor('" + forDeviceId + "')/Observations?$top=1")
         let request = NSMutableURLRequest(url: url!)
         request.httpMethod = "GET"
+        request.setValue(DateTime.Now., forHTTPHeaderField: "x-auth-timestamp")
+        request.setValue("1", forHTTPHeaderField: "x-auth-size")
+        request.setValue(TokensManager.shared.guestToken, forHTTPHeaderField: "X-Auth-Token")  //TODO: proper secure token
         
         let task = URLSession.shared.dataTask(with: request as URLRequest) { data,response,error in
             if let err = error {

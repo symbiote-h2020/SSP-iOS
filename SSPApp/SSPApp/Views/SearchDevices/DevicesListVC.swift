@@ -26,6 +26,9 @@ class DevicesListVC: ViewControllerWithDrawerMenu {
         
         self.title = "Devices List"
         
+        //init tokens data
+        TokensManager.shared.getGuestToken()
+        
         // Debug test
 //        if sdm.devicesList.count == 0 {
 //            sdm.getBackupTestData()
