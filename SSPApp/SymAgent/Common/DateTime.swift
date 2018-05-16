@@ -370,6 +370,11 @@ extension DateTime {
 
 // MARK: i18n
 extension DateTime {
+    public func unixEpochTime() -> Int {
+        let t = self.asNSDate.timeIntervalSince1970
+        return Int(t)
+    }
+    
     
     public func format(_ dateFormat: String, locale: Locale? = DateTime.DatabaseLocale) -> String {
         let formatter = DateFormatter()
