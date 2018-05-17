@@ -24,8 +24,8 @@ public class TokensManager {
     }
     
     public func getGuestToken() {
-        let url = URL(string: "https://symbiote-dev.man.poznan.pl/coreInterface/get_guest_token") //debug - token from core
-        //TODO when server side is ready change to http://(mainUrl):8443/get_guest_token
+        //let url = URL(string: "https://symbiote-dev.man.poznan.pl/coreInterface/get_guest_token") //debug - token from core
+        let url = URL(string: Constants.restApiUrl + "/saam/get_guest_token")
         
         let request = NSMutableURLRequest(url: url!)
         request.httpMethod = "POST"
@@ -40,7 +40,7 @@ public class TokensManager {
             else {
                 if let httpResponse = response as? HTTPURLResponse
                 {
-                    logVerbose("response header for guest_token request:  \(httpResponse.allHeaderFields)")
+                    //logVerbose("response header for guest_token request:  \(httpResponse.allHeaderFields)")
                     if let xAuthToken = httpResponse.allHeaderFields["x-auth-token"] as? String {
                         // use X-Dem-Auth here
                         log("gouest_token = \(xAuthToken)")
@@ -52,5 +52,19 @@ public class TokensManager {
         
         task.resume()
     }
-    
+ 
+    public func makeXAuth1RequestHeader() -> String {
+        let json = JSON(
+                ["token":self.guestToken,
+                 "authenticationChallenge":"",
+                 "clientCertificate":"",
+                 "clientCertificateSigningAAMCertificate":"",
+                 "foreignTokenIssuingAAMCertificate":""
+                 ]
+        )
+        
+        log(json.rawString(options: []))
+        //let str = "{\"token\":\"\(TokensManager.shared.guestToken)\":\"\" }"
+        return json.rawString(options: []) ?? "couldn't build request json"
+    }
 }

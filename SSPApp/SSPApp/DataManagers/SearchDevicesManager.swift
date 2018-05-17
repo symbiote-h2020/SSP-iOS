@@ -58,10 +58,10 @@ public class SearchDevicesManager {
         request.httpMethod = "GET" //POST for core
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         
-        //adding request body
-        let json: [String: Any] = ["id": "appId"]
-        let jsonData = try? JSONSerialization.data(withJSONObject: json)
-        request.httpBody = jsonData
+//        //adding request body for core
+//        let json: [String: Any] = ["id": "appId"]
+//        let jsonData = try? JSONSerialization.data(withJSONObject: json)
+//        request.httpBody = jsonData
         
         
         let task = URLSession.shared.dataTask(with: request as URLRequest) { data,response,error in

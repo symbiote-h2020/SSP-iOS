@@ -36,7 +36,7 @@ public class ObservationsManager {
         request.httpMethod = "GET"
         request.setValue("\(DateTime.Now.unixEpochTime())", forHTTPHeaderField: "x-auth-timestamp")
         request.setValue("1", forHTTPHeaderField: "x-auth-size")
-        request.setValue(TokensManager.shared.guestToken, forHTTPHeaderField: "X-Auth-Token")  //TODO: proper secure token
+        request.setValue(TokensManager.shared.makeXAuth1RequestHeader(), forHTTPHeaderField: "x-auth-1")
         
         let task = URLSession.shared.dataTask(with: request as URLRequest) { data,response,error in
             if let err = error {
@@ -49,7 +49,7 @@ public class ObservationsManager {
                 let status = (response as! HTTPURLResponse).statusCode
                 if (status >= 400) {
                     self.getTestData()
-                    logError("response status: \(status)")
+                    logError("response status: \(status) \(response.debugDescription)")
                     let notiInfoObj  = NotificationInfo(type: ErrorType.connection, info: "response status: \(status)")
                     NotificationCenter.default.postNotificationName(SymNotificationName.ObservationsListLoaded, object: notiInfoObj)
                 }
@@ -72,7 +72,6 @@ public class ObservationsManager {
         
         task.resume()
     }
-    
     
     public func parseOservationsJson(_ dataJson: JSON) {
         let jsonArr:[JSON] = dataJson.arrayValue
