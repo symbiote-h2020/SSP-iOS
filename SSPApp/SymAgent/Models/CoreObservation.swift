@@ -9,7 +9,8 @@
 import Foundation
 import SwiftyJSON
 
-public class Observation {
+///JSON in core has a bit different form
+public class CoreObservation {
     
     public var resourceId: String = ""
     public var resultTime: String = ""  //TODO parse time to DateTime

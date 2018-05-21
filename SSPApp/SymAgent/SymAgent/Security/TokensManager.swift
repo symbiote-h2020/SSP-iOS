@@ -42,8 +42,7 @@ public class TokensManager {
                 {
                     //logVerbose("response header for guest_token request:  \(httpResponse.allHeaderFields)")
                     if let xAuthToken = httpResponse.allHeaderFields["x-auth-token"] as? String {
-                        // use X-Dem-Auth here
-                        log("gouest_token = \(xAuthToken)")
+                        //log("gouest_token = \(xAuthToken)")
                         self.guestToken = xAuthToken
                     }
                 }

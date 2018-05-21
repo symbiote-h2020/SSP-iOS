@@ -31,10 +31,15 @@ public class ObservationsManager {
     }
     
     public func getObservations(forDeviceId: String!) {
-        let url = URL(string: Constants.restApiUrl + "/rap/Sensor('" + forDeviceId + "')/Observations?$top=1")
+        let devId = Int(forDeviceId)!
+        let strUrl =  "\(Constants.restApiUrl)/rap/Sensor('\(devId)')/Observations"  ///Observations?$top=1")
+       // let strUrl =  "\(Constants.restApiUrl)/rap/Sensor/\(devId)/Observations"  ///"The URI is malformed""
+        //let strTestUrl =   "http://217.72.97.9:8080/rap/Sensor('1')/Observations" //test
+        log(strUrl)
+        let url = URL(string: strUrl)
         let request = NSMutableURLRequest(url: url!)
         request.httpMethod = "GET"
-        request.setValue("\(DateTime.Now.unixEpochTime())", forHTTPHeaderField: "x-auth-timestamp")
+        request.setValue("\(DateTime.Now.unixEpochTime()*1000)", forHTTPHeaderField: "x-auth-timestamp")
         request.setValue("1", forHTTPHeaderField: "x-auth-size")
         request.setValue(TokensManager.shared.makeXAuth1RequestHeader(), forHTTPHeaderField: "x-auth-1")
         
@@ -74,7 +79,8 @@ public class ObservationsManager {
     }
     
     public func parseOservationsJson(_ dataJson: JSON) {
-        let jsonArr:[JSON] = dataJson.arrayValue
+        let jsonArr:[JSON] = dataJson["body"].arrayValue
+        //for jInnerArray in jsonArr {
         for childJson in jsonArr {
             
             let obs = Observation(j: childJson)
@@ -86,6 +92,7 @@ public class ObservationsManager {
             }
             self.observationsByLocation[location]?.append(obs)
         }
+        
         
         NotificationCenter.default.postNotificationName(SymNotificationName.ObservationsListLoaded)
     }

@@ -17,6 +17,10 @@ public class ActuatorManager {
         let url = URL(string: Constants.restApiUrl + "/rap/Actuator/" + smartDeviceId)
         let request = NSMutableURLRequest(url: url!)
         request.httpMethod = "POST"
+        request.setValue("\(DateTime.Now.unixEpochTime())", forHTTPHeaderField: "x-auth-timestamp")
+        request.setValue("1", forHTTPHeaderField: "x-auth-size")
+        request.setValue(TokensManager.shared.makeXAuth1RequestHeader(), forHTTPHeaderField: "x-auth-1")
+        
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         
         //adding request body
@@ -44,7 +48,7 @@ public class ActuatorManager {
             else {
                 let status = (response as! HTTPURLResponse).statusCode
                 if (status >= 400) {
-                    logError("response status: \(status)")
+                    logError("response status: \(status) \(response.debugDescription)")
                     let notiInfoObj  = NotificationInfo(type: ErrorType.connection, info: "response status: \(status)")
                     NotificationCenter.default.postNotificationName(SymNotificationName.ActuatorAction, object: notiInfoObj)
                 }
