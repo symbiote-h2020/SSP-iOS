@@ -95,12 +95,12 @@ public class SmartDevice {
     
     public static func makeDebugTestDevice() -> SmartDevice {
         let dev = SmartDevice()
-        dev.id="aa"
-        dev.name="Error"
+        dev.id="0"
+        dev.name="No smart devices in this SmartSpace"
         dev.locationName="Not found"
         dev.platformName="No devices"
         dev.deviceDescription="Debug test device in case of error"
-        dev.status = "TEST"
+        dev.status = "NOT FOUND"
         dev.observedProperties.append("debug data")
         return dev
     }
