@@ -42,9 +42,10 @@ class DevicesListVC: ViewControllerWithDrawerMenu {
         NotificationCenter.default.addObserver(self, selector: #selector(tokenFromSSPNotificationReceived(_:)), name: SymNotificationName.SecurityTokenSSP, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(tokenFromCoreNotificationReceived(_:)), name: SymNotificationName.SecurityTokenCore, object: nil)
         
-        //init tokens data
-        TokensManager.shared.getSSPGuestToken()
-        TokensManager.shared.getCoreGuestToken()
+        //TODO do we need tokens at this point
+//        TokensManager.shared.getSSPGuestToken()
+//        TokensManager.shared.getCoreGuestToken()
+        sdm.getCoreResourceList()
     }
     
     
@@ -56,7 +57,7 @@ class DevicesListVC: ViewControllerWithDrawerMenu {
         let notInfo = NotificationInfo(object: notification.object as AnyObject?)
         
         if notInfo.errorType == .noErrorSuccessfulFinish {
-            sdm.getResourceList()
+            sdm.getCoreResourceList()
         }
         else {
             notInfo.showProblemAlert()
