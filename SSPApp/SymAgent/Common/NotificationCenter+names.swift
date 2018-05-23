@@ -15,7 +15,8 @@ public enum SymNotificationName: String {
     case ObservationsListLoaded
     case ActuatorAction
     case Settings
-    case Security
+    case SecurityTokenSSP
+    case SecurityTokenCore
 }
 
 public extension AsyncBlock {

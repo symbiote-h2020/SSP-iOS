@@ -19,7 +19,7 @@ public class ActuatorManager {
         request.httpMethod = "POST"
         request.setValue("\(DateTime.Now.unixEpochTime())", forHTTPHeaderField: "x-auth-timestamp")
         request.setValue("1", forHTTPHeaderField: "x-auth-size")
-        request.setValue(TokensManager.shared.makeXAuth1RequestHeader(), forHTTPHeaderField: "x-auth-1")
+        request.setValue(TokensManager.shared.makeXAuth1SSPRequestHeader(), forHTTPHeaderField: "x-auth-1")
         
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         

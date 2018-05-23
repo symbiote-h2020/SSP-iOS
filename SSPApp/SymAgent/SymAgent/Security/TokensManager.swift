@@ -13,7 +13,8 @@ public class TokensManager {
     // MARK: - Properties
     public static let shared = TokensManager(GlobalSettings.restApiUrl)
     
-    public var guestToken: String = ""
+    public var sspGuestToken: String = ""
+    public var coreGuestToken: String = ""
     
     let baseURL: URL
     
@@ -23,11 +24,10 @@ public class TokensManager {
         self.baseURL = baseURL!
     }
     
-    public func getGuestToken() {
-        //let url = URL(string: "https://symbiote-dev.man.poznan.pl/coreInterface/get_guest_token") //debug - token from core
-        let url = URL(string: GlobalSettings.restApiUrl + "/saam/get_guest_token")
-        
-        let request = NSMutableURLRequest(url: url!)
+    ///slightly different url for tokenns for SSP and core (also different notificationsNames)
+    public func getCoreGuestToken() {
+        let url = URL(string: GlobalSettings.coreInterfaceApiUrl + "/get_guest_token")!
+        let request = NSMutableURLRequest(url: url)
         request.httpMethod = "POST"
         
         let task = URLSession.shared.dataTask(with: request as URLRequest) { data,response,error in
@@ -35,7 +35,7 @@ public class TokensManager {
                 logError(error.debugDescription)
                 
                 let notiInfoObj  = NotificationInfo(type: ErrorType.connection, info: err.localizedDescription)
-                NotificationCenter.default.postNotificationName(SymNotificationName.Security, object: notiInfoObj)
+                NotificationCenter.default.postNotificationName(SymNotificationName.SecurityTokenCore, object: notiInfoObj)
             }
             else {
                 if let httpResponse = response as? HTTPURLResponse
@@ -43,7 +43,37 @@ public class TokensManager {
                     //logVerbose("response header for guest_token request:  \(httpResponse.allHeaderFields)")
                     if let xAuthToken = httpResponse.allHeaderFields["x-auth-token"] as? String {
                         //log("gouest_token = \(xAuthToken)")
-                        self.guestToken = xAuthToken
+                        self.coreGuestToken = xAuthToken
+                        NotificationCenter.default.postNotificationName(SymNotificationName.SecurityTokenCore)
+                    }
+                }
+            }
+        }
+        
+        task.resume()
+    }
+    
+    ///slightly different url for tokenns for SSP and core (also different notificationsNames)
+    public func getSSPGuestToken() {
+        let url = URL(string: GlobalSettings.restApiUrl + "/saam/get_guest_token")!
+        let request = NSMutableURLRequest(url: url)
+        request.httpMethod = "POST"
+        
+        let task = URLSession.shared.dataTask(with: request as URLRequest) { data,response,error in
+            if let err = error {
+                logError(error.debugDescription)
+                
+                let notiInfoObj  = NotificationInfo(type: ErrorType.connection, info: err.localizedDescription)
+                NotificationCenter.default.postNotificationName(SymNotificationName.SecurityTokenSSP, object: notiInfoObj)
+            }
+            else {
+                if let httpResponse = response as? HTTPURLResponse
+                {
+                    //logVerbose("response header for guest_token request:  \(httpResponse.allHeaderFields)")
+                    if let xAuthToken = httpResponse.allHeaderFields["x-auth-token"] as? String {
+                        //log("gouest_token = \(xAuthToken)")
+                        self.sspGuestToken = xAuthToken
+                        NotificationCenter.default.postNotificationName(SymNotificationName.SecurityTokenSSP)
                     }
                 }
             }
@@ -52,9 +82,9 @@ public class TokensManager {
         task.resume()
     }
  
-    public func makeXAuth1RequestHeader() -> String {
+    public func makeXAuth1SSPRequestHeader() -> String {
         let json = JSON(
-                ["token":self.guestToken,
+                ["token":self.sspGuestToken,
                  "authenticationChallenge":"",
                  "clientCertificate":"",
                  "clientCertificateSigningAAMCertificate":"",
@@ -63,7 +93,20 @@ public class TokensManager {
         )
         
         log(json.rawString(options: []))
-        //let str = "{\"token\":\"\(TokensManager.shared.guestToken)\":\"\" }"
+        return json.rawString(options: []) ?? "couldn't build request json"
+    }
+    
+    public func makeXAuth1CoreRequestHeader() -> String {
+        let json = JSON(
+            ["token":self.coreGuestToken,
+             "authenticationChallenge":"",
+             "clientCertificate":"",
+             "clientCertificateSigningAAMCertificate":"",
+             "foreignTokenIssuingAAMCertificate":""
+            ]
+        )
+        
+        log(json.rawString(options: []))
         return json.rawString(options: []) ?? "couldn't build request json"
     }
     

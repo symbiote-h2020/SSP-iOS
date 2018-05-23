@@ -25,9 +25,7 @@ class DevicesListVC: ViewControllerWithDrawerMenu {
         super.viewDidLoad()
         
         self.title = "Devices List"
-        
-        //init tokens data
-        TokensManager.shared.getGuestToken()
+    
         
         // Debug test
 //        if sdm.devicesList.count == 0 {
@@ -40,18 +38,37 @@ class DevicesListVC: ViewControllerWithDrawerMenu {
     
         tableView.tableFooterView = UIView()
         
-        NotificationCenter.default.addObserver(self, selector: #selector(notyficationReceived(_:)), name: SymNotificationName.DeviceListLoaded, object: nil)
-        sdm.getResourceList()
+        NotificationCenter.default.addObserver(self, selector: #selector(getListNotyficationReceived(_:)), name: SymNotificationName.DeviceListLoaded, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(tokenFromSSPNotificationReceived(_:)), name: SymNotificationName.SecurityTokenSSP, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(tokenFromCoreNotificationReceived(_:)), name: SymNotificationName.SecurityTokenCore, object: nil)
+        
+        //init tokens data
+        TokensManager.shared.getSSPGuestToken()
+        TokensManager.shared.getCoreGuestToken()
     }
     
     
+    //MARK Tokens
+    func tokenFromSSPNotificationReceived(_ notification: Notification) {
+    }
+    
+    func tokenFromCoreNotificationReceived(_ notification: Notification) {
+        let notInfo = NotificationInfo(object: notification.object as AnyObject?)
+        
+        if notInfo.errorType == .noErrorSuccessfulFinish {
+            sdm.getResourceList()
+        }
+        else {
+            notInfo.showProblemAlert()
+        }
+    }
+    
     //MARK - data management
-    func notyficationReceived(_ notification: Notification) {
+    func getListNotyficationReceived(_ notification: Notification) {
         let notInfo = NotificationInfo(object: notification.object as AnyObject?)
         log("MasterViewController notification = \(notInfo.infoText)")
         
         if notInfo.errorType == .noErrorSuccessfulFinish {
-            //todo
             deviceObjects = sdm.devicesList
             tableView.reloadData()
         }
