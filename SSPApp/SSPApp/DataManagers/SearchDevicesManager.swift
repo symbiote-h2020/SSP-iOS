@@ -53,11 +53,8 @@ public class SearchDevicesManager {
     }
     
     public func getCoreResourceList() {
-        //core https://symbiote-open.man.poznan.pl/coreInterface/query
-        //let url = URL(string: "https://symbiote-open.man.poznan.pl/coreInterface/query?id=5ae314283a6fd805304869ca")
-
-        let url = URL(string: "https://symbiote-open.man.poznan.pl:8777/query?homePlatformId=SymbIoTe_Core_AAM")
-        //let url = URL(string: GlobalSettings.restApiUrl + "/innkeeper/public_resources/")
+        //let url = URL(string: "https://symbiote-open.man.poznan.pl/coreInterface/query?id=5ae314283a6fd805304869ca") //if using direct request  -needs security tokens in heade
+        let url = URL(string: "https://symbiote-open.man.poznan.pl:8777/query?homePlatformId=SymbIoTe_Core_AAM") //requesting via client proxy
         let request = NSMutableURLRequest(url: url!)
         request.httpMethod = "GET"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
@@ -66,13 +63,7 @@ public class SearchDevicesManager {
 //        request.setValue("1", forHTTPHeaderField: "x-auth-size")
 //        //request.setValue(TokensManager.shared.makeXAuth1RequestHeader(), forHTTPHeaderField: "x-auth-1")
 //        request.setValue(TokensManager.shared.makeXAuth1RequestHeader_DebugTest(), forHTTPHeaderField: "x-auth-1")
-        
-//        //adding request body for core
-//        let json: [String: Any] = ["id": "appId"]
-//        let jsonData = try? JSONSerialization.data(withJSONObject: json)
-//        request.httpBody = jsonData
-        
-        
+
         let task = URLSession.shared.dataTask(with: request as URLRequest) { data,response,error in
             if let err = error {
                 logError(error.debugDescription)
@@ -109,27 +100,11 @@ public class SearchDevicesManager {
         task.resume()
     }
     
-    ///TODO rebuild urls
     public func getSSPResourceList() {
-        //core https://symbiote-open.man.poznan.pl/coreInterface/query
-        //let url = URL(string: "https://symbiote-open.man.poznan.pl/coreInterface/query?id=5ae314283a6fd805304869ca")
-        //https://symbiote-open.man.poznan.pl:8777/query?homePlatformId=SymbIoTe_Core_AAM
-        //let url = URL(string: "https://symbiote-open.man.poznan.pl:8777/query?homePlatformId=SymbIoTe_Core_AAM")
         let url = URL(string: GlobalSettings.restApiUrl + "/innkeeper/public_resources/")
         let request = NSMutableURLRequest(url: url!)
         request.httpMethod = "GET"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        
-        //        request.setValue("\(DateTime.Now.unixEpochTime()*1000)", forHTTPHeaderField: "x-auth-timestamp")
-        //        request.setValue("1", forHTTPHeaderField: "x-auth-size")
-        //        //request.setValue(TokensManager.shared.makeXAuth1RequestHeader(), forHTTPHeaderField: "x-auth-1")
-        //        request.setValue(TokensManager.shared.makeXAuth1RequestHeader_DebugTest(), forHTTPHeaderField: "x-auth-1")
-        
-        //        //adding request body for core
-        //        let json: [String: Any] = ["id": "appId"]
-        //        let jsonData = try? JSONSerialization.data(withJSONObject: json)
-        //        request.httpBody = jsonData
-        
         
         let task = URLSession.shared.dataTask(with: request as URLRequest) { data,response,error in
             if let err = error {
@@ -155,7 +130,7 @@ public class SearchDevicesManager {
                 if let jsonData = data {
                     do {
                         let json = try JSON(data: jsonData)
-                        self.parseDevicesFromCoreJson(json)
+                        self.parseDevicesFromSSPJson(json)
                     } catch {
                         logError("getResourceList json")
                     }
@@ -187,7 +162,7 @@ public class SearchDevicesManager {
         
         if devicesList.count == 0 {
             getBackupTestData()
-            let notiInfoObj  = NotificationInfo(type: ErrorType.emptySet, info: "No devices found")
+            let notiInfoObj  = NotificationInfo(type: ErrorType.emptySet, info: "No devices found in core")
             NotificationCenter.default.postNotificationName(SymNotificationName.DeviceListLoaded, object: notiInfoObj)
         }
         else {
@@ -195,6 +170,24 @@ public class SearchDevicesManager {
         }
     }
     
+    
+    public func parseDevicesFromSSPJson(_ dataJson: JSON) {
+        let jsonArr:[JSON] = dataJson.arrayValue
+        for childJson in jsonArr {
+            
+            let dev = SSPSmartDevice(childJson)
+            devicesList.append(dev)
+        }
+        
+        if devicesList.count == 0 {
+            getBackupTestData()
+            let notiInfoObj  = NotificationInfo(type: ErrorType.emptySet, info: "No devices in SSP")
+            NotificationCenter.default.postNotificationName(SymNotificationName.DeviceListLoaded, object: notiInfoObj)
+        }
+        else {
+            NotificationCenter.default.postNotificationName(SymNotificationName.DeviceListLoaded)
+        }
+    }
     
     public func getBackupTestData() {
         logWarn("+++  no devices found getting debug test data +++")

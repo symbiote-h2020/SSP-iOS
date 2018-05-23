@@ -12,7 +12,7 @@ import SwiftyJSON
 /**
    Do not mix with cores SmartDevice - it has different JSON
  */
-public class SppSmartDevice : SmartDevice {
+public class SSPSmartDevice : SmartDevice {
     
     
     public convenience init(_ resourceJson: JSON)  {

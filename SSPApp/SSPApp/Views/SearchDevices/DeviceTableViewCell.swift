@@ -40,12 +40,14 @@ class DeviceTableViewCell: UITableViewCell {
         else {
             statusLabel.textColor = SSPColors.no
         }
-        platformLabel.text = d.platformName
+        
         if d.type == .ssp {
             platformLabel.textColor = SSPColors.accentColor
+            platformLabel.text = "[ SSP ]"
         }
         else {
             platformLabel.textColor = SSPColors.subtleTextColor
+            platformLabel.text = d.platformName
         }
         
         typeLabel.text = d.observedProperties.flatMap({$0}).joined(separator: ",");

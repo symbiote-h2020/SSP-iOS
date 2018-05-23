@@ -46,6 +46,7 @@ class DevicesListVC: ViewControllerWithDrawerMenu {
 //        TokensManager.shared.getSSPGuestToken()
 //        TokensManager.shared.getCoreGuestToken()
         sdm.getCoreResourceList()
+        sdm.getSSPResourceList()
     }
     
     
