@@ -12,26 +12,10 @@ import SwiftyJSON
 /**
  Smart device for core's has different JSON structure
  */
-public class CoresSmartDevice {
-    public var platformId: String = ""
-    public var platformName: String = ""
-    public var owner: String =  ""
-    public var name: String = ""
-    public var id: String = ""
-    public var deviceDescription: String = ""
-    public var status: String = ""
+public class CoreSmartDevice : SmartDevice {
+
     
-    //location
-    public var locationName: String = ""
-    public var locationLatitude: String = ""
-    public var locationLongitude: String = ""
-    public var locationAltitude: String = ""
-    
-    //array
-    public var observedProperties: [String] = [String]()
-    public var resourceType: [String] = [String]()
-    
-    public convenience init(j: JSON)  {
+    public convenience init(_ j: JSON)  {
         self.init()
         
         if j["platformId"].exists()     { platformId = j["platformId"].stringValue }
@@ -69,22 +53,5 @@ public class CoresSmartDevice {
                 resourceType.append(r.stringValue)
             }
         }
-
-        
-
     }
-    
-    
-    public static func makeDebugTestDevice() -> SmartDevice {
-        let dev = SmartDevice()
-        dev.id="aa"
-        dev.name="Error"
-        dev.locationName="Not found"
-        dev.platformName="No devices"
-        dev.deviceDescription="Debug test device in case of error"
-        dev.status = "TEST"
-        dev.observedProperties.append("debug data")
-        return dev
-    }
-    
 }

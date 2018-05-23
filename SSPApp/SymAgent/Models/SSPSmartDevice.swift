@@ -12,39 +12,11 @@ import SwiftyJSON
 /**
    Do not mix with cores SmartDevice - it has different JSON
  */
-public class SmartDevice {
-    public var platformId: String = ""
-    public var platformName: String = ""
-    public var owner: String =  ""
-    public var name: String = ""
-    public var id: String = ""
-    public var deviceDescription: String = ""
-    public var status: String = ""
-    
-    //location
-    public var locationName: String = ""
-    public var locationLatitude: String = ""
-    public var locationLongitude: String = ""
-    public var locationAltitude: String = ""
-    
-    //array
-    public var observedProperties: [String] = [String]()
-    public var resourceType: [String] = [String]()
-    
-    //not common with the core APIs JOSN
-    public var internalIdResource: String = "" //": "5c:cf:7f:3a:6b:76",
-    public var sspIdResource: String = "" //": "1",
-    public var sspIdParent: String = "" // ": "0",
-    public var symIdParent: String = "" //": "",
+public class SppSmartDevice : SmartDevice {
     
     
     public convenience init(_ resourceJson: JSON)  {
         self.init()
-        
-        
-        if resourceJson["internalIdResource"].exists() {
-            internalIdResource = resourceJson["internalIdResource"].stringValue
-        }
         
         var j: JSON = JSON()
         if resourceJson["resource"].exists()  {
@@ -87,22 +59,5 @@ public class SmartDevice {
                 resourceType.append(r.stringValue)
             }
         }
-        
-        
-        
     }
-    
-    
-    public static func makeDebugTestDevice() -> SmartDevice {
-        let dev = SmartDevice()
-        dev.id="0"
-        dev.name="No smart devices in this SmartSpace"
-        dev.locationName="Not found"
-        dev.platformName="No devices"
-        dev.deviceDescription="Debug test device in case of error"
-        dev.status = "NOT FOUND"
-        dev.observedProperties.append("debug data")
-        return dev
-    }
-    
 }
