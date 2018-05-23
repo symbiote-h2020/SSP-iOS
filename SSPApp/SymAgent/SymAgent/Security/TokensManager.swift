@@ -11,7 +11,7 @@ import SwiftyJSON
 
 public class TokensManager {
     // MARK: - Properties
-    public static let shared = TokensManager(Constants.restApiUrl)
+    public static let shared = TokensManager(GlobalSettings.restApiUrl)
     
     public var guestToken: String = ""
     
@@ -25,7 +25,7 @@ public class TokensManager {
     
     public func getGuestToken() {
         //let url = URL(string: "https://symbiote-dev.man.poznan.pl/coreInterface/get_guest_token") //debug - token from core
-        let url = URL(string: Constants.restApiUrl + "/saam/get_guest_token")
+        let url = URL(string: GlobalSettings.restApiUrl + "/saam/get_guest_token")
         
         let request = NSMutableURLRequest(url: url!)
         request.httpMethod = "POST"
@@ -60,6 +60,21 @@ public class TokensManager {
                  "clientCertificateSigningAAMCertificate":"",
                  "foreignTokenIssuingAAMCertificate":""
                  ]
+        )
+        
+        log(json.rawString(options: []))
+        //let str = "{\"token\":\"\(TokensManager.shared.guestToken)\":\"\" }"
+        return json.rawString(options: []) ?? "couldn't build request json"
+    }
+    
+    public func makeXAuth1RequestHeader_DebugTest() -> String {
+        let json = JSON(
+            ["token":"eyJhbGciOiJFUzI1NiJ9.eyJ0dHlwIjoiR1VFU1QiLCJzdWIiOiJndWVzdCIsImlwayI6Ik1Ga3dFd1lIS29aSXpqMENBUVlJS29aSXpqMERBUWNEUWdBRXQwVExQODBZUDFHWHhiVXErYkd5ZGdFZzRuNzFqVkRVTVdBYXoxbTBkam5LL0lldUlSL3lWNGNLSnZnTzlST3pMZUVNODBzbThMQ0JkTCtzYW9wdzZRPT0iLCJpc3MiOiJTeW1iSW9UZV9Db3JlX0FBTSIsImV4cCI6MTUyNzAwMDMyNCwiaWF0IjoxNTI3MDAwMjY0LCJqdGkiOiIxNzQwNjU1NjMyIiwic3BrIjoiTUZrd0V3WUhLb1pJemowQ0FRWUlLb1pJemowREFRY0RRZ0FFUi96OC9xczFvRUpqd0VNWWd5djhqU2lwUVZ5K2ZPZUlyc0FkQW90M09RZG1VOVEzRDJoRmhsSjVleTgwMlNPcmxsWWNBS2FzbUF1bDRTdWljSUJhUWc9PSJ9.lRGpPscwKkpGhlHONbxEFcG38tkWs9Q5mvQFMT_PIWI5zJPJLwj3mypQnB4ossd6iKvtfSMVFfGg0q_v0PDtrA",
+             "authenticationChallenge":"",
+             "clientCertificate":"",
+             "clientCertificateSigningAAMCertificate":"",
+             "foreignTokenIssuingAAMCertificate":""
+            ]
         )
         
         log(json.rawString(options: []))

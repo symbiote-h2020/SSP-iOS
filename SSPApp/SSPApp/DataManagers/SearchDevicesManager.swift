@@ -53,10 +53,19 @@ public class SearchDevicesManager {
     }
     
     public func getResourceList() {
-        let url = URL(string: Constants.restApiUrl + "/innkeeper/public_resources/")
+        //core https://symbiote-open.man.poznan.pl/coreInterface/query
+        //let url = URL(string: "https://symbiote-open.man.poznan.pl/coreInterface/query?id=5ae314283a6fd805304869ca")
+        //https://symbiote-open.man.poznan.pl:8777/query?homePlatformId=SymbIoTe_Core_AAM
+        //let url = URL(string: "https://symbiote-open.man.poznan.pl:8777/query?homePlatformId=SymbIoTe_Core_AAM")
+        let url = URL(string: GlobalSettings.restApiUrl + "/innkeeper/public_resources/")
         let request = NSMutableURLRequest(url: url!)
-        request.httpMethod = "GET" //POST for core
+        request.httpMethod = "GET"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+//        request.setValue("\(DateTime.Now.unixEpochTime()*1000)", forHTTPHeaderField: "x-auth-timestamp")
+//        request.setValue("1", forHTTPHeaderField: "x-auth-size")
+//        //request.setValue(TokensManager.shared.makeXAuth1RequestHeader(), forHTTPHeaderField: "x-auth-1")
+//        request.setValue(TokensManager.shared.makeXAuth1RequestHeader_DebugTest(), forHTTPHeaderField: "x-auth-1")
         
 //        //adding request body for core
 //        let json: [String: Any] = ["id": "appId"]
@@ -76,7 +85,7 @@ public class SearchDevicesManager {
             else {
                 let status = (response as! HTTPURLResponse).statusCode
                 if (status >= 400) {
-                    logError("response status: \(status)")
+                    logError("response status: \(status)  \(response.debugDescription)")
                     let notiInfoObj  = NotificationInfo(type: ErrorType.connection, info: "response status: \(status)")
                     NotificationCenter.default.postNotificationName(SymNotificationName.DeviceListLoaded, object: notiInfoObj)
                 }

@@ -10,13 +10,13 @@ import Foundation
 
 
 public func logVerbose(_ text: String?) {
-    if Constants.isDebug && Constants.isVerboseLogging {
+    if GlobalSettings.isDebug && GlobalSettings.isVerboseLogging {
         logText("_L v_ ", text: text)
     }
 }
 
 public func log(_ text: String?) {
-    if Constants.isDebug {
+    if GlobalSettings.isDebug {
         logText("_LOG_ ", text: text)
     }
 }
@@ -33,7 +33,7 @@ public func logTime(_ text: String?) {
 }
 
 public func logWarn(_ text: String?) {
-    if Constants.isDebug {
+    if GlobalSettings.isDebug {
         logText("__WARN __ ", text: text)
     }
 }

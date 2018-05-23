@@ -32,7 +32,7 @@ public class ObservationsManager {
     
     public func getObservations(forDeviceId: String!) {
         let devId = Int(forDeviceId)!
-        let strUrl =  "\(Constants.restApiUrl)/rap/Sensor('\(devId)')/Observations"  ///Observations?$top=1")
+        let strUrl =  "\(GlobalSettings.restApiUrl)/rap/Sensor('\(devId)')/Observations"  ///Observations?$top=1")
        // let strUrl =  "\(Constants.restApiUrl)/rap/Sensor/\(devId)/Observations"  ///"The URI is malformed""
         //let strTestUrl =   "http://217.72.97.9:8080/rap/Sensor('1')/Observations" //test
         log(strUrl)

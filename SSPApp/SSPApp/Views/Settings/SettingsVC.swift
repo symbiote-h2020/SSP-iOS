@@ -12,11 +12,13 @@ import SymAgent
 class SettingsVC: ViewControllerWithDrawerMenu {
     
     @IBOutlet weak var endpointUrlTextField: UITextField!
+    @IBOutlet weak var coreInterfaceUelTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        endpointUrlTextField.text = Constants.restApiUrl
+        endpointUrlTextField.text = GlobalSettings.restApiUrl
+        coreInterfaceUelTextField.text = GlobalSettings.coreInterfaceApiUrl
         
         //hiding keyboard
         endpointUrlTextField.delegate = self
@@ -32,9 +34,9 @@ class SettingsVC: ViewControllerWithDrawerMenu {
         if notInfo.errorType == .noErrorSuccessfulFinish {
             notInfo.showOkAlert()
             
-            //debug - close app
+            //debug - close app - to make sure everything is working
             exit(0);
-            //TODO: proper refresment of list
+            //TODO: proper refreshment of list
         }
         else {
             notInfo.showProblemAlert()
@@ -47,6 +49,7 @@ class SettingsVC: ViewControllerWithDrawerMenu {
     @IBAction func applyButtonTapped(_ sender: Any) {
         let stMan = SettingsManager()
         stMan.allSettings.restApiUrl = endpointUrlTextField.text!
+        stMan.allSettings.coreInterfaceApi = coreInterfaceUelTextField.text!
         stMan.saveSettings()
     }
     

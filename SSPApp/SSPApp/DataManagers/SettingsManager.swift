@@ -32,8 +32,8 @@ public class SettingsManager {
             allSettings = NSKeyedUnarchiver.unarchiveObject(withFile: archiveUrl) as! GlobalSettingsContainer
             
             
-            Constants.restApiUrl = allSettings.restApiUrl
-            
+            GlobalSettings.restApiUrl = allSettings.restApiUrl
+            GlobalSettings.coreInterfaceApiUrl = allSettings.coreInterfaceApi
         }
         else {
             logWarn("[GlobalSettingsManager] Settings file not found. Will create new one")

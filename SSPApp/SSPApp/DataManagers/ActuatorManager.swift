@@ -14,7 +14,7 @@ public class ActuatorManager {
     public init() {}
     
     public func sendRequest(_ smartDeviceId: String, valuesList: [ActuatorsValue]) {
-        let url = URL(string: Constants.restApiUrl + "/rap/Actuator/" + smartDeviceId)
+        let url = URL(string: GlobalSettings.restApiUrl + "/rap/Actuator/" + smartDeviceId)
         let request = NSMutableURLRequest(url: url!)
         request.httpMethod = "POST"
         request.setValue("\(DateTime.Now.unixEpochTime())", forHTTPHeaderField: "x-auth-timestamp")
