@@ -14,7 +14,7 @@ class DeviceTableViewCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     
     @IBOutlet weak var statusLabel: UILabel!
-    //@IBOutlet weak var platformLabel: UILabel!
+    @IBOutlet weak var platformLabel: UILabel!
     @IBOutlet weak var typeLabel: UILabel!
     
     
@@ -40,7 +40,14 @@ class DeviceTableViewCell: UITableViewCell {
         else {
             statusLabel.textColor = SSPColors.no
         }
-        //platformLabel.text = d.platformName
+        platformLabel.text = d.platformName
+        if d.type == .ssp {
+            platformLabel.textColor = SSPColors.accentColor
+        }
+        else {
+            platformLabel.textColor = SSPColors.subtleTextColor
+        }
+        
         typeLabel.text = d.observedProperties.flatMap({$0}).joined(separator: ",");
     }
     

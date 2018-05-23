@@ -18,6 +18,8 @@ public class SppSmartDevice : SmartDevice {
     public convenience init(_ resourceJson: JSON)  {
         self.init()
         
+        type = .ssp
+        
         var j: JSON = JSON()
         if resourceJson["resource"].exists()  {
             j = resourceJson["resource"]

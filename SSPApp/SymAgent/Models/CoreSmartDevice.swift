@@ -18,6 +18,8 @@ public class CoreSmartDevice : SmartDevice {
     public convenience init(_ j: JSON)  {
         self.init()
         
+        type = .core
+        
         if j["platformId"].exists()     { platformId = j["platformId"].stringValue }
         if j["platformName"].exists()   { platformName = j["platformName"].stringValue }
         if j["owner"].exists()          { owner = j["owner"].stringValue }

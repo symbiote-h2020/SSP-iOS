@@ -9,6 +9,11 @@
 import Foundation
 import SwiftyJSON
 
+public enum DeviceType{
+    case ssp
+    case core
+}
+
 public class SmartDevice {
     public var platformId: String = ""
     public var platformName: String = ""
@@ -28,6 +33,7 @@ public class SmartDevice {
     public var observedProperties: [String] = [String]()
     public var resourceType: [String] = [String]()
 
+    public var type: DeviceType = .ssp
     
     public static func makeDebugTestDevice() -> SmartDevice {
         let dev = SmartDevice()
