@@ -53,7 +53,7 @@ public class ObservationsManager {
     
     func makeRequestForCoreObservations(_ forDeviceId: String!) -> NSMutableURLRequest? {
         if let devId = forDeviceId {
-            let strUrl =  "\(GlobalSettings.coreInterfaceApiUrl)/rap/Sensor('\(devId)')/Observations"  ///Observations?$top=1")
+            let strUrl =  "\(GlobalSettings.coreInterfaceApiUrl)/Sensor('\(devId)')/Observations"  ///Observations?$top=1")
             // let strUrl =  "\(Constants.restApiUrl)/rap/Sensor/\(devId)/Observations"  ///"The URI is malformed""
             //let strTestUrl =   "http://217.72.97.9:8080/rap/Sensor('1')/Observations" //test
             log(strUrl)
@@ -80,7 +80,7 @@ public class ObservationsManager {
             httpRequest = makeRequestForCoreObservations(forDevice.id)
         }
         
-        if let request = httpRequest {  
+        if let request = httpRequest {
             let task = URLSession.shared.dataTask(with: request as URLRequest) { data,response,error in
                 if let err = error {
                     logError(error.debugDescription)

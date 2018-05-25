@@ -16,7 +16,7 @@ private struct Keys {
 public final class GlobalSettingsContainer: NSObject, NSCoding {
 
     public var restApiUrl: String = "http://217.72.97.9:8080"
-    public var coreInterfaceApi: String = "https://symbiote-open.man.poznan.pl/coreInterface/"
+    public var coreInterfaceApi: String = "https://symbiote-open.man.poznan.pl/coreInterface"
     
     @objc public func encode(with aCoder: NSCoder) {
         aCoder.encode(self.restApiUrl, forKey: Keys.restApiUrl)
@@ -35,7 +35,7 @@ public final class GlobalSettingsContainer: NSObject, NSCoding {
             self.coreInterfaceApi = aDecoder.decodeObject(forKey: Keys.coreInterfaceApi) as! String
         }
         else {
-            self.coreInterfaceApi = "https://symbiote-open.man.poznan.pl/coreInterface/"
+            self.coreInterfaceApi = "https://symbiote-open.man.poznan.pl/coreInterface"
         }
         
     }

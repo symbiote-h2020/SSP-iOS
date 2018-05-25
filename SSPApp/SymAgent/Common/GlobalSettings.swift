@@ -14,5 +14,5 @@ public final class GlobalSettings {
     public static let isVerboseLogging: Bool                               = true  //TODO: zrobić zaawansowaną konfigurację jak w loggerze microsoftowym
     
     public static var restApiUrl: String  = "http://217.72.97.9:8080"
-    public static var coreInterfaceApiUrl: String = "https://symbiote-open.man.poznan.pl/coreInterface/"
+    public static var coreInterfaceApiUrl: String = "https://symbiote-open.man.poznan.pl/coreInterface"
 }

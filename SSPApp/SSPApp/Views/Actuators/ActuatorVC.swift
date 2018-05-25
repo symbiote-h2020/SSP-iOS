@@ -51,9 +51,9 @@ class ActuatorVC: UIViewController {
         let r = ActuatorsValue()
         let g = ActuatorsValue()
         let b = ActuatorsValue()
-        r.name = "RED"
-        g.name = "GREEN"
-        b.name = "BLUE"
+        r.name = "r"
+        g.name = "g"
+        b.name = "b"
         valuesList.append(r)
         valuesList.append(g)
         valuesList.append(b)
