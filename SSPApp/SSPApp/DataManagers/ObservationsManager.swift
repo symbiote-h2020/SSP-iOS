@@ -31,8 +31,8 @@ public class ObservationsManager {
     }
     
     public func getObservations(forDeviceId: String!) {
-        
-        let strUrl =  "\(GlobalSettings.restApiUrl)/rap/Sensor('\(forDeviceId)')/Observations"  ///Observations?$top=1")
+        if let devId = forDeviceId {
+        let strUrl =  "\(GlobalSettings.restApiUrl)/rap/Sensor('\(devId)')/Observations"  ///Observations?$top=1")
        // let strUrl =  "\(Constants.restApiUrl)/rap/Sensor/\(devId)/Observations"  ///"The URI is malformed""
         //let strTestUrl =   "http://217.72.97.9:8080/rap/Sensor('1')/Observations" //test
         log(strUrl)
@@ -76,17 +76,18 @@ public class ObservationsManager {
         }
         
         task.resume()
+        }
     }
     
     public func parseOservationsJson(_ dataJson: JSON) {
-        let jsonArr:[JSON] = dataJson["body"].arrayValue
+        let jsonArr:[JSON] = dataJson.arrayValue
         //for jInnerArray in jsonArr {
         for childJson in jsonArr {
             
             let obs = Observation(j: childJson)
             currentObservations.append(obs)
             
-            let location = obs.location?.name ?? "unknown location"
+            let location = obs.location?.name ?? "[ SSP ]"
             if (observationsByLocation[location] == nil) {
                 observationsByLocation[location] = [Observation]()
             }

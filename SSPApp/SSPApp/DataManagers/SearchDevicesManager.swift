@@ -81,8 +81,8 @@ public class SearchDevicesManager {
                     NotificationCenter.default.postNotificationName(SymNotificationName.DeviceListLoaded, object: notiInfoObj)
                 }
                 //debug
-                let dataString = String(data: data!, encoding: String.Encoding.utf8)
-                logVerbose(dataString)
+//                let dataString = String(data: data!, encoding: String.Encoding.utf8)
+//                logVerbose(dataString)
                 
                 
                 if let jsonData = data {
@@ -123,8 +123,8 @@ public class SearchDevicesManager {
                     NotificationCenter.default.postNotificationName(SymNotificationName.DeviceListLoaded, object: notiInfoObj)
                 }
                 //debug
-                let dataString = String(data: data!, encoding: String.Encoding.utf8)
-                logVerbose(dataString)
+//                let dataString = String(data: data!, encoding: String.Encoding.utf8)
+//                logVerbose(dataString)
                 
                 
                 if let jsonData = data {

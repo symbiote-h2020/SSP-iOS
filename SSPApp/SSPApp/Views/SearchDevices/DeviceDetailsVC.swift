@@ -58,6 +58,9 @@ class DeviceDetailsVC: UIViewController {
         super.viewDidLoad()
         
         configureView()
+        
+        TokensManager.shared.getSSPGuestToken()
+        TokensManager.shared.getCoreGuestToken()
         //for debug porpous and desing I keep colorful layout
         setupGui()
     }
