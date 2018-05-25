@@ -14,28 +14,33 @@ public class ActuatorManager {
     public init() {}
     
     public func sendRequest(_ smartDeviceId: String, valuesList: [ActuatorsValue]) {
-        let url = URL(string: GlobalSettings.restApiUrl + "/rap/Actuator/" + smartDeviceId)
+        let strUrl = GlobalSettings.restApiUrl + "/rap/Actuator/" + smartDeviceId
+
+        //let strUrl = "\(GlobalSettings.restApiUrl)/rap/Actuator('\(smartDeviceId)')"
+        
+        log(strUrl)
+        let url = URL(string: strUrl)
         let request = NSMutableURLRequest(url: url!)
         request.httpMethod = "POST"
-        request.setValue("\(DateTime.Now.unixEpochTime())", forHTTPHeaderField: "x-auth-timestamp")
+        request.setValue("\(DateTime.Now.unixEpochTime()*1000)", forHTTPHeaderField: "x-auth-timestamp")
         request.setValue("1", forHTTPHeaderField: "x-auth-size")
         request.setValue(TokensManager.shared.makeXAuth1SSPRequestHeader(), forHTTPHeaderField: "x-auth-1")
         
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         
-        //adding request body
-        let dict = buildActionsDict(valuesList)
+//        //adding request body
+//        let dict = buildActionsDict(valuesList)
+//
+//        let json: [String: Any] = [
+//            "id": smartDeviceId,
+//            "action" : dict
+//            ]
+//        let jsonData = try? JSONSerialization.data(withJSONObject: json)
+//        request.httpBody = jsonData
         
-        let json: [String: Any] = [
-            "id": smartDeviceId,
-            "action" : dict
-            ]
-        let jsonData = try? JSONSerialization.data(withJSONObject: json)
-        request.httpBody = jsonData
+        let jsonStr = buidFakeTestRequest().rawString()
+        request.httpBody = jsonStr?.data(using: .utf8)
         
-        //debug
-        let dataString = String(data: jsonData!, encoding: String.Encoding.utf8)
-        logVerbose("sending actuator json: \n" + dataString!)
 
         
         let task = URLSession.shared.dataTask(with: request as URLRequest) { data,response,error in
@@ -74,5 +79,33 @@ public class ActuatorManager {
         }
         
         return retDict
+    
     }
+    
+    private func buidFakeTestRequest() -> JSON {
+        let json = JSON(
+        ["RGBCapability":[
+            ["r":5],
+            ["g":5],
+            ["b":5]
+            ]]
+        )
+        
+        log(json.rawString(options: []))
+        return json
+    }
+    
+    
+    /*
+    private func buildRequestBody() -> JSON{
+        let json = JSON(
+        {"RGBCapability": [
+            {"r":5}
+                ]}
+        )
+        
+        log(json.rawString(options: []))
+        return json
+    }
+ */
 }
