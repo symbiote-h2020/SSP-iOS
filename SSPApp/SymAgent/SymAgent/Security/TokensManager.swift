@@ -42,7 +42,7 @@ public class TokensManager {
                 {
                     //logVerbose("response header for guest_token request:  \(httpResponse.allHeaderFields)")
                     if let xAuthToken = httpResponse.allHeaderFields["x-auth-token"] as? String {
-                        //log("gouest_token = \(xAuthToken)")
+                        log("core gouest_token = \(xAuthToken)")
                         self.coreGuestToken = xAuthToken
                         NotificationCenter.default.postNotificationName(SymNotificationName.SecurityTokenCore)
                     }
@@ -71,7 +71,7 @@ public class TokensManager {
                 {
                     //logVerbose("response header for guest_token request:  \(httpResponse.allHeaderFields)")
                     if let xAuthToken = httpResponse.allHeaderFields["x-auth-token"] as? String {
-                        //log("gouest_token = \(xAuthToken)")
+                        log("ssp gouest_token = \(xAuthToken)")
                         self.sspGuestToken = xAuthToken
                         NotificationCenter.default.postNotificationName(SymNotificationName.SecurityTokenSSP)
                     }

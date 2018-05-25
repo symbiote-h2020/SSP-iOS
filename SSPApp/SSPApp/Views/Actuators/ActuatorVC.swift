@@ -47,7 +47,7 @@ class ActuatorVC: UIViewController {
                 valuesList.append(av)
             }
         }
-        /* hardcoded debug test
+        ///* hardcoded debug test
         let r = ActuatorsValue()
         let g = ActuatorsValue()
         let b = ActuatorsValue()
@@ -57,7 +57,7 @@ class ActuatorVC: UIViewController {
         valuesList.append(r)
         valuesList.append(g)
         valuesList.append(b)
-         */
+        /// */
     }
     
     

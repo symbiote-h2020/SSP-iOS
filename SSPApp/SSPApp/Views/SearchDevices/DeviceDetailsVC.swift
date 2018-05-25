@@ -94,7 +94,7 @@ class DeviceDetailsVC: UIViewController {
     //MARK: - actions buttons
     @IBAction func showObservations(_ sender: Any) {
         let om = ObservationsManager()
-        om.getObservations(forDeviceId: detailItem?.id)
+        om.getObservations(forDevice: detailItem)
         
         let vc = ObservationsVC.getViewController()
         vc.setObservations(om)
@@ -104,7 +104,7 @@ class DeviceDetailsVC: UIViewController {
     
     @IBAction func chartButtonTapped(_ sender: Any) {
         let om = ObservationsManager()
-        om.getObservations(forDeviceId: detailItem?.id)
+        om.getObservations(forDevice: detailItem)
         
         let vc = ObservationsChartVC.getViewController()
         vc.setObservations(om)
