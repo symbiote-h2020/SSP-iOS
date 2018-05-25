@@ -68,8 +68,6 @@ class DevicesListVC: ViewControllerWithDrawerMenu {
     //MARK - data management
     func getListNotyficationReceived(_ notification: Notification) {
         let notInfo = NotificationInfo(object: notification.object as AnyObject?)
-        log("MasterViewController notification = \(notInfo.infoText)")
-        
         if notInfo.errorType == .noErrorSuccessfulFinish {
             deviceObjects = sdm.devicesList
             tableView.reloadData()

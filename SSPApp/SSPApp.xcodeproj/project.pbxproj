@@ -14,9 +14,6 @@
 		76162ED31F28923A0043285D /* DrawerMenuTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76162ECF1F28923A0043285D /* DrawerMenuTableVC.swift */; };
 		76162ED41F28923A0043285D /* TableViewControllerWithDrawerMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76162ED01F28923A0043285D /* TableViewControllerWithDrawerMenu.swift */; };
 		76162ED51F28923A0043285D /* ViewControllerWithDrawerMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76162ED11F28923A0043285D /* ViewControllerWithDrawerMenu.swift */; };
-		76162EDA1F2892530043285D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76162ED71F2892530043285D /* DetailViewController.swift */; };
-		76162EDB1F2892530043285D /* DevicesList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76162ED81F2892530043285D /* DevicesList.storyboard */; };
-		76162EDC1F2892530043285D /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76162ED91F2892530043285D /* MasterViewController.swift */; };
 		763138041F30B4F8007A34E9 /* DevicesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763138031F30B4F7007A34E9 /* DevicesListVC.swift */; };
 		763138061F30B863007A34E9 /* DeviceDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763138051F30B863007A34E9 /* DeviceDetailsVC.swift */; };
 		763138081F34A7F1007A34E9 /* DevicesCombinedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763138071F34A7F1007A34E9 /* DevicesCombinedVC.swift */; };
@@ -67,9 +64,6 @@
 		76162ECF1F28923A0043285D /* DrawerMenuTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawerMenuTableVC.swift; path = Views/Drawer/DrawerMenuTableVC.swift; sourceTree = "<group>"; };
 		76162ED01F28923A0043285D /* TableViewControllerWithDrawerMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewControllerWithDrawerMenu.swift; path = Views/Drawer/TableViewControllerWithDrawerMenu.swift; sourceTree = "<group>"; };
 		76162ED11F28923A0043285D /* ViewControllerWithDrawerMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllerWithDrawerMenu.swift; path = Views/Drawer/ViewControllerWithDrawerMenu.swift; sourceTree = "<group>"; };
-		76162ED71F2892530043285D /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = Views/DevicesList/DetailViewController.swift; sourceTree = "<group>"; };
-		76162ED81F2892530043285D /* DevicesList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = DevicesList.storyboard; path = Views/DevicesList/DevicesList.storyboard; sourceTree = "<group>"; };
-		76162ED91F2892530043285D /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterViewController.swift; path = Views/DevicesList/MasterViewController.swift; sourceTree = "<group>"; };
 		763138031F30B4F7007A34E9 /* DevicesListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DevicesListVC.swift; path = Views/SearchDevices/DevicesListVC.swift; sourceTree = "<group>"; };
 		763138051F30B863007A34E9 /* DeviceDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeviceDetailsVC.swift; path = Views/SearchDevices/DeviceDetailsVC.swift; sourceTree = "<group>"; };
 		763138071F34A7F1007A34E9 /* DevicesCombinedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DevicesCombinedVC.swift; path = Views/SearchDevices/DevicesCombinedVC.swift; sourceTree = "<group>"; };
@@ -120,7 +114,6 @@
 				767A91E91F603544006BEACC /* Actuators */,
 				768B56051F28C78100E8D075 /* SearchDevices */,
 				76486BDD1F4D829500D9702D /* Observations */,
-				76162ED61F2892410043285D /* DevicesList */,
 				76162ECD1F2892220043285D /* Drawer */,
 				76162EC91F2780A30043285D /* Main */,
 				769C82631F70DEDF00139A9C /* Settings */,
@@ -148,16 +141,6 @@
 				76486BF61F4EEE6B00D9702D /* NavigationProtocol.swift */,
 			);
 			name = Drawer;
-			sourceTree = "<group>";
-		};
-		76162ED61F2892410043285D /* DevicesList */ = {
-			isa = PBXGroup;
-			children = (
-				76162ED71F2892530043285D /* DetailViewController.swift */,
-				76162ED81F2892530043285D /* DevicesList.storyboard */,
-				76162ED91F2892530043285D /* MasterViewController.swift */,
-			);
-			name = DevicesList;
 			sourceTree = "<group>";
 		};
 		76486BDD1F4D829500D9702D /* Observations */ = {
@@ -347,7 +330,6 @@
 				768B56071F28C7AC00E8D075 /* SearchDevices.storyboard in Resources */,
 				767A91F51F62DEEA006BEACC /* listOfDevicesFromCloud.json in Resources */,
 				769C82651F70DF4100139A9C /* Settings.storyboard in Resources */,
-				76162EDB1F2892530043285D /* DevicesList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,11 +396,9 @@
 				7666B2D11F27716900675435 /* AppDelegate.swift in Sources */,
 				763138081F34A7F1007A34E9 /* DevicesCombinedVC.swift in Sources */,
 				76162ED31F28923A0043285D /* DrawerMenuTableVC.swift in Sources */,
-				76162EDA1F2892530043285D /* DetailViewController.swift in Sources */,
 				76162ECC1F2892040043285D /* MainViewController.swift in Sources */,
 				76486BF71F4EEE6B00D9702D /* NavigationProtocol.swift in Sources */,
 				76486BDC1F4D6DC500D9702D /* DeviceTableViewCell.swift in Sources */,
-				76162EDC1F2892530043285D /* MasterViewController.swift in Sources */,
 				76486BE11F4D835C00D9702D /* ObservationsVC.swift in Sources */,
 				76162ED41F28923A0043285D /* TableViewControllerWithDrawerMenu.swift in Sources */,
 				768B56091F28C7EA00E8D075 /* SearchDevicesVC.swift in Sources */,
