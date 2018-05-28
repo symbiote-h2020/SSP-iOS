@@ -9,7 +9,7 @@
 import Foundation
 import SwiftyJSON
 
-///JSON in core has a bit different form
+@available(*, deprecated, message: "SSP Observations are unified now")
 public class CoreObservation {
     
     public var resourceId: String = ""
