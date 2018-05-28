@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		6C3C24674B67B705EA0329FB /* Pods_SymAgent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D931D50813761836BED51380 /* Pods_SymAgent.framework */; };
 		7605A2121F97320D0096964F /* Pods_SymAgent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7605A2111F97320D0096964F /* Pods_SymAgent.framework */; };
-		7605A21D1F9784760096964F /* Actuator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A2161F9784760096964F /* Actuator.swift */; };
 		7605A21E1F9784760096964F /* ActuatorsValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A2171F9784760096964F /* ActuatorsValue.swift */; };
 		7605A21F1F9784760096964F /* GlobalSettingsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A2181F9784760096964F /* GlobalSettingsContainer.swift */; };
 		7605A2201F9784760096964F /* CoreObservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A2191F9784760096964F /* CoreObservation.swift */; };
@@ -46,7 +45,6 @@
 		7605A20B1F9731670096964F /* Pods_SSPApp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_SSPApp.framework; path = "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/Pods/../build/Debug-iphoneos/Pods_SSPApp.framework"; sourceTree = "<absolute>"; };
 		7605A20F1F9731FF0096964F /* Pods_SymAgent.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_SymAgent.framework; path = "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/Pods/../build/Debug-iphoneos/Pods_SymAgent.framework"; sourceTree = "<absolute>"; };
 		7605A2111F97320D0096964F /* Pods_SymAgent.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_SymAgent.framework; path = "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/Pods/../build/Debug-iphoneos/Pods_SymAgent.framework"; sourceTree = "<absolute>"; };
-		7605A2161F9784760096964F /* Actuator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Actuator.swift; path = Models/Actuator.swift; sourceTree = SOURCE_ROOT; };
 		7605A2171F9784760096964F /* ActuatorsValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActuatorsValue.swift; path = Models/ActuatorsValue.swift; sourceTree = SOURCE_ROOT; };
 		7605A2181F9784760096964F /* GlobalSettingsContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobalSettingsContainer.swift; path = Models/GlobalSettingsContainer.swift; sourceTree = SOURCE_ROOT; };
 		7605A2191F9784760096964F /* CoreObservation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreObservation.swift; path = Models/CoreObservation.swift; sourceTree = SOURCE_ROOT; };
@@ -98,7 +96,6 @@
 		7605A2021F9731360096964F /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				7605A2161F9784760096964F /* Actuator.swift */,
 				7605A2171F9784760096964F /* ActuatorsValue.swift */,
 				7605A2181F9784760096964F /* GlobalSettingsContainer.swift */,
 				7605A2191F9784760096964F /* CoreObservation.swift */,
@@ -368,7 +365,6 @@
 				7605A22F1FA0C76C0096964F /* SettingsManager.swift in Sources */,
 				76D2AE281FA1D65B00DB8ACD /* NotificationCenter+names.swift in Sources */,
 				76D2AE2A1FA1D65B00DB8ACD /* SSPColors.swift in Sources */,
-				7605A21D1F9784760096964F /* Actuator.swift in Sources */,
 				7605A2261F9785420096964F /* DateTime.swift in Sources */,
 				763310DA1FF6694C00B71734 /* HttpMessage.swift in Sources */,
 				7605A2201F9784760096964F /* CoreObservation.swift in Sources */,

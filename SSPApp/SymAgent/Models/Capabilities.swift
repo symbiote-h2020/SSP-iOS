@@ -13,6 +13,7 @@ import SwiftyJSON
 public class Capabilities {
 
     var name: String = ""
+    var parameters: [CapabilitiesParameters] = [CapabilitiesParameters]()
     
     public convenience init(_ cJson: JSON)  {
         self.init()
@@ -21,9 +22,18 @@ public class Capabilities {
         
         if cJson["parameters"].exists() {
             for cP in cJson["parameters"].arrayValue {
-                
+                parameters.append(CapabilitiesParameters(cP))
             }
         }
+    }
+    
+    func findParameterWithName(name: String) -> CapabilitiesParameters? {
+        for p in parameters {
+            if p.name == name {
+                return p
+            }
+        }
+        return nil //did not find
     }
     
     

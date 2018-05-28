@@ -17,4 +17,7 @@ public class ActuatorsValue {
     public var maxValue: Int = 255
     public var minValue: Int = 0
     
+    
+    //TODO change with Capabiliteis parmaeter
+    
 }
