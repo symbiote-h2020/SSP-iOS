@@ -61,5 +61,9 @@ public class SSPSmartDevice : SmartDevice {
                 resourceType.append(r.stringValue)
             }
         }
+        
+        if j["capabilities"].exists() {
+            self.capabilities = Capabilities(j["capabilities"])
+        }
     }
 }
