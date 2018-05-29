@@ -13,12 +13,16 @@ class SettingsVC: ViewControllerWithDrawerMenu {
     
     @IBOutlet weak var endpointUrlTextField: UITextField!
     @IBOutlet weak var coreInterfaceUelTextField: UITextField!
+    @IBOutlet weak var coreClientQueryTextField: UITextField!
+    @IBOutlet weak var coreResourceRequestTemplateTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         endpointUrlTextField.text = GlobalSettings.restApiUrl
         coreInterfaceUelTextField.text = GlobalSettings.coreInterfaceApiUrl
+        coreClientQueryTextField.text = GlobalSettings.coreClientRequest
+        coreResourceRequestTemplateTextField.text = GlobalSettings.coreRapSensorAdressTamplate
         
         //hiding keyboard
         endpointUrlTextField.delegate = self
@@ -50,6 +54,7 @@ class SettingsVC: ViewControllerWithDrawerMenu {
         let stMan = SettingsManager()
         stMan.allSettings.restApiUrl = endpointUrlTextField.text!
         stMan.allSettings.coreInterfaceApi = coreInterfaceUelTextField.text!
+        
         stMan.saveSettings()
     }
     

@@ -11,16 +11,24 @@ import Foundation
 private struct Keys {
     static let restApiUrl: String = "restApiUrl"
     static let coreInterfaceApi: String = "coreInterfaceApi"
+    static let coreClientRequest: String = "coreClientRequest"
+    static let coreRapSensorAdressTamplate: String = "coreRapSensorAdressTamplate"
 }
 
 public final class GlobalSettingsContainer: NSObject, NSCoding {
 
-    public var restApiUrl: String = "http://217.72.97.9:8080"
-    public var coreInterfaceApi: String = "https://symbiote-open.man.poznan.pl/coreInterface"
+    public var restApiUrl: String = Constants.defaultSspRestApiUrl
+    public var coreInterfaceApi: String = Constants.defaultCoreInterfaceApiUrl
+    
+    ///this is used during demo
+    public var coreClientRequest: String = Constants.defaultCoreClientRequest
+    public var coreRapSensorAdressTamplate: String = Constants.defaultCoreRapSensorAdressTamplate
     
     @objc public func encode(with aCoder: NSCoder) {
         aCoder.encode(self.restApiUrl, forKey: Keys.restApiUrl)
         aCoder.encode(self.coreInterfaceApi, forKey: Keys.coreInterfaceApi)
+        aCoder.encode(self.coreClientRequest, forKey: Keys.coreClientRequest)
+        aCoder.encode(self.coreRapSensorAdressTamplate, forKey: Keys.coreRapSensorAdressTamplate)
     }
     
     @objc convenience public init?(coder aDecoder: NSCoder) {
@@ -29,15 +37,27 @@ public final class GlobalSettingsContainer: NSObject, NSCoding {
             self.restApiUrl = aDecoder.decodeObject(forKey: Keys.restApiUrl) as! String
         }
         else {
-            self.restApiUrl = "http://217.72.97.9:8080"
+            self.restApiUrl =  Constants.defaultSspRestApiUrl
         }
         if aDecoder.containsValue(forKey: Keys.coreInterfaceApi) {
             self.coreInterfaceApi = aDecoder.decodeObject(forKey: Keys.coreInterfaceApi) as! String
         }
         else {
-            self.coreInterfaceApi = "https://symbiote-open.man.poznan.pl/coreInterface"
+            self.coreInterfaceApi = Constants.defaultCoreInterfaceApiUrl
         }
         
+        if aDecoder.containsValue(forKey: Keys.coreClientRequest) {
+            self.coreClientRequest = aDecoder.decodeObject(forKey: Keys.coreClientRequest) as! String
+        }
+        else {
+            self.coreClientRequest =  Constants.defaultCoreClientRequest
+        }
+        if aDecoder.containsValue(forKey: Keys.coreRapSensorAdressTamplate) {
+            self.coreRapSensorAdressTamplate = aDecoder.decodeObject(forKey: Keys.coreRapSensorAdressTamplate) as! String
+        }
+        else {
+            self.coreRapSensorAdressTamplate = Constants.defaultCoreRapSensorAdressTamplate
+        }
     }
 
 }

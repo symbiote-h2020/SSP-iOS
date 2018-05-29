@@ -124,7 +124,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="Pb1-nw-Lbn"/>
                     <connections>
+                        <outlet property="coreClientQueryTextField" destination="uht-Zx-tJV" id="Zve-dP-Z75"/>
                         <outlet property="coreInterfaceUelTextField" destination="KFv-no-OPV" id="njM-GH-4Pt"/>
+                        <outlet property="coreResourceRequestTemplateTextField" destination="kCe-KL-t87" id="Z9a-Eu-JRA"/>
                         <outlet property="endpointUrlTextField" destination="ZyE-Zy-X0y" id="zYy-ar-yRz"/>
                     </connections>
                 </viewController>
