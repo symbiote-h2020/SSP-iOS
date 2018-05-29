@@ -13,6 +13,8 @@ class ActuatorVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var valuesList: [ActuatorsValue] = [ActuatorsValue]()
     var theDevice: SmartDevice? = nil
+    var theCapability: Capability? = nil
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,7 +49,14 @@ class ActuatorVC: UIViewController {
                 valuesList.append(av)
             }
         }
-        ///* hardcoded debug test
+        if let cap = self.theCapability {
+            self.title = cap.name
+            for param in cap.parameters {
+                valuesList.append(ActuatorsValue(param))
+            }
+        }
+        
+        /* hardcoded debug test
         let r = ActuatorsValue()
         let g = ActuatorsValue()
         let b = ActuatorsValue()
@@ -57,8 +66,37 @@ class ActuatorVC: UIViewController {
         valuesList.append(r)
         valuesList.append(g)
         valuesList.append(b)
-        /// */
+        // */
     }
+    
+    func setCapability(_ cap: Capability?, device: SmartDevice) {
+        if let capab = cap {
+            theCapability = capab
+        }
+        else {
+            logError("++++ Smart device has nil capability")
+        }
+        theDevice = device
+    }
+    
+    @available(*, deprecated, message: "use separeted view for each capability")
+    func setSmartDevice(_ device: SmartDevice?) {
+        if let sdev = device {
+            logVerbose("accturator for device \(sdev.id)")
+            theDevice = sdev
+        }
+        else {
+            logError("++++ Smart device for actuatorVC is nil")
+        }
+    }
+    
+    @IBAction func applyButtonTapped(_ sender: Any) {
+        if let sdev = self.theDevice {
+            let ac = ActuatorManager()
+            ac.sendRequest(sdev.id, valuesList: valuesList)
+        }
+    }
+    
     
     
     //MARK - storybord management
@@ -72,23 +110,6 @@ class ActuatorVC: UIViewController {
         let storyboard = UIStoryboard(name: "Actuators", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "ActuatorNavigationVC")
         return controller as! UINavigationController
-    }
-    
-    func setSmartDevice(_ device: SmartDevice?) {
-        if let sdev = device {
-            logVerbose("accturator for device \(sdev.id)")
-            theDevice = sdev
-        }
-        else {
-            logError("++++ Smart device for actuatorVC is nil")
-        }
-    }
-
-    @IBAction func applyButtonTapped(_ sender: Any) {
-        if let sdev = self.theDevice {
-            let ac = ActuatorManager()
-            ac.sendRequest(sdev.id, valuesList: valuesList)
-        }
     }
 }
 

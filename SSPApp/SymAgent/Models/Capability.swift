@@ -12,8 +12,8 @@ import SwiftyJSON
 
 public class Capability {
 
-    var name: String = ""
-    var parameters: [CapabilitiesParameters] = [CapabilitiesParameters]()
+    public var name: String = ""
+    public var parameters: [CapabilitiesParameters] = [CapabilitiesParameters]()
     
     public convenience init(_ cJson: JSON)  {
         self.init()

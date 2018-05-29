@@ -112,9 +112,14 @@ class DeviceDetailsVC: UIViewController {
     }
     
     @IBAction func actuateButtonTapped(_ sender: Any) {
-        let vc = ActuatorVC.getViewController()
-        vc.setSmartDevice(detailItem)
-        navigationController?.pushViewController(vc, animated: true)
+        if let sdev = detailItem {
+            let vc = ActuatorVC.getViewController()
+            //TODO prapare multi actuators
+            if sdev.capabilities.count > 0 {
+                vc.setCapability(detailItem?.capabilities[0], device: sdev)
+            }
+            navigationController?.pushViewController(vc, animated: true)
+        }
     }
     
 }

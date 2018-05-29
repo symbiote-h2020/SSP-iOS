@@ -15,7 +15,6 @@ public class ActuatorManager {
     
     public func sendRequest(_ smartDeviceId: String, valuesList: [ActuatorsValue]) {
         let strUrl = GlobalSettings.restApiUrl + "/rap/Actuator/" + smartDeviceId
-
         //let strUrl = "\(GlobalSettings.restApiUrl)/rap/Actuator('\(smartDeviceId)')"
         
         log(strUrl)
@@ -28,20 +27,8 @@ public class ActuatorManager {
         
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         
-//        //adding request body
-//        let dict = buildActionsDict(valuesList)
-//
-//        let json: [String: Any] = [
-//            "id": smartDeviceId,
-//            "action" : dict
-//            ]
-//        let jsonData = try? JSONSerialization.data(withJSONObject: json)
-//        request.httpBody = jsonData
-        
-        let jsonStr = buidFakeTestRequest().rawString()
+        let jsonStr = buildRequestBody(valuesList).rawString()
         request.httpBody = jsonStr?.data(using: .utf8)
-        
-
         
         let task = URLSession.shared.dataTask(with: request as URLRequest) { data,response,error in
             if let err = error {
@@ -71,18 +58,19 @@ public class ActuatorManager {
         task.resume()
     }
     
-    private func buildActionsDict(_ valuesList: [ActuatorsValue]) -> [String: Int] {
-        var retDict = [String: Int]()
+    private func buildActionsDict(_ valuesList: [ActuatorsValue]) -> [[String: Int]] {
+        var retDict = [[String: Int]]()
         
         for v in valuesList {
-            retDict[v.name] = v.value
+            let dict = [v.name : v.value]
+            retDict.append(dict)
         }
         
         return retDict
     
     }
     
-    private func buidFakeTestRequest() -> JSON {
+    private func buidFakeDebugTestRequest() -> JSON {
         let json = JSON(
         ["RGBCapability":[
             ["r":5],
@@ -96,16 +84,17 @@ public class ActuatorManager {
     }
     
     
-    /*
-    private func buildRequestBody() -> JSON{
-        let json = JSON(
-        {"RGBCapability": [
-            {"r":5}
-                ]}
-        )
+    
+    private func buildRequestBody(_ valuesList: [ActuatorsValue]) -> JSON {
+        let arrOfDict = buildActionsDict(valuesList)
         
+        
+        //let jArr = JSON(valuesList)
+        let json = JSON(
+            ["RGBCapability":arrOfDict]
+            )
         log(json.rawString(options: []))
         return json
     }
- */
+ 
 }

@@ -10,9 +10,9 @@ import Foundation
 import SwiftyJSON
 
 public class CapabilitiesParameters {
-    var name: String = ""
-    var mandatory: Bool = false
-    var restricitons: [Restriction] = [Restriction]()
+    public var name: String = ""
+    public var mandatory: Bool = false
+    public var restricitons: [Restriction] = [Restriction]()
     
     public convenience init(_ cpj: JSON)  {
         self.init()
@@ -24,6 +24,15 @@ public class CapabilitiesParameters {
                 restricitons.append(Restriction(r))
             }
         }
+    }
+    
+    public func findRestrictionByName(_ naem: String) -> Restriction? {
+        for r in restricitons {
+            if r.cName == name {
+                return r
+            }
+        }
+        return nil
     }
 }
 
