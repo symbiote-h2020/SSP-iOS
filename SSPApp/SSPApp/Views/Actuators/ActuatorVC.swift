@@ -92,8 +92,10 @@ class ActuatorVC: UIViewController {
     
     @IBAction func applyButtonTapped(_ sender: Any) {
         if let sdev = self.theDevice {
-            let ac = ActuatorManager()
-            ac.sendRequest(sdev.id, valuesList: valuesList)
+            if let cap = self.theCapability {
+                let ac = ActuatorManager()
+                ac.sendRequest(sdev.id, capability: cap, valuesList: valuesList)
+            }
         }
     }
     

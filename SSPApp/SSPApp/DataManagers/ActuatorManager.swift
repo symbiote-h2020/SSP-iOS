@@ -13,7 +13,7 @@ import SwiftyJSON
 public class ActuatorManager {
     public init() {}
     
-    public func sendRequest(_ smartDeviceId: String, valuesList: [ActuatorsValue]) {
+    public func sendRequest(_ smartDeviceId: String, capability: Capability, valuesList: [ActuatorsValue]) {
         let strUrl = GlobalSettings.restApiUrl + "/rap/Actuator/" + smartDeviceId
         //let strUrl = "\(GlobalSettings.restApiUrl)/rap/Actuator('\(smartDeviceId)')"
         
@@ -27,7 +27,7 @@ public class ActuatorManager {
         
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         
-        let jsonStr = buildRequestBody(valuesList).rawString()
+        let jsonStr = buildRequestBody(valuesList: valuesList, capabilityName: capability.name).rawString()
         request.httpBody = jsonStr?.data(using: .utf8)
         
         let task = URLSession.shared.dataTask(with: request as URLRequest) { data,response,error in
@@ -85,13 +85,13 @@ public class ActuatorManager {
     
     
     
-    private func buildRequestBody(_ valuesList: [ActuatorsValue]) -> JSON {
+    private func buildRequestBody(valuesList: [ActuatorsValue], capabilityName: String) -> JSON {
         let arrOfDict = buildActionsDict(valuesList)
         
         
         //let jArr = JSON(valuesList)
         let json = JSON(
-            ["RGBCapability":arrOfDict]
+            [capabilityName:arrOfDict]
             )
         log(json.rawString(options: []))
         return json
