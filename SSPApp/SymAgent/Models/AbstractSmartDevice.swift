@@ -34,7 +34,7 @@ public class SmartDevice {
     public var resourceType: [String] = [String]()
 
     public var type: DeviceType = .ssp
-    public var capabilities: Capabilities = Capabilities()
+    public var capabilities: [Capabilities] = [Capabilities]()
     
     public static func makeDebugTestDevice() -> SmartDevice {
         let dev = SmartDevice()

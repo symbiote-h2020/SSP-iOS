@@ -54,7 +54,7 @@ public class SearchDevicesManager {
     
     public func getCoreResourceList() {
         //let url = URL(string: "https://symbiote-open.man.poznan.pl/coreInterface/query?id=5ae314283a6fd805304869ca") //if using direct request  -needs security tokens in heade
-        let url = URL(string: "https://symbiote-open.man.poznan.pl:8777/query?homePlatformId=SymbIoTe_Core_AAM") //requesting via client proxy
+        let url = URL(string: GlobalSettings.coreClientRequest) //requesting via client proxy
         let request = NSMutableURLRequest(url: url!)
         request.httpMethod = "GET"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")

@@ -53,9 +53,7 @@ public class ObservationsManager {
     
     func makeRequestForCoreObservations(_ forDeviceId: String!) -> NSMutableURLRequest? {
         if let devId = forDeviceId {
-            let strUrl =  "https://symbiote.tel.fer.hr/rap/Sensor('\(devId)')/Observations"
-            //let strUrl =  "\(GlobalSettings.coreInterfaceApiUrl)/Sensor('\(devId)')/Observations"  ///observations
-            //let strUrl =  "\(GlobalSettings.coreInterfaceApiUrl)/resourceUrls?id=\(devId)"  ///"The URI is malformed""
+            let strUrl =  "\(GlobalSettings.coreRapSensorAdressTamplate)/rap/Sensor('\(devId)')/Observations"
            
             log(strUrl)
             let url = URL(string: strUrl)

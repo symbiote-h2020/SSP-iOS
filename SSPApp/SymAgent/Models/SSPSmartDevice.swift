@@ -63,7 +63,9 @@ public class SSPSmartDevice : SmartDevice {
         }
         
         if j["capabilities"].exists() {
-            self.capabilities = Capabilities(j["capabilities"])
+            for c in j["capabilities"].arrayValue {
+                self.capabilities.append( Capabilities(c))
+            }
         }
     }
 }
