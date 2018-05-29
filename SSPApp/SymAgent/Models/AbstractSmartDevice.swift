@@ -34,7 +34,7 @@ public class SmartDevice {
     public var resourceType: [String] = [String]()
 
     public var type: DeviceType = .ssp
-    public var capabilities: [Capabilities] = [Capabilities]()
+    public var capabilities: [Capability] = [Capability]()
     
     public static func makeDebugTestDevice() -> SmartDevice {
         let dev = SmartDevice()
@@ -46,5 +46,14 @@ public class SmartDevice {
         dev.status = "NOT FOUND"
         dev.observedProperties.append("debug data")
         return dev
+    }
+    
+    public func findCapabilityByname(name: String) -> Capability? {
+        for c in capabilities {
+            if c.name == name {
+                return c
+            }
+        }
+        return nil
     }
 }

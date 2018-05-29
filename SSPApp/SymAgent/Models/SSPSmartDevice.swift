@@ -64,7 +64,7 @@ public class SSPSmartDevice : SmartDevice {
         
         if j["capabilities"].exists() {
             for c in j["capabilities"].arrayValue {
-                self.capabilities.append( Capabilities(c))
+                self.capabilities.append(Capability(c))
             }
         }
     }

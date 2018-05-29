@@ -10,7 +10,7 @@ import Foundation
 import SwiftyJSON
 
 
-public class Capabilities {
+public class Capability {
 
     var name: String = ""
     var parameters: [CapabilitiesParameters] = [CapabilitiesParameters]()
