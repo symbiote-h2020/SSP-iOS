@@ -25,11 +25,14 @@ class DeviceDetailsVC: UIViewController {
     var detailItem: SmartDevice? {
         didSet {
             // Update the view.
-            configureView()
+            if UIDevice.current.userInterfaceIdiom == .pad {
+                configureView()
+            }
         }
     }
     
     func configureView() {
+        hideButtons()
         // Update the user interface for the detail item.
         if let d = detailItem {
             if let l = nameLabel {
@@ -72,7 +75,7 @@ class DeviceDetailsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //configureView() //moved to didSet
+        configureView()
     
         //for debug porpous and desing I keep colorful layout
         setupGui()
@@ -99,16 +102,41 @@ class DeviceDetailsVC: UIViewController {
     //MARK Tokens
     func tokenFromSSPNotificationReceived(_ notification: Notification) {
         logVerbose("DeviceDetialsVC: gets token from ssp - shows button")
-        actuatorButton.isHidden = false
-        chartButton.isHidden = false
-        observationButton.isHidden = false
+        showButtons()
     }
     
     func tokenFromCoreNotificationReceived(_ notification: Notification) {
         logVerbose("DeviceDetialsVC: gets token from core - shows button")
-        actuatorButton.isHidden = false
-        chartButton.isHidden = false
-        observationButton.isHidden = false
+        showButtons()
+    }
+    
+    func hideButtons() {
+        actuatorButton.isHidden = true
+        chartButton.isHidden = true
+        observationButton.isHidden = true
+    }
+    
+    func showButtons() {
+        if let d = detailItem {
+            if d.functionType == .actuator {
+                actuatorButton.isHidden = false
+                chartButton.isHidden = true
+                observationButton.isHidden = true
+            }
+            else if d.functionType == .sensor {
+                actuatorButton.isHidden = true
+                chartButton.isHidden = false
+                observationButton.isHidden = false
+            }
+            else if d.functionType == .both {
+                actuatorButton.isHidden = false
+                chartButton.isHidden = false
+                observationButton.isHidden = false
+            }
+            else if d.functionType == .none {
+                hideButtons()
+            }
+        }
     }
     
     

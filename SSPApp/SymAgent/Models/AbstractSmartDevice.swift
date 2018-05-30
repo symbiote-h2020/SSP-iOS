@@ -14,6 +14,13 @@ public enum DeviceType{
     case core
 }
 
+public enum DeviceFunctionType {
+    case actuator
+    case sensor
+    case both //is this posible
+    case none
+}
+
 public class SmartDevice {
     public var platformId: String = ""
     public var platformName: String = ""
@@ -35,6 +42,25 @@ public class SmartDevice {
 
     public var type: DeviceType = .ssp
     public var capabilities: [Capability] = [Capability]()
+    
+    public var functionType: DeviceFunctionType {
+        get {
+            if capabilities.count > 0 {
+                if observedProperties.count > 0 {
+                    return .both
+                }
+                else {
+                    return .actuator
+                }
+            }
+            else if observedProperties.count > 0 {
+                return .sensor
+            }
+            else {
+                return .none
+            }
+        }
+    }
     
     public static func makeDebugTestDevice() -> SmartDevice {
         let dev = SmartDevice()
