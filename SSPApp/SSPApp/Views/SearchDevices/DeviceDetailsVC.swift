@@ -17,6 +17,11 @@ class DeviceDetailsVC: UIViewController {
     @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet weak var observesPropertiesLabel: UILabel!
     
+    @IBOutlet weak var actuatorButton: UIButton!
+    @IBOutlet weak var chartButton: UIButton!
+    @IBOutlet weak var observationButton: UIButton!
+    
+    
     var detailItem: SmartDevice? {
         didSet {
             // Update the view.
@@ -51,16 +56,24 @@ class DeviceDetailsVC: UIViewController {
             if let opL = observesPropertiesLabel {
                 opL.text = d.observedProperties.flatMap({$0}).joined(separator: ",");
             }
+            
+            if d.type == .ssp {
+                NotificationCenter.default.addObserver(self, selector: #selector(tokenFromSSPNotificationReceived(_:)), name: SymNotificationName.SecurityTokenSSP, object: nil)
+                TokensManager.shared.getSSPGuestToken()
+            }
+            else if d.type == .core {
+                NotificationCenter.default.addObserver(self, selector: #selector(tokenFromCoreNotificationReceived(_:)), name: SymNotificationName.SecurityTokenCore, object: nil)
+                TokensManager.shared.getCoreGuestToken()
+            }
+
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        configureView()
-        
-        TokensManager.shared.getSSPGuestToken()
-        TokensManager.shared.getCoreGuestToken()
+        //configureView() //moved to didSet
+    
         //for debug porpous and desing I keep colorful layout
         setupGui()
     }
@@ -70,7 +83,9 @@ class DeviceDetailsVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
     
     func setupGui() {
         self.view.backgroundColor = SSPColors.background
@@ -80,6 +95,21 @@ class DeviceDetailsVC: UIViewController {
         self.locationLabel.backgroundColor = SSPColors.clear
     }
     
+    
+    //MARK Tokens
+    func tokenFromSSPNotificationReceived(_ notification: Notification) {
+        logVerbose("DeviceDetialsVC: gets token from ssp - shows button")
+        actuatorButton.isHidden = false
+        chartButton.isHidden = false
+        observationButton.isHidden = false
+    }
+    
+    func tokenFromCoreNotificationReceived(_ notification: Notification) {
+        logVerbose("DeviceDetialsVC: gets token from core - shows button")
+        actuatorButton.isHidden = false
+        chartButton.isHidden = false
+        observationButton.isHidden = false
+    }
     
     
     //MARK - storybord management

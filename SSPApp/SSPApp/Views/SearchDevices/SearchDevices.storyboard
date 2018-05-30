@@ -221,21 +221,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZQ-nV-Fae">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZQ-nV-Fae">
                                 <rect key="frame" x="47.5" y="621" width="91" height="30"/>
                                 <state key="normal" title="Observations"/>
                                 <connections>
                                     <action selector="showObservations:" destination="ndW-EX-nnb" eventType="touchUpInside" id="s5F-Na-i8B"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUr-4k-wta">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUr-4k-wta">
                                 <rect key="frame" x="16" y="583" width="155" height="30"/>
                                 <state key="normal" title="Chart"/>
                                 <connections>
                                     <action selector="chartButtonTapped:" destination="ndW-EX-nnb" eventType="touchUpInside" id="ZdE-ak-k79"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dty-nC-bIn">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dty-nC-bIn">
                                 <rect key="frame" x="66.5" y="545" width="53" height="30"/>
                                 <state key="normal" title="Actuate"/>
                                 <connections>
@@ -289,9 +289,12 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="actuatorButton" destination="dty-nC-bIn" id="whe-I8-fhn"/>
+                        <outlet property="chartButton" destination="hUr-4k-wta" id="mcM-SF-Pjn"/>
                         <outlet property="descriptionLabel" destination="bFR-Gf-K7m" id="jRN-Lb-FLj"/>
                         <outlet property="locationLabel" destination="bTo-fq-OQv" id="3ES-EH-wKj"/>
                         <outlet property="nameLabel" destination="Xgt-tP-Igc" id="xOL-cu-VNk"/>
+                        <outlet property="observationButton" destination="HZQ-nV-Fae" id="a70-WC-aJa"/>
                         <outlet property="observesPropertiesLabel" destination="ZvZ-93-ITg" id="y5G-LV-xCj"/>
                         <outlet property="platformNameLabel" destination="g0T-A3-MJF" id="Ocw-PQ-cbo"/>
                         <outlet property="statusLabel" destination="5s0-Aj-1GR" id="5cU-G3-66Z"/>
