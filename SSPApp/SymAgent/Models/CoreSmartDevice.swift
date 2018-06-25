@@ -10,7 +10,7 @@ import Foundation
 import SwiftyJSON
 
 /**
- Smart device for core's has different JSON structure
+ Smart device/resources for core's has slightly different JSON structure
  */
 public class CoreSmartDevice : SmartDevice {
 

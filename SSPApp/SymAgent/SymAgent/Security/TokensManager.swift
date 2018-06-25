@@ -67,6 +67,13 @@ public class TokensManager {
                 NotificationCenter.default.postNotificationName(SymNotificationName.SecurityTokenSSP, object: notiInfoObj)
             }
             else {
+                let status = (response as! HTTPURLResponse).statusCode
+                if (status >= 400) {
+                    logError("getSSPGuestToken() response status: \(status)  \(response.debugDescription)")
+                    let notiInfoObj  = NotificationInfo(type: ErrorType.connection, info: "response status: \(status)")
+                    NotificationCenter.default.postNotificationName(SymNotificationName.SecurityTokenSSP, object: notiInfoObj)
+                }
+                
                 if let httpResponse = response as? HTTPURLResponse
                 {
                     //logVerbose("response header for guest_token request:  \(httpResponse.allHeaderFields)")
