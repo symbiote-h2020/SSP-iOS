@@ -40,11 +40,6 @@ class DevicesListVC: ViewControllerWithDrawerMenu {
         
         NotificationCenter.default.addObserver(self, selector: #selector(getListNotyficationReceived(_:)), name: SymNotificationName.DeviceListLoaded, object: nil)
         
-        //TODO do we need tokens at this point
-//        NotificationCenter.default.addObserver(self, selector: #selector(tokenFromSSPNotificationReceived(_:)), name: SymNotificationName.SecurityTokenSSP, object: nil)
-//        NotificationCenter.default.addObserver(self, selector: #selector(tokenFromCoreNotificationReceived(_:)), name: SymNotificationName.SecurityTokenCore, object: nil)
-//        TokensManager.shared.getSSPGuestToken()
-//        TokensManager.shared.getCoreGuestToken()
         sdm.getCoreResourceList()
         sdm.getSSPResourceList()
     }

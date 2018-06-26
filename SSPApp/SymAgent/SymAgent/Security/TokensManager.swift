@@ -11,17 +11,18 @@ import SwiftyJSON
 
 public class TokensManager {
     // MARK: - Properties
-    public static let shared = TokensManager(GlobalSettings.restApiUrl)
+    public static let shared = TokensManager(GlobalSettings.restApiUrl, GlobalSettings.coreInterfaceApiUrl)
     
     public var sspGuestToken: String = ""
     public var coreGuestToken: String = ""
     
-    let baseURL: URL
+    let baseSspUrl: String
+    let baseCoreUrl: String
     
     // Initialization
-    private init(_ strUrl: String) {
-        let baseURL = URL(string: strUrl)
-        self.baseURL = baseURL!
+    private init(_ sspUrl: String, _ coreUrl: String) {
+        self.baseSspUrl = sspUrl
+        self.baseCoreUrl = coreUrl
     }
     
     ///slightly different url for tokenns for SSP and core (also different notificationsNames)
@@ -128,7 +129,6 @@ public class TokensManager {
         )
         
         log(json.rawString(options: []))
-        //let str = "{\"token\":\"\(TokensManager.shared.guestToken)\":\"\" }"
         return json.rawString(options: []) ?? "couldn't build request json"
     }
 }

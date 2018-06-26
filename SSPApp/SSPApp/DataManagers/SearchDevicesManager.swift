@@ -59,10 +59,6 @@ public class SearchDevicesManager {
         request.httpMethod = "GET"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         
-//        request.setValue("\(DateTime.Now.unixEpochTime()*1000)", forHTTPHeaderField: "x-auth-timestamp")
-//        request.setValue("1", forHTTPHeaderField: "x-auth-size")
-//        //request.setValue(TokensManager.shared.makeXAuth1RequestHeader(), forHTTPHeaderField: "x-auth-1")
-//        request.setValue(TokensManager.shared.makeXAuth1RequestHeader_DebugTest(), forHTTPHeaderField: "x-auth-1")
 
         let task = URLSession.shared.dataTask(with: request as URLRequest) { data,response,error in
             if let err = error {
