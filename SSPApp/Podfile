@@ -7,8 +7,14 @@ workspace 'SymAgent'
 pod 'SwiftyJSON'
 pod 'AsyncSwift'
 pod 'SensingKit'
-pod 'RxSwift',    '~> 4.0'
-pod 'RxCocoa',    '~> 4.0'
+#pod 'RxSwift',    '~> 4.0'
+#pod 'RxCocoa',    '~> 4.0'
+
+#Security
+target :SecuritySSP do
+    project 'SecuritySSP/SecuritySSP.xcodeproj'
+   
+end
 
 # SymAgent
 target :SymAgent do
