@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7666D15720E4F74800340DE6 /* SecuritySSP.h in Headers */ = {isa = PBXBuildFile; fileRef = 7666D15520E4F74800340DE6 /* SecuritySSP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76F98A2D20E5152B00C68BAE /* TokensManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F98A2C20E5152B00C68BAE /* TokensManager.swift */; };
 		F5AA702E04F90250F3F42508 /* Pods_SecuritySSP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F4A44BAB5D3D257A575047B /* Pods_SecuritySSP.framework */; };
 /* End PBXBuildFile section */
 
@@ -18,6 +19,7 @@
 		7666D15220E4F74800340DE6 /* SecuritySSP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SecuritySSP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7666D15520E4F74800340DE6 /* SecuritySSP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecuritySSP.h; sourceTree = "<group>"; };
 		7666D15620E4F74800340DE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76F98A2C20E5152B00C68BAE /* TokensManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokensManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				7666D15520E4F74800340DE6 /* SecuritySSP.h */,
+				76F98A2C20E5152B00C68BAE /* TokensManager.swift */,
 				7666D15620E4F74800340DE6 /* Info.plist */,
 			);
 			path = SecuritySSP;
@@ -190,6 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76F98A2D20E5152B00C68BAE /* TokensManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

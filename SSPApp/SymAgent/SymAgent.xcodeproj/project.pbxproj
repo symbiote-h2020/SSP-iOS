@@ -61,7 +61,7 @@
 		7613D6791FE41A2B003568D2 /* AbstractInnkeeperConntector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractInnkeeperConntector.swift; sourceTree = "<group>"; };
 		763310D91FF6694C00B71734 /* HttpMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMessage.swift; sourceTree = "<group>"; };
 		76875C4620AB2F10007BF3E2 /* SSPSmartDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SSPSmartDevice.swift; path = Models/SSPSmartDevice.swift; sourceTree = SOURCE_ROOT; };
-		76875C4A20AC763B007BF3E2 /* TokensManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokensManager.swift; sourceTree = "<group>"; };
+		76875C4A20AC763B007BF3E2 /* TokensManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TokensManager.swift; path = ../../../SecuritySSP/SecuritySSP/TokensManager.swift; sourceTree = "<group>"; };
 		76875C4C20B2C3C9007BF3E2 /* SSPObservations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SSPObservations.swift; path = Models/SSPObservations.swift; sourceTree = SOURCE_ROOT; };
 		76875C4E20B579B5007BF3E2 /* AbstractSmartDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AbstractSmartDevice.swift; path = Models/AbstractSmartDevice.swift; sourceTree = SOURCE_ROOT; };
 		76875C5220BC10BC007BF3E2 /* CapabilitiesParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CapabilitiesParameters.swift; path = Models/CapabilitiesParameters.swift; sourceTree = SOURCE_ROOT; };
