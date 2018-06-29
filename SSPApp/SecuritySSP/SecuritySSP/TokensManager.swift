@@ -27,7 +27,7 @@ public class TokensManager {
     
     ///slightly different url for tokenns for SSP and core (also different notificationsNames)
     public func getCoreGuestToken() {
-        let url = URL(string: GlobalSettings.coreInterfaceApiUrl + "/get_guest_token")!
+        let url = URL(string: baseCoreUrl + "/get_guest_token")!
         let request = NSMutableURLRequest(url: url)
         request.httpMethod = "POST"
         
@@ -56,7 +56,7 @@ public class TokensManager {
     
     ///slightly different url for tokenns for SSP and core (also different notificationsNames)
     public func getSSPGuestToken() {
-        let url = URL(string: GlobalSettings.restApiUrl + "/saam/get_guest_token")!
+        let url = URL(string: baseSspUrl + "/saam/get_guest_token")!
         let request = NSMutableURLRequest(url: url)
         request.httpMethod = "POST"
         
