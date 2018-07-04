@@ -25,19 +25,15 @@
 		7613D67A1FE41A2B003568D2 /* AbstractInnkeeperConntector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7613D6791FE41A2B003568D2 /* AbstractInnkeeperConntector.swift */; };
 		763310DA1FF6694C00B71734 /* HttpMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763310D91FF6694C00B71734 /* HttpMessage.swift */; };
 		76875C4720AB2F10007BF3E2 /* SSPSmartDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76875C4620AB2F10007BF3E2 /* SSPSmartDevice.swift */; };
-		76875C4B20AC763B007BF3E2 /* TokensManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76875C4A20AC763B007BF3E2 /* TokensManager.swift */; };
 		76875C4D20B2C3C9007BF3E2 /* SSPObservations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76875C4C20B2C3C9007BF3E2 /* SSPObservations.swift */; };
 		76875C4F20B579B5007BF3E2 /* AbstractSmartDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76875C4E20B579B5007BF3E2 /* AbstractSmartDevice.swift */; };
 		76875C5320BC10BC007BF3E2 /* CapabilitiesParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76875C5220BC10BC007BF3E2 /* CapabilitiesParameters.swift */; };
 		76875C5520BD5E67007BF3E2 /* Capability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76875C5420BD5E67007BF3E2 /* Capability.swift */; };
 		76965F9C200CE70500613785 /* SoundLevelMeterMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76965F9B200CE70500613785 /* SoundLevelMeterMessage.swift */; };
 		76965F9E200CE71800613785 /* MagnetometerMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76965F9D200CE71800613785 /* MagnetometerMessage.swift */; };
-		76D2AE261FA1D65B00DB8ACD /* GlobalSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D2AE211FA1D65B00DB8ACD /* GlobalSettings.swift */; };
-		76D2AE271FA1D65B00DB8ACD /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D2AE221FA1D65B00DB8ACD /* Logger.swift */; };
-		76D2AE281FA1D65B00DB8ACD /* NotificationCenter+names.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D2AE231FA1D65B00DB8ACD /* NotificationCenter+names.swift */; };
-		76D2AE291FA1D65B00DB8ACD /* NotificationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D2AE241FA1D65B00DB8ACD /* NotificationInfo.swift */; };
 		76D2AE2A1FA1D65B00DB8ACD /* SSPColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D2AE251FA1D65B00DB8ACD /* SSPColors.swift */; };
 		76D2D60C1F91040F00677088 /* SymAgent.h in Headers */ = {isa = PBXBuildFile; fileRef = 76D2D60A1F91040F00677088 /* SymAgent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76F98A4620E66C2600C68BAE /* SecuritySSP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F98A4720E66C2600C68BAE /* SecuritySSP.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,21 +57,17 @@
 		7613D6791FE41A2B003568D2 /* AbstractInnkeeperConntector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractInnkeeperConntector.swift; sourceTree = "<group>"; };
 		763310D91FF6694C00B71734 /* HttpMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMessage.swift; sourceTree = "<group>"; };
 		76875C4620AB2F10007BF3E2 /* SSPSmartDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SSPSmartDevice.swift; path = Models/SSPSmartDevice.swift; sourceTree = SOURCE_ROOT; };
-		76875C4A20AC763B007BF3E2 /* TokensManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TokensManager.swift; path = ../../../SecuritySSP/SecuritySSP/TokensManager.swift; sourceTree = "<group>"; };
 		76875C4C20B2C3C9007BF3E2 /* SSPObservations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SSPObservations.swift; path = Models/SSPObservations.swift; sourceTree = SOURCE_ROOT; };
 		76875C4E20B579B5007BF3E2 /* AbstractSmartDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AbstractSmartDevice.swift; path = Models/AbstractSmartDevice.swift; sourceTree = SOURCE_ROOT; };
 		76875C5220BC10BC007BF3E2 /* CapabilitiesParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CapabilitiesParameters.swift; path = Models/CapabilitiesParameters.swift; sourceTree = SOURCE_ROOT; };
 		76875C5420BD5E67007BF3E2 /* Capability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Capability.swift; path = Models/Capability.swift; sourceTree = SOURCE_ROOT; };
 		76965F9B200CE70500613785 /* SoundLevelMeterMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundLevelMeterMessage.swift; sourceTree = "<group>"; };
 		76965F9D200CE71800613785 /* MagnetometerMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnetometerMessage.swift; sourceTree = "<group>"; };
-		76D2AE211FA1D65B00DB8ACD /* GlobalSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobalSettings.swift; path = Common/GlobalSettings.swift; sourceTree = SOURCE_ROOT; };
-		76D2AE221FA1D65B00DB8ACD /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Common/Logger.swift; sourceTree = SOURCE_ROOT; };
-		76D2AE231FA1D65B00DB8ACD /* NotificationCenter+names.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NotificationCenter+names.swift"; path = "Common/NotificationCenter+names.swift"; sourceTree = SOURCE_ROOT; };
-		76D2AE241FA1D65B00DB8ACD /* NotificationInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationInfo.swift; path = Common/NotificationInfo.swift; sourceTree = SOURCE_ROOT; };
 		76D2AE251FA1D65B00DB8ACD /* SSPColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SSPColors.swift; path = Common/SSPColors.swift; sourceTree = SOURCE_ROOT; };
 		76D2D6071F91040F00677088 /* SymAgent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SymAgent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76D2D60A1F91040F00677088 /* SymAgent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SymAgent.h; sourceTree = "<group>"; };
 		76D2D60B1F91040F00677088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76F98A4720E66C2600C68BAE /* SecuritySSP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SecuritySSP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A89819C700AD39101CE5BF33 /* Pods-SymAgent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SymAgent.release.xcconfig"; path = "../Pods/Target Support Files/Pods-SymAgent/Pods-SymAgent.release.xcconfig"; sourceTree = "<group>"; };
 		D931D50813761836BED51380 /* Pods_SymAgent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SymAgent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -85,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76F98A4620E66C2600C68BAE /* SecuritySSP.framework in Frameworks */,
 				7605A2121F97320D0096964F /* Pods_SymAgent.framework in Frameworks */,
 				6C3C24674B67B705EA0329FB /* Pods_SymAgent.framework in Frameworks */,
 			);
@@ -115,6 +108,7 @@
 		7605A20A1F9731660096964F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				76F98A4720E66C2600C68BAE /* SecuritySSP.framework */,
 				7605A2111F97320D0096964F /* Pods_SymAgent.framework */,
 				7605A20F1F9731FF0096964F /* Pods_SymAgent.framework */,
 				7605A20B1F9731670096964F /* Pods_SSPApp.framework */,
@@ -127,10 +121,6 @@
 			isa = PBXGroup;
 			children = (
 				7605A2251F9785420096964F /* DateTime.swift */,
-				76D2AE211FA1D65B00DB8ACD /* GlobalSettings.swift */,
-				76D2AE221FA1D65B00DB8ACD /* Logger.swift */,
-				76D2AE231FA1D65B00DB8ACD /* NotificationCenter+names.swift */,
-				76D2AE241FA1D65B00DB8ACD /* NotificationInfo.swift */,
 				76D2AE251FA1D65B00DB8ACD /* SSPColors.swift */,
 			);
 			name = Common;
@@ -176,14 +166,6 @@
 			path = RequestsModels;
 			sourceTree = "<group>";
 		};
-		76875C4920AC7617007BF3E2 /* Security */ = {
-			isa = PBXGroup;
-			children = (
-				76875C4A20AC763B007BF3E2 /* TokensManager.swift */,
-			);
-			path = Security;
-			sourceTree = "<group>";
-		};
 		76D2D5FD1F91040F00677088 = {
 			isa = PBXGroup;
 			children = (
@@ -208,7 +190,6 @@
 				7605A2241F97851F0096964F /* Common */,
 				7605A2021F9731360096964F /* Models */,
 				7605A22B1FA0C76C0096964F /* DataManagers */,
-				76875C4920AC7617007BF3E2 /* Security */,
 				760E43261FD1A78E00F6320E /* Sensors */,
 				7613D6781FE415F0003568D2 /* SensorsDataSender */,
 				76D2D60A1F91040F00677088 /* SymAgent.h */,
@@ -342,9 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76875C4F20B579B5007BF3E2 /* AbstractSmartDevice.swift in Sources */,
-				76D2AE271FA1D65B00DB8ACD /* Logger.swift in Sources */,
 				76875C4D20B2C3C9007BF3E2 /* SSPObservations.swift in Sources */,
-				76D2AE291FA1D65B00DB8ACD /* NotificationInfo.swift in Sources */,
 				76965F9C200CE70500613785 /* SoundLevelMeterMessage.swift in Sources */,
 				76875C5320BC10BC007BF3E2 /* CapabilitiesParameters.swift in Sources */,
 				7605A22D1FA0C76C0096964F /* ObservationsManager.swift in Sources */,
@@ -358,17 +337,14 @@
 				760E43281FD1A7AD00F6320E /* Magnetometer.swift in Sources */,
 				7605A21F1F9784760096964F /* GlobalSettingsContainer.swift in Sources */,
 				76875C4720AB2F10007BF3E2 /* SSPSmartDevice.swift in Sources */,
-				76875C4B20AC763B007BF3E2 /* TokensManager.swift in Sources */,
 				7605A22E1FA0C76C0096964F /* ActuatorManager.swift in Sources */,
 				76965F9E200CE71800613785 /* MagnetometerMessage.swift in Sources */,
 				7605A22C1FA0C76C0096964F /* SearchDevicesManager.swift in Sources */,
 				7605A22F1FA0C76C0096964F /* SettingsManager.swift in Sources */,
-				76D2AE281FA1D65B00DB8ACD /* NotificationCenter+names.swift in Sources */,
 				76D2AE2A1FA1D65B00DB8ACD /* SSPColors.swift in Sources */,
 				7605A2261F9785420096964F /* DateTime.swift in Sources */,
 				763310DA1FF6694C00B71734 /* HttpMessage.swift in Sources */,
 				7605A2201F9784760096964F /* CoreObservation.swift in Sources */,
-				76D2AE261FA1D65B00DB8ACD /* GlobalSettings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
