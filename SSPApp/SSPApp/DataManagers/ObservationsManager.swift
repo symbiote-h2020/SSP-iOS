@@ -8,7 +8,6 @@
 
 import Foundation
 import SwiftyJSON
-import SecuritySSP
 
 public class ObservationsManager {
     public init() {}

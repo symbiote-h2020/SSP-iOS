@@ -24,6 +24,11 @@
 		760E432A1FD1A7D300F6320E /* SoundLevelMeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760E43291FD1A7D300F6320E /* SoundLevelMeter.swift */; };
 		7613D67A1FE41A2B003568D2 /* AbstractInnkeeperConntector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7613D6791FE41A2B003568D2 /* AbstractInnkeeperConntector.swift */; };
 		763310DA1FF6694C00B71734 /* HttpMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763310D91FF6694C00B71734 /* HttpMessage.swift */; };
+		7644073C20ED040400DF522C /* NotificationCenter+names.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7644073820ED040400DF522C /* NotificationCenter+names.swift */; };
+		7644073D20ED040400DF522C /* GlobalSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7644073920ED040400DF522C /* GlobalSettings.swift */; };
+		7644073E20ED040400DF522C /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7644073A20ED040400DF522C /* Logger.swift */; };
+		7644073F20ED040400DF522C /* NotificationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7644073B20ED040400DF522C /* NotificationInfo.swift */; };
+		7644074220ED04B700DF522C /* TokensManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7644074120ED04B700DF522C /* TokensManager.swift */; };
 		76875C4720AB2F10007BF3E2 /* SSPSmartDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76875C4620AB2F10007BF3E2 /* SSPSmartDevice.swift */; };
 		76875C4D20B2C3C9007BF3E2 /* SSPObservations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76875C4C20B2C3C9007BF3E2 /* SSPObservations.swift */; };
 		76875C4F20B579B5007BF3E2 /* AbstractSmartDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76875C4E20B579B5007BF3E2 /* AbstractSmartDevice.swift */; };
@@ -56,6 +61,11 @@
 		760E43291FD1A7D300F6320E /* SoundLevelMeter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundLevelMeter.swift; sourceTree = "<group>"; };
 		7613D6791FE41A2B003568D2 /* AbstractInnkeeperConntector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractInnkeeperConntector.swift; sourceTree = "<group>"; };
 		763310D91FF6694C00B71734 /* HttpMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMessage.swift; sourceTree = "<group>"; };
+		7644073820ED040400DF522C /* NotificationCenter+names.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NotificationCenter+names.swift"; path = "../../../SecuritySSP/SecuritySSP/Common/NotificationCenter+names.swift"; sourceTree = "<group>"; };
+		7644073920ED040400DF522C /* GlobalSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobalSettings.swift; path = ../../../SecuritySSP/SecuritySSP/Common/GlobalSettings.swift; sourceTree = "<group>"; };
+		7644073A20ED040400DF522C /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = ../../../SecuritySSP/SecuritySSP/Common/Logger.swift; sourceTree = "<group>"; };
+		7644073B20ED040400DF522C /* NotificationInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationInfo.swift; path = ../../../SecuritySSP/SecuritySSP/Common/NotificationInfo.swift; sourceTree = "<group>"; };
+		7644074120ED04B700DF522C /* TokensManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TokensManager.swift; path = ../../../SecuritySSP/SecuritySSP/TokensManager.swift; sourceTree = "<group>"; };
 		76875C4620AB2F10007BF3E2 /* SSPSmartDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SSPSmartDevice.swift; path = Models/SSPSmartDevice.swift; sourceTree = SOURCE_ROOT; };
 		76875C4C20B2C3C9007BF3E2 /* SSPObservations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SSPObservations.swift; path = Models/SSPObservations.swift; sourceTree = SOURCE_ROOT; };
 		76875C4E20B579B5007BF3E2 /* AbstractSmartDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AbstractSmartDevice.swift; path = Models/AbstractSmartDevice.swift; sourceTree = SOURCE_ROOT; };
@@ -166,6 +176,25 @@
 			path = RequestsModels;
 			sourceTree = "<group>";
 		};
+		7644073720ED03E700DF522C /* CommonWithSecurity */ = {
+			isa = PBXGroup;
+			children = (
+				7644073920ED040400DF522C /* GlobalSettings.swift */,
+				7644073A20ED040400DF522C /* Logger.swift */,
+				7644073820ED040400DF522C /* NotificationCenter+names.swift */,
+				7644073B20ED040400DF522C /* NotificationInfo.swift */,
+			);
+			path = CommonWithSecurity;
+			sourceTree = "<group>";
+		};
+		7644074020ED042200DF522C /* SecuritySSP */ = {
+			isa = PBXGroup;
+			children = (
+				7644074120ED04B700DF522C /* TokensManager.swift */,
+			);
+			path = SecuritySSP;
+			sourceTree = "<group>";
+		};
 		76D2D5FD1F91040F00677088 = {
 			isa = PBXGroup;
 			children = (
@@ -188,8 +217,10 @@
 			isa = PBXGroup;
 			children = (
 				7605A2241F97851F0096964F /* Common */,
+				7644073720ED03E700DF522C /* CommonWithSecurity */,
 				7605A2021F9731360096964F /* Models */,
 				7605A22B1FA0C76C0096964F /* DataManagers */,
+				7644074020ED042200DF522C /* SecuritySSP */,
 				760E43261FD1A78E00F6320E /* Sensors */,
 				7613D6781FE415F0003568D2 /* SensorsDataSender */,
 				76D2D60A1F91040F00677088 /* SymAgent.h */,
@@ -323,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76875C4F20B579B5007BF3E2 /* AbstractSmartDevice.swift in Sources */,
+				7644074220ED04B700DF522C /* TokensManager.swift in Sources */,
 				76875C4D20B2C3C9007BF3E2 /* SSPObservations.swift in Sources */,
 				76965F9C200CE70500613785 /* SoundLevelMeterMessage.swift in Sources */,
 				76875C5320BC10BC007BF3E2 /* CapabilitiesParameters.swift in Sources */,
@@ -330,6 +362,8 @@
 				76875C5520BD5E67007BF3E2 /* Capability.swift in Sources */,
 				7605A21E1F9784760096964F /* ActuatorsValue.swift in Sources */,
 				7613D67A1FE41A2B003568D2 /* AbstractInnkeeperConntector.swift in Sources */,
+				7644073D20ED040400DF522C /* GlobalSettings.swift in Sources */,
+				7644073E20ED040400DF522C /* Logger.swift in Sources */,
 				760E432A1FD1A7D300F6320E /* SoundLevelMeter.swift in Sources */,
 				7605A2211F9784760096964F /* ObservationLocation.swift in Sources */,
 				7605A2221F9784760096964F /* ObservationValue.swift in Sources */,
@@ -338,6 +372,8 @@
 				7605A21F1F9784760096964F /* GlobalSettingsContainer.swift in Sources */,
 				76875C4720AB2F10007BF3E2 /* SSPSmartDevice.swift in Sources */,
 				7605A22E1FA0C76C0096964F /* ActuatorManager.swift in Sources */,
+				7644073C20ED040400DF522C /* NotificationCenter+names.swift in Sources */,
+				7644073F20ED040400DF522C /* NotificationInfo.swift in Sources */,
 				76965F9E200CE71800613785 /* MagnetometerMessage.swift in Sources */,
 				7605A22C1FA0C76C0096964F /* SearchDevicesManager.swift in Sources */,
 				7605A22F1FA0C76C0096964F /* SettingsManager.swift in Sources */,
