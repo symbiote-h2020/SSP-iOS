@@ -30,7 +30,48 @@ class CsrSsp {
         }()
     }
     
-    func buildPlatformCertificateSigningRequestPEM() -> String {//(platformId, KeyPair keyPair)
+    
+    func requestCSR() {
+        
+        let csr = buildPlatformCertificateSigningRequestPEM()
+        
+        let json: [String: Any] = [  "username" : "icom",
+                                     "password" : "icom",
+                                     "clientId" : "clientId",
+                                     "clientCSRinPEMFormat" : "\(csr)"]
+        
+        let jsonData = try? JSONSerialization.data(withJSONObject: json)
+        
+        let url = URL(string: "https://symbiote-dev.man.poznan.pl/coreInterface/sign_certificate_request")
+        let request = NSMutableURLRequest(url: url!)
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.httpBody = jsonData
+        
+        let task = URLSession.shared.dataTask(with: request as URLRequest) { data,response,error in
+            if let err = error {
+                logError(err.localizedDescription)
+                logError(error.debugDescription)
+            }
+            else {
+                let status = (response as! HTTPURLResponse).statusCode
+                if (status >= 400) {
+                    logWarn("response status: \(status)")
+                    
+                }
+                //debug
+                let dataString = String(data: data!, encoding: String.Encoding.utf8)
+                logVerbose("datastring= \(dataString ?? "    ")")
+                
+                
+            }
+        }
+        
+        task.resume()
+    }
+    
+    
+    private func buildPlatformCertificateSigningRequestPEM() -> String {//(platformId, KeyPair keyPair)
         //let cn = "CN=icom@clientId@SymbIoTe_Core_AAM" //with this I get: "400: ERR_INVALID_ARGUMENTS"
         //let cn = "CN=icom" //with this I get "400 invalid argument"
         let cn = "icom@clientId@SymbIoTe_Core_AAM"
