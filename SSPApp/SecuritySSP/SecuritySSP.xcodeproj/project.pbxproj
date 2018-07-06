@@ -10,6 +10,8 @@
 		7666D15720E4F74800340DE6 /* SecuritySSP.h in Headers */ = {isa = PBXBuildFile; fileRef = 7666D15520E4F74800340DE6 /* SecuritySSP.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		76E28BF620EF79B7005E62D3 /* SHA256.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E28BF420EF79B7005E62D3 /* SHA256.swift */; };
 		76E28BF720EF79B7005E62D3 /* EllipticCurveKeyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E28BF520EF79B7005E62D3 /* EllipticCurveKeyPair.swift */; };
+		76E28C1D20EF9E2E005E62D3 /* CsrSsp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E28C1C20EF9E2E005E62D3 /* CsrSsp.swift */; };
+		76E28C2220EF9F9D005E62D3 /* CertificateSigningRequestSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76E28C1120EF9C5A005E62D3 /* CertificateSigningRequestSwift.framework */; };
 		76F98A2D20E5152B00C68BAE /* TokensManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F98A2C20E5152B00C68BAE /* TokensManager.swift */; };
 		76F98A4020E66B3C00C68BAE /* GlobalSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F98A3A20E66B3C00C68BAE /* GlobalSettings.swift */; };
 		76F98A4220E66B3C00C68BAE /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F98A3C20E66B3C00C68BAE /* Logger.swift */; };
@@ -75,6 +77,20 @@
 			remoteGlobalIDString = 1FA41621AC3A009F4C76C1F6E3167DCC;
 			remoteInfo = SwiftyJSON;
 		};
+		76E28C1020EF9C5A005E62D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76E28C0B20EF9C5A005E62D3 /* CertificateSigningRequestSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 917B68861DD0F4FD00AE5629;
+			remoteInfo = CertificateSigningRequestSwift;
+		};
+		76E28C1220EF9C5A005E62D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76E28C0B20EF9C5A005E62D3 /* CertificateSigningRequestSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 917B688F1DD0F4FD00AE5629;
+			remoteInfo = CertificateSigningRequestSwiftTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +103,8 @@
 		76E28BD720EE5ABC005E62D3 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = ../Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		76E28BF420EF79B7005E62D3 /* SHA256.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHA256.swift; sourceTree = "<group>"; };
 		76E28BF520EF79B7005E62D3 /* EllipticCurveKeyPair.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EllipticCurveKeyPair.swift; sourceTree = "<group>"; };
+		76E28C0B20EF9C5A005E62D3 /* CertificateSigningRequestSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CertificateSigningRequestSwift.xcodeproj; path = SecuritySSP/CertificateSigningRequestSwift/CertificateSigningRequestSwift.xcodeproj; sourceTree = "<group>"; };
+		76E28C1C20EF9E2E005E62D3 /* CsrSsp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CsrSsp.swift; sourceTree = "<group>"; };
 		76F98A2C20E5152B00C68BAE /* TokensManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokensManager.swift; sourceTree = "<group>"; };
 		76F98A3A20E66B3C00C68BAE /* GlobalSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalSettings.swift; sourceTree = "<group>"; };
 		76F98A3C20E66B3C00C68BAE /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
@@ -99,6 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76E28C2220EF9F9D005E62D3 /* CertificateSigningRequestSwift.framework in Frameworks */,
 				F5AA702E04F90250F3F42508 /* Pods_SecuritySSP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -165,8 +184,18 @@
 		76E28BF820EF874B005E62D3 /* CertificateRequest */ = {
 			isa = PBXGroup;
 			children = (
+				76E28C1C20EF9E2E005E62D3 /* CsrSsp.swift */,
 			);
 			path = CertificateRequest;
+			sourceTree = "<group>";
+		};
+		76E28C0C20EF9C5A005E62D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				76E28C1120EF9C5A005E62D3 /* CertificateSigningRequestSwift.framework */,
+				76E28C1320EF9C5A005E62D3 /* CertificateSigningRequestSwiftTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		76F98A3720E66AF800C68BAE /* Common */ = {
@@ -192,6 +221,7 @@
 		F8CF13DF7A94793C185C0CC6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				76E28C0B20EF9C5A005E62D3 /* CertificateSigningRequestSwift.xcodeproj */,
 				4F4A44BAB5D3D257A575047B /* Pods_SecuritySSP.framework */,
 			);
 			name = Frameworks;
@@ -257,6 +287,10 @@
 			productRefGroup = 7666D15320E4F74800340DE6 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
+				{
+					ProductGroup = 76E28C0C20EF9C5A005E62D3 /* Products */;
+					ProjectRef = 76E28C0B20EF9C5A005E62D3 /* CertificateSigningRequestSwift.xcodeproj */;
+				},
 				{
 					ProductGroup = 76E28BD820EE5ABC005E62D3 /* Products */;
 					ProjectRef = 76E28BD720EE5ABC005E62D3 /* Pods.xcodeproj */;
@@ -326,6 +360,20 @@
 			remoteRef = 76E28BF020EE5ABC005E62D3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		76E28C1120EF9C5A005E62D3 /* CertificateSigningRequestSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CertificateSigningRequestSwift.framework;
+			remoteRef = 76E28C1020EF9C5A005E62D3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		76E28C1320EF9C5A005E62D3 /* CertificateSigningRequestSwiftTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CertificateSigningRequestSwiftTests.xctest;
+			remoteRef = 76E28C1220EF9C5A005E62D3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -381,6 +429,7 @@
 				76E28BF620EF79B7005E62D3 /* SHA256.swift in Sources */,
 				76F98A4B20E66CA100C68BAE /* NotificationInfo.swift in Sources */,
 				76F98A4020E66B3C00C68BAE /* GlobalSettings.swift in Sources */,
+				76E28C1D20EF9E2E005E62D3 /* CsrSsp.swift in Sources */,
 				76E28BF720EF79B7005E62D3 /* EllipticCurveKeyPair.swift in Sources */,
 				76F98A2D20E5152B00C68BAE /* TokensManager.swift in Sources */,
 			);
