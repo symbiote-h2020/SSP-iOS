@@ -148,7 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				76E28BF320EF7974005E62D3 /* EllipticCurveKeyPair */,
-				76E28BF820EF874B005E62D3 /* CertificateRequest */,
+				76E28BF820EF874B005E62D3 /* HomeToken */,
 				76F98A3720E66AF800C68BAE /* Common */,
 				7666D15520E4F74800340DE6 /* SecuritySSP.h */,
 				76F98A2C20E5152B00C68BAE /* GuestTokensManager.swift */,
@@ -181,12 +181,12 @@
 			path = EllipticCurveKeyPair;
 			sourceTree = "<group>";
 		};
-		76E28BF820EF874B005E62D3 /* CertificateRequest */ = {
+		76E28BF820EF874B005E62D3 /* HomeToken */ = {
 			isa = PBXGroup;
 			children = (
 				76E28C1C20EF9E2E005E62D3 /* CsrSsp.swift */,
 			);
-			path = CertificateRequest;
+			path = HomeToken;
 			sourceTree = "<group>";
 		};
 		76E28C0C20EF9C5A005E62D3 /* Products */ = {
