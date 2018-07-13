@@ -9,9 +9,9 @@
 import Foundation
 import SwiftyJSON
 
-public class TokensManager {
+public class GuestTokensManager {
     // MARK: - Properties
-    public static let shared = TokensManager(GlobalSettings.restApiUrl, GlobalSettings.coreInterfaceApiUrl)
+    public static let shared = GuestTokensManager(GlobalSettings.restApiUrl, GlobalSettings.coreInterfaceApiUrl)
     
     public var sspGuestToken: String = ""
     public var coreGuestToken: String = ""

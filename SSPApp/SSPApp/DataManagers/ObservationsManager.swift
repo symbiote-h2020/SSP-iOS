@@ -42,7 +42,7 @@ public class ObservationsManager {
             request.httpMethod = "GET"
             request.setValue("\(DateTime.Now.unixEpochTime()*1000)", forHTTPHeaderField: "x-auth-timestamp")
             request.setValue("1", forHTTPHeaderField: "x-auth-size")
-            request.setValue(TokensManager.shared.makeXAuth1SSPRequestHeader(), forHTTPHeaderField: "x-auth-1")
+            request.setValue(GuestTokensManager.shared.makeXAuth1SSPRequestHeader(), forHTTPHeaderField: "x-auth-1")
             
             return request
         }
@@ -61,7 +61,7 @@ public class ObservationsManager {
             request.httpMethod = "GET"
             request.setValue("\(DateTime.Now.unixEpochTime()*1000)", forHTTPHeaderField: "x-auth-timestamp")
             request.setValue("1", forHTTPHeaderField: "x-auth-size")
-            request.setValue(TokensManager.shared.makeXAuth1CoreRequestHeader(), forHTTPHeaderField: "x-auth-1")
+            request.setValue(GuestTokensManager.shared.makeXAuth1CoreRequestHeader(), forHTTPHeaderField: "x-auth-1")
             
             return request
         }

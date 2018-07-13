@@ -62,11 +62,11 @@ class DeviceDetailsVC: UIViewController {
             
             if d.type == .ssp {
                 NotificationCenter.default.addObserver(self, selector: #selector(tokenFromSSPNotificationReceived(_:)), name: SymNotificationName.SecurityTokenSSP, object: nil)
-                TokensManager.shared.getSSPGuestToken()
+                GuestTokensManager.shared.getSSPGuestToken()
             }
             else if d.type == .core {
                 NotificationCenter.default.addObserver(self, selector: #selector(tokenFromCoreNotificationReceived(_:)), name: SymNotificationName.SecurityTokenCore, object: nil)
-                TokensManager.shared.getCoreGuestToken()
+                GuestTokensManager.shared.getCoreGuestToken()
             }
 
         }
