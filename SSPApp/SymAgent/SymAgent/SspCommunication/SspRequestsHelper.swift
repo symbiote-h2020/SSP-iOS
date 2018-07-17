@@ -12,6 +12,16 @@ import SwiftyJSON
 /// Documentation for RestAPI https://colab.intracom-telecom.com/pages/viewpage.action?spaceKey=SYM&title=Interface+Innkeeper
 class SspRequestsHelper {
     
+    /**
+     Platforms or SDEV can request to be registered in a Smart Space. The Registration procedure for a Smart Device is provided by using the lightweight security protocol. The message body of the registration request is encrypted and formatted as follow:
+     •    Regarding the field symId (i.e. the symbIoTe id), if this is the first time the device connects to symbIoTe, then it should be an empty field; the innkeeper then responds with the id that device should save in the Flash memory (if L4) and it should re-use in future interactions with the symbIoTe ecosystem.
+     •    PluginId and pluginURL are metadata used by the RAP.  The pluginURL is the ip:port/path where the RAP sends the request to the SDEV.
+     •    Roaming indicates if the SDEV is a L3 or L4 device to the innkeeper during the registration
+     •    The field dk1 represents the current session key.
+     •    Regarding the hashField could be
+        o    all 0 when the SDEV joins for the first time or
+        o    hashField = H(symId || previous dk1)     
+     */
     public func register(_ sdev: SdevInfo) {
         let url = URL(string: GlobalSettings.restApiUrl + "/innkeeper/sdev/register")
         let request = NSMutableURLRequest(url: url!)
