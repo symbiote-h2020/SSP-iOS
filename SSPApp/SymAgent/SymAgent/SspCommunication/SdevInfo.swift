@@ -18,7 +18,7 @@ class SdevInfo {
     var hashField: String = ""
     
     
-    public func toJsonRequestBody() -> JSON {
+    public func buidFakeDebugTestRequest() -> JSON {
         let json = JSON(
             ["symId":"iOS_sdev_test",
              "sspId":"unidata",
@@ -33,7 +33,17 @@ class SdevInfo {
         return json
     }
     
-    private func buidFakeDebugTestRequest() -> JSON {
+    public func idToJson() -> JSON {
+        let json = JSON(
+            ["symId":symId
+            ]
+        )
+        
+        logVerbose(json.rawString(options: []))
+        return json
+    }
+    
+    public func toJsonRequestBody() -> JSON {
         let json = JSON(
             ["symId":symId,
              "sspId":sspId,
@@ -41,6 +51,20 @@ class SdevInfo {
              "pluginURL":pluginURL,
              "dk1":dk1,
              "hashField":hashField
+            ]
+        )
+        
+        logVerbose(json.rawString(options: []))
+        return json
+    }
+    
+    public func testJoinRequestBody() -> JSON {
+        let json = JSON(
+            ["internalIdResource":"iOS_sdev_test",
+             "sspIdResource":"unidata",
+             "sspIdParent":"",
+             "accessPolicy":"",
+             "filteringPolicy":""
             ]
         )
         

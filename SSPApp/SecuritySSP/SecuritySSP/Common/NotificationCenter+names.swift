@@ -18,6 +18,7 @@ public enum SymNotificationName: String {
     case Settings
     case SecurityTokenSSP
     case SecurityTokenCore
+    case InnkeeperCommunication
 }
 
 public extension AsyncBlock {
