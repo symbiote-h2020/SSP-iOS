@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		763D1B1220FDF5D70041B49E /* LwspManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763D1B1120FDF5D70041B49E /* LwspManager.swift */; };
 		7666D15720E4F74800340DE6 /* SecuritySSP.h in Headers */ = {isa = PBXBuildFile; fileRef = 7666D15520E4F74800340DE6 /* SecuritySSP.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		76E28BF620EF79B7005E62D3 /* SHA256.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E28BF420EF79B7005E62D3 /* SHA256.swift */; };
 		76E28BF720EF79B7005E62D3 /* EllipticCurveKeyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E28BF520EF79B7005E62D3 /* EllipticCurveKeyPair.swift */; };
@@ -97,6 +98,7 @@
 		4F4A44BAB5D3D257A575047B /* Pods_SecuritySSP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SecuritySSP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C2C04C35FBBFFA33988E224 /* Pods-SecuritySSP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecuritySSP.release.xcconfig"; path = "../Pods/Target Support Files/Pods-SecuritySSP/Pods-SecuritySSP.release.xcconfig"; sourceTree = "<group>"; };
 		6267664255A7D020CEE541C2 /* Pods-SecuritySSP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecuritySSP.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-SecuritySSP/Pods-SecuritySSP.debug.xcconfig"; sourceTree = "<group>"; };
+		763D1B1120FDF5D70041B49E /* LwspManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LwspManager.swift; sourceTree = "<group>"; };
 		7666D15220E4F74800340DE6 /* SecuritySSP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SecuritySSP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7666D15520E4F74800340DE6 /* SecuritySSP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecuritySSP.h; sourceTree = "<group>"; };
 		7666D15620E4F74800340DE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 		763D1B0220FDF34E0041B49E /* LightweightSecurityProtocol */ = {
 			isa = PBXGroup;
 			children = (
+				763D1B1120FDF5D70041B49E /* LwspManager.swift */,
 			);
 			path = LightweightSecurityProtocol;
 			sourceTree = "<group>";
@@ -451,6 +454,7 @@
 				76F98A4920E66C9D00C68BAE /* NotificationCenter+names.swift in Sources */,
 				76F98A4220E66B3C00C68BAE /* Logger.swift in Sources */,
 				76E28BF620EF79B7005E62D3 /* SHA256.swift in Sources */,
+				763D1B1220FDF5D70041B49E /* LwspManager.swift in Sources */,
 				76F98A4B20E66CA100C68BAE /* NotificationInfo.swift in Sources */,
 				76F98A4020E66B3C00C68BAE /* GlobalSettings.swift in Sources */,
 				76E28C1D20EF9E2E005E62D3 /* CsrSsp.swift in Sources */,

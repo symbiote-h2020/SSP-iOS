@@ -26,6 +26,8 @@
 		763310DA1FF6694C00B71734 /* HttpMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763310D91FF6694C00B71734 /* HttpMessage.swift */; };
 		763D1AFD20FCC7D70041B49E /* SspRequestsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763D1AFC20FCC7D70041B49E /* SspRequestsHelper.swift */; };
 		763D1AFF20FCD0250041B49E /* SdevInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763D1AFE20FCD0240041B49E /* SdevInfo.swift */; };
+		763D1B1E20FDF60A0041B49E /* GuestTokensManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763D1B1D20FDF6090041B49E /* GuestTokensManager.swift */; };
+		763D1B2020FDF6180041B49E /* LwspManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763D1B1F20FDF6180041B49E /* LwspManager.swift */; };
 		7644073C20ED040400DF522C /* NotificationCenter+names.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7644073820ED040400DF522C /* NotificationCenter+names.swift */; };
 		7644073D20ED040400DF522C /* GlobalSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7644073920ED040400DF522C /* GlobalSettings.swift */; };
 		7644073E20ED040400DF522C /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7644073A20ED040400DF522C /* Logger.swift */; };
@@ -39,7 +41,6 @@
 		76965F9E200CE71800613785 /* MagnetometerMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76965F9D200CE71800613785 /* MagnetometerMessage.swift */; };
 		76D2AE2A1FA1D65B00DB8ACD /* SSPColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D2AE251FA1D65B00DB8ACD /* SSPColors.swift */; };
 		76D2D60C1F91040F00677088 /* SymAgent.h in Headers */ = {isa = PBXBuildFile; fileRef = 76D2D60A1F91040F00677088 /* SymAgent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		76E28C2C20F88D82005E62D3 /* GuestTokensManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E28C2B20F88D82005E62D3 /* GuestTokensManager.swift */; };
 		76F98A4620E66C2600C68BAE /* SecuritySSP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F98A4720E66C2600C68BAE /* SecuritySSP.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +66,8 @@
 		763310D91FF6694C00B71734 /* HttpMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMessage.swift; sourceTree = "<group>"; };
 		763D1AFC20FCC7D70041B49E /* SspRequestsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SspRequestsHelper.swift; sourceTree = "<group>"; };
 		763D1AFE20FCD0240041B49E /* SdevInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SdevInfo.swift; sourceTree = "<group>"; };
+		763D1B1D20FDF6090041B49E /* GuestTokensManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GuestTokensManager.swift; path = ../../../SecuritySSP/SecuritySSP/GuestToken/GuestTokensManager.swift; sourceTree = "<group>"; };
+		763D1B1F20FDF6180041B49E /* LwspManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LwspManager.swift; path = ../../../SecuritySSP/SecuritySSP/LightweightSecurityProtocol/LwspManager.swift; sourceTree = "<group>"; };
 		7644073820ED040400DF522C /* NotificationCenter+names.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NotificationCenter+names.swift"; path = "../../../SecuritySSP/SecuritySSP/Common/NotificationCenter+names.swift"; sourceTree = "<group>"; };
 		7644073920ED040400DF522C /* GlobalSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobalSettings.swift; path = ../../../SecuritySSP/SecuritySSP/Common/GlobalSettings.swift; sourceTree = "<group>"; };
 		7644073A20ED040400DF522C /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = ../../../SecuritySSP/SecuritySSP/Common/Logger.swift; sourceTree = "<group>"; };
@@ -80,7 +83,6 @@
 		76D2D6071F91040F00677088 /* SymAgent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SymAgent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76D2D60A1F91040F00677088 /* SymAgent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SymAgent.h; sourceTree = "<group>"; };
 		76D2D60B1F91040F00677088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		76E28C2B20F88D82005E62D3 /* GuestTokensManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GuestTokensManager.swift; path = ../../../SecuritySSP/SecuritySSP/GuestTokensManager.swift; sourceTree = "<group>"; };
 		76F98A4720E66C2600C68BAE /* SecuritySSP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SecuritySSP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A89819C700AD39101CE5BF33 /* Pods-SymAgent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SymAgent.release.xcconfig"; path = "../Pods/Target Support Files/Pods-SymAgent/Pods-SymAgent.release.xcconfig"; sourceTree = "<group>"; };
 		D931D50813761836BED51380 /* Pods_SymAgent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SymAgent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -203,7 +205,8 @@
 		7644074020ED042200DF522C /* SecuritySSP */ = {
 			isa = PBXGroup;
 			children = (
-				76E28C2B20F88D82005E62D3 /* GuestTokensManager.swift */,
+				763D1B1F20FDF6180041B49E /* LwspManager.swift */,
+				763D1B1D20FDF6090041B49E /* GuestTokensManager.swift */,
 			);
 			path = SecuritySSP;
 			sourceTree = "<group>";
@@ -374,9 +377,9 @@
 				7605A22D1FA0C76C0096964F /* ObservationsManager.swift in Sources */,
 				763D1AFD20FCC7D70041B49E /* SspRequestsHelper.swift in Sources */,
 				76875C5520BD5E67007BF3E2 /* Capability.swift in Sources */,
-				76E28C2C20F88D82005E62D3 /* GuestTokensManager.swift in Sources */,
 				7605A21E1F9784760096964F /* ActuatorsValue.swift in Sources */,
 				7613D67A1FE41A2B003568D2 /* AbstractInnkeeperConntector.swift in Sources */,
+				763D1B2020FDF6180041B49E /* LwspManager.swift in Sources */,
 				7644073D20ED040400DF522C /* GlobalSettings.swift in Sources */,
 				7644073E20ED040400DF522C /* Logger.swift in Sources */,
 				760E432A1FD1A7D300F6320E /* SoundLevelMeter.swift in Sources */,
@@ -384,6 +387,7 @@
 				7605A2221F9784760096964F /* ObservationValue.swift in Sources */,
 				7605A2231F9784760096964F /* CoreSmartDevice.swift in Sources */,
 				760E43281FD1A7AD00F6320E /* Magnetometer.swift in Sources */,
+				763D1B1E20FDF60A0041B49E /* GuestTokensManager.swift in Sources */,
 				7605A21F1F9784760096964F /* GlobalSettingsContainer.swift in Sources */,
 				76875C4720AB2F10007BF3E2 /* SSPSmartDevice.swift in Sources */,
 				7605A22E1FA0C76C0096964F /* ActuatorManager.swift in Sources */,
