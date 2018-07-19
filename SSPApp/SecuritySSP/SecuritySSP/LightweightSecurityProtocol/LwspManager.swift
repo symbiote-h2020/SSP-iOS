@@ -2,12 +2,10 @@
 //  LwspManager.swift
 //  SecuritySSP
 //
-//  Created by Konrad Leszczyński on 01/06/2018.
-//  Copyright © 2018 Konrad. All rights reserved.
-//
 
 import Foundation
 
+///Why this is completly different than LocalAAM? At the begginint it was said tha LocalAAM will be a subset (simple version) of CoreAAM
 class LwspManager {
     
 }
