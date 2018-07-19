@@ -10,6 +10,8 @@
 		763D1B1220FDF5D70041B49E /* LwspManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763D1B1120FDF5D70041B49E /* LwspManager.swift */; };
 		763D1B242100C69D0041B49E /* CoreAAM_Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763D1B232100C69D0041B49E /* CoreAAM_Manager.swift */; };
 		763D1B312100C6CE0041B49E /* LocalAAM_Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763D1B302100C6CE0041B49E /* LocalAAM_Manager.swift */; };
+		763D1B352100D2290041B49E /* SecurityConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763D1B342100D2290041B49E /* SecurityConstants.swift */; };
+		763D1B422100D3210041B49E /* JWTClaims.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763D1B412100D3210041B49E /* JWTClaims.swift */; };
 		7666D15720E4F74800340DE6 /* SecuritySSP.h in Headers */ = {isa = PBXBuildFile; fileRef = 7666D15520E4F74800340DE6 /* SecuritySSP.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		76E28BF620EF79B7005E62D3 /* SHA256.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E28BF420EF79B7005E62D3 /* SHA256.swift */; };
 		76E28BF720EF79B7005E62D3 /* EllipticCurveKeyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E28BF520EF79B7005E62D3 /* EllipticCurveKeyPair.swift */; };
@@ -103,6 +105,8 @@
 		763D1B1120FDF5D70041B49E /* LwspManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LwspManager.swift; sourceTree = "<group>"; };
 		763D1B232100C69D0041B49E /* CoreAAM_Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAAM_Manager.swift; sourceTree = "<group>"; };
 		763D1B302100C6CE0041B49E /* LocalAAM_Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAAM_Manager.swift; sourceTree = "<group>"; };
+		763D1B342100D2290041B49E /* SecurityConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityConstants.swift; sourceTree = "<group>"; };
+		763D1B412100D3210041B49E /* JWTClaims.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWTClaims.swift; sourceTree = "<group>"; };
 		7666D15220E4F74800340DE6 /* SecuritySSP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SecuritySSP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7666D15520E4F74800340DE6 /* SecuritySSP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecuritySSP.h; sourceTree = "<group>"; };
 		7666D15620E4F74800340DE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -163,6 +167,14 @@
 			path = LocalAAM;
 			sourceTree = "<group>";
 		};
+		763D1B402100D3020041B49E /* JWT */ = {
+			isa = PBXGroup;
+			children = (
+				763D1B412100D3210041B49E /* JWTClaims.swift */,
+			);
+			path = JWT;
+			sourceTree = "<group>";
+		};
 		7666D14820E4F74800340DE6 = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +199,7 @@
 			children = (
 				763D1B0E20FDF3780041B49E /* GuestToken */,
 				76E28BF820EF874B005E62D3 /* HomeToken */,
+				763D1B402100D3020041B49E /* JWT */,
 				763D1B0D20FDF3650041B49E /* Libs */,
 				763D1B0220FDF34E0041B49E /* LightweightSecurityProtocol */,
 				763D1B2F2100C6B70041B49E /* LocalAAM */,
@@ -246,6 +259,7 @@
 				76F98A4A20E66CA100C68BAE /* NotificationInfo.swift */,
 				76F98A3A20E66B3C00C68BAE /* GlobalSettings.swift */,
 				76F98A3C20E66B3C00C68BAE /* Logger.swift */,
+				763D1B342100D2290041B49E /* SecurityConstants.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -465,6 +479,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				763D1B422100D3210041B49E /* JWTClaims.swift in Sources */,
 				76F98A4920E66C9D00C68BAE /* NotificationCenter+names.swift in Sources */,
 				76F98A4220E66B3C00C68BAE /* Logger.swift in Sources */,
 				76E28BF620EF79B7005E62D3 /* SHA256.swift in Sources */,
@@ -476,6 +491,7 @@
 				76E28C1D20EF9E2E005E62D3 /* CsrSsp.swift in Sources */,
 				76E28BF720EF79B7005E62D3 /* EllipticCurveKeyPair.swift in Sources */,
 				76F98A2D20E5152B00C68BAE /* GuestTokensManager.swift in Sources */,
+				763D1B352100D2290041B49E /* SecurityConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
