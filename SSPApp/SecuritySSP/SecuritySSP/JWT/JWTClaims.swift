@@ -37,17 +37,11 @@ public class JWTClaims {
     
   
     public func toString() -> String {
-    return "JWTClaims{" +
-        "jti='" + jti + "'" +
-        ", alg='" + alg + "'" +
-            ", iss='" + iss + "'" +
-            ", sub='" + sub + "'" +
-            ", iat='" + iat + "'" +
-            ", exp='" + exp + "'" +
-            ", ipk='" + ipk + "'" +
-            ", spk='" + spk + "'" +
-            ", att='" + att + "'" +
-            ", ttyp'" + ttyp + "'" +
-        "}";
+        return "JWTClaims{jti='\(jti)', alg='\(alg)', iss='\(iss)', sub='\(sub)', iat='\(iat)', exp='\(exp)'}"
+//            ", ipk='" + ipk + "'" +
+//            ", spk='" + spk + "'" +
+//            ", att='" + att + "'" +
+//            ", ttyp'" + ttyp + "'" +
+//        "}";
     }
 }

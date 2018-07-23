@@ -12,6 +12,7 @@
 		763D1B312100C6CE0041B49E /* LocalAAM_Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763D1B302100C6CE0041B49E /* LocalAAM_Manager.swift */; };
 		763D1B352100D2290041B49E /* SecurityConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763D1B342100D2290041B49E /* SecurityConstants.swift */; };
 		763D1B422100D3210041B49E /* JWTClaims.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763D1B412100D3210041B49E /* JWTClaims.swift */; };
+		763D1B442101CEC20041B49E /* JWTEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763D1B432101CEC20041B49E /* JWTEngine.swift */; };
 		7666D15720E4F74800340DE6 /* SecuritySSP.h in Headers */ = {isa = PBXBuildFile; fileRef = 7666D15520E4F74800340DE6 /* SecuritySSP.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		76E28BF620EF79B7005E62D3 /* SHA256.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E28BF420EF79B7005E62D3 /* SHA256.swift */; };
 		76E28BF720EF79B7005E62D3 /* EllipticCurveKeyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E28BF520EF79B7005E62D3 /* EllipticCurveKeyPair.swift */; };
@@ -107,6 +108,7 @@
 		763D1B302100C6CE0041B49E /* LocalAAM_Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAAM_Manager.swift; sourceTree = "<group>"; };
 		763D1B342100D2290041B49E /* SecurityConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityConstants.swift; sourceTree = "<group>"; };
 		763D1B412100D3210041B49E /* JWTClaims.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWTClaims.swift; sourceTree = "<group>"; };
+		763D1B432101CEC20041B49E /* JWTEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWTEngine.swift; sourceTree = "<group>"; };
 		7666D15220E4F74800340DE6 /* SecuritySSP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SecuritySSP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7666D15520E4F74800340DE6 /* SecuritySSP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecuritySSP.h; sourceTree = "<group>"; };
 		7666D15620E4F74800340DE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				763D1B412100D3210041B49E /* JWTClaims.swift */,
+				763D1B432101CEC20041B49E /* JWTEngine.swift */,
 			);
 			path = JWT;
 			sourceTree = "<group>";
@@ -486,6 +489,7 @@
 				763D1B1220FDF5D70041B49E /* LwspManager.swift in Sources */,
 				763D1B312100C6CE0041B49E /* LocalAAM_Manager.swift in Sources */,
 				76F98A4B20E66CA100C68BAE /* NotificationInfo.swift in Sources */,
+				763D1B442101CEC20041B49E /* JWTEngine.swift in Sources */,
 				76F98A4020E66B3C00C68BAE /* GlobalSettings.swift in Sources */,
 				763D1B242100C69D0041B49E /* CoreAAM_Manager.swift in Sources */,
 				76E28C1D20EF9E2E005E62D3 /* CsrSsp.swift in Sources */,
