@@ -25,6 +25,36 @@ public class GuestTokensManager {
         self.baseCoreUrl = coreUrl
     }
     
+    
+    public func getAvailableAams() {
+        let url = URL(string: baseCoreUrl + "/get_available_aams")!
+        let request = NSMutableURLRequest(url: url)
+        request.httpMethod = "POST"
+        
+        let task = URLSession.shared.dataTask(with: request as URLRequest) { data,response,error in
+            if let err = error {
+                logError(error.debugDescription)
+                
+                let notiInfoObj  = NotificationInfo(type: ErrorType.connection, info: err.localizedDescription)
+                NotificationCenter.default.postNotificationName(SymNotificationName.SecurityTokenCore, object: notiInfoObj)
+            }
+            else {
+                if let httpResponse = response as? HTTPURLResponse
+                {
+                    //logVerbose("response header for guest_token request:  \(httpResponse.allHeaderFields)")
+                    if let xAuthToken = httpResponse.allHeaderFields["x-auth-token"] as? String {
+                        //log("core gouest_token = \(xAuthToken)")
+                        self.coreGuestToken = xAuthToken
+                        NotificationCenter.default.postNotificationName(SymNotificationName.SecurityTokenCore)
+                    }
+                }
+            }
+        }
+        
+        task.resume()
+    }
+    
+    
     ///slightly different url for tokenns for SSP and core (also different notificationsNames)
     public func getCoreGuestToken() {
         let url = URL(string: baseCoreUrl + "/get_guest_token")!
