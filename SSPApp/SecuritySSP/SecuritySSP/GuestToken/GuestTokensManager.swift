@@ -15,6 +15,8 @@ public class GuestTokensManager {
     
     public var sspGuestToken: String = ""
     public var coreGuestToken: String = ""
+
+    
     
     let baseSspUrl: String
     let baseCoreUrl: String
@@ -29,23 +31,32 @@ public class GuestTokensManager {
     public func getAvailableAams() {
         let url = URL(string: baseCoreUrl + "/get_available_aams")!
         let request = NSMutableURLRequest(url: url)
-        request.httpMethod = "POST"
+        request.httpMethod = "GET"
         
         let task = URLSession.shared.dataTask(with: request as URLRequest) { data,response,error in
             if let err = error {
                 logError(error.debugDescription)
                 
                 let notiInfoObj  = NotificationInfo(type: ErrorType.connection, info: err.localizedDescription)
-                NotificationCenter.default.postNotificationName(SymNotificationName.SecurityTokenCore, object: notiInfoObj)
+                NotificationCenter.default.postNotificationName(SymNotificationName.CoreCommunictation, object: notiInfoObj)
             }
             else {
                 if let httpResponse = response as? HTTPURLResponse
                 {
-                    //logVerbose("response header for guest_token request:  \(httpResponse.allHeaderFields)")
-                    if let xAuthToken = httpResponse.allHeaderFields["x-auth-token"] as? String {
-                        //log("core gouest_token = \(xAuthToken)")
-                        self.coreGuestToken = xAuthToken
-                        NotificationCenter.default.postNotificationName(SymNotificationName.SecurityTokenCore)
+                    let status = httpResponse.statusCode
+                    if (status >= 400) {
+                        logWarn("response status: \(status)")
+                    }
+                    //debug
+                    let dataString = String(data: data!, encoding: String.Encoding.utf8)
+                    logVerbose("datastring= \(dataString ?? "    ")")
+                    if let jsonData = data {
+                        do {
+                            let json = try JSON(data: jsonData)
+                            
+                        } catch {
+                            logError("getAvailableAams json")
+                        }
                     }
                 }
             }

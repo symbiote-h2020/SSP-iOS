@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import SecuritySSP
 
 class SecuritySSPTests: XCTestCase {
     
@@ -23,7 +24,6 @@ class SecuritySSPTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        XCTFail()
     }
     
     func testPerformanceExample() {
@@ -31,6 +31,10 @@ class SecuritySSPTests: XCTestCase {
         self.measure {
             // Put the code you want to measure the time of here.
         }
+    }
+    
+    func testGetAAMs() {
+        GuestTokensManager.shared.getAvailableAams()
     }
     
 }
