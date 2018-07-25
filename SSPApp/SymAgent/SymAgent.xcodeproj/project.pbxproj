@@ -42,6 +42,7 @@
 		76D2AE2A1FA1D65B00DB8ACD /* SSPColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D2AE251FA1D65B00DB8ACD /* SSPColors.swift */; };
 		76D2D60C1F91040F00677088 /* SymAgent.h in Headers */ = {isa = PBXBuildFile; fileRef = 76D2D60A1F91040F00677088 /* SymAgent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		76F98A4620E66C2600C68BAE /* SecuritySSP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F98A4720E66C2600C68BAE /* SecuritySSP.framework */; };
+		76FE1F2B2106145E00251537 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 76FE1F2A2106145E00251537 /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +85,7 @@
 		76D2D60A1F91040F00677088 /* SymAgent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SymAgent.h; sourceTree = "<group>"; };
 		76D2D60B1F91040F00677088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76F98A4720E66C2600C68BAE /* SecuritySSP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SecuritySSP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76FE1F2A2106145E00251537 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = "<group>"; };
 		A89819C700AD39101CE5BF33 /* Pods-SymAgent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SymAgent.release.xcconfig"; path = "../Pods/Target Support Files/Pods-SymAgent/Pods-SymAgent.release.xcconfig"; sourceTree = "<group>"; };
 		D931D50813761836BED51380 /* Pods_SymAgent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SymAgent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -214,6 +216,7 @@
 		76D2D5FD1F91040F00677088 = {
 			isa = PBXGroup;
 			children = (
+				76FE1F2A2106145E00251537 /* Podfile */,
 				76D2D6091F91040F00677088 /* SymAgent */,
 				76D2D6081F91040F00677088 /* Products */,
 				7605A20A1F9731660096964F /* Frameworks */,
@@ -327,6 +330,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76FE1F2B2106145E00251537 /* Podfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
