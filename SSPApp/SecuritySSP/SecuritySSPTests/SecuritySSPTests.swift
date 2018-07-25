@@ -33,8 +33,19 @@ class SecuritySSPTests: XCTestCase {
         }
     }
     
-    func testGetAAMs() {
+    func testGetAams() {
         GuestTokensManager.shared.getAvailableAams()
+        
+        if waitForNotificationNamed(SymNotificationName.CoreCommunictation.rawValue) {
+            XCTAssertTrue(GuestTokensManager.shared.aams.count >= 1 , "There are some AAMs")
+        }
+    }
+    
+    func waitForNotificationNamed(_ notificationName: String) -> Bool {
+        let expectation = XCTNSNotificationExpectation(name: notificationName)
+        let result = XCTWaiter().wait(for: [expectation], timeout: 5)
+        log("waitForNotificationNamed result = \(result.rawValue)")
+        return result == .completed
     }
     
 }

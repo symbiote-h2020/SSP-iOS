@@ -16,6 +16,7 @@ public class GuestTokensManager {
     public var sspGuestToken: String = ""
     public var coreGuestToken: String = ""
 
+    public var aams: [Aam] = [Aam]()
     
     
     let baseSspUrl: String
@@ -48,12 +49,13 @@ public class GuestTokensManager {
                         logWarn("response status: \(status)")
                     }
                     //debug
-                    let dataString = String(data: data!, encoding: String.Encoding.utf8)
-                    logVerbose("datastring= \(dataString ?? "    ")")
+                    //let dataString = String(data: data!, encoding: String.Encoding.utf8)
+                    //logVerbose("datastring= \(dataString ?? "    ")")
                     if let jsonData = data {
                         do {
                             let json = try JSON(data: jsonData)
-                            
+                            self.parseAamsJson(json)
+                            NotificationCenter.default.postNotificationName(SymNotificationName.CoreCommunictation)
                         } catch {
                             logError("getAvailableAams json")
                         }
@@ -65,6 +67,19 @@ public class GuestTokensManager {
         task.resume()
     }
     
+    private func parseAamsJson(_ dataJson: JSON) {
+        if dataJson["availableAAMs"].exists() == false {
+            logWarn("+++++++ wrong json +++++  parseAamsJson dataJson = \(dataJson)")
+        }
+        else {
+            let jsonArr:JSON = dataJson["availableAAMs"]
+            for (key, subJson) in jsonArr {
+                logVerbose("AAM name = \(key)")
+                let dev = Aam(subJson)
+                aams.append(dev)
+            }
+        }
+    }
     
     ///slightly different url for tokenns for SSP and core (also different notificationsNames)
     public func getCoreGuestToken() {

@@ -44,6 +44,7 @@ public extension NotificationCenter {
    
         // always in main thread
         Async.mainNowOrAsync {
+            //logVerbose("-------   posting notification \(aName.rawValue)")
             if object == nil {
                 let notiInfoObj  = NotificationInfo(type: ErrorType.noErrorSuccessfulFinish, info: "By default it works")
                 self.post(name: Notification.Name(aName.rawValue), object: notiInfoObj, userInfo: userInfo)

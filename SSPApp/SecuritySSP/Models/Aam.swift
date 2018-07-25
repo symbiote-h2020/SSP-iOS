@@ -7,3 +7,12 @@
 //
 
 import Foundation
+import SwiftyJSON
+
+public class Aam {
+    
+    public convenience init(_ resourceJson: JSON)  {
+        self.init()
+        
+    }
+}
