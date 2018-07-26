@@ -30,6 +30,11 @@ class SecuritySSPTests: XCTestCase {
         // This is an example of a performance test case.
         self.measure {
             // Put the code you want to measure the time of here.
+            GuestTokensManager.shared.getAvailableAams()
+            
+            if self.waitForNotificationNamed(SymNotificationName.CoreCommunictation.rawValue) {
+                XCTAssertTrue(GuestTokensManager.shared.aams.count >= 1 , "There are no AAMs")
+            }
         }
     }
     
@@ -37,14 +42,14 @@ class SecuritySSPTests: XCTestCase {
         GuestTokensManager.shared.getAvailableAams()
         
         if waitForNotificationNamed(SymNotificationName.CoreCommunictation.rawValue) {
-            XCTAssertTrue(GuestTokensManager.shared.aams.count >= 1 , "There are some AAMs")
+            XCTAssertTrue(GuestTokensManager.shared.aams.count >= 1 , "There are no AAMs")
         }
     }
     
     func waitForNotificationNamed(_ notificationName: String) -> Bool {
         let expectation = XCTNSNotificationExpectation(name: notificationName)
         let result = XCTWaiter().wait(for: [expectation], timeout: 5)
-        log("waitForNotificationNamed result = \(result.rawValue)")
+        //log("waitForNotificationNamed result = \(result.rawValue)")
         return result == .completed
     }
     
