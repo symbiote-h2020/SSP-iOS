@@ -8,9 +8,10 @@
 
 import Foundation
 import LocalAuthentication
-//import EllipticCurveKeyPair
+import EllipticCurveKeyPair
 //import CertificateSigningRequestSwift
-/*
+
+
 class CsrSsp {
     struct Shared {
         static let keypair: EllipticCurveKeyPair.Manager = {
@@ -110,4 +111,5 @@ class CsrSsp {
         
     }
 }
-*/
+
+

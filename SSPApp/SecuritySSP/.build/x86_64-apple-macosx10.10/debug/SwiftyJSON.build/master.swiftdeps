@@ -1,5 +1,0 @@
-version: "Apple Swift version 4.1.2 (swiftlang-902.0.54 clang-902.0.39.2)"
-options: "1a471ff5a765fba187a85d397673189a"
-build_time: [1532681380, 277696000]
-inputs:
-  "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/checkouts/SwiftyJSON.git-3043514560129222422/Source/SwiftyJSON.swift": [1532681341, 0]
