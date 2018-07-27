@@ -6,6 +6,8 @@
 //  Copyright © 2018 Konrad. All rights reserved.
 //
 
+//zupa zupa
+
 import XCTest
 @testable import SecuritySSP
 
