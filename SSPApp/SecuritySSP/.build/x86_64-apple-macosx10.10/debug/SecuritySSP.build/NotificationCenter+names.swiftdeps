@@ -1,0 +1,346 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SymNotificationName"
+- "Async"
+provides-nominal:
+- "11SecuritySSP19SymNotificationNameO"
+provides-member:
+- ["11SecuritySSP19SymNotificationNameO", ""]
+- ["So13DispatchQueueC", ""]
+- ["So18NotificationCenterC", ""]
+- ["10Foundation12NotificationV", ""]
+- ["So13DispatchQueueC", "main"]
+- ["So13DispatchQueueC", "mainNowOrAsync"]
+- ["So18NotificationCenterC", "postNotificationName"]
+- ["So18NotificationCenterC", "addObserver"]
+- ["So18NotificationCenterC", "removeObserver"]
+- ["10Foundation12NotificationV", "init"]
+provides-dynamic-lookup:
+depends-top-level:
+- "=="
+- !private "??"
+- "AnyHashable"
+- "AnyObject"
+- !private "Array"
+- "Async"
+- "DispatchQueue"
+- !private "ErrorType"
+- "Notification"
+- "NotificationCenter"
+- !private "NotificationInfo"
+- "Selector"
+- "String"
+- "StringLiteralType"
+- "SymNotificationName"
+- !private "Thread"
+- "TimeInterval"
+- !private "_findStringSwitchCase"
+- !private "~="
+depends-member:
+- ["s23BidirectionalCollectionP", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "Async"]
+- !private ["s7CVarArgP", "ErrorType"]
+- !private ["s7CVarArgP", "Notification"]
+- !private ["s7CVarArgP", "NotificationInfo"]
+- !private ["s7CVarArgP", "Thread"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "addObserver"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "isMainThread"]
+- !private ["s7CVarArgP", "main"]
+- !private ["s7CVarArgP", "mainNowOrAsync"]
+- !private ["s7CVarArgP", "post"]
+- !private ["s7CVarArgP", "removeObserver"]
+- ["s10CollectionP", "init"]
+- ["s10ComparableP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "Async"]
+- !private ["s28CustomDebugStringConvertibleP", "ErrorType"]
+- !private ["s28CustomDebugStringConvertibleP", "Name"]
+- !private ["s28CustomDebugStringConvertibleP", "Notification"]
+- !private ["s28CustomDebugStringConvertibleP", "NotificationInfo"]
+- !private ["s28CustomDebugStringConvertibleP", "Thread"]
+- !private ["s28CustomDebugStringConvertibleP", "addObserver"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "isMainThread"]
+- !private ["s28CustomDebugStringConvertibleP", "main"]
+- !private ["s28CustomDebugStringConvertibleP", "mainNowOrAsync"]
+- !private ["s28CustomDebugStringConvertibleP", "post"]
+- !private ["s28CustomDebugStringConvertibleP", "removeObserver"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "Name"]
+- !private ["s17CustomReflectableP", "Notification"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "Async"]
+- !private ["s23CustomStringConvertibleP", "ErrorType"]
+- !private ["s23CustomStringConvertibleP", "Name"]
+- !private ["s23CustomStringConvertibleP", "Notification"]
+- !private ["s23CustomStringConvertibleP", "NotificationInfo"]
+- !private ["s23CustomStringConvertibleP", "Thread"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "addObserver"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isMainThread"]
+- !private ["s23CustomStringConvertibleP", "main"]
+- !private ["s23CustomStringConvertibleP", "mainNowOrAsync"]
+- !private ["s23CustomStringConvertibleP", "post"]
+- !private ["s23CustomStringConvertibleP", "removeObserver"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- ["s9DecodableP", "init"]
+- !private ["So14DispatchObjectC", "Async"]
+- !private ["So14DispatchObjectC", "Thread"]
+- ["So14DispatchObjectC", "TimeInterval"]
+- ["So14DispatchObjectC", "main"]
+- ["So14DispatchObjectC", "mainNowOrAsync"]
+- !private ["So13DispatchQueueC", "Async"]
+- !private ["So13DispatchQueueC", "Thread"]
+- ["So13DispatchQueueC", "TimeInterval"]
+- ["So13DispatchQueueC", "main"]
+- ["So13DispatchQueueC", "mainNowOrAsync"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- ["s9EncodableP", "init"]
+- !private ["s9EquatableP", "Async"]
+- !private ["s9EquatableP", "ErrorType"]
+- !private ["s9EquatableP", "Name"]
+- !private ["s9EquatableP", "Notification"]
+- !private ["s9EquatableP", "NotificationInfo"]
+- ["s9EquatableP", "RawValue"]
+- !private ["s9EquatableP", "Thread"]
+- ["s9EquatableP", ""]
+- ["s9EquatableP", "_Default_RawValue"]
+- !private ["s9EquatableP", "_findStringSwitchCase"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "addObserver"]
+- ["s9EquatableP", "hashValue"]
+- ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "isMainThread"]
+- !private ["s9EquatableP", "main"]
+- !private ["s9EquatableP", "mainNowOrAsync"]
+- !private ["s9EquatableP", "noErrorSuccessfulFinish"]
+- !private ["s9EquatableP", "post"]
+- ["s9EquatableP", "rawValue"]
+- !private ["s9EquatableP", "removeObserver"]
+- !private ["11SecuritySSP9ErrorTypeO", "noErrorSuccessfulFinish"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s8HashableP", "Async"]
+- !private ["s8HashableP", "ErrorType"]
+- !private ["s8HashableP", "Name"]
+- !private ["s8HashableP", "Notification"]
+- !private ["s8HashableP", "NotificationInfo"]
+- ["s8HashableP", "RawValue"]
+- !private ["s8HashableP", "Thread"]
+- ["s8HashableP", ""]
+- ["s8HashableP", "_Default_RawValue"]
+- !private ["s8HashableP", "_findStringSwitchCase"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "addObserver"]
+- ["s8HashableP", "hashValue"]
+- ["s8HashableP", "init"]
+- !private ["s8HashableP", "isMainThread"]
+- !private ["s8HashableP", "main"]
+- !private ["s8HashableP", "mainNowOrAsync"]
+- !private ["s8HashableP", "noErrorSuccessfulFinish"]
+- !private ["s8HashableP", "post"]
+- ["s8HashableP", "rawValue"]
+- !private ["s8HashableP", "removeObserver"]
+- ["10SwiftyJSON17JSONSubscriptTypeP", "init"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- ["s25LosslessStringConvertibleP", "init"]
+- ["s10MirrorPathP", "init"]
+- ["So8NSObjectC", "AnyHashable"]
+- ["So8NSObjectC", "AnyObject"]
+- !private ["So8NSObjectC", "Async"]
+- !private ["So8NSObjectC", "ErrorType"]
+- !private ["So8NSObjectC", "Notification"]
+- !private ["So8NSObjectC", "NotificationInfo"]
+- ["So8NSObjectC", "Selector"]
+- ["So8NSObjectC", "SymNotificationName"]
+- !private ["So8NSObjectC", "Thread"]
+- ["So8NSObjectC", "TimeInterval"]
+- ["So8NSObjectC", "addObserver"]
+- !private ["So8NSObjectC", "isMainThread"]
+- ["So8NSObjectC", "main"]
+- ["So8NSObjectC", "mainNowOrAsync"]
+- !private ["So8NSObjectC", "post"]
+- ["So8NSObjectC", "postNotificationName"]
+- ["So8NSObjectC", "removeObserver"]
+- !private ["So16NSObjectProtocolP", "Async"]
+- !private ["So16NSObjectProtocolP", "ErrorType"]
+- !private ["So16NSObjectProtocolP", "Notification"]
+- !private ["So16NSObjectProtocolP", "NotificationInfo"]
+- !private ["So16NSObjectProtocolP", "Thread"]
+- !private ["So16NSObjectProtocolP", "addObserver"]
+- !private ["So16NSObjectProtocolP", "isMainThread"]
+- !private ["So16NSObjectProtocolP", "main"]
+- !private ["So16NSObjectProtocolP", "mainNowOrAsync"]
+- !private ["So16NSObjectProtocolP", "post"]
+- !private ["So16NSObjectProtocolP", "removeObserver"]
+- !private ["So14NSNotificationC4NameV", "init"]
+- ["10Foundation12NotificationV", "AnyHashable"]
+- ["10Foundation12NotificationV", "AnyObject"]
+- !private ["10Foundation12NotificationV", "Name"]
+- !private ["10Foundation12NotificationV", "Notification"]
+- ["10Foundation12NotificationV", "SymNotificationName"]
+- ["10Foundation12NotificationV", "init"]
+- ["So18NotificationCenterC", "AnyHashable"]
+- ["So18NotificationCenterC", "AnyObject"]
+- !private ["So18NotificationCenterC", "Async"]
+- !private ["So18NotificationCenterC", "ErrorType"]
+- !private ["So18NotificationCenterC", "Notification"]
+- !private ["So18NotificationCenterC", "NotificationInfo"]
+- ["So18NotificationCenterC", "Selector"]
+- ["So18NotificationCenterC", "SymNotificationName"]
+- ["So18NotificationCenterC", "addObserver"]
+- !private ["So18NotificationCenterC", "post"]
+- ["So18NotificationCenterC", "postNotificationName"]
+- ["So18NotificationCenterC", "removeObserver"]
+- !private ["11SecuritySSP16NotificationInfoC", "init"]
+- !private ["So9OS_objectC", "Async"]
+- !private ["So9OS_objectC", "Thread"]
+- ["So9OS_objectC", "TimeInterval"]
+- ["So9OS_objectC", "main"]
+- ["So9OS_objectC", "mainNowOrAsync"]
+- ["s26RangeReplaceableCollectionP", "init"]
+- ["s16RawRepresentableP", "RawValue"]
+- ["s16RawRepresentableP", ""]
+- ["s16RawRepresentableP", "_Default_RawValue"]
+- !private ["s16RawRepresentableP", "_findStringSwitchCase"]
+- ["s16RawRepresentableP", "hashValue"]
+- ["s16RawRepresentableP", "init"]
+- ["s16RawRepresentableP", "rawValue"]
+- !private ["10Foundation20ReferenceConvertibleP", "Name"]
+- !private ["10Foundation20ReferenceConvertibleP", "Notification"]
+- !private ["10Foundation20ReferenceConvertibleP", "init"]
+- ["s8SequenceP", "init"]
+- !private ["s12StaticStringV", "init"]
+- ["SS", "init"]
+- ["s14StringProtocolP", "init"]
+- ["11SecuritySSP19SymNotificationNameO", "ActuatorAction"]
+- ["11SecuritySSP19SymNotificationNameO", "CoreCommunictation"]
+- ["11SecuritySSP19SymNotificationNameO", "DeviceListLoaded"]
+- ["11SecuritySSP19SymNotificationNameO", "DeviceOfSSPLoaded"]
+- ["11SecuritySSP19SymNotificationNameO", "InnkeeperCommunication"]
+- ["11SecuritySSP19SymNotificationNameO", "ObservationsListLoaded"]
+- ["11SecuritySSP19SymNotificationNameO", "RawValue"]
+- ["11SecuritySSP19SymNotificationNameO", "SecurityTokenCore"]
+- ["11SecuritySSP19SymNotificationNameO", "SecurityTokenSSP"]
+- ["11SecuritySSP19SymNotificationNameO", "Settings"]
+- ["11SecuritySSP19SymNotificationNameO", "_Default_RawValue"]
+- !private ["11SecuritySSP19SymNotificationNameO", "_findStringSwitchCase"]
+- ["11SecuritySSP19SymNotificationNameO", "deinit"]
+- ["11SecuritySSP19SymNotificationNameO", "hashValue"]
+- ["11SecuritySSP19SymNotificationNameO", "init"]
+- ["11SecuritySSP19SymNotificationNameO", "rawValue"]
+- ["s16TextOutputStreamP", "init"]
+- ["s20TextOutputStreamableP", "init"]
+- !private ["So6ThreadC", "isMainThread"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Async"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "ErrorType"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Notification"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NotificationInfo"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Thread"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addObserver"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isMainThread"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "mainNowOrAsync"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "post"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "removeObserver"]
+- !private ["s21_ObjectiveCBridgeableP", "Name"]
+- !private ["s21_ObjectiveCBridgeableP", "Notification"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s20_SwiftNewtypeWrapperP", "init"]
+- ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- "s23BidirectionalCollectionP"
+- !private "Sb"
+- "s7CVarArgP"
+- "s10CollectionP"
+- "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "s9DecodableP"
+- "So14DispatchObjectC"
+- "So13DispatchQueueC"
+- "s9EncodableP"
+- "s9EquatableP"
+- !private "11SecuritySSP9ErrorTypeO"
+- !private "s27ExpressibleByBooleanLiteralP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- "s8HashableP"
+- "10SwiftyJSON17JSONSubscriptTypeP"
+- "s25LosslessStringConvertibleP"
+- "s10MirrorPathP"
+- "So8NSObjectC"
+- !private "So16NSObjectProtocolP"
+- !private "So14NSNotificationC4NameV"
+- "10Foundation12NotificationV"
+- "So18NotificationCenterC"
+- !private "11SecuritySSP16NotificationInfoC"
+- "So9OS_objectC"
+- "s26RangeReplaceableCollectionP"
+- "s16RawRepresentableP"
+- !private "10Foundation20ReferenceConvertibleP"
+- "s8SequenceP"
+- !private "s12StaticStringV"
+- "SS"
+- "s14StringProtocolP"
+- "11SecuritySSP19SymNotificationNameO"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
+- !private "So6ThreadC"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "s33_ExpressibleByStringInterpolationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- "s21_ObjectiveCBridgeableP"
+- !private "s20_SwiftNewtypeWrapperP"
+- "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SwiftyJSON.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/checkouts/swift-nio-ssl-support.git--2359138821295600615/module.modulemap"
+- "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/checkouts/swift-nio-zlib-support.git--1071467962839356487/module.modulemap"
+- "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/CNIOSHA1.build/module.modulemap"
+- "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/CNIOOpenSSL.build/module.modulemap"
+- "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/CNIOZlib.build/module.modulemap"
+- "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/CNIODarwin.build/module.modulemap"
+- "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/CNIOHTTPParser.build/module.modulemap"
+- "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/CNIOAtomics.build/module.modulemap"
+- "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/CNIOLinux.build/module.modulemap"
+- "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/checkouts/crypto.git-7980259129511365902/Sources/libbcrypt/include/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/LocalAuthentication.framework/Headers/LocalAuthentication.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "a8b85dce85b0ac56c276600cb5de862d"

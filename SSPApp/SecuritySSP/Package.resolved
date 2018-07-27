@@ -2,21 +2,12 @@
   "object": {
     "pins": [
       {
-        "package": "CLibreSSL",
-        "repositoryURL": "https://github.com/vapor/clibressl.git",
-        "state": {
-          "branch": null,
-          "revision": "23ddb296981d17a8ee6c7418742a40cad5d2f9d0",
-          "version": "1.0.0"
-        }
-      },
-      {
         "package": "Core",
         "repositoryURL": "https://github.com/vapor/core.git",
         "state": {
           "branch": null,
-          "revision": "661a105e25a8d84cb61f268c0b6ed85834493761",
-          "version": "1.1.2"
+          "revision": "7f56a09995bf3c8df562be456bdcda405d9d0678",
+          "version": "3.4.1"
         }
       },
       {
@@ -24,26 +15,8 @@
         "repositoryURL": "https://github.com/vapor/crypto.git",
         "state": {
           "branch": null,
-          "revision": "f55ce8fa7c8c42c4219091d031dbf97b6177ab8e",
-          "version": "1.1.0"
-        }
-      },
-      {
-        "package": "Jay",
-        "repositoryURL": "https://github.com/DanToml/Jay.git",
-        "state": {
-          "branch": null,
-          "revision": "833125251b2d026bee6afa0aff2967a90eb63cd0",
-          "version": "1.0.1"
-        }
-      },
-      {
-        "package": "JSON",
-        "repositoryURL": "https://github.com/vapor/json.git",
-        "state": {
-          "branch": null,
-          "revision": "44bd19b27c4eafbb1b18f1fe14fec712fc545bed",
-          "version": "1.0.6"
+          "revision": "4b85405430df1892ee3aa1554bdb477e96cf46ad",
+          "version": "3.2.0"
         }
       },
       {
@@ -51,35 +24,53 @@
         "repositoryURL": "https://github.com/vapor/jwt.git",
         "state": {
           "branch": null,
-          "revision": "f9a9737a15a4d003524bc361ef6a16bddd9bbd18",
-          "version": "1.0.1"
+          "revision": "de0dc5bbba60250c24c5c4b4d2505d7a71dd03ae",
+          "version": "3.0.0-rc.2.1.2"
         }
       },
       {
-        "package": "Node",
-        "repositoryURL": "https://github.com/vapor/node.git",
+        "package": "swift-nio",
+        "repositoryURL": "https://github.com/apple/swift-nio.git",
         "state": {
           "branch": null,
-          "revision": "4cf8c76c1195b29e36c7d37ca056d8fa5433e957",
-          "version": "1.0.1"
+          "revision": "695afc5205aaa49fca092b94b479ff71c43d9d3c",
+          "version": "1.8.0"
         }
       },
       {
-        "package": "PathIndexable",
-        "repositoryURL": "https://github.com/vapor/path-indexable.git",
+        "package": "swift-nio-ssl",
+        "repositoryURL": "https://github.com/apple/swift-nio-ssl.git",
         "state": {
           "branch": null,
-          "revision": "0aa6f6eb151ce5747509ca6591cf6a4379e72851",
+          "revision": "6617eb0d3afcb12170594968df01ca63afb58ac5",
+          "version": "1.2.0"
+        }
+      },
+      {
+        "package": "swift-nio-ssl-support",
+        "repositoryURL": "https://github.com/apple/swift-nio-ssl-support.git",
+        "state": {
+          "branch": null,
+          "revision": "c02eec4e0e6d351cd092938cf44195a8e669f555",
           "version": "1.0.0"
         }
       },
       {
-        "package": "Polymorphic",
-        "repositoryURL": "https://github.com/vapor/polymorphic.git",
+        "package": "swift-nio-zlib-support",
+        "repositoryURL": "https://github.com/apple/swift-nio-zlib-support.git",
         "state": {
           "branch": null,
-          "revision": "43ad0c4ce02cff79fbdf33977c2a9599835d4dde",
-          "version": "1.0.1"
+          "revision": "37760e9a52030bb9011972c5213c3350fa9d41fd",
+          "version": "1.0.0"
+        }
+      },
+      {
+        "package": "SwiftyJSON",
+        "repositoryURL": "https://github.com/SwiftyJSON/SwiftyJSON.git",
+        "state": {
+          "branch": null,
+          "revision": "ebfc0d7e314f15c1df02fcb198beb40624421839",
+          "version": "4.1.0"
         }
       }
     ]

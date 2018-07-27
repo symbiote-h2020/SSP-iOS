@@ -1,0 +1,1027 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "EllipticCurveKeyPair"
+provides-nominal:
+- "11SecuritySSP20EllipticCurveKeyPairO"
+- "11SecuritySSP20EllipticCurveKeyPairO6ConfigV"
+- "11SecuritySSP20EllipticCurveKeyPairO7ManagerC"
+- "11SecuritySSP20EllipticCurveKeyPairO6HelperV"
+- "11SecuritySSP20EllipticCurveKeyPairO9ConstantsV"
+- "11SecuritySSP20EllipticCurveKeyPairO06PublicE4DataC"
+- "11SecuritySSP20EllipticCurveKeyPairO0E0C"
+- "11SecuritySSP20EllipticCurveKeyPairO06PublicE0C"
+- "11SecuritySSP20EllipticCurveKeyPairO07PrivateE0C"
+- "11SecuritySSP20EllipticCurveKeyPairO13AccessControlC"
+- "11SecuritySSP20EllipticCurveKeyPairO5ErrorO"
+- "11SecuritySSP20EllipticCurveKeyPairO4HashO"
+- "11SecuritySSP20EllipticCurveKeyPairO5TokenO"
+- "11SecuritySSP20EllipticCurveKeyPairO6DeviceO"
+provides-member:
+- ["11SecuritySSP20EllipticCurveKeyPairO", ""]
+- ["11SecuritySSP20EllipticCurveKeyPairO6ConfigV", ""]
+- ["11SecuritySSP20EllipticCurveKeyPairO7ManagerC", ""]
+- ["11SecuritySSP20EllipticCurveKeyPairO6HelperV", ""]
+- ["11SecuritySSP20EllipticCurveKeyPairO9ConstantsV", ""]
+- ["11SecuritySSP20EllipticCurveKeyPairO06PublicE4DataC", ""]
+- ["11SecuritySSP20EllipticCurveKeyPairO0E0C", ""]
+- ["11SecuritySSP20EllipticCurveKeyPairO06PublicE0C", ""]
+- ["11SecuritySSP20EllipticCurveKeyPairO07PrivateE0C", ""]
+- ["11SecuritySSP20EllipticCurveKeyPairO13AccessControlC", ""]
+- ["11SecuritySSP20EllipticCurveKeyPairO5ErrorO", ""]
+- ["11SecuritySSP20EllipticCurveKeyPairO4HashO", ""]
+- ["11SecuritySSP20EllipticCurveKeyPairO5TokenO", ""]
+- ["11SecuritySSP20EllipticCurveKeyPairO6DeviceO", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!"
+- !private "!="
+- !private "!=="
+- !private "&&"
+- "=="
+- !private "??"
+- !private "AnyObject"
+- "Array"
+- "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- !private "CFData"
+- !private "CFDictionary"
+- "CFError"
+- !private "CFErrorCopyUserInfo"
+- !private "CFErrorGetCode"
+- !private "CFErrorGetDomain"
+- "CFTypeRef"
+- "CastingPrecedence"
+- "Data"
+- !private "Dictionary"
+- "EllipticCurveKeyPair"
+- !private "Int"
+- "LAContext"
+- "LAError"
+- !private "LAErrorDomain"
+- "LocalizedError"
+- "NSError"
+- !private "NSLocalizedDescriptionKey"
+- !private "NSLocalizedFailureReasonErrorKey"
+- !private "NSLocalizedRecoverySuggestionErrorKey"
+- !private "NSOSStatusErrorDomain"
+- !private "NSUnderlyingErrorKey"
+- "OSStatus"
+- "SecAccessControl"
+- "SecAccessControlCreateFlags"
+- !private "SecAccessControlCreateWithFlags"
+- !private "SecItemAdd"
+- !private "SecItemCopyMatching"
+- !private "SecItemDelete"
+- "SecKey"
+- "SecKeyAlgorithm"
+- !private "SecKeyCopyExternalRepresentation"
+- !private "SecKeyCreateDecryptedData"
+- !private "SecKeyCreateEncryptedData"
+- !private "SecKeyCreateSignature"
+- !private "SecKeyGeneratePair"
+- !private "SecKeyVerifySignature"
+- "String"
+- "StringLiteralType"
+- !private "TARGET_OS_SIMULATOR"
+- "TernaryPrecedence"
+- !private "Thread"
+- "UInt8"
+- !private "UnicodeScalarType"
+- !private "Unmanaged"
+- "Void"
+- !private "_findStringSwitchCase"
+- !private "errSecAuthFailed"
+- !private "errSecDuplicateItem"
+- !private "errSecInvalidRecord"
+- !private "errSecItemNotFound"
+- !private "errSecSuccess"
+- !private "kCFAllocatorDefault"
+- !private "kSecAttrAccessControl"
+- !private "kSecAttrAccessGroup"
+- !private "kSecAttrAccessible"
+- !private "kSecAttrIsPermanent"
+- !private "kSecAttrKeyClass"
+- !private "kSecAttrKeyClassPrivate"
+- !private "kSecAttrKeyClassPublic"
+- !private "kSecAttrKeySizeInBits"
+- !private "kSecAttrKeyType"
+- "kSecAttrKeyTypeEC"
+- "kSecAttrKeyTypeECSECPrimeRandom"
+- !private "kSecAttrLabel"
+- !private "kSecAttrTokenID"
+- !private "kSecAttrTokenIDSecureEnclave"
+- !private "kSecClass"
+- !private "kSecClassKey"
+- !private "kSecPrivateKeyAttrs"
+- !private "kSecPublicKeyAttrs"
+- !private "kSecReturnAttributes"
+- !private "kSecReturnData"
+- !private "kSecReturnRef"
+- !private "kSecUseAuthenticationContext"
+- !private "kSecUseAuthenticationUI"
+- !private "kSecUseAuthenticationUIAllow"
+- !private "kSecUseOperationPrompt"
+- !private "kSecValueRef"
+- "print"
+- !private "||"
+- !private "~="
+depends-member:
+- !private ["11SecuritySSP20EllipticCurveKeyPairO13AccessControlC", "CFError"]
+- ["11SecuritySSP20EllipticCurveKeyPairO13AccessControlC", "CFTypeRef"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO13AccessControlC", "EllipticCurveKeyPair"]
+- ["11SecuritySSP20EllipticCurveKeyPairO13AccessControlC", "SecAccessControl"]
+- ["11SecuritySSP20EllipticCurveKeyPairO13AccessControlC", "SecAccessControlCreateFlags"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO13AccessControlC", "SecAccessControlCreateWithFlags"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO13AccessControlC", "Unmanaged"]
+- ["11SecuritySSP20EllipticCurveKeyPairO13AccessControlC", "deinit"]
+- ["11SecuritySSP20EllipticCurveKeyPairO13AccessControlC", "flags"]
+- ["11SecuritySSP20EllipticCurveKeyPairO13AccessControlC", "init"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO13AccessControlC", "kCFAllocatorDefault"]
+- ["11SecuritySSP20EllipticCurveKeyPairO13AccessControlC", "protection"]
+- ["11SecuritySSP20EllipticCurveKeyPairO13AccessControlC", "underlying"]
+- !private ["Sa", "init"]
+- !private ["So6NSDataC21Base64EncodingOptionsV", "endLineWithCarriageReturn"]
+- !private ["So6NSDataC21Base64EncodingOptionsV", "lineLength64Characters"]
+- !private ["s23BidirectionalCollectionP", "append"]
+- !private ["s23BidirectionalCollectionP", "base64EncodedString"]
+- !private ["s23BidirectionalCollectionP", "first"]
+- ["s23BidirectionalCollectionP", "init"]
+- !private ["s13BinaryIntegerP", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "canEvaluatePolicy"]
+- !private ["s7CVarArgP", "code"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "isMainThread"]
+- !private ["s7CVarArgP", "localizedDescription"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["SC7LAErrorV4CodeO", "rawValue"]
+- !private ["s10CollectionP", "append"]
+- !private ["s10CollectionP", "base64EncodedString"]
+- !private ["s10CollectionP", "first"]
+- ["s10CollectionP", "init"]
+- !private ["s10CollectionP", "subscript"]
+- !private ["s10ComparableP", "append"]
+- ["s10ComparableP", "init"]
+- ["11SecuritySSP20EllipticCurveKeyPairO6ConfigV", "AccessControl"]
+- ["11SecuritySSP20EllipticCurveKeyPairO6ConfigV", "String"]
+- ["11SecuritySSP20EllipticCurveKeyPairO6ConfigV", "Token"]
+- ["11SecuritySSP20EllipticCurveKeyPairO6ConfigV", "init"]
+- ["11SecuritySSP20EllipticCurveKeyPairO6ConfigV", "operationPrompt"]
+- ["11SecuritySSP20EllipticCurveKeyPairO6ConfigV", "privateKeyAccessControl"]
+- ["11SecuritySSP20EllipticCurveKeyPairO6ConfigV", "privateKeyAccessGroup"]
+- ["11SecuritySSP20EllipticCurveKeyPairO6ConfigV", "privateLabel"]
+- ["11SecuritySSP20EllipticCurveKeyPairO6ConfigV", "publicKeyAccessControl"]
+- ["11SecuritySSP20EllipticCurveKeyPairO6ConfigV", "publicKeyAccessGroup"]
+- ["11SecuritySSP20EllipticCurveKeyPairO6ConfigV", "publicLabel"]
+- ["11SecuritySSP20EllipticCurveKeyPairO6ConfigV", "token"]
+- ["11SecuritySSP20EllipticCurveKeyPairO9ConstantsV", "String"]
+- ["11SecuritySSP20EllipticCurveKeyPairO9ConstantsV", "UInt8"]
+- ["11SecuritySSP20EllipticCurveKeyPairO9ConstantsV", "attrKeyTypeEllipticCurve"]
+- ["11SecuritySSP20EllipticCurveKeyPairO9ConstantsV", "init"]
+- ["11SecuritySSP20EllipticCurveKeyPairO9ConstantsV", "kSecAttrKeyTypeEC"]
+- ["11SecuritySSP20EllipticCurveKeyPairO9ConstantsV", "kSecAttrKeyTypeECSECPrimeRandom"]
+- ["11SecuritySSP20EllipticCurveKeyPairO9ConstantsV", "noCompression"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "base64EncodedString"]
+- !private ["s28CustomDebugStringConvertibleP", "canEvaluatePolicy"]
+- !private ["s28CustomDebugStringConvertibleP", "code"]
+- !private ["s28CustomDebugStringConvertibleP", "first"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "isMainThread"]
+- !private ["s28CustomDebugStringConvertibleP", "localizedDescription"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["10Foundation13CustomNSErrorP", "authenticationFailed"]
+- !private ["10Foundation13CustomNSErrorP", "init"]
+- !private ["10Foundation13CustomNSErrorP", "localizedDescription"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "append"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "append"]
+- !private ["s17CustomReflectableP", "base64EncodedString"]
+- !private ["s17CustomReflectableP", "first"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "base64EncodedString"]
+- !private ["s23CustomStringConvertibleP", "canEvaluatePolicy"]
+- !private ["s23CustomStringConvertibleP", "code"]
+- !private ["s23CustomStringConvertibleP", "first"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isMainThread"]
+- !private ["s23CustomStringConvertibleP", "localizedDescription"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["10Foundation4DataV", "append"]
+- !private ["10Foundation4DataV", "base64EncodedString"]
+- !private ["10Foundation4DataV", "first"]
+- !private ["10Foundation4DataV", "init"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "append"]
+- !private ["s9DecodableP", "base64EncodedString"]
+- !private ["s9DecodableP", "first"]
+- ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "subscript"]
+- ["11SecuritySSP20EllipticCurveKeyPairO6DeviceO", "Bool"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO6DeviceO", "LAContext"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO6DeviceO", "TARGET_OS_SIMULATOR"]
+- ["11SecuritySSP20EllipticCurveKeyPairO6DeviceO", "hasSecureEnclave"]
+- ["11SecuritySSP20EllipticCurveKeyPairO6DeviceO", "hasTouchID"]
+- ["11SecuritySSP20EllipticCurveKeyPairO6DeviceO", "isSimulator"]
+- !private ["s10DictionaryV", "init"]
+- !private ["s10DictionaryV", "subscript"]
+- ["11SecuritySSP20EllipticCurveKeyPairO", "AccessControl"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "AnyObject"]
+- ["11SecuritySSP20EllipticCurveKeyPairO", "Bool"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "CFData"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "CFDictionary"]
+- ["11SecuritySSP20EllipticCurveKeyPairO", "CFError"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "CFErrorCopyUserInfo"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "CFErrorGetCode"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "CFErrorGetDomain"]
+- ["11SecuritySSP20EllipticCurveKeyPairO", "CFTypeRef"]
+- ["11SecuritySSP20EllipticCurveKeyPairO", "Config"]
+- ["11SecuritySSP20EllipticCurveKeyPairO", "Constants"]
+- ["11SecuritySSP20EllipticCurveKeyPairO", "Data"]
+- ["11SecuritySSP20EllipticCurveKeyPairO", "Device"]
+- ["11SecuritySSP20EllipticCurveKeyPairO", "EllipticCurveKeyPair"]
+- ["11SecuritySSP20EllipticCurveKeyPairO", "Error"]
+- ["11SecuritySSP20EllipticCurveKeyPairO", "Hash"]
+- ["11SecuritySSP20EllipticCurveKeyPairO", "Helper"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "Int"]
+- ["11SecuritySSP20EllipticCurveKeyPairO", "Key"]
+- ["11SecuritySSP20EllipticCurveKeyPairO", "LAContext"]
+- ["11SecuritySSP20EllipticCurveKeyPairO", "LAError"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "LAErrorDomain"]
+- ["11SecuritySSP20EllipticCurveKeyPairO", "LocalizedError"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "LogOnce"]
+- ["11SecuritySSP20EllipticCurveKeyPairO", "Logger"]
+- ["11SecuritySSP20EllipticCurveKeyPairO", "Manager"]
+- ["11SecuritySSP20EllipticCurveKeyPairO", "NSError"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "NSLocalizedDescriptionKey"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "NSLocalizedFailureReasonErrorKey"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "NSLocalizedRecoverySuggestionErrorKey"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "NSOSStatusErrorDomain"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "NSUnderlyingErrorKey"]
+- ["11SecuritySSP20EllipticCurveKeyPairO", "OSStatus"]
+- ["11SecuritySSP20EllipticCurveKeyPairO", "PrivateKey"]
+- ["11SecuritySSP20EllipticCurveKeyPairO", "PublicKey"]
+- ["11SecuritySSP20EllipticCurveKeyPairO", "PublicKeyData"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "Query"]
+- ["11SecuritySSP20EllipticCurveKeyPairO", "SecAccessControl"]
+- ["11SecuritySSP20EllipticCurveKeyPairO", "SecAccessControlCreateFlags"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "SecAccessControlCreateWithFlags"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "SecItemAdd"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "SecItemCopyMatching"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "SecItemDelete"]
+- ["11SecuritySSP20EllipticCurveKeyPairO", "SecKey"]
+- ["11SecuritySSP20EllipticCurveKeyPairO", "SecKeyAlgorithm"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "SecKeyCopyExternalRepresentation"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "SecKeyCreateDecryptedData"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "SecKeyCreateEncryptedData"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "SecKeyCreateSignature"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "SecKeyGeneratePair"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "SecKeyVerifySignature"]
+- ["11SecuritySSP20EllipticCurveKeyPairO", "String"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "TARGET_OS_SIMULATOR"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "Thread"]
+- ["11SecuritySSP20EllipticCurveKeyPairO", "Token"]
+- ["11SecuritySSP20EllipticCurveKeyPairO", "UInt8"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "Unmanaged"]
+- ["11SecuritySSP20EllipticCurveKeyPairO", "Void"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "_findStringSwitchCase"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "errSecAuthFailed"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "errSecDuplicateItem"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "errSecInvalidRecord"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "errSecItemNotFound"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "errSecSuccess"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "kCFAllocatorDefault"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "kSecAttrAccessControl"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "kSecAttrAccessGroup"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "kSecAttrAccessible"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "kSecAttrIsPermanent"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "kSecAttrKeyClass"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "kSecAttrKeyClassPrivate"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "kSecAttrKeyClassPublic"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "kSecAttrKeySizeInBits"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "kSecAttrKeyType"]
+- ["11SecuritySSP20EllipticCurveKeyPairO", "kSecAttrKeyTypeEC"]
+- ["11SecuritySSP20EllipticCurveKeyPairO", "kSecAttrKeyTypeECSECPrimeRandom"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "kSecAttrLabel"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "kSecAttrTokenID"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "kSecAttrTokenIDSecureEnclave"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "kSecClass"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "kSecClassKey"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "kSecPrivateKeyAttrs"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "kSecPublicKeyAttrs"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "kSecReturnAttributes"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "kSecReturnData"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "kSecReturnRef"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "kSecUseAuthenticationContext"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "kSecUseAuthenticationUI"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "kSecUseAuthenticationUIAllow"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "kSecUseOperationPrompt"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO", "kSecValueRef"]
+- ["11SecuritySSP20EllipticCurveKeyPairO", "logger"]
+- ["11SecuritySSP20EllipticCurveKeyPairO", "print"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "append"]
+- !private ["s9EncodableP", "base64EncodedString"]
+- !private ["s9EncodableP", "first"]
+- ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "subscript"]
+- !private ["s9EquatableP", "Device"]
+- ["s9EquatableP", "RawValue"]
+- !private ["s9EquatableP", "SecKeyAlgorithm"]
+- ["s9EquatableP", ""]
+- ["s9EquatableP", "_Default_RawValue"]
+- !private ["s9EquatableP", "_findStringSwitchCase"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "append"]
+- !private ["s9EquatableP", "authenticationFailed"]
+- !private ["s9EquatableP", "base64EncodedString"]
+- !private ["s9EquatableP", "canEvaluatePolicy"]
+- !private ["s9EquatableP", "code"]
+- !private ["s9EquatableP", "contains"]
+- !private ["s9EquatableP", "deviceOwnerAuthenticationWithBiometrics"]
+- !private ["s9EquatableP", "ecdsaSignatureMessageX962SHA1"]
+- !private ["s9EquatableP", "ecdsaSignatureMessageX962SHA224"]
+- !private ["s9EquatableP", "ecdsaSignatureMessageX962SHA256"]
+- !private ["s9EquatableP", "ecdsaSignatureMessageX962SHA384"]
+- !private ["s9EquatableP", "ecdsaSignatureMessageX962SHA512"]
+- !private ["s9EquatableP", "eciesEncryptionStandardX963SHA1AESGCM"]
+- !private ["s9EquatableP", "eciesEncryptionStandardX963SHA224AESGCM"]
+- !private ["s9EquatableP", "eciesEncryptionStandardX963SHA256AESGCM"]
+- !private ["s9EquatableP", "eciesEncryptionStandardX963SHA384AESGCM"]
+- !private ["s9EquatableP", "eciesEncryptionStandardX963SHA512AESGCM"]
+- !private ["s9EquatableP", "encryptionEciesEcdh"]
+- !private ["s9EquatableP", "endLineWithCarriageReturn"]
+- !private ["s9EquatableP", "first"]
+- ["s9EquatableP", "hashValue"]
+- ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "isEmpty"]
+- !private ["s9EquatableP", "isMainThread"]
+- !private ["s9EquatableP", "keychain"]
+- !private ["s9EquatableP", "lineLength64Characters"]
+- !private ["s9EquatableP", "localizedDescription"]
+- !private ["s9EquatableP", "privateKeyUsage"]
+- ["s9EquatableP", "rawValue"]
+- !private ["s9EquatableP", "secureEnclave"]
+- ["s9EquatableP", "sha1"]
+- ["s9EquatableP", "sha224"]
+- ["s9EquatableP", "sha256"]
+- ["s9EquatableP", "sha384"]
+- ["s9EquatableP", "sha512"]
+- !private ["s9EquatableP", "signatureMessage"]
+- !private ["s9EquatableP", "subscript"]
+- ["11SecuritySSP20EllipticCurveKeyPairO5ErrorO", "CFError"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO5ErrorO", "CFErrorCopyUserInfo"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO5ErrorO", "CFErrorGetCode"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO5ErrorO", "CFErrorGetDomain"]
+- ["11SecuritySSP20EllipticCurveKeyPairO5ErrorO", "Error"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO5ErrorO", "Int"]
+- ["11SecuritySSP20EllipticCurveKeyPairO5ErrorO", "LAError"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO5ErrorO", "LAErrorDomain"]
+- ["11SecuritySSP20EllipticCurveKeyPairO5ErrorO", "NSError"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO5ErrorO", "NSLocalizedDescriptionKey"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO5ErrorO", "NSLocalizedFailureReasonErrorKey"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO5ErrorO", "NSLocalizedRecoverySuggestionErrorKey"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO5ErrorO", "NSOSStatusErrorDomain"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO5ErrorO", "NSUnderlyingErrorKey"]
+- ["11SecuritySSP20EllipticCurveKeyPairO5ErrorO", "OSStatus"]
+- ["11SecuritySSP20EllipticCurveKeyPairO5ErrorO", "String"]
+- ["11SecuritySSP20EllipticCurveKeyPairO5ErrorO", "_code"]
+- ["11SecuritySSP20EllipticCurveKeyPairO5ErrorO", "_domain"]
+- ["11SecuritySSP20EllipticCurveKeyPairO5ErrorO", "_getEmbeddedNSError"]
+- ["11SecuritySSP20EllipticCurveKeyPairO5ErrorO", "_userInfo"]
+- ["11SecuritySSP20EllipticCurveKeyPairO5ErrorO", "authentication"]
+- ["11SecuritySSP20EllipticCurveKeyPairO5ErrorO", "deinit"]
+- ["11SecuritySSP20EllipticCurveKeyPairO5ErrorO", "errorDescription"]
+- ["11SecuritySSP20EllipticCurveKeyPairO5ErrorO", "failureReason"]
+- ["11SecuritySSP20EllipticCurveKeyPairO5ErrorO", "fromError"]
+- ["11SecuritySSP20EllipticCurveKeyPairO5ErrorO", "helpAnchor"]
+- ["11SecuritySSP20EllipticCurveKeyPairO5ErrorO", "inconcistency"]
+- ["11SecuritySSP20EllipticCurveKeyPairO5ErrorO", "osStatus"]
+- ["11SecuritySSP20EllipticCurveKeyPairO5ErrorO", "probablyAuthenticationError"]
+- ["11SecuritySSP20EllipticCurveKeyPairO5ErrorO", "recoverySuggestion"]
+- ["11SecuritySSP20EllipticCurveKeyPairO5ErrorO", "underlying"]
+- !private ["s5ErrorP", "CFErrorCopyUserInfo"]
+- !private ["s5ErrorP", "CFErrorGetCode"]
+- !private ["s5ErrorP", "CFErrorGetDomain"]
+- !private ["s5ErrorP", "Error"]
+- !private ["s5ErrorP", "Int"]
+- !private ["s5ErrorP", "LAError"]
+- !private ["s5ErrorP", "LAErrorDomain"]
+- !private ["s5ErrorP", "NSError"]
+- !private ["s5ErrorP", "NSLocalizedDescriptionKey"]
+- !private ["s5ErrorP", "NSLocalizedFailureReasonErrorKey"]
+- !private ["s5ErrorP", "NSLocalizedRecoverySuggestionErrorKey"]
+- !private ["s5ErrorP", "NSOSStatusErrorDomain"]
+- !private ["s5ErrorP", "NSUnderlyingErrorKey"]
+- !private ["s5ErrorP", "String"]
+- ["s5ErrorP", ""]
+- ["s5ErrorP", "_code"]
+- ["s5ErrorP", "_domain"]
+- ["s5ErrorP", "_getEmbeddedNSError"]
+- ["s5ErrorP", "_userInfo"]
+- ["s5ErrorP", "authentication"]
+- !private ["s5ErrorP", "authenticationFailed"]
+- !private ["s5ErrorP", "code"]
+- ["s5ErrorP", "errorDescription"]
+- ["s5ErrorP", "failureReason"]
+- !private ["s5ErrorP", "fromError"]
+- ["s5ErrorP", "helpAnchor"]
+- ["s5ErrorP", "inconcistency"]
+- !private ["s5ErrorP", "init"]
+- !private ["s5ErrorP", "localizedDescription"]
+- !private ["s5ErrorP", "osStatus"]
+- !private ["s5ErrorP", "probablyAuthenticationError"]
+- ["s5ErrorP", "recoverySuggestion"]
+- ["s5ErrorP", "underlying"]
+- !private ["s25ExpressibleByArrayLiteralP", "contains"]
+- !private ["s25ExpressibleByArrayLiteralP", "endLineWithCarriageReturn"]
+- !private ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "isEmpty"]
+- !private ["s25ExpressibleByArrayLiteralP", "lineLength64Characters"]
+- !private ["s25ExpressibleByArrayLiteralP", "privateKeyUsage"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "init"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "append"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "append"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "append"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s17FixedWidthIntegerP", "init"]
+- ["11SecuritySSP20EllipticCurveKeyPairO4HashO", "RawValue"]
+- ["11SecuritySSP20EllipticCurveKeyPairO4HashO", "SecKeyAlgorithm"]
+- ["11SecuritySSP20EllipticCurveKeyPairO4HashO", "_Default_RawValue"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO4HashO", "_findStringSwitchCase"]
+- ["11SecuritySSP20EllipticCurveKeyPairO4HashO", "deinit"]
+- ["11SecuritySSP20EllipticCurveKeyPairO4HashO", "encryptionEciesEcdh"]
+- ["11SecuritySSP20EllipticCurveKeyPairO4HashO", "hashValue"]
+- ["11SecuritySSP20EllipticCurveKeyPairO4HashO", "init"]
+- ["11SecuritySSP20EllipticCurveKeyPairO4HashO", "rawValue"]
+- ["11SecuritySSP20EllipticCurveKeyPairO4HashO", "sha1"]
+- ["11SecuritySSP20EllipticCurveKeyPairO4HashO", "sha224"]
+- ["11SecuritySSP20EllipticCurveKeyPairO4HashO", "sha256"]
+- ["11SecuritySSP20EllipticCurveKeyPairO4HashO", "sha384"]
+- ["11SecuritySSP20EllipticCurveKeyPairO4HashO", "sha512"]
+- ["11SecuritySSP20EllipticCurveKeyPairO4HashO", "signatureMessage"]
+- !private ["s8HashableP", "Device"]
+- ["s8HashableP", "RawValue"]
+- !private ["s8HashableP", "SecKeyAlgorithm"]
+- ["s8HashableP", ""]
+- ["s8HashableP", "_Default_RawValue"]
+- !private ["s8HashableP", "_findStringSwitchCase"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "append"]
+- !private ["s8HashableP", "authenticationFailed"]
+- !private ["s8HashableP", "base64EncodedString"]
+- !private ["s8HashableP", "canEvaluatePolicy"]
+- !private ["s8HashableP", "code"]
+- !private ["s8HashableP", "deviceOwnerAuthenticationWithBiometrics"]
+- !private ["s8HashableP", "ecdsaSignatureMessageX962SHA1"]
+- !private ["s8HashableP", "ecdsaSignatureMessageX962SHA224"]
+- !private ["s8HashableP", "ecdsaSignatureMessageX962SHA256"]
+- !private ["s8HashableP", "ecdsaSignatureMessageX962SHA384"]
+- !private ["s8HashableP", "ecdsaSignatureMessageX962SHA512"]
+- !private ["s8HashableP", "eciesEncryptionStandardX963SHA1AESGCM"]
+- !private ["s8HashableP", "eciesEncryptionStandardX963SHA224AESGCM"]
+- !private ["s8HashableP", "eciesEncryptionStandardX963SHA256AESGCM"]
+- !private ["s8HashableP", "eciesEncryptionStandardX963SHA384AESGCM"]
+- !private ["s8HashableP", "eciesEncryptionStandardX963SHA512AESGCM"]
+- !private ["s8HashableP", "encryptionEciesEcdh"]
+- !private ["s8HashableP", "first"]
+- ["s8HashableP", "hashValue"]
+- ["s8HashableP", "init"]
+- !private ["s8HashableP", "isMainThread"]
+- !private ["s8HashableP", "keychain"]
+- !private ["s8HashableP", "localizedDescription"]
+- ["s8HashableP", "rawValue"]
+- !private ["s8HashableP", "secureEnclave"]
+- ["s8HashableP", "sha1"]
+- ["s8HashableP", "sha224"]
+- ["s8HashableP", "sha256"]
+- ["s8HashableP", "sha384"]
+- ["s8HashableP", "sha512"]
+- !private ["s8HashableP", "signatureMessage"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO6HelperV", "CFData"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO6HelperV", "CFDictionary"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO6HelperV", "CFError"]
+- ["11SecuritySSP20EllipticCurveKeyPairO6HelperV", "Config"]
+- ["11SecuritySSP20EllipticCurveKeyPairO6HelperV", "Data"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO6HelperV", "Error"]
+- ["11SecuritySSP20EllipticCurveKeyPairO6HelperV", "Hash"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO6HelperV", "Helper"]
+- ["11SecuritySSP20EllipticCurveKeyPairO6HelperV", "LAContext"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO6HelperV", "LogOnce"]
+- ["11SecuritySSP20EllipticCurveKeyPairO6HelperV", "PrivateKey"]
+- ["11SecuritySSP20EllipticCurveKeyPairO6HelperV", "PublicKey"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO6HelperV", "Query"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO6HelperV", "SecKey"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO6HelperV", "SecKeyCreateDecryptedData"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO6HelperV", "SecKeyCreateEncryptedData"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO6HelperV", "SecKeyCreateSignature"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO6HelperV", "SecKeyGeneratePair"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO6HelperV", "SecKeyVerifySignature"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO6HelperV", "Thread"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO6HelperV", "Unmanaged"]
+- ["11SecuritySSP20EllipticCurveKeyPairO6HelperV", "config"]
+- ["11SecuritySSP20EllipticCurveKeyPairO6HelperV", "decrypt"]
+- ["11SecuritySSP20EllipticCurveKeyPairO6HelperV", "delete"]
+- ["11SecuritySSP20EllipticCurveKeyPairO6HelperV", "encrypt"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO6HelperV", "errSecAuthFailed"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO6HelperV", "errSecSuccess"]
+- ["11SecuritySSP20EllipticCurveKeyPairO6HelperV", "generateKeyPair"]
+- ["11SecuritySSP20EllipticCurveKeyPairO6HelperV", "getKeys"]
+- ["11SecuritySSP20EllipticCurveKeyPairO6HelperV", "getPrivateKey"]
+- ["11SecuritySSP20EllipticCurveKeyPairO6HelperV", "getPublicKey"]
+- ["11SecuritySSP20EllipticCurveKeyPairO6HelperV", "init"]
+- ["11SecuritySSP20EllipticCurveKeyPairO6HelperV", "logToConsoleIfExecutingOnMainThread"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO6HelperV", "logger"]
+- ["11SecuritySSP20EllipticCurveKeyPairO6HelperV", "sign"]
+- ["11SecuritySSP20EllipticCurveKeyPairO6HelperV", "signUsingSha256"]
+- ["11SecuritySSP20EllipticCurveKeyPairO6HelperV", "verify"]
+- ["11SecuritySSP20EllipticCurveKeyPairO6HelperV", "verifyUsingSha256"]
+- !private ["Si", "init"]
+- !private ["10SwiftyJSON17JSONSubscriptTypeP", "append"]
+- ["10SwiftyJSON17JSONSubscriptTypeP", "init"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO0E0C", "AnyObject"]
+- ["11SecuritySSP20EllipticCurveKeyPairO0E0C", "Bool"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO0E0C", "CFDictionary"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO0E0C", "CFError"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO0E0C", "Constants"]
+- ["11SecuritySSP20EllipticCurveKeyPairO0E0C", "Data"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO0E0C", "EllipticCurveKeyPair"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO0E0C", "Error"]
+- ["11SecuritySSP20EllipticCurveKeyPairO0E0C", "LAContext"]
+- ["11SecuritySSP20EllipticCurveKeyPairO0E0C", "PublicKeyData"]
+- ["11SecuritySSP20EllipticCurveKeyPairO0E0C", "SecAccessControl"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO0E0C", "SecItemCopyMatching"]
+- ["11SecuritySSP20EllipticCurveKeyPairO0E0C", "SecKey"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO0E0C", "SecKeyCopyExternalRepresentation"]
+- ["11SecuritySSP20EllipticCurveKeyPairO0E0C", "String"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO0E0C", "Unmanaged"]
+- ["11SecuritySSP20EllipticCurveKeyPairO0E0C", ""]
+- ["11SecuritySSP20EllipticCurveKeyPairO0E0C", "accessControl"]
+- ["11SecuritySSP20EllipticCurveKeyPairO0E0C", "accessGroup"]
+- ["11SecuritySSP20EllipticCurveKeyPairO0E0C", "attributes"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO0E0C", "cachedAttributes"]
+- ["11SecuritySSP20EllipticCurveKeyPairO0E0C", "cachedData"]
+- ["11SecuritySSP20EllipticCurveKeyPairO0E0C", "context"]
+- ["11SecuritySSP20EllipticCurveKeyPairO0E0C", "data"]
+- ["11SecuritySSP20EllipticCurveKeyPairO0E0C", "deinit"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO0E0C", "errSecSuccess"]
+- ["11SecuritySSP20EllipticCurveKeyPairO0E0C", "export"]
+- ["11SecuritySSP20EllipticCurveKeyPairO0E0C", "exportWithOldApi"]
+- ["11SecuritySSP20EllipticCurveKeyPairO0E0C", "init"]
+- ["11SecuritySSP20EllipticCurveKeyPairO0E0C", "isStoredOnSecureEnclave"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO0E0C", "kSecAttrAccessControl"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO0E0C", "kSecAttrAccessGroup"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO0E0C", "kSecAttrLabel"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO0E0C", "kSecAttrTokenID"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO0E0C", "kSecAttrTokenIDSecureEnclave"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO0E0C", "kSecClass"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO0E0C", "kSecClassKey"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO0E0C", "kSecReturnAttributes"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO0E0C", "kSecReturnData"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO0E0C", "kSecValueRef"]
+- ["11SecuritySSP20EllipticCurveKeyPairO0E0C", "label"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO0E0C", "logger"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO0E0C", "queryAttributes"]
+- ["11SecuritySSP20EllipticCurveKeyPairO0E0C", "queryData"]
+- ["11SecuritySSP20EllipticCurveKeyPairO0E0C", "underlying"]
+- !private ["So9LAContextC", "canEvaluatePolicy"]
+- !private ["So9LAContextC", "init"]
+- !private ["SC7LAErrorV", "authenticationFailed"]
+- !private ["SC7LAErrorV", "init"]
+- !private ["SC7LAErrorV", "localizedDescription"]
+- !private ["SC8LAPolicyO", "deviceOwnerAuthenticationWithBiometrics"]
+- !private ["10Foundation14LocalizedErrorP", "CFErrorCopyUserInfo"]
+- !private ["10Foundation14LocalizedErrorP", "CFErrorGetCode"]
+- !private ["10Foundation14LocalizedErrorP", "CFErrorGetDomain"]
+- !private ["10Foundation14LocalizedErrorP", "Error"]
+- !private ["10Foundation14LocalizedErrorP", "Int"]
+- !private ["10Foundation14LocalizedErrorP", "LAError"]
+- !private ["10Foundation14LocalizedErrorP", "LAErrorDomain"]
+- !private ["10Foundation14LocalizedErrorP", "NSError"]
+- !private ["10Foundation14LocalizedErrorP", "NSLocalizedDescriptionKey"]
+- !private ["10Foundation14LocalizedErrorP", "NSLocalizedFailureReasonErrorKey"]
+- !private ["10Foundation14LocalizedErrorP", "NSLocalizedRecoverySuggestionErrorKey"]
+- !private ["10Foundation14LocalizedErrorP", "NSOSStatusErrorDomain"]
+- !private ["10Foundation14LocalizedErrorP", "NSUnderlyingErrorKey"]
+- !private ["10Foundation14LocalizedErrorP", "String"]
+- ["10Foundation14LocalizedErrorP", ""]
+- ["10Foundation14LocalizedErrorP", "_code"]
+- ["10Foundation14LocalizedErrorP", "_domain"]
+- ["10Foundation14LocalizedErrorP", "_getEmbeddedNSError"]
+- ["10Foundation14LocalizedErrorP", "_userInfo"]
+- ["10Foundation14LocalizedErrorP", "authentication"]
+- ["10Foundation14LocalizedErrorP", "errorDescription"]
+- ["10Foundation14LocalizedErrorP", "failureReason"]
+- !private ["10Foundation14LocalizedErrorP", "fromError"]
+- ["10Foundation14LocalizedErrorP", "helpAnchor"]
+- ["10Foundation14LocalizedErrorP", "inconcistency"]
+- !private ["10Foundation14LocalizedErrorP", "osStatus"]
+- !private ["10Foundation14LocalizedErrorP", "probablyAuthenticationError"]
+- ["10Foundation14LocalizedErrorP", "recoverySuggestion"]
+- ["10Foundation14LocalizedErrorP", "underlying"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "append"]
+- ["s25LosslessStringConvertibleP", "init"]
+- ["11SecuritySSP20EllipticCurveKeyPairO7ManagerC", "Config"]
+- ["11SecuritySSP20EllipticCurveKeyPairO7ManagerC", "Data"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO7ManagerC", "EllipticCurveKeyPair"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO7ManagerC", "Error"]
+- ["11SecuritySSP20EllipticCurveKeyPairO7ManagerC", "Hash"]
+- ["11SecuritySSP20EllipticCurveKeyPairO7ManagerC", "Helper"]
+- ["11SecuritySSP20EllipticCurveKeyPairO7ManagerC", "LAContext"]
+- ["11SecuritySSP20EllipticCurveKeyPairO7ManagerC", "PrivateKey"]
+- ["11SecuritySSP20EllipticCurveKeyPairO7ManagerC", "PublicKey"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO7ManagerC", "cachedPrivateKey"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO7ManagerC", "cachedPublicKey"]
+- ["11SecuritySSP20EllipticCurveKeyPairO7ManagerC", "clearCache"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO7ManagerC", "config"]
+- ["11SecuritySSP20EllipticCurveKeyPairO7ManagerC", "decrypt"]
+- ["11SecuritySSP20EllipticCurveKeyPairO7ManagerC", "deinit"]
+- ["11SecuritySSP20EllipticCurveKeyPairO7ManagerC", "deleteKeyPair"]
+- ["11SecuritySSP20EllipticCurveKeyPairO7ManagerC", "encrypt"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO7ManagerC", "errSecItemNotFound"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO7ManagerC", "helper"]
+- ["11SecuritySSP20EllipticCurveKeyPairO7ManagerC", "init"]
+- ["11SecuritySSP20EllipticCurveKeyPairO7ManagerC", "keys"]
+- ["11SecuritySSP20EllipticCurveKeyPairO7ManagerC", "privateKey"]
+- ["11SecuritySSP20EllipticCurveKeyPairO7ManagerC", "publicKey"]
+- ["11SecuritySSP20EllipticCurveKeyPairO7ManagerC", "sign"]
+- ["11SecuritySSP20EllipticCurveKeyPairO7ManagerC", "signUsingSha256"]
+- ["11SecuritySSP20EllipticCurveKeyPairO7ManagerC", "verify"]
+- ["11SecuritySSP20EllipticCurveKeyPairO7ManagerC", "verifyUsingSha256"]
+- !private ["s10MirrorPathP", "append"]
+- ["s10MirrorPathP", "init"]
+- !private ["s17MutableCollectionP", "append"]
+- !private ["s17MutableCollectionP", "base64EncodedString"]
+- !private ["s17MutableCollectionP", "first"]
+- !private ["s17MutableCollectionP", "init"]
+- !private ["So8NSCodingP", "append"]
+- !private ["So8NSCodingP", "code"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "localizedDescription"]
+- !private ["So9NSCopyingP", "append"]
+- !private ["So9NSCopyingP", "code"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "localizedDescription"]
+- !private ["So7NSErrorC", "code"]
+- !private ["So7NSErrorC", "init"]
+- !private ["So7NSErrorC", "localizedDescription"]
+- !private ["So21NSItemProviderReadingP", "append"]
+- !private ["So21NSItemProviderWritingP", "append"]
+- !private ["So16NSMutableCopyingP", "append"]
+- !private ["So8NSObjectC", "append"]
+- !private ["So8NSObjectC", "canEvaluatePolicy"]
+- !private ["So8NSObjectC", "code"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "isMainThread"]
+- !private ["So8NSObjectC", "localizedDescription"]
+- !private ["So16NSObjectProtocolP", "append"]
+- !private ["So16NSObjectProtocolP", "canEvaluatePolicy"]
+- !private ["So16NSObjectProtocolP", "code"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "isMainThread"]
+- !private ["So16NSObjectProtocolP", "localizedDescription"]
+- !private ["So14NSSecureCodingP", "append"]
+- !private ["So14NSSecureCodingP", "code"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "localizedDescription"]
+- !private ["So8NSStringC", "append"]
+- !private ["s7NumericP", "init"]
+- !private ["s9OptionSetP", "contains"]
+- !private ["s9OptionSetP", "endLineWithCarriageReturn"]
+- !private ["s9OptionSetP", "isEmpty"]
+- !private ["s9OptionSetP", "lineLength64Characters"]
+- !private ["s9OptionSetP", "privateKeyUsage"]
+- ["11SecuritySSP20EllipticCurveKeyPairO07PrivateE0C", "Bool"]
+- ["11SecuritySSP20EllipticCurveKeyPairO07PrivateE0C", "LAContext"]
+- ["11SecuritySSP20EllipticCurveKeyPairO07PrivateE0C", "SecKey"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO07PrivateE0C", "String"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO07PrivateE0C", "attributes"]
+- ["11SecuritySSP20EllipticCurveKeyPairO07PrivateE0C", "context"]
+- ["11SecuritySSP20EllipticCurveKeyPairO07PrivateE0C", "deinit"]
+- ["11SecuritySSP20EllipticCurveKeyPairO07PrivateE0C", "init"]
+- ["11SecuritySSP20EllipticCurveKeyPairO07PrivateE0C", "isStoredOnSecureEnclave"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO07PrivateE0C", "kSecAttrTokenID"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO07PrivateE0C", "kSecAttrTokenIDSecureEnclave"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO07PrivateE0C", "underlying"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO06PublicE0C", "AnyObject"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO06PublicE0C", "CFDictionary"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO06PublicE0C", "CFError"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO06PublicE0C", "Constants"]
+- ["11SecuritySSP20EllipticCurveKeyPairO06PublicE0C", "Data"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO06PublicE0C", "EllipticCurveKeyPair"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO06PublicE0C", "Error"]
+- ["11SecuritySSP20EllipticCurveKeyPairO06PublicE0C", "PublicKeyData"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO06PublicE0C", "SecItemCopyMatching"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO06PublicE0C", "SecKeyCopyExternalRepresentation"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO06PublicE0C", "String"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO06PublicE0C", "Unmanaged"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO06PublicE0C", "cachedData"]
+- ["11SecuritySSP20EllipticCurveKeyPairO06PublicE0C", "data"]
+- ["11SecuritySSP20EllipticCurveKeyPairO06PublicE0C", "deinit"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO06PublicE0C", "errSecSuccess"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO06PublicE0C", "export"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO06PublicE0C", "exportWithOldApi"]
+- ["11SecuritySSP20EllipticCurveKeyPairO06PublicE0C", "init"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO06PublicE0C", "kSecClass"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO06PublicE0C", "kSecClassKey"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO06PublicE0C", "kSecReturnData"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO06PublicE0C", "kSecValueRef"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO06PublicE0C", "logger"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO06PublicE0C", "queryData"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO06PublicE0C", "underlying"]
+- ["11SecuritySSP20EllipticCurveKeyPairO06PublicE4DataC", "CSR"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO06PublicE4DataC", "CSR.storage"]
+- ["11SecuritySSP20EllipticCurveKeyPairO06PublicE4DataC", "DER"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO06PublicE4DataC", "DER.storage"]
+- ["11SecuritySSP20EllipticCurveKeyPairO06PublicE4DataC", "Data"]
+- ["11SecuritySSP20EllipticCurveKeyPairO06PublicE4DataC", "PEM"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO06PublicE4DataC", "PEM.storage"]
+- ["11SecuritySSP20EllipticCurveKeyPairO06PublicE4DataC", "String"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO06PublicE4DataC", "UInt8"]
+- ["11SecuritySSP20EllipticCurveKeyPairO06PublicE4DataC", "deinit"]
+- ["11SecuritySSP20EllipticCurveKeyPairO06PublicE4DataC", "init"]
+- ["11SecuritySSP20EllipticCurveKeyPairO06PublicE4DataC", "raw"]
+- !private ["s22RandomAccessCollectionP", "append"]
+- !private ["s22RandomAccessCollectionP", "base64EncodedString"]
+- !private ["s22RandomAccessCollectionP", "first"]
+- !private ["s22RandomAccessCollectionP", "init"]
+- !private ["s26RangeReplaceableCollectionP", "append"]
+- !private ["s26RangeReplaceableCollectionP", "base64EncodedString"]
+- !private ["s26RangeReplaceableCollectionP", "first"]
+- ["s26RangeReplaceableCollectionP", "init"]
+- ["s16RawRepresentableP", "RawValue"]
+- !private ["s16RawRepresentableP", "SecKeyAlgorithm"]
+- ["s16RawRepresentableP", ""]
+- ["s16RawRepresentableP", "_Default_RawValue"]
+- !private ["s16RawRepresentableP", "_findStringSwitchCase"]
+- !private ["s16RawRepresentableP", "contains"]
+- !private ["s16RawRepresentableP", "deviceOwnerAuthenticationWithBiometrics"]
+- !private ["s16RawRepresentableP", "ecdsaSignatureMessageX962SHA1"]
+- !private ["s16RawRepresentableP", "ecdsaSignatureMessageX962SHA224"]
+- !private ["s16RawRepresentableP", "ecdsaSignatureMessageX962SHA256"]
+- !private ["s16RawRepresentableP", "ecdsaSignatureMessageX962SHA384"]
+- !private ["s16RawRepresentableP", "ecdsaSignatureMessageX962SHA512"]
+- !private ["s16RawRepresentableP", "eciesEncryptionStandardX963SHA1AESGCM"]
+- !private ["s16RawRepresentableP", "eciesEncryptionStandardX963SHA224AESGCM"]
+- !private ["s16RawRepresentableP", "eciesEncryptionStandardX963SHA256AESGCM"]
+- !private ["s16RawRepresentableP", "eciesEncryptionStandardX963SHA384AESGCM"]
+- !private ["s16RawRepresentableP", "eciesEncryptionStandardX963SHA512AESGCM"]
+- !private ["s16RawRepresentableP", "encryptionEciesEcdh"]
+- !private ["s16RawRepresentableP", "endLineWithCarriageReturn"]
+- ["s16RawRepresentableP", "hashValue"]
+- ["s16RawRepresentableP", "init"]
+- !private ["s16RawRepresentableP", "isEmpty"]
+- !private ["s16RawRepresentableP", "lineLength64Characters"]
+- !private ["s16RawRepresentableP", "privateKeyUsage"]
+- ["s16RawRepresentableP", "rawValue"]
+- ["s16RawRepresentableP", "sha1"]
+- ["s16RawRepresentableP", "sha224"]
+- ["s16RawRepresentableP", "sha256"]
+- ["s16RawRepresentableP", "sha384"]
+- ["s16RawRepresentableP", "sha512"]
+- !private ["s16RawRepresentableP", "signatureMessage"]
+- !private ["10Foundation20ReferenceConvertibleP", "append"]
+- !private ["10Foundation20ReferenceConvertibleP", "base64EncodedString"]
+- !private ["10Foundation20ReferenceConvertibleP", "first"]
+- !private ["10Foundation20ReferenceConvertibleP", "init"]
+- !private ["SC27SecAccessControlCreateFlagsV", "contains"]
+- !private ["SC27SecAccessControlCreateFlagsV", "isEmpty"]
+- !private ["SC27SecAccessControlCreateFlagsV", "privateKeyUsage"]
+- !private ["SC15SecKeyAlgorithmV", "ecdsaSignatureMessageX962SHA1"]
+- !private ["SC15SecKeyAlgorithmV", "ecdsaSignatureMessageX962SHA224"]
+- !private ["SC15SecKeyAlgorithmV", "ecdsaSignatureMessageX962SHA256"]
+- !private ["SC15SecKeyAlgorithmV", "ecdsaSignatureMessageX962SHA384"]
+- !private ["SC15SecKeyAlgorithmV", "ecdsaSignatureMessageX962SHA512"]
+- !private ["SC15SecKeyAlgorithmV", "eciesEncryptionStandardX963SHA1AESGCM"]
+- !private ["SC15SecKeyAlgorithmV", "eciesEncryptionStandardX963SHA224AESGCM"]
+- !private ["SC15SecKeyAlgorithmV", "eciesEncryptionStandardX963SHA256AESGCM"]
+- !private ["SC15SecKeyAlgorithmV", "eciesEncryptionStandardX963SHA384AESGCM"]
+- !private ["SC15SecKeyAlgorithmV", "eciesEncryptionStandardX963SHA512AESGCM"]
+- !private ["s8SequenceP", "append"]
+- !private ["s8SequenceP", "base64EncodedString"]
+- !private ["s8SequenceP", "first"]
+- ["s8SequenceP", "init"]
+- !private ["s8SequenceP", "subscript"]
+- !private ["s10SetAlgebraP", "contains"]
+- !private ["s10SetAlgebraP", "endLineWithCarriageReturn"]
+- !private ["s10SetAlgebraP", "isEmpty"]
+- !private ["s10SetAlgebraP", "lineLength64Characters"]
+- !private ["s10SetAlgebraP", "privateKeyUsage"]
+- !private ["s13SignedIntegerP", "init"]
+- !private ["s13SignedNumericP", "init"]
+- !private ["s12StaticStringV", "init"]
+- !private ["s10StrideableP", "init"]
+- !private ["SS", "append"]
+- ["SS", "init"]
+- !private ["s14StringProtocolP", "append"]
+- ["s14StringProtocolP", "init"]
+- !private ["s16TextOutputStreamP", "append"]
+- ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "append"]
+- ["s20TextOutputStreamableP", "init"]
+- !private ["So6ThreadC", "isMainThread"]
+- !private ["11SecuritySSP20EllipticCurveKeyPairO5TokenO", "Device"]
+- ["11SecuritySSP20EllipticCurveKeyPairO5TokenO", "Token"]
+- ["11SecuritySSP20EllipticCurveKeyPairO5TokenO", "__derived_enum_equals"]
+- ["11SecuritySSP20EllipticCurveKeyPairO5TokenO", "deinit"]
+- ["11SecuritySSP20EllipticCurveKeyPairO5TokenO", "hashValue"]
+- ["11SecuritySSP20EllipticCurveKeyPairO5TokenO", "keychain"]
+- ["11SecuritySSP20EllipticCurveKeyPairO5TokenO", "secureEnclave"]
+- ["11SecuritySSP20EllipticCurveKeyPairO5TokenO", "secureEnclaveIfAvailable"]
+- !private ["s9UnmanagedV", "takeRetainedValue"]
+- !private ["s14_ArrayProtocolP", "init"]
+- !private ["s18_BitwiseOperationsP", "init"]
+- !private ["10Foundation21_BridgedStoredNSErrorP", "authenticationFailed"]
+- !private ["10Foundation21_BridgedStoredNSErrorP", "init"]
+- !private ["10Foundation21_BridgedStoredNSErrorP", "localizedDescription"]
+- !private ["s24_DestructorSafeContainerP", "init"]
+- !private ["10Foundation18_ErrorCodeProtocolP", "rawValue"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "append"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "append"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "append"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "append"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "append"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "append"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "canEvaluatePolicy"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "code"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isMainThread"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "localizedDescription"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
+- !private ["s21_ObjectiveCBridgeableP", "base64EncodedString"]
+- !private ["s21_ObjectiveCBridgeableP", "first"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["10Foundation26_ObjectiveCBridgeableErrorP", "authenticationFailed"]
+- !private ["10Foundation26_ObjectiveCBridgeableErrorP", "init"]
+- !private ["10Foundation26_ObjectiveCBridgeableErrorP", "localizedDescription"]
+- !private ["s20_SwiftNewtypeWrapperP", "ecdsaSignatureMessageX962SHA1"]
+- !private ["s20_SwiftNewtypeWrapperP", "ecdsaSignatureMessageX962SHA224"]
+- !private ["s20_SwiftNewtypeWrapperP", "ecdsaSignatureMessageX962SHA256"]
+- !private ["s20_SwiftNewtypeWrapperP", "ecdsaSignatureMessageX962SHA384"]
+- !private ["s20_SwiftNewtypeWrapperP", "ecdsaSignatureMessageX962SHA512"]
+- !private ["s20_SwiftNewtypeWrapperP", "eciesEncryptionStandardX963SHA1AESGCM"]
+- !private ["s20_SwiftNewtypeWrapperP", "eciesEncryptionStandardX963SHA224AESGCM"]
+- !private ["s20_SwiftNewtypeWrapperP", "eciesEncryptionStandardX963SHA256AESGCM"]
+- !private ["s20_SwiftNewtypeWrapperP", "eciesEncryptionStandardX963SHA384AESGCM"]
+- !private ["s20_SwiftNewtypeWrapperP", "eciesEncryptionStandardX963SHA512AESGCM"]
+- !private ["s16_SwiftStringViewP", "append"]
+- ["s16_SwiftStringViewP", "init"]
+- !private ["10Foundation16__BridgedNSErrorP", "authenticationFailed"]
+- !private ["10Foundation16__BridgedNSErrorP", "init"]
+- !private ["10Foundation16__BridgedNSErrorP", "localizedDescription"]
+depends-nominal:
+- "11SecuritySSP20EllipticCurveKeyPairO13AccessControlC"
+- !private "Sa"
+- !private "So6NSDataC21Base64EncodingOptionsV"
+- "s23BidirectionalCollectionP"
+- !private "s13BinaryIntegerP"
+- !private "Sb"
+- "s7CVarArgP"
+- !private "SC7LAErrorV4CodeO"
+- "s10CollectionP"
+- "s10ComparableP"
+- "11SecuritySSP20EllipticCurveKeyPairO6ConfigV"
+- "11SecuritySSP20EllipticCurveKeyPairO9ConstantsV"
+- "s28CustomDebugStringConvertibleP"
+- !private "10Foundation13CustomNSErrorP"
+- "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "10Foundation4DataV"
+- "s9DecodableP"
+- "11SecuritySSP20EllipticCurveKeyPairO6DeviceO"
+- !private "s10DictionaryV"
+- "11SecuritySSP20EllipticCurveKeyPairO"
+- "s9EncodableP"
+- "s9EquatableP"
+- "11SecuritySSP20EllipticCurveKeyPairO5ErrorO"
+- "s5ErrorP"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s30ExpressibleByDictionaryLiteralP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s17FixedWidthIntegerP"
+- "11SecuritySSP20EllipticCurveKeyPairO4HashO"
+- "s8HashableP"
+- "11SecuritySSP20EllipticCurveKeyPairO6HelperV"
+- !private "Si"
+- "10SwiftyJSON17JSONSubscriptTypeP"
+- "11SecuritySSP20EllipticCurveKeyPairO0E0C"
+- !private "So9LAContextC"
+- !private "SC7LAErrorV"
+- !private "SC8LAPolicyO"
+- "10Foundation14LocalizedErrorP"
+- "s25LosslessStringConvertibleP"
+- "11SecuritySSP20EllipticCurveKeyPairO7ManagerC"
+- "s10MirrorPathP"
+- !private "s17MutableCollectionP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So7NSErrorC"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- !private "So8NSObjectC"
+- !private "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "s7NumericP"
+- !private "s9OptionSetP"
+- "11SecuritySSP20EllipticCurveKeyPairO07PrivateE0C"
+- "11SecuritySSP20EllipticCurveKeyPairO06PublicE0C"
+- "11SecuritySSP20EllipticCurveKeyPairO06PublicE4DataC"
+- !private "s22RandomAccessCollectionP"
+- "s26RangeReplaceableCollectionP"
+- "s16RawRepresentableP"
+- !private "10Foundation20ReferenceConvertibleP"
+- !private "SC27SecAccessControlCreateFlagsV"
+- !private "SC15SecKeyAlgorithmV"
+- "s8SequenceP"
+- !private "s10SetAlgebraP"
+- !private "s13SignedIntegerP"
+- !private "s13SignedNumericP"
+- !private "s12StaticStringV"
+- !private "s10StrideableP"
+- "SS"
+- "s14StringProtocolP"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
+- !private "So6ThreadC"
+- "11SecuritySSP20EllipticCurveKeyPairO5TokenO"
+- !private "s9UnmanagedV"
+- !private "s14_ArrayProtocolP"
+- !private "s18_BitwiseOperationsP"
+- !private "10Foundation21_BridgedStoredNSErrorP"
+- !private "s24_DestructorSafeContainerP"
+- !private "10Foundation18_ErrorCodeProtocolP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- "s21_ObjectiveCBridgeableP"
+- !private "10Foundation26_ObjectiveCBridgeableErrorP"
+- !private "s20_SwiftNewtypeWrapperP"
+- "s16_SwiftStringViewP"
+- !private "10Foundation16__BridgedNSErrorP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SwiftyJSON.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/checkouts/swift-nio-ssl-support.git--2359138821295600615/module.modulemap"
+- "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/checkouts/swift-nio-zlib-support.git--1071467962839356487/module.modulemap"
+- "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/CNIOSHA1.build/module.modulemap"
+- "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/CNIOOpenSSL.build/module.modulemap"
+- "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/CNIOZlib.build/module.modulemap"
+- "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/CNIODarwin.build/module.modulemap"
+- "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/CNIOHTTPParser.build/module.modulemap"
+- "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/CNIOAtomics.build/module.modulemap"
+- "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/CNIOLinux.build/module.modulemap"
+- "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/checkouts/crypto.git-7980259129511365902/Sources/libbcrypt/include/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/LocalAuthentication.framework/Headers/LocalAuthentication.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "9b09acfd411a723a793113bc87ed84f5"

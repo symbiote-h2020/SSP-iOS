@@ -1,0 +1,13 @@
+version: "Apple Swift version 4.1.2 (swiftlang-902.0.54 clang-902.0.39.2)"
+options: "04a68bc5ecd242a324392105472863fd"
+build_time: [1532681384, 990167000]
+inputs:
+  "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/checkouts/jwt.git-2678055958716421745/Sources/JWT/JWT.swift": [1532681341, 0]
+  "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/checkouts/jwt.git-2678055958716421745/Sources/JWT/JWTAlgorithm.swift": [1532681341, 0]
+  "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/checkouts/jwt.git-2678055958716421745/Sources/JWT/JWTClaim.swift": [1532681341, 0]
+  "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/checkouts/jwt.git-2678055958716421745/Sources/JWT/JWTError.swift": [1532681341, 0]
+  "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/checkouts/jwt.git-2678055958716421745/Sources/JWT/JWTHeader.swift": [1532681341, 0]
+  "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/checkouts/jwt.git-2678055958716421745/Sources/JWT/JWTPayload.swift": [1532681341, 0]
+  "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/checkouts/jwt.git-2678055958716421745/Sources/JWT/JWTSigner.swift": [1532681341, 0]
+  "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/checkouts/jwt.git-2678055958716421745/Sources/JWT/JWTSigners.swift": [1532681341, 0]
+  "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/checkouts/jwt.git-2678055958716421745/Sources/JWT/JWTVerifiableClaim.swift": [1532681341, 0]
