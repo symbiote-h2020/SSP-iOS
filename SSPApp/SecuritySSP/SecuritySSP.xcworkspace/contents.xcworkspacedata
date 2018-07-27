@@ -5,6 +5,9 @@
       location = "group:SecuritySSP.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:SecuritySSP/Libs/JWT/JWT.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>
