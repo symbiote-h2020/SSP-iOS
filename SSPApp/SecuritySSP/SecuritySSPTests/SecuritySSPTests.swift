@@ -6,6 +6,8 @@
 //  Copyright © 2018 Konrad. All rights reserved.
 //
 
+//tests
+
 import XCTest
 @testable import SecuritySSP
 
