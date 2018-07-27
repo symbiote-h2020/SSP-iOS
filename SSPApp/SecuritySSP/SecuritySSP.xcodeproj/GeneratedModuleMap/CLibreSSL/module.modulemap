@@ -1,0 +1,4 @@
+module CLibreSSL {
+    umbrella header "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/checkouts/clibressl.git-4924093653370840509/Sources/CLibreSSL/include/CLibreSSL.h"
+    export *
+}
