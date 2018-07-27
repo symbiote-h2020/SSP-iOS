@@ -1,0 +1,59 @@
+{
+  "": {
+    "swift-dependencies": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/JWT.build/master.swiftdeps"
+  },
+  "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/checkouts/jwt.git-2678055958716421745/Sources/JWT/JWT.swift": {
+    "dependencies": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/JWT.build/JWT.d",
+    "object": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/JWT.build/JWT.swift.o",
+    "swiftmodule": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/JWT.build/JWT~partial.swiftmodule",
+    "swift-dependencies": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/JWT.build/JWT.swiftdeps"
+  },
+  "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/checkouts/jwt.git-2678055958716421745/Sources/JWT/JWTAlgorithm.swift": {
+    "dependencies": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/JWT.build/JWTAlgorithm.d",
+    "object": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/JWT.build/JWTAlgorithm.swift.o",
+    "swiftmodule": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/JWT.build/JWTAlgorithm~partial.swiftmodule",
+    "swift-dependencies": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/JWT.build/JWTAlgorithm.swiftdeps"
+  },
+  "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/checkouts/jwt.git-2678055958716421745/Sources/JWT/JWTClaim.swift": {
+    "dependencies": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/JWT.build/JWTClaim.d",
+    "object": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/JWT.build/JWTClaim.swift.o",
+    "swiftmodule": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/JWT.build/JWTClaim~partial.swiftmodule",
+    "swift-dependencies": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/JWT.build/JWTClaim.swiftdeps"
+  },
+  "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/checkouts/jwt.git-2678055958716421745/Sources/JWT/JWTError.swift": {
+    "dependencies": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/JWT.build/JWTError.d",
+    "object": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/JWT.build/JWTError.swift.o",
+    "swiftmodule": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/JWT.build/JWTError~partial.swiftmodule",
+    "swift-dependencies": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/JWT.build/JWTError.swiftdeps"
+  },
+  "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/checkouts/jwt.git-2678055958716421745/Sources/JWT/JWTHeader.swift": {
+    "dependencies": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/JWT.build/JWTHeader.d",
+    "object": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/JWT.build/JWTHeader.swift.o",
+    "swiftmodule": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/JWT.build/JWTHeader~partial.swiftmodule",
+    "swift-dependencies": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/JWT.build/JWTHeader.swiftdeps"
+  },
+  "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/checkouts/jwt.git-2678055958716421745/Sources/JWT/JWTPayload.swift": {
+    "dependencies": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/JWT.build/JWTPayload.d",
+    "object": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/JWT.build/JWTPayload.swift.o",
+    "swiftmodule": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/JWT.build/JWTPayload~partial.swiftmodule",
+    "swift-dependencies": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/JWT.build/JWTPayload.swiftdeps"
+  },
+  "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/checkouts/jwt.git-2678055958716421745/Sources/JWT/JWTSigner.swift": {
+    "dependencies": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/JWT.build/JWTSigner.d",
+    "object": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/JWT.build/JWTSigner.swift.o",
+    "swiftmodule": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/JWT.build/JWTSigner~partial.swiftmodule",
+    "swift-dependencies": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/JWT.build/JWTSigner.swiftdeps"
+  },
+  "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/checkouts/jwt.git-2678055958716421745/Sources/JWT/JWTSigners.swift": {
+    "dependencies": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/JWT.build/JWTSigners.d",
+    "object": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/JWT.build/JWTSigners.swift.o",
+    "swiftmodule": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/JWT.build/JWTSigners~partial.swiftmodule",
+    "swift-dependencies": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/JWT.build/JWTSigners.swiftdeps"
+  },
+  "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/checkouts/jwt.git-2678055958716421745/Sources/JWT/JWTVerifiableClaim.swift": {
+    "dependencies": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/JWT.build/JWTVerifiableClaim.d",
+    "object": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/JWT.build/JWTVerifiableClaim.swift.o",
+    "swiftmodule": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/JWT.build/JWTVerifiableClaim~partial.swiftmodule",
+    "swift-dependencies": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/JWT.build/JWTVerifiableClaim.swiftdeps"
+  }
+}

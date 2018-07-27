@@ -1,0 +1,6 @@
+version: "Apple Swift version 4.1.2 (swiftlang-902.0.54 clang-902.0.39.2)"
+options: "b8d8f2543eb4c72786d66b68ac86784c"
+build_time: [1532681383, 393532000]
+inputs:
+  "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/checkouts/swift-nio.git-3108475404973543938/Sources/NIOConcurrencyHelpers/atomics.swift": [1532681340, 0]
+  "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/checkouts/swift-nio.git-3108475404973543938/Sources/NIOConcurrencyHelpers/lock.swift": [1532681340, 0]

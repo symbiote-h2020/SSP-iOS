@@ -1,0 +1,95 @@
+{
+  "": {
+    "swift-dependencies": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/master.swiftdeps"
+  },
+  "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/Sources/SecuritySSP/Common/GlobalSettings.swift": {
+    "dependencies": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/GlobalSettings.d",
+    "object": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/Common/GlobalSettings.swift.o",
+    "swiftmodule": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/GlobalSettings~partial.swiftmodule",
+    "swift-dependencies": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/GlobalSettings.swiftdeps"
+  },
+  "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/Sources/SecuritySSP/Common/Logger.swift": {
+    "dependencies": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/Logger.d",
+    "object": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/Common/Logger.swift.o",
+    "swiftmodule": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/Logger~partial.swiftmodule",
+    "swift-dependencies": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/Logger.swiftdeps"
+  },
+  "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/Sources/SecuritySSP/Common/NotificationCenter+names.swift": {
+    "dependencies": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/NotificationCenter+names.d",
+    "object": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/Common/NotificationCenter+names.swift.o",
+    "swiftmodule": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/NotificationCenter+names~partial.swiftmodule",
+    "swift-dependencies": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/NotificationCenter+names.swiftdeps"
+  },
+  "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/Sources/SecuritySSP/Common/NotificationInfo.swift": {
+    "dependencies": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/NotificationInfo.d",
+    "object": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/Common/NotificationInfo.swift.o",
+    "swiftmodule": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/NotificationInfo~partial.swiftmodule",
+    "swift-dependencies": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/NotificationInfo.swiftdeps"
+  },
+  "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/Sources/SecuritySSP/Common/SecurityConstants.swift": {
+    "dependencies": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/SecurityConstants.d",
+    "object": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/Common/SecurityConstants.swift.o",
+    "swiftmodule": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/SecurityConstants~partial.swiftmodule",
+    "swift-dependencies": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/SecurityConstants.swiftdeps"
+  },
+  "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/Sources/SecuritySSP/GuestToken/GuestTokensManager.swift": {
+    "dependencies": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/GuestTokensManager.d",
+    "object": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/GuestToken/GuestTokensManager.swift.o",
+    "swiftmodule": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/GuestTokensManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/GuestTokensManager.swiftdeps"
+  },
+  "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/Sources/SecuritySSP/HomeToken/CoreAAM_Manager.swift": {
+    "dependencies": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/CoreAAM_Manager.d",
+    "object": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/HomeToken/CoreAAM_Manager.swift.o",
+    "swiftmodule": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/CoreAAM_Manager~partial.swiftmodule",
+    "swift-dependencies": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/CoreAAM_Manager.swiftdeps"
+  },
+  "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/Sources/SecuritySSP/HomeToken/CsrSsp.swift": {
+    "dependencies": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/CsrSsp.d",
+    "object": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/HomeToken/CsrSsp.swift.o",
+    "swiftmodule": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/CsrSsp~partial.swiftmodule",
+    "swift-dependencies": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/CsrSsp.swiftdeps"
+  },
+  "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/Sources/SecuritySSP/JWT/JWTClaims.swift": {
+    "dependencies": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/JWTClaims.d",
+    "object": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/JWT/JWTClaims.swift.o",
+    "swiftmodule": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/JWTClaims~partial.swiftmodule",
+    "swift-dependencies": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/JWTClaims.swiftdeps"
+  },
+  "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/Sources/SecuritySSP/JWT/JWTEngine.swift": {
+    "dependencies": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/JWTEngine.d",
+    "object": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/JWT/JWTEngine.swift.o",
+    "swiftmodule": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/JWTEngine~partial.swiftmodule",
+    "swift-dependencies": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/JWTEngine.swiftdeps"
+  },
+  "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/Sources/SecuritySSP/Libs/EllipticCurveKeyPair/EllipticCurveKeyPair.swift": {
+    "dependencies": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/EllipticCurveKeyPair.d",
+    "object": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/Libs/EllipticCurveKeyPair/EllipticCurveKeyPair.swift.o",
+    "swiftmodule": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/EllipticCurveKeyPair~partial.swiftmodule",
+    "swift-dependencies": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/EllipticCurveKeyPair.swiftdeps"
+  },
+  "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/Sources/SecuritySSP/Libs/EllipticCurveKeyPair/SHA256.swift": {
+    "dependencies": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/SHA256.d",
+    "object": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/Libs/EllipticCurveKeyPair/SHA256.swift.o",
+    "swiftmodule": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/SHA256~partial.swiftmodule",
+    "swift-dependencies": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/SHA256.swiftdeps"
+  },
+  "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/Sources/SecuritySSP/LightweightSecurityProtocol/LwspManager.swift": {
+    "dependencies": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/LwspManager.d",
+    "object": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/LightweightSecurityProtocol/LwspManager.swift.o",
+    "swiftmodule": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/LwspManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/LwspManager.swiftdeps"
+  },
+  "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/Sources/SecuritySSP/LocalAAM/LocalAAM_Manager.swift": {
+    "dependencies": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/LocalAAM_Manager.d",
+    "object": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/LocalAAM/LocalAAM_Manager.swift.o",
+    "swiftmodule": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/LocalAAM_Manager~partial.swiftmodule",
+    "swift-dependencies": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/LocalAAM_Manager.swiftdeps"
+  },
+  "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/Sources/SecuritySSP/Models/Aam.swift": {
+    "dependencies": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/Aam.d",
+    "object": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/Models/Aam.swift.o",
+    "swiftmodule": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/Aam~partial.swiftmodule",
+    "swift-dependencies": "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SecuritySSP.build/Aam.swiftdeps"
+  }
+}

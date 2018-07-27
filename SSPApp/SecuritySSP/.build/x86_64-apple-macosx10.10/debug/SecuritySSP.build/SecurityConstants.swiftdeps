@@ -1,0 +1,149 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SecurityConstants"
+provides-nominal:
+- "11SecuritySSP0A9ConstantsC"
+provides-member:
+- ["11SecuritySSP0A9ConstantsC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "FloatLiteralType"
+- "IntegerLiteralType"
+- "SecurityConstants"
+- "StringLiteralType"
+depends-member:
+- ["s23BidirectionalCollectionP", "init"]
+- ["s7CVarArgP", "init"]
+- ["s10CollectionP", "init"]
+- ["s10ComparableP", "init"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- ["s17CustomReflectableP", "init"]
+- ["s23CustomStringConvertibleP", "init"]
+- ["s9DecodableP", "init"]
+- ["s9EncodableP", "init"]
+- ["s9EquatableP", "init"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["s8HashableP", "init"]
+- ["10SwiftyJSON17JSONSubscriptTypeP", "init"]
+- ["s25LosslessStringConvertibleP", "init"]
+- ["s10MirrorPathP", "init"]
+- ["s26RangeReplaceableCollectionP", "init"]
+- ["11SecuritySSP0A9ConstantsC", "AAM_CERTIFICATE_HEADER_NAME"]
+- ["11SecuritySSP0A9ConstantsC", "AAM_COMPONENT_NAME"]
+- ["11SecuritySSP0A9ConstantsC", "AAM_GET_AAMS_INTERNALLY"]
+- ["11SecuritySSP0A9ConstantsC", "AAM_GET_AVAILABLE_AAMS"]
+- ["11SecuritySSP0A9ConstantsC", "AAM_GET_COMPONENT_CERTIFICATE"]
+- ["11SecuritySSP0A9ConstantsC", "AAM_GET_FOREIGN_TOKEN"]
+- ["11SecuritySSP0A9ConstantsC", "AAM_GET_GUEST_TOKEN"]
+- ["11SecuritySSP0A9ConstantsC", "AAM_GET_HOME_TOKEN"]
+- ["11SecuritySSP0A9ConstantsC", "AAM_GET_USER_DETAILS"]
+- ["11SecuritySSP0A9ConstantsC", "AAM_MANAGE_PLATFORMS"]
+- ["11SecuritySSP0A9ConstantsC", "AAM_MANAGE_USERS"]
+- ["11SecuritySSP0A9ConstantsC", "AAM_REVOKE_CREDENTIALS"]
+- ["11SecuritySSP0A9ConstantsC", "AAM_SIGN_CERTIFICATE_REQUEST"]
+- ["11SecuritySSP0A9ConstantsC", "AAM_VALIDATE_CREDENTIALS"]
+- ["11SecuritySSP0A9ConstantsC", "AAM_VALIDATE_FOREIGN_TOKEN_ORIGIN_CREDENTIALS"]
+- ["11SecuritySSP0A9ConstantsC", "ACCESS_POLICY_JSON_FIELD_CLAIMS"]
+- ["11SecuritySSP0A9ConstantsC", "ACCESS_POLICY_JSON_FIELD_COMPOSITE_AP"]
+- ["11SecuritySSP0A9ConstantsC", "ACCESS_POLICY_JSON_FIELD_OPERATOR"]
+- ["11SecuritySSP0A9ConstantsC", "ACCESS_POLICY_JSON_FIELD_SINGLE_TOKEN_AP"]
+- ["11SecuritySSP0A9ConstantsC", "ACCESS_POLICY_JSON_FIELD_TYPE"]
+- ["11SecuritySSP0A9ConstantsC", "CLAIM_NAME_TOKEN_TYPE"]
+- ["11SecuritySSP0A9ConstantsC", "CLIENT_CERTIFICATE_HEADER_NAME"]
+- ["11SecuritySSP0A9ConstantsC", "CORE_AAM_FRIENDLY_NAME"]
+- ["11SecuritySSP0A9ConstantsC", "CORE_AAM_INSTANCE_ID"]
+- ["11SecuritySSP0A9ConstantsC", "CURVE_NAME"]
+- ["11SecuritySSP0A9ConstantsC", "ERROR_DESC_UNSUPPORTED_ACCESS_POLICY_TYPE"]
+- ["11SecuritySSP0A9ConstantsC", "FEDERATION_CLAIM_KEY_PREFIX"]
+- ["11SecuritySSP0A9ConstantsC", "FOREIGN_TOKEN_ISSUING_AAM_CERTIFICATE"]
+- ["11SecuritySSP0A9ConstantsC", "GUEST_NAME"]
+- ["11SecuritySSP0A9ConstantsC", "JWT_PARTS_COUNT"]
+- ["11SecuritySSP0A9ConstantsC", "KEY_PAIR_GEN_ALGORITHM"]
+- ["11SecuritySSP0A9ConstantsC", "SECURITY_CREDENTIALS_HEADER_PREFIX"]
+- ["11SecuritySSP0A9ConstantsC", "SECURITY_CREDENTIALS_SIZE_HEADER"]
+- ["11SecuritySSP0A9ConstantsC", "SECURITY_CREDENTIALS_TIMESTAMP_HEADER"]
+- ["11SecuritySSP0A9ConstantsC", "SECURITY_RESPONSE_HEADER"]
+- ["11SecuritySSP0A9ConstantsC", "SIGNATURE_ALGORITHM"]
+- ["11SecuritySSP0A9ConstantsC", "SYMBIOTE_ATTRIBUTES_PREFIX"]
+- ["11SecuritySSP0A9ConstantsC", "TOKEN_HEADER_NAME"]
+- ["11SecuritySSP0A9ConstantsC", "deinit"]
+- ["11SecuritySSP0A9ConstantsC", "init"]
+- ["11SecuritySSP0A9ConstantsC", "serialVersionUID"]
+- ["s8SequenceP", "init"]
+- ["SS", "init"]
+- ["s14StringProtocolP", "init"]
+- ["s16TextOutputStreamP", "init"]
+- ["s20TextOutputStreamableP", "init"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- "s23BidirectionalCollectionP"
+- "s7CVarArgP"
+- "s10CollectionP"
+- "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "s9DecodableP"
+- "s9EncodableP"
+- "s9EquatableP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- "s8HashableP"
+- "10SwiftyJSON17JSONSubscriptTypeP"
+- "s25LosslessStringConvertibleP"
+- "s10MirrorPathP"
+- "s26RangeReplaceableCollectionP"
+- "11SecuritySSP0A9ConstantsC"
+- "s8SequenceP"
+- "SS"
+- "s14StringProtocolP"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "s33_ExpressibleByStringInterpolationP"
+- "s21_ObjectiveCBridgeableP"
+- "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/SwiftyJSON.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/checkouts/swift-nio-ssl-support.git--2359138821295600615/module.modulemap"
+- "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/checkouts/swift-nio-zlib-support.git--1071467962839356487/module.modulemap"
+- "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/CNIOSHA1.build/module.modulemap"
+- "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/CNIOOpenSSL.build/module.modulemap"
+- "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/CNIOZlib.build/module.modulemap"
+- "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/CNIODarwin.build/module.modulemap"
+- "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/CNIOHTTPParser.build/module.modulemap"
+- "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/CNIOAtomics.build/module.modulemap"
+- "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/x86_64-apple-macosx10.10/debug/CNIOLinux.build/module.modulemap"
+- "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/checkouts/crypto.git-7980259129511365902/Sources/libbcrypt/include/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/LocalAuthentication.framework/Headers/LocalAuthentication.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "0e5aed7463e774210e415b1381b0c2e8"

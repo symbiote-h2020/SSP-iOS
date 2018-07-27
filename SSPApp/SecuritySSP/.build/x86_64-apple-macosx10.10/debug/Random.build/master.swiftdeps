@@ -1,0 +1,8 @@
+version: "Apple Swift version 4.1.2 (swiftlang-902.0.54 clang-902.0.39.2)"
+options: "b3768b5ff3cd10b0df91a894d6a61fe6"
+build_time: [1532681383, 869692000]
+inputs:
+  "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/checkouts/crypto.git-7980259129511365902/Sources/Random/Array+Random.swift": [1532681341, 0]
+  "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/checkouts/crypto.git-7980259129511365902/Sources/Random/OSRandom.swift": [1532681341, 0]
+  "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/checkouts/crypto.git-7980259129511365902/Sources/Random/RandomProtocol.swift": [1532681341, 0]
+  "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/checkouts/crypto.git-7980259129511365902/Sources/Random/URandom.swift": [1532681341, 0]

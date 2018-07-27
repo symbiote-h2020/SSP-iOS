@@ -1,0 +1,7 @@
+version: "Apple Swift version 4.1.2 (swiftlang-902.0.54 clang-902.0.39.2)"
+options: "42430c3d6935150cc48570f5ead42cfa"
+build_time: [1532681380, 307989000]
+inputs:
+  "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/checkouts/core.git-9210800844849382486/Sources/Debugging/Debuggable.swift": [1532681341, 0]
+  "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/checkouts/core.git-9210800844849382486/Sources/Debugging/Demangler.swift": [1532681341, 0]
+  "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/checkouts/core.git-9210800844849382486/Sources/Debugging/SourceLocation.swift": [1532681341, 0]
