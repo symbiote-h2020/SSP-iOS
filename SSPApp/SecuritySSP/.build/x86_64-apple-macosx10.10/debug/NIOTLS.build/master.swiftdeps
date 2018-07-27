@@ -1,7 +1,0 @@
-version: "Apple Swift version 4.1.2 (swiftlang-902.0.54 clang-902.0.39.2)"
-options: "1e84610c09702f66d65f87ecff886286"
-build_time: [1532681383, 736937000]
-inputs:
-  "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/checkouts/swift-nio.git-3108475404973543938/Sources/NIOTLS/ApplicationProtocolNegotiationHandler.swift": [1532681340, 0]
-  "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/checkouts/swift-nio.git-3108475404973543938/Sources/NIOTLS/SNIHandler.swift": [1532681340, 0]
-  "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/checkouts/swift-nio.git-3108475404973543938/Sources/NIOTLS/TLSEvents.swift": [1532681340, 0]

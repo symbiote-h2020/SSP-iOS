@@ -1,6 +1,0 @@
-version: "Apple Swift version 4.1.2 (swiftlang-902.0.54 clang-902.0.39.2)"
-options: "63fcc6d4b0faa922e5a354e071bb56c2"
-build_time: [1532681380, 296617000]
-inputs:
-  "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/checkouts/swift-nio.git-3108475404973543938/Sources/NIOPriorityQueue/Heap.swift": [1532681340, 0]
-  "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/SecuritySSP/.build/checkouts/swift-nio.git-3108475404973543938/Sources/NIOPriorityQueue/PriorityQueue.swift": [1532681340, 0]
