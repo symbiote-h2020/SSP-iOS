@@ -1,9 +1,21 @@
 {
+  "Mac" : [
+    {
+      "name" : "UInt256",
+      "hash" : "5b33f8a668f49d4ee0f02dba677fe3bd997e854795280fb7abdbd63a4b88cdd7"
+    }
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
   "commitish" : "0.2.2",
   "iOS" : [
     {
       "name" : "UInt256",
-      "hash" : "5ae5a56a4d08055e64dbfec9c420183ebabd826da740624a40146200cb62f416"
+      "hash" : "4ed6274f5eba396f0b83867e2bf5b1fc09c29d251f2bf1082089348a89a25a1b"
     }
   ]
 }

@@ -1,9 +1,21 @@
 {
+  "Mac" : [
+    {
+      "name" : "EllipticCurve",
+      "hash" : "1ee259c1d067d76e5651c3b96ff722ab4ec132517cee387f6ade8afa91f80825"
+    }
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
   "commitish" : "0.3.2",
   "iOS" : [
     {
       "name" : "EllipticCurve",
-      "hash" : "33b31407297c1b3d82be27a153306945758147c59b1cb11c5b419c11e6944ed0"
+      "hash" : "0787db09a32b77ad93d762d30f55f8b53d2e4f0a641a482e67bc9face10a7976"
     }
   ]
 }

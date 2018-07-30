@@ -20,6 +20,11 @@ class CoreAAM_Manager {
         self.baseCoreUrl = coreUrl
     }
     
+    public func debugTest() {
+        //let ec = EllipticCurve(isInfinity: false)
+    }
+    
+    
     public func getAvailableAams() {
         let url = URL(string: baseCoreUrl + "/get_available_aams")!
         let request = NSMutableURLRequest(url: url)
