@@ -14,6 +14,7 @@
 		763D1B422100D3210041B49E /* JWTClaims.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763D1B412100D3210041B49E /* JWTClaims.swift */; };
 		763D1B442101CEC20041B49E /* JWTEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763D1B432101CEC20041B49E /* JWTEngine.swift */; };
 		7666D15720E4F74800340DE6 /* SecuritySSP.h in Headers */ = {isa = PBXBuildFile; fileRef = 7666D15520E4F74800340DE6 /* SecuritySSP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76CB2EA8210F0CF7001D55AE /* EllipticCurve.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76CB2EA5210F0CF6001D55AE /* EllipticCurve.framework */; };
 		76E28BF620EF79B7005E62D3 /* SHA256.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E28BF420EF79B7005E62D3 /* SHA256.swift */; };
 		76E28BF720EF79B7005E62D3 /* EllipticCurveKeyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E28BF520EF79B7005E62D3 /* EllipticCurveKeyPair.swift */; };
 		76E28C1D20EF9E2E005E62D3 /* CsrSsp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E28C1C20EF9E2E005E62D3 /* CsrSsp.swift */; };
@@ -71,6 +72,7 @@
 		7666D15220E4F74800340DE6 /* SecuritySSP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SecuritySSP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7666D15520E4F74800340DE6 /* SecuritySSP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecuritySSP.h; sourceTree = "<group>"; };
 		7666D15620E4F74800340DE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76CB2EA5210F0CF6001D55AE /* EllipticCurve.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EllipticCurve.framework; path = Carthage/Build/iOS/EllipticCurve.framework; sourceTree = "<group>"; };
 		76E28BF420EF79B7005E62D3 /* SHA256.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHA256.swift; sourceTree = "<group>"; };
 		76E28BF520EF79B7005E62D3 /* EllipticCurveKeyPair.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EllipticCurveKeyPair.swift; sourceTree = "<group>"; };
 		76E28C0B20EF9C5A005E62D3 /* CertificateSigningRequestSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CertificateSigningRequestSwift.xcodeproj; path = SecuritySSP/CertificateSigningRequestSwift/CertificateSigningRequestSwift.xcodeproj; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76CB2EA8210F0CF7001D55AE /* EllipticCurve.framework in Frameworks */,
 				76E2AFD2210895EC00444D6D /* SwiftyJSON.framework in Frameworks */,
 				76E2AFD0210895E900444D6D /* Async.framework in Frameworks */,
 				76E28C2220EF9F9D005E62D3 /* CertificateSigningRequestSwift.framework in Frameworks */,
@@ -266,6 +269,7 @@
 		F8CF13DF7A94793C185C0CC6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				76CB2EA5210F0CF6001D55AE /* EllipticCurve.framework */,
 				76E2AFD5210896B100444D6D /* Async.framework */,
 				76E2AFD3210895EC00444D6D /* SwiftyJSON.framework */,
 				76E2AFD1210895E900444D6D /* Async.framework */,
@@ -653,6 +657,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SecuritySSP/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
@@ -676,6 +684,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SecuritySSP/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
