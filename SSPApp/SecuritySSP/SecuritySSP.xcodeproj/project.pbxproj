@@ -17,7 +17,7 @@
 		76BA3B94210F446B0096A532 /* Epoch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BA3B90210F446B0096A532 /* Epoch.swift */; };
 		76BA3B95210F446B0096A532 /* JWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BA3B93210F446B0096A532 /* JWT.swift */; };
 		76BA3B97210F44B70096A532 /* JWTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BA3B96210F44B70096A532 /* JWTTests.swift */; };
-		76CB2EA8210F0CF7001D55AE /* EllipticCurve.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76CB2EA5210F0CF6001D55AE /* EllipticCurve.framework */; };
+		76BA3B9921102E9F0096A532 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 76BA3B9821102E9E0096A532 /* Cartfile */; };
 		76E28BF620EF79B7005E62D3 /* SHA256.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E28BF420EF79B7005E62D3 /* SHA256.swift */; };
 		76E28BF720EF79B7005E62D3 /* EllipticCurveKeyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E28BF520EF79B7005E62D3 /* EllipticCurveKeyPair.swift */; };
 		76E28C1D20EF9E2E005E62D3 /* CsrSsp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E28C1C20EF9E2E005E62D3 /* CsrSsp.swift */; };
@@ -78,6 +78,7 @@
 		76BA3B90210F446B0096A532 /* Epoch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Epoch.swift; sourceTree = "<group>"; };
 		76BA3B93210F446B0096A532 /* JWT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWT.swift; sourceTree = "<group>"; };
 		76BA3B96210F44B70096A532 /* JWTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWTTests.swift; sourceTree = "<group>"; };
+		76BA3B9821102E9E0096A532 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		76CB2EA5210F0CF6001D55AE /* EllipticCurve.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EllipticCurve.framework; path = Carthage/Build/iOS/EllipticCurve.framework; sourceTree = "<group>"; };
 		76E28BF420EF79B7005E62D3 /* SHA256.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHA256.swift; sourceTree = "<group>"; };
 		76E28BF520EF79B7005E62D3 /* EllipticCurveKeyPair.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EllipticCurveKeyPair.swift; sourceTree = "<group>"; };
@@ -105,7 +106,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76CB2EA8210F0CF7001D55AE /* EllipticCurve.framework in Frameworks */,
 				76E2AFD2210895EC00444D6D /* SwiftyJSON.framework in Frameworks */,
 				76E2AFD0210895E900444D6D /* Async.framework in Frameworks */,
 				76E28C2220EF9F9D005E62D3 /* CertificateSigningRequestSwift.framework in Frameworks */,
@@ -171,6 +171,7 @@
 		7666D14820E4F74800340DE6 = {
 			isa = PBXGroup;
 			children = (
+				76BA3B9821102E9E0096A532 /* Cartfile */,
 				7666D15420E4F74800340DE6 /* SecuritySSP */,
 				76E2AFD72108A95E00444D6D /* Models */,
 				76E2AFC421088D1900444D6D /* SecuritySSPTests */,
@@ -410,6 +411,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76BA3B9921102E9F0096A532 /* Cartfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -675,7 +677,7 @@
 				);
 				INFOPLIST_FILE = SecuritySSP/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.psnc.SymbIoTe.Security.ssp.SecuritySSP;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -702,7 +704,7 @@
 				);
 				INFOPLIST_FILE = SecuritySSP/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.psnc.SymbIoTe.Security.ssp.SecuritySSP;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";

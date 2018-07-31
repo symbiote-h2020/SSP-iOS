@@ -32,7 +32,7 @@ public enum EllipticCurveKeyPair {
     
     public typealias Logger = (String) -> ()
     public static var logger: Logger?
-        
+    
     public struct Config {
         
         // The label used to identify the public key in keychain
@@ -166,9 +166,9 @@ public enum EllipticCurveKeyPair {
         @available(iOS, deprecated: 10.0, message: "This method and extra complexity will be removed when 9.0 is obsolete.")
         public func signUsingSha256(_ digest: Data, context: LAContext? = nil) throws -> Data {
             #if os(iOS)
-                return try helper.signUsingSha256(digest, privateKey: privateKey(context: context))
+            return try helper.signUsingSha256(digest, privateKey: privateKey(context: context))
             #else
-                throw Error.inconcistency(message: "Should be unreachable.")
+            throw Error.inconcistency(message: "Should be unreachable.")
             #endif
         }
         
@@ -181,9 +181,9 @@ public enum EllipticCurveKeyPair {
         @available(iOS, deprecated: 10.0, message: "This method and extra complexity will be removed when 9.0 is obsolete.")
         public func verifyUsingSha256(signature: Data, originalDigest: Data) throws  {
             #if os(iOS)
-                try helper.verifyUsingSha256(signature: signature, digest: originalDigest, publicKey: publicKey())
+            try helper.verifyUsingSha256(signature: signature, digest: originalDigest, publicKey: publicKey())
             #else
-                throw Error.inconcistency(message: "Should be unreachable.")
+            throw Error.inconcistency(message: "Should be unreachable.")
             #endif
         }
         
@@ -194,7 +194,7 @@ public enum EllipticCurveKeyPair {
         
         @available(iOS 10.3, *) // API available at 10.0, but bugs made it unusable on versions lower than 10.3
         public func decrypt(_ encrypted: Data, hash: Hash = .sha256, context: LAContext? = nil) throws -> Data {
-            return try helper.decrypt(encrypted, privateKey: privateKey(), hash: hash)
+            return try helper.decrypt(encrypted, privateKey: privateKey(context: context), hash: hash)
         }
         
     }
@@ -267,24 +267,24 @@ public enum EllipticCurveKeyPair {
         @available(iOS, deprecated: 10.0, message: "This method and extra complexity will be removed when 9.0 is obsolete.")
         public func signUsingSha256(_ digest: Data, privateKey: PrivateKey) throws -> Data {
             #if os(iOS)
-                Helper.logToConsoleIfExecutingOnMainThread()
-                let digestToSign = digest.sha256()
-                
-                var digestToSignBytes = [UInt8](repeating: 0, count: digestToSign.count)
-                digestToSign.copyBytes(to: &digestToSignBytes, count: digestToSign.count)
-                
-                var signatureBytes = [UInt8](repeating: 0, count: 128)
-                var signatureLength = 128
-                
-                let signErr = SecKeyRawSign(privateKey.underlying, .PKCS1, &digestToSignBytes, digestToSignBytes.count, &signatureBytes, &signatureLength)
-                guard signErr == errSecSuccess else {
-                    throw Error.osStatus(message: "Could not create signature.", osStatus: signErr)
-                }
-                
-                let signature = Data(bytes: &signatureBytes, count: signatureLength)
-                return signature
+            Helper.logToConsoleIfExecutingOnMainThread()
+            let digestToSign = digest.sha256()
+            
+            var digestToSignBytes = [UInt8](repeating: 0, count: digestToSign.count)
+            digestToSign.copyBytes(to: &digestToSignBytes, count: digestToSign.count)
+            
+            var signatureBytes = [UInt8](repeating: 0, count: 128)
+            var signatureLength = 128
+            
+            let signErr = SecKeyRawSign(privateKey.underlying, .PKCS1, &digestToSignBytes, digestToSignBytes.count, &signatureBytes, &signatureLength)
+            guard signErr == errSecSuccess else {
+                throw Error.osStatus(message: "Could not create signature.", osStatus: signErr)
+            }
+            
+            let signature = Data(bytes: &signatureBytes, count: signatureLength)
+            return signature
             #else
-                throw Error.inconcistency(message: "Should be unreachable.")
+            throw Error.inconcistency(message: "Should be unreachable.")
             #endif
         }
         
@@ -304,19 +304,19 @@ public enum EllipticCurveKeyPair {
         @available(iOS, deprecated: 10.0, message: "This method and extra complexity will be removed when 9.0 is obsolete.")
         public func verifyUsingSha256(signature: Data, digest: Data, publicKey: PublicKey) throws {
             #if os(iOS)
-                let sha = digest.sha256()
-                var shaBytes = [UInt8](repeating: 0, count: sha.count)
-                sha.copyBytes(to: &shaBytes, count: sha.count)
-                
-                var signatureBytes = [UInt8](repeating: 0, count: signature.count)
-                signature.copyBytes(to: &signatureBytes, count: signature.count)
-                
-                let status = SecKeyRawVerify(publicKey.underlying, .PKCS1, &shaBytes, shaBytes.count, &signatureBytes, signatureBytes.count)
-                guard status == errSecSuccess else {
-                    throw Error.osStatus(message: "Could not verify signature.", osStatus: status)
-                }
+            let sha = digest.sha256()
+            var shaBytes = [UInt8](repeating: 0, count: sha.count)
+            sha.copyBytes(to: &shaBytes, count: sha.count)
+            
+            var signatureBytes = [UInt8](repeating: 0, count: signature.count)
+            signature.copyBytes(to: &signatureBytes, count: signature.count)
+            
+            let status = SecKeyRawVerify(publicKey.underlying, .PKCS1, &shaBytes, shaBytes.count, &signatureBytes, signatureBytes.count)
+            guard status == errSecSuccess else {
+                throw Error.osStatus(message: "Could not verify signature.", osStatus: status)
+            }
             #else
-                throw Error.inconcistency(message: "Should be unreachable.")
+            throw Error.inconcistency(message: "Should be unreachable.")
             #endif
         }
         
@@ -372,7 +372,7 @@ public enum EllipticCurveKeyPair {
                 kSecAttrKeyClass as String: kSecAttrKeyClassPublic,
                 kSecAttrLabel as String: labeled,
                 kSecReturnRef as String: true,
-            ]
+                ]
             if let accessGroup = accessGroup {
                 params[kSecAttrAccessGroup as String] = accessGroup
             }
@@ -499,7 +499,7 @@ public enum EllipticCurveKeyPair {
         }
     }
     
-    public struct Constants {        
+    public struct Constants {
         public static let noCompression: UInt8 = 4
         public static let attrKeyTypeEllipticCurve: String = {
             if #available(iOS 10.0, *) {
@@ -529,8 +529,8 @@ public enum EllipticCurveKeyPair {
         public lazy var DER: Data = {
             var x9_62HeaderECHeader = [UInt8]([
                 /* sequence          */ 0x30, 0x59,
-                /* |-> sequence      */ 0x30, 0x13,
-                /* |---> ecPublicKey */ 0x06, 0x07, 0x2A, 0x86, 0x48, 0xCE, 0x3D, 0x02, 0x01, // http://oid-info.com/get/1.2.840.10045.2.1 (ANSI X9.62 public key type)
+                                        /* |-> sequence      */ 0x30, 0x13,
+                                                                /* |---> ecPublicKey */ 0x06, 0x07, 0x2A, 0x86, 0x48, 0xCE, 0x3D, 0x02, 0x01, // http://oid-info.com/get/1.2.840.10045.2.1 (ANSI X9.62 public key type)
                 /* |---> prime256v1  */ 0x06, 0x08, 0x2A, 0x86, 0x48, 0xCE, 0x3D, 0x03, 0x01, // http://oid-info.com/get/1.2.840.10045.3.1.7 (ANSI X9.62 named elliptic curve)
                 /* |-> bit headers   */ 0x07, 0x03, 0x42, 0x00
                 ])
@@ -545,14 +545,6 @@ public enum EllipticCurveKeyPair {
             lines.append("-----BEGIN PUBLIC KEY-----\n")
             lines.append(self.DER.base64EncodedString(options: [.lineLength64Characters, .endLineWithCarriageReturn]))
             lines.append("\n-----END PUBLIC KEY-----")
-            return lines
-        }()
-        
-        public lazy var CSR: String = {
-            var lines = String()
-            lines.append("-----BEGIN CERTIFICATE REQUEST-----\n")
-            lines.append(self.DER.base64EncodedString(options: [.lineLength64Characters, .endLineWithCarriageReturn]))
-            lines.append("\n-----END CERTIFICATE REQUEST-----")
             return lines
         }()
         
@@ -803,9 +795,9 @@ public enum EllipticCurveKeyPair {
             case .sha224:
                 return SecKeyAlgorithm.eciesEncryptionStandardX963SHA224AESGCM
             case .sha256:
-                return SecKeyAlgorithm.eciesEncryptionStandardX963SHA384AESGCM
-            case .sha384:
                 return SecKeyAlgorithm.eciesEncryptionStandardX963SHA256AESGCM
+            case .sha384:
+                return SecKeyAlgorithm.eciesEncryptionStandardX963SHA384AESGCM
             case .sha512:
                 return SecKeyAlgorithm.eciesEncryptionStandardX963SHA512AESGCM
             }

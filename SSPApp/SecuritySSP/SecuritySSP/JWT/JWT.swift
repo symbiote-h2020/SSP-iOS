@@ -7,13 +7,14 @@
 //
 
 import Foundation
-import EllipticCurve
+//import EllipticCurveKeyPair
 
 enum JWTAlgorithm: String {
     case ES256 = "ES256"
 }
 
 class JWT {
+  
     
     let algorithm: JWTAlgorithm
     let issuer: String
@@ -30,8 +31,7 @@ class JWT {
     func createToken(expiresAfter: TimeInterval) -> String {
         let header = createHeader()
         let payload = createPayload(expirationTime: expiresAfter)
-        let signatureInput = "eyJhbGciOiJFUzI1NiJ9.eyJpc3MiOiJ0ZXN0dXNlcm5hbWUiLCJzdWIiOiJ0ZXN0Y2xpZW50aWQiLCJpYXQiOjE1MDE1MDk3ODIsImV4cCI6MTUwMTUwOTg0Mn0"
-        //self.base64(header) + "." + self.base64(payload)
+        let signatureInput = self.base64(header) + "." + self.base64(payload)
         let signature = createSignature(signatureInput)
         
         return signatureInput + "." + signature
@@ -45,10 +45,8 @@ extension JWT {
     }
     
     fileprivate func createPayload(expirationTime: TimeInterval) -> String {
-        //let iat = Epoch().getString()
-        //let exp = Epoch(after: expirationTime).getString()
-        let iat = "1501509782"
-        let exp = "1501509842"
+        let iat = Epoch().getString()
+        let exp = Epoch(after: expirationTime).getString()
         return "{\"iss\":\"\(self.issuer)\",\"sub\":\"\(self.subject)\",\"iat\":\(iat),\"exp\":\(exp)}"
     }
     
@@ -61,17 +59,30 @@ extension JWT {
     }
     
     fileprivate func createSignature(_ input: String) -> String {
-        let privkey: UInt256 = 1
-        func hashFunc(m: Data) -> UInt256 {
-            return UInt256(1234567890)
+        guard
+            let data = input.data(using: .utf8),
+            let signature = try? keysManager.sign(data, hash: .sha256)
+            else {
+                fatalError("Cannot create signature")
         }
-       
-        var data = input.data(using: .utf8)
-        //let signature = try? keysManager.sign(data, hash: .sha256)
-        var signature = ECDSA<Secp256k1>.sign(message: Data(), signedBy: privkey, hashedBy: hashFunc)
-
-        var result = signature.base64EncodedString(options: .init(rawValue: 0))
+        let decodedSignature = DEREC256SignatureDecode(signature)
+        let result = decodedSignature.base64EncodedString(options: .init(rawValue: 0))
         return filterBase64(result)
+    }
+    
+    fileprivate func DEREC256SignatureDecode(_ signature: Data) -> Data {
+        var decoded = signature
+        let maxChunkSize = 32
+        decoded.removeFirst() // removing sequence header
+        decoded.removeFirst() // removing sequence size
+        decoded.removeFirst() // removing 'r' element header
+        let rLength = Int(decoded.removeFirst()) // removing 'r' element length
+        let r  = decoded.prefix(rLength).suffix(maxChunkSize) // read out 'r' bytes and discard any padding
+        decoded.removeFirst(Int(rLength)) // removing 'r' bytes
+        decoded.removeFirst() // 's' element header
+        let sLength = Int(decoded.removeFirst()) // 's' element length
+        let s  = decoded.prefix(sLength).suffix(maxChunkSize) // read out 's' bytes and discard any padding
+        return Data(r) + Data(s)
     }
     
     private func filterBase64(_ input: String) -> String {
