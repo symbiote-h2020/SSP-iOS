@@ -14,6 +14,9 @@
 		763D1B422100D3210041B49E /* JWTClaims.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763D1B412100D3210041B49E /* JWTClaims.swift */; };
 		763D1B442101CEC20041B49E /* JWTEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763D1B432101CEC20041B49E /* JWTEngine.swift */; };
 		7666D15720E4F74800340DE6 /* SecuritySSP.h in Headers */ = {isa = PBXBuildFile; fileRef = 7666D15520E4F74800340DE6 /* SecuritySSP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76BA3B94210F446B0096A532 /* Epoch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BA3B90210F446B0096A532 /* Epoch.swift */; };
+		76BA3B95210F446B0096A532 /* JWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BA3B93210F446B0096A532 /* JWT.swift */; };
+		76BA3B97210F44B70096A532 /* JWTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BA3B96210F44B70096A532 /* JWTTests.swift */; };
 		76CB2EA8210F0CF7001D55AE /* EllipticCurve.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76CB2EA5210F0CF6001D55AE /* EllipticCurve.framework */; };
 		76E28BF620EF79B7005E62D3 /* SHA256.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E28BF420EF79B7005E62D3 /* SHA256.swift */; };
 		76E28BF720EF79B7005E62D3 /* EllipticCurveKeyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E28BF520EF79B7005E62D3 /* EllipticCurveKeyPair.swift */; };
@@ -72,6 +75,9 @@
 		7666D15220E4F74800340DE6 /* SecuritySSP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SecuritySSP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7666D15520E4F74800340DE6 /* SecuritySSP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecuritySSP.h; sourceTree = "<group>"; };
 		7666D15620E4F74800340DE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76BA3B90210F446B0096A532 /* Epoch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Epoch.swift; sourceTree = "<group>"; };
+		76BA3B93210F446B0096A532 /* JWT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWT.swift; sourceTree = "<group>"; };
+		76BA3B96210F44B70096A532 /* JWTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWTTests.swift; sourceTree = "<group>"; };
 		76CB2EA5210F0CF6001D55AE /* EllipticCurve.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EllipticCurve.framework; path = Carthage/Build/iOS/EllipticCurve.framework; sourceTree = "<group>"; };
 		76E28BF420EF79B7005E62D3 /* SHA256.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHA256.swift; sourceTree = "<group>"; };
 		76E28BF520EF79B7005E62D3 /* EllipticCurveKeyPair.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EllipticCurveKeyPair.swift; sourceTree = "<group>"; };
@@ -154,6 +160,8 @@
 		763D1B402100D3020041B49E /* JWT */ = {
 			isa = PBXGroup;
 			children = (
+				76BA3B90210F446B0096A532 /* Epoch.swift */,
+				76BA3B93210F446B0096A532 /* JWT.swift */,
 				763D1B412100D3210041B49E /* JWTClaims.swift */,
 				763D1B432101CEC20041B49E /* JWTEngine.swift */,
 			);
@@ -227,6 +235,7 @@
 		76E2AFC421088D1900444D6D /* SecuritySSPTests */ = {
 			isa = PBXGroup;
 			children = (
+				76BA3B96210F44B70096A532 /* JWTTests.swift */,
 				76E2AFC521088D1900444D6D /* SecuritySSPTests.swift */,
 				76E2AFC721088D1900444D6D /* Info.plist */,
 			);
@@ -501,7 +510,9 @@
 				76F98A4220E66B3C00C68BAE /* Logger.swift in Sources */,
 				76E2AFDB2108A98200444D6D /* Aam.swift in Sources */,
 				76E28BF620EF79B7005E62D3 /* SHA256.swift in Sources */,
+				76BA3B94210F446B0096A532 /* Epoch.swift in Sources */,
 				763D1B1220FDF5D70041B49E /* LwspManager.swift in Sources */,
+				76BA3B95210F446B0096A532 /* JWT.swift in Sources */,
 				763D1B312100C6CE0041B49E /* LocalAAM_Manager.swift in Sources */,
 				76F98A4B20E66CA100C68BAE /* NotificationInfo.swift in Sources */,
 				763D1B442101CEC20041B49E /* JWTEngine.swift in Sources */,
@@ -519,6 +530,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76E2AFC621088D1900444D6D /* SecuritySSPTests.swift in Sources */,
+				76BA3B97210F44B70096A532 /* JWTTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -21,7 +21,15 @@ class CoreAAM_Manager {
     }
     
     public func debugTest() {
-        //let ec = EllipticCurve(isInfinity: false)
+        let privkey: UInt256 = 1
+        let point = privkey * Secp256k1.One
+        func hashFunc(m: Data) -> UInt256 {
+            return UInt256(1234567890)
+        }
+        
+        let sig = ECDSA<Secp256k1>.sign(message: Data(), signedBy: privkey, hashedBy: hashFunc)
+        let ver = ECDSA<Secp256k1>.verify(signature: sig, withPoint: point, forMessage: Data(), hashedBy: hashFunc)
+        
     }
     
     
