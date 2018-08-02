@@ -7,8 +7,27 @@
 //
 
 import XCTest
+@testable import SecuritySSP
+
 
 class SSPAppTests: XCTestCase {
+    struct KeyPair {
+        static let manager: EllipticCurveKeyPair.Manager = {
+            let publicAccessControl = EllipticCurveKeyPair.AccessControl(protection: kSecAttrAccessibleAlwaysThisDeviceOnly, flags: [])
+            let privateAccessControl = EllipticCurveKeyPair.AccessControl(protection: kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly, flags: {
+                return EllipticCurveKeyPair.Device.hasSecureEnclave ? [.userPresence, .privateKeyUsage] : [.userPresence]
+            }())
+            let config = EllipticCurveKeyPair.Config(
+                publicLabel: "n.sign.public",
+                privateLabel: "n.sign.private",
+                operationPrompt: "n Ident",
+                publicKeyAccessControl: publicAccessControl,
+                privateKeyAccessControl: privateAccessControl,
+                token: .secureEnclaveIfAvailable)
+            return EllipticCurveKeyPair.Manager(config: config)
+        }()
+    }
+    
     
     override func setUp() {
         super.setUp()
@@ -30,6 +49,29 @@ class SSPAppTests: XCTestCase {
         self.measure {
             // Put the code you want to measure the time of here.
         }
+    }
+    
+    func testJWT() {
+        
+        
+        let manager = KeyPair.manager
+        try? manager.deleteKeyPair()
+        
+        
+        let pk = try! manager.publicKey()
+        let pkdata = try! pk.data()
+        log("pkdata.PEM= \(pkdata.PEM)")
+        
+        
+        let expirationTime: TimeInterval = 60
+        let jwt = JWT(issuer: "testusername", subject: "testclientid", keysManager: manager)
+        let token = jwt.createToken(expiresAfter: expirationTime)
+        
+        log("token =")
+        log(token)
+        //        let pk = try! manager.publicKey()
+        //        let pkdata = try! pk.data()
+        //        log("pkdata.PEM= \(pkdata.PEM)")
     }
     
 }
