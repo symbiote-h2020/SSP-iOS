@@ -40,6 +40,8 @@
 		769C82651F70DF4100139A9C /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 769C82641F70DF4100139A9C /* Settings.storyboard */; };
 		769C82671F70DF5B00139A9C /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769C82661F70DF5B00139A9C /* SettingsVC.swift */; };
 		76BA3BA12110475B0096A532 /* SSPAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BA3BA02110475B0096A532 /* SSPAppTests.swift */; };
+		76BA3BAA2112EDB20096A532 /* SecuritySSP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76BA3BA92112EDB20096A532 /* SecuritySSP.framework */; };
+		76BA3BAB2112EDB20096A532 /* SecuritySSP.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 76BA3BA92112EDB20096A532 /* SecuritySSP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EEF88BDC63FE38CBD748549B /* Pods_SSPApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B4D6CB0A2C850EEF642ED40 /* Pods_SSPApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +63,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				7605A2141F97323E0096964F /* SymAgent.framework in Embed Frameworks */,
+				76BA3BAB2112EDB20096A532 /* SecuritySSP.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,6 +108,7 @@
 		76BA3B9E2110475B0096A532 /* SSPAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SSPAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76BA3BA02110475B0096A532 /* SSPAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSPAppTests.swift; sourceTree = "<group>"; };
 		76BA3BA22110475B0096A532 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76BA3BA92112EDB20096A532 /* SecuritySSP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SecuritySSP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76D2D6121F91042900677088 /* SymAgent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SymAgent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EBCCB6CCEC240CBD7C93E95 /* Pods-SSPApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSPApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SSPApp/Pods-SSPApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76BA3BAA2112EDB20096A532 /* SecuritySSP.framework in Frameworks */,
 				7605A2131F97323E0096964F /* SymAgent.framework in Frameworks */,
 				EEF88BDC63FE38CBD748549B /* Pods_SSPApp.framework in Frameworks */,
 			);
@@ -189,6 +194,7 @@
 		7666B2C41F27716900675435 = {
 			isa = PBXGroup;
 			children = (
+				76BA3BA92112EDB20096A532 /* SecuritySSP.framework */,
 				76D2D6121F91042900677088 /* SymAgent.framework */,
 				7666B2CF1F27716900675435 /* SSPApp */,
 				768B56011F28A5DC00E8D075 /* Extensions */,
