@@ -41,7 +41,6 @@
 		76965F9E200CE71800613785 /* MagnetometerMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76965F9D200CE71800613785 /* MagnetometerMessage.swift */; };
 		76D2AE2A1FA1D65B00DB8ACD /* SSPColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D2AE251FA1D65B00DB8ACD /* SSPColors.swift */; };
 		76D2D60C1F91040F00677088 /* SymAgent.h in Headers */ = {isa = PBXBuildFile; fileRef = 76D2D60A1F91040F00677088 /* SymAgent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		76F98A4620E66C2600C68BAE /* SecuritySSP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F98A4720E66C2600C68BAE /* SecuritySSP.framework */; };
 		76FE1F2B2106145E00251537 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 76FE1F2A2106145E00251537 /* Podfile */; };
 /* End PBXBuildFile section */
 
@@ -95,7 +94,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76F98A4620E66C2600C68BAE /* SecuritySSP.framework in Frameworks */,
 				7605A2121F97320D0096964F /* Pods_SymAgent.framework in Frameworks */,
 				6C3C24674B67B705EA0329FB /* Pods_SymAgent.framework in Frameworks */,
 			);
@@ -524,7 +522,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SymAgent/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.psnc.SymAgent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -545,7 +543,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SymAgent/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.psnc.SymAgent;
 				PRODUCT_NAME = "$(TARGET_NAME)";

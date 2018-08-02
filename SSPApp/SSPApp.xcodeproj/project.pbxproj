@@ -39,8 +39,19 @@
 		768B560C1F29D1B200E8D075 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 768B560B1F29D1B200E8D075 /* Main.storyboard */; };
 		769C82651F70DF4100139A9C /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 769C82641F70DF4100139A9C /* Settings.storyboard */; };
 		769C82671F70DF5B00139A9C /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769C82661F70DF5B00139A9C /* SettingsVC.swift */; };
+		76BA3BA12110475B0096A532 /* SSPAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BA3BA02110475B0096A532 /* SSPAppTests.swift */; };
 		EEF88BDC63FE38CBD748549B /* Pods_SSPApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B4D6CB0A2C850EEF642ED40 /* Pods_SSPApp.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		76BA3BA32110475B0096A532 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7666B2C51F27716900675435 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7666B2CC1F27716900675435;
+			remoteInfo = SSPApp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		7605A2151F97323E0096964F /* Embed Frameworks */ = {
@@ -91,6 +102,9 @@
 		768B560B1F29D1B200E8D075 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Views/Main/Main.storyboard; sourceTree = "<group>"; };
 		769C82641F70DF4100139A9C /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Settings.storyboard; path = Views/Settings/Settings.storyboard; sourceTree = "<group>"; };
 		769C82661F70DF5B00139A9C /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsVC.swift; path = Views/Settings/SettingsVC.swift; sourceTree = "<group>"; };
+		76BA3B9E2110475B0096A532 /* SSPAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SSPAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		76BA3BA02110475B0096A532 /* SSPAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSPAppTests.swift; sourceTree = "<group>"; };
+		76BA3BA22110475B0096A532 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76D2D6121F91042900677088 /* SymAgent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SymAgent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EBCCB6CCEC240CBD7C93E95 /* Pods-SSPApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSPApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SSPApp/Pods-SSPApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,6 +116,13 @@
 			files = (
 				7605A2131F97323E0096964F /* SymAgent.framework in Frameworks */,
 				EEF88BDC63FE38CBD748549B /* Pods_SSPApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76BA3B9B2110475B0096A532 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +192,7 @@
 				76D2D6121F91042900677088 /* SymAgent.framework */,
 				7666B2CF1F27716900675435 /* SSPApp */,
 				768B56011F28A5DC00E8D075 /* Extensions */,
+				76BA3B9F2110475B0096A532 /* SSPAppTests */,
 				7666B2CE1F27716900675435 /* Products */,
 				A9E3D6F10F6F53B96FF1B0AA /* Pods */,
 				B6A084357F55C20DE9CACBA6 /* Frameworks */,
@@ -181,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				7666B2CD1F27716900675435 /* SSPApp.app */,
+				76BA3B9E2110475B0096A532 /* SSPAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -237,6 +260,15 @@
 			name = Settings;
 			sourceTree = "<group>";
 		};
+		76BA3B9F2110475B0096A532 /* SSPAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				76BA3BA02110475B0096A532 /* SSPAppTests.swift */,
+				76BA3BA22110475B0096A532 /* Info.plist */,
+			);
+			path = SSPAppTests;
+			sourceTree = "<group>";
+		};
 		A9E3D6F10F6F53B96FF1B0AA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -278,13 +310,31 @@
 			productReference = 7666B2CD1F27716900675435 /* SSPApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		76BA3B9D2110475B0096A532 /* SSPAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76BA3BA72110475B0096A532 /* Build configuration list for PBXNativeTarget "SSPAppTests" */;
+			buildPhases = (
+				76BA3B9A2110475B0096A532 /* Sources */,
+				76BA3B9B2110475B0096A532 /* Frameworks */,
+				76BA3B9C2110475B0096A532 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76BA3BA42110475B0096A532 /* PBXTargetDependency */,
+			);
+			name = SSPAppTests;
+			productName = SSPAppTests;
+			productReference = 76BA3B9E2110475B0096A532 /* SSPAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		7666B2C51F27716900675435 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = PSNC;
 				TargetAttributes = {
@@ -292,6 +342,11 @@
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = W9AYBK7AF4;
 						ProvisioningStyle = Automatic;
+					};
+					76BA3B9D2110475B0096A532 = {
+						CreatedOnToolsVersion = 9.4.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7666B2CC1F27716900675435;
 					};
 				};
 			};
@@ -309,6 +364,7 @@
 			projectRoot = "";
 			targets = (
 				7666B2CC1F27716900675435 /* SSPApp */,
+				76BA3B9D2110475B0096A532 /* SSPAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -330,6 +386,13 @@
 				768B56071F28C7AC00E8D075 /* SearchDevices.storyboard in Resources */,
 				767A91F51F62DEEA006BEACC /* listOfDevicesFromCloud.json in Resources */,
 				769C82651F70DF4100139A9C /* Settings.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76BA3B9C2110475B0096A532 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,7 +472,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		76BA3B9A2110475B0096A532 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76BA3BA12110475B0096A532 /* SSPAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		76BA3BA42110475B0096A532 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7666B2CC1F27716900675435 /* SSPApp */;
+			targetProxy = 76BA3BA32110475B0096A532 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7666B2D91F27716900675435 /* LaunchScreen.storyboard */ = {
@@ -525,7 +604,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 65KP3UJJWG;
 				INFOPLIST_FILE = SSPApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.psnc.ssp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -540,11 +619,71 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 65KP3UJJWG;
 				INFOPLIST_FILE = SSPApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.psnc.ssp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		76BA3BA52110475B0096A532 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 65KP3UJJWG;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = SSPAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.psnc.SymbIoTe.Security.ssp.SSPAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SSPApp.app/SSPApp";
+			};
+			name = Debug;
+		};
+		76BA3BA62110475B0096A532 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 65KP3UJJWG;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = SSPAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.psnc.SymbIoTe.Security.ssp.SSPAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SSPApp.app/SSPApp";
 			};
 			name = Release;
 		};
@@ -565,6 +704,15 @@
 			buildConfigurations = (
 				7666B2E01F27716900675435 /* Debug */,
 				7666B2E11F27716900675435 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76BA3BA72110475B0096A532 /* Build configuration list for PBXNativeTarget "SSPAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76BA3BA52110475B0096A532 /* Debug */,
+				76BA3BA62110475B0096A532 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
