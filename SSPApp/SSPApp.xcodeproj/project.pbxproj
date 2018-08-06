@@ -42,6 +42,7 @@
 		76BA3BA12110475B0096A532 /* SSPAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BA3BA02110475B0096A532 /* SSPAppTests.swift */; };
 		76BA3BAA2112EDB20096A532 /* SecuritySSP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76BA3BA92112EDB20096A532 /* SecuritySSP.framework */; };
 		76BA3BAB2112EDB20096A532 /* SecuritySSP.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 76BA3BA92112EDB20096A532 /* SecuritySSP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		76BA3BC421189DAF0096A532 /* AndroidLikeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BA3BC321189DAF0096A532 /* AndroidLikeTests.swift */; };
 		EEF88BDC63FE38CBD748549B /* Pods_SSPApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B4D6CB0A2C850EEF642ED40 /* Pods_SSPApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -109,6 +110,7 @@
 		76BA3BA02110475B0096A532 /* SSPAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSPAppTests.swift; sourceTree = "<group>"; };
 		76BA3BA22110475B0096A532 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76BA3BA92112EDB20096A532 /* SecuritySSP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SecuritySSP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76BA3BC321189DAF0096A532 /* AndroidLikeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndroidLikeTests.swift; sourceTree = "<group>"; };
 		76D2D6121F91042900677088 /* SymAgent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SymAgent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EBCCB6CCEC240CBD7C93E95 /* Pods-SSPApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSPApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SSPApp/Pods-SSPApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -269,6 +271,7 @@
 		76BA3B9F2110475B0096A532 /* SSPAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				76BA3BC321189DAF0096A532 /* AndroidLikeTests.swift */,
 				76BA3BA02110475B0096A532 /* SSPAppTests.swift */,
 				76BA3BA22110475B0096A532 /* Info.plist */,
 			);
@@ -482,6 +485,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76BA3BC421189DAF0096A532 /* AndroidLikeTests.swift in Sources */,
 				76BA3BA12110475B0096A532 /* SSPAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

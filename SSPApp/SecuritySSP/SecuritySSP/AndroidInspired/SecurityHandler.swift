@@ -26,7 +26,7 @@ public class SecurityHandler {
     }
     
     
-    public func getAvailableAams() {
+    public func getAvailableAams() -> [Aam] {
         return getAvailableAams(self.homeAAMAddress)
     }
     
