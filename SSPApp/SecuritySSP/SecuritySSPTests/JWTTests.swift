@@ -38,6 +38,9 @@ class JWTTests: XCTestCase {
         }()
     }
     
+    
+    ///this tast will fail if started from framework, because secureEnclave needs a full app
+    /// tha same test is run from the app level
     func testJWT() {
         
         

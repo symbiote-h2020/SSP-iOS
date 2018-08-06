@@ -52,8 +52,6 @@ class SSPAppTests: XCTestCase {
     }
     
     func testJWT() {
-        
-        
         let manager = KeyPair.manager
         try? manager.deleteKeyPair()
         
@@ -74,4 +72,18 @@ class SSPAppTests: XCTestCase {
         //        log("pkdata.PEM= \(pkdata.PEM)")
     }
     
+    func testHomeToken() {
+        HomeTokenManager.getHomeToken()
+        
+        if waitForNotificationNamed(SymNotificationName.CoreCommunictation.rawValue) {
+            XCTAssertTrue(CoreAAM_Manager.shared.aams.count >= 1 , "There are some AAMs")
+        }
+    }
+    
+    func waitForNotificationNamed(_ notificationName: String) -> Bool {
+        let expectation = XCTNSNotificationExpectation(name: NSNotification.Name(rawValue: notificationName))
+        let result = XCTWaiter().wait(for: [expectation], timeout: 5)
+        log("waitForNotificationNamed result = \(result.rawValue)")
+        return result == .completed
+    }
 }
