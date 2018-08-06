@@ -26,7 +26,7 @@ class HomeTokenManager {
     }
     
     
-    public static func getHomeToken(iss: String = "testApplicationUsername", sub: String = "icom") {
+    public static func getHomeToken(iss: String = "icom", sub: String = "1ef55ca2-206a-11e8-b467-0ed5f89f718b") {
         let manager = KeyPair.manager
         try? manager.deleteKeyPair()
         
