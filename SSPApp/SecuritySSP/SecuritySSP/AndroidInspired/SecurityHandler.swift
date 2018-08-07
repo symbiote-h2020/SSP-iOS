@@ -18,7 +18,8 @@ public class SecurityHandler {
     private var homeAAMAddress: String
     private var platformId: String
     
-    var availableAams = [Aam]()
+    var coreAAM: Aam?
+    var availableAams = [String:Aam]()
     
     init(homeAAMAddress: String, platformId: String = "") {
         self.homeAAMAddress = homeAAMAddress
@@ -26,15 +27,24 @@ public class SecurityHandler {
     }
     
     
-    public func getAvailableAams() -> [Aam] {
+    public func getAvailableAams() -> [String:Aam] {
         return getAvailableAams(self.homeAAMAddress)
+    }
+    
+    public func getCoreAAMInstance() -> Aam? {
+        if let val = self.availableAams[SecurityConstants.CORE_AAM_INSTANCE_ID] {
+            return val
+        }
+        else {
+            return nil
+        }
     }
     
     /**
      - Parameter aamAddress:  Address where the user can reach REST endpoints used in security layer of SymbIoTe
      */
-    public func getAvailableAams(_ aamAddress: String) -> [Aam] {
-        let url = URL(string: aamAddress + "/get_available_aams")!
+    public func getAvailableAams(_ aamAddress: String) -> [String:Aam] {
+        let url = URL(string: aamAddress + SecurityConstants.AAM_GET_AVAILABLE_AAMS)!
         let request = NSMutableURLRequest(url: url)
         request.httpMethod = "GET"
         
@@ -75,8 +85,8 @@ public class SecurityHandler {
         return self.availableAams
     }
     
-    private func parseAamsJson(_ dataJson: JSON) -> [Aam] {
-        var aams = [Aam]()
+    private func parseAamsJson(_ dataJson: JSON) -> [String:Aam] {
+        var aams = [String:Aam]()
         
         if dataJson["availableAAMs"].exists() == false {
             logWarn("+++++++ wrong json +++++  parseAamsJson dataJson = \(dataJson)")
@@ -85,8 +95,8 @@ public class SecurityHandler {
             let jsonArr:JSON = dataJson["availableAAMs"]
             for (key, subJson) in jsonArr {
                 logVerbose("AAM name = \(key)")
-                let dev = Aam(subJson)
-                aams.append(dev)
+                let a = Aam(subJson)
+                aams[a.aamInstanceId] = a
             }
         }
         

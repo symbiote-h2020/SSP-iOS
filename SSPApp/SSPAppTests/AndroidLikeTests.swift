@@ -16,6 +16,15 @@ import XCTest
  
  */
 class AndroidLikeTests: XCTestCase {
+    private static let AAMServerAddress: String = "https://symbiote-dev.man.poznan.pl/coreInterface/"
+    //private var keyStorePassword: String = "KEYSTORE_PASSWORD";
+    private var icomUsername: String = "icom";
+    private var icomPassword: String = "icom";
+    private var platformId: String = "SymbIoTe_Core_AAM";
+    private var clientId: String = "1ef55ca2-206a-11e8-b467-0ed5f89f718b";
+    //private var keyStoreFilename: String = "/keystore.jks";
+    private var clientSH: SecurityHandler = SecurityHandler(homeAAMAddress: AndroidLikeTests.AAMServerAddress)
+    
     
     override func setUp() {
         super.setUp()
@@ -27,9 +36,10 @@ class AndroidLikeTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testGetSecurityRequest() {
+        let aams = clientSH.getAvailableAams()
+        
+        let coreAam = clientSH.getCoreAAMInstance()
     }
     
     func testPerformanceExample() {
