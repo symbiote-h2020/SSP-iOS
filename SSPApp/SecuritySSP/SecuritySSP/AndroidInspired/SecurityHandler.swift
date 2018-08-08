@@ -28,7 +28,14 @@ public class SecurityHandler {
     
     
     public func getAvailableAams() -> [String:Aam] {
-        return getAvailableAams(self.homeAAMAddress)
+        var aams = [String:Aam]()
+        let semaphore = DispatchSemaphore(value: 0)  //1. create a counting semaphore
+        getAvailableAams(self.homeAAMAddress) {dictOfAams in
+            aams = dictOfAams
+            semaphore.signal()  //3. count it up
+        }
+        semaphore.wait()  //2. wait for finished counting
+        return aams
     }
     
     public func getCoreAAMInstance() -> Aam? {
@@ -43,7 +50,7 @@ public class SecurityHandler {
     /**
      - Parameter aamAddress:  Address where the user can reach REST endpoints used in security layer of SymbIoTe
      */
-    public func getAvailableAams(_ aamAddress: String) -> [String:Aam] {
+    public func getAvailableAams(_ aamAddress: String, finished: @escaping ((_ dictOfAams: [String:Aam])->Void))   {
         let url = URL(string: aamAddress + SecurityConstants.AAM_GET_AVAILABLE_AAMS)!
         let request = NSMutableURLRequest(url: url)
         request.httpMethod = "GET"
@@ -71,6 +78,7 @@ public class SecurityHandler {
                             let json = try JSON(data: jsonData)
                             self.availableAams = self.parseAamsJson(json)
                             NotificationCenter.default.postNotificationName(SymNotificationName.CoreCommunictation)
+                            finished(self.availableAams)
                         } catch {
                             logError("getAvailableAams json")
                             let notiInfoObj  = NotificationInfo(type: ErrorType.connection, info: "wrong data json")
@@ -82,7 +90,6 @@ public class SecurityHandler {
         }
         
         task.resume()
-        return self.availableAams
     }
     
     private func parseAamsJson(_ dataJson: JSON) -> [String:Aam] {
@@ -93,8 +100,8 @@ public class SecurityHandler {
         }
         else {
             let jsonArr:JSON = dataJson["availableAAMs"]
-            for (key, subJson) in jsonArr {
-                logVerbose("AAM name = \(key)")
+            for (_, subJson) in jsonArr {
+                //logVerbose("AAM name = \(key)")
                 let a = Aam(subJson)
                 aams[a.aamInstanceId] = a
             }

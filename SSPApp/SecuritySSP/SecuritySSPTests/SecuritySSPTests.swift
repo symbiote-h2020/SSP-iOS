@@ -39,7 +39,7 @@ class SecuritySSPTests: XCTestCase {
         CoreAAM_Manager.shared.getAvailableAams()
         
         if waitForNotificationNamed(SymNotificationName.CoreCommunictation.rawValue) {
-            XCTAssertTrue(CoreAAM_Manager.shared.aams.count >= 1 , "There are some AAMs")
+            XCTAssertTrue(CoreAAM_Manager.shared.aams.count >= 1 , "There are no AAMs")
         }
     }
     

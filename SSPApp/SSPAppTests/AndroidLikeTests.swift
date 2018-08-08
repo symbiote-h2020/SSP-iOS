@@ -38,8 +38,18 @@ class AndroidLikeTests: XCTestCase {
     
     func testGetSecurityRequest() {
         let aams = clientSH.getAvailableAams()
+        XCTAssertTrue(aams.count >= 1 , "There are no AAMs just after method")
+        log("clientSH.getAvailableAams() finished")
+        if waitForNotificationNamed(SymNotificationName.CoreCommunictation.rawValue) {
+            log("clientSH posted notification")
+            XCTAssertTrue(clientSH.availableAams.count >= 1 , "There are no AAMs in public property")
+        }
         
         let coreAam = clientSH.getCoreAAMInstance()
+        if let coreAamAddress = coreAam?.aamAddress {
+            log("coreAam.aamAddress=\(coreAamAddress)")
+            XCTAssert(coreAamAddress.hasPrefix(AndroidLikeTests.AAMServerAddress), "Unexpected address of CoreAAM")
+        }
     }
     
     func testPerformanceExample() {
@@ -47,6 +57,14 @@ class AndroidLikeTests: XCTestCase {
         self.measure {
             // Put the code you want to measure the time of here.
         }
+    }
+    
+    func waitForNotificationNamed(_ notificationName: String) -> Bool {
+        let notiName = NSNotification.Name(notificationName)
+        let expectation = XCTNSNotificationExpectation(name: notiName)
+        let result = XCTWaiter().wait(for: [expectation], timeout: 5)
+        log("waitForNotificationNamed result = \(result.rawValue)")
+        return result == .completed
     }
     
 }
