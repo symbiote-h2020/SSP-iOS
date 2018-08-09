@@ -53,7 +53,7 @@ class AndroidLikeTests: XCTestCase {
     }
     
     func testCSR() {
-        clientSH.requestCSR()
+        clientSH.getCertificate(aamUrl: AndroidLikeTests.AAMServerAddress, username: icomUsername, password: icomPassword, clientId: clientId)
     }
     
     func testPerformanceExample() {

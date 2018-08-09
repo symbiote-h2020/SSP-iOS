@@ -129,19 +129,20 @@ public class SecurityHandler {
         return aams
     }
     
-    //public Certificate getCertificate(AAM homeAAM, String username, String password, String clientId)
-    public func requestCSR() {
+    /// declaration of this function in java is: public Certificate getCertificate(AAM homeAAM, String username, String password, String clientId)
+    public func getCertificate(aamUrl: String, username: String, password: String, clientId: String) {
         
         let csr = buildPlatformCertificateSigningRequestPEM()
         
-        let json: [String: Any] = [  "username" : "icom",
-                                     "password" : "icom",
-                                     "clientId" : "clientId",
+        let json: [String: Any] = [  "username" : username,
+                                     "password" : password,
+                                     "clientId" : clientId,
                                      "clientCSRinPEMFormat" : "\(csr)"]
         
         let jsonData = try? JSONSerialization.data(withJSONObject: json)
         
-        let url = URL(string: "https://symbiote-dev.man.poznan.pl/coreInterface/sign_certificate_request")
+        //url eg. https://symbiote-dev.man.poznan.pl/coreInterface/sign_certificate_request
+        let url = URL(string: aamUrl + SecurityConstants.AAM_SIGN_CERTIFICATE_REQUEST)
         let request = NSMutableURLRequest(url: url!)
         request.httpMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
