@@ -8,6 +8,7 @@
 
 import Foundation
 import SwiftyJSON
+import CertificateSigningRequestSwift
 
 /**
   SecurityHandler class is designe to work exactly as its counterpart on android /java code
@@ -20,6 +21,24 @@ public class SecurityHandler {
     
     var coreAAM: Aam?
     var availableAams = [String:Aam]()
+    
+    
+    struct KeyPair {
+        static let manager: EllipticCurveKeyPair.Manager = {
+            let publicAccessControl = EllipticCurveKeyPair.AccessControl(protection: kSecAttrAccessibleAlwaysThisDeviceOnly, flags: [])
+            let privateAccessControl = EllipticCurveKeyPair.AccessControl(protection: kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly, flags: {
+                return EllipticCurveKeyPair.Device.hasSecureEnclave ? [.userPresence, .privateKeyUsage] : [.userPresence]
+            }())
+            let config = EllipticCurveKeyPair.Config(
+                publicLabel: "n.sign.public",
+                privateLabel: "n.sign.private",
+                operationPrompt: "n Ident",
+                publicKeyAccessControl: publicAccessControl,
+                privateKeyAccessControl: privateAccessControl,
+                token: .secureEnclaveIfAvailable)
+            return EllipticCurveKeyPair.Manager(config: config)
+        }()
+    }
     
     init(homeAAMAddress: String, platformId: String = "") {
         self.homeAAMAddress = homeAAMAddress
@@ -108,5 +127,79 @@ public class SecurityHandler {
         }
         
         return aams
+    }
+    
+    //public Certificate getCertificate(AAM homeAAM, String username, String password, String clientId)
+    public func requestCSR() {
+        
+        let csr = buildPlatformCertificateSigningRequestPEM()
+        
+        let json: [String: Any] = [  "username" : "icom",
+                                     "password" : "icom",
+                                     "clientId" : "clientId",
+                                     "clientCSRinPEMFormat" : "\(csr)"]
+        
+        let jsonData = try? JSONSerialization.data(withJSONObject: json)
+        
+        let url = URL(string: "https://symbiote-dev.man.poznan.pl/coreInterface/sign_certificate_request")
+        let request = NSMutableURLRequest(url: url!)
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.httpBody = jsonData
+        
+        let task = URLSession.shared.dataTask(with: request as URLRequest) { data,response,error in
+            if let err = error {
+                logError(err.localizedDescription)
+                logError(error.debugDescription)
+            }
+            else {
+                let status = (response as! HTTPURLResponse).statusCode
+                if (status >= 400) {
+                    logWarn("response status: \(status)")
+                    
+                }
+                //debug
+                let dataString = String(data: data!, encoding: String.Encoding.utf8)
+                logVerbose("datastring= \(dataString ?? "    ")")
+                
+                
+            }
+        }
+        
+        task.resume()
+    }
+    
+    
+    private func buildPlatformCertificateSigningRequestPEM() -> String {//(platformId, KeyPair keyPair)
+        //let cn = "CN=icom@clientId@SymbIoTe_Core_AAM" //with this I get: "400: ERR_INVALID_ARGUMENTS"
+        //let cn = "CN=icom" //with this I get "400 invalid argument"
+        let cn = "icom@clientId@SymbIoTe_Core_AAM"
+        
+        var privateKey: SecKey?
+        var publicKeyBits: Data?
+        
+        let keyAlgorithm = KeyAlgorithm.ec(signatureType: .sha256)
+        
+        do {
+            privateKey = try SecurityHandler.KeyPair.manager.privateKey().underlying
+        }
+        catch {
+            logError("Error: \(error)")
+        }
+        
+        publicKeyBits = try! SecurityHandler.KeyPair.manager.publicKey().data().raw
+        
+        //Initiale CSR
+        let csr = CertificateSigningRequest(commonName: cn, organizationName: nil, organizationUnitName: nil, countryName: nil, stateOrProvinceName: nil, localityName: nil, keyAlgorithm: keyAlgorithm)
+
+        
+        guard let csrBuild2 = csr.buildCSRAndReturnString(publicKeyBits!, privateKey: privateKey!) else {
+            return ""
+        }
+        logVerbose("CSR string with header and footer")
+        logVerbose(csrBuild2)
+        
+        return csrBuild2
+        
     }
 }
