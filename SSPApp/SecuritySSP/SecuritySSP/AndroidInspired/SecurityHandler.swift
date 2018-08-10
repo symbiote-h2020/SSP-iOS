@@ -130,8 +130,8 @@ public class SecurityHandler {
     }
     
     /// declaration of this function in java is: public Certificate getCertificate(AAM homeAAM, String username, String password, String clientId)
-    public func getCertificate(aamUrl: String, username: String, password: String, clientId: String) {
-        
+    public func getCertificate(aamUrl: String, username: String, password: String, clientId: String) -> String {
+        var certyficateString = ""
         let csr = buildPlatformCertificateSigningRequestPEM()
         
         let json: [String: Any] = [  "username" : username,
@@ -141,13 +141,14 @@ public class SecurityHandler {
         
         let jsonData = try? JSONSerialization.data(withJSONObject: json)
         
-        //url eg. https://symbiote-dev.man.poznan.pl/coreInterface/sign_certificate_request
-        let url = URL(string: aamUrl + SecurityConstants.AAM_SIGN_CERTIFICATE_REQUEST)
+        //url eg.
+        let url = URL(string: "https://symbiote-dev.man.poznan.pl/coreInterface/sign_certificate_request")
+        //let url = URL(string: aamUrl + SecurityConstants.AAM_SIGN_CERTIFICATE_REQUEST)
         let request = NSMutableURLRequest(url: url!)
         request.httpMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.httpBody = jsonData
-        
+        let semaphore = DispatchSemaphore(value: 0)
         let task = URLSession.shared.dataTask(with: request as URLRequest) { data,response,error in
             if let err = error {
                 logError(err.localizedDescription)
@@ -160,22 +161,19 @@ public class SecurityHandler {
                     
                 }
                 //debug
-                let dataString = String(data: data!, encoding: String.Encoding.utf8)
-                logVerbose("datastring= \(dataString ?? "    ")")
-                
-                
+                certyficateString = String(data: data!, encoding: String.Encoding.utf8) ?? ""
+                logVerbose("datastring= \(certyficateString)")
             }
+            semaphore.signal()
         }
-        
         task.resume()
+        semaphore.wait()
+        return certyficateString
     }
     
     
-    private func buildPlatformCertificateSigningRequestPEM() -> String {//(platformId, KeyPair keyPair)
-        //let cn = "CN=icom@clientId@SymbIoTe_Core_AAM" //with this I get: "400: ERR_INVALID_ARGUMENTS"
-        //let cn = "CN=icom" //with this I get "400 invalid argument"
-        let cn = "icom@clientId@SymbIoTe_Core_AAM"
-        
+    private func buildPlatformCertificateSigningRequestPEM(cn: String = "icom@clientId@SymbIoTe_Core_AAM") -> String {//(platformId, KeyPair keyPair)
+
         var privateKey: SecKey?
         var publicKeyBits: Data?
         

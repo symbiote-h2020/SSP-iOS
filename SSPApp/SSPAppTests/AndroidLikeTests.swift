@@ -16,7 +16,7 @@ import XCTest
  
  */
 class AndroidLikeTests: XCTestCase {
-    private static let AAMServerAddress: String = "https://symbiote-dev.man.poznan.pl/coreInterface/"
+    private static let AAMServerAddress: String = "https://symbiote-dev.man.poznan.pl/coreInterface"
     //private var keyStorePassword: String = "KEYSTORE_PASSWORD";
     private var icomUsername: String = "icom";
     private var icomPassword: String = "icom";
@@ -53,7 +53,8 @@ class AndroidLikeTests: XCTestCase {
     }
     
     func testCSR() {
-        clientSH.getCertificate(aamUrl: AndroidLikeTests.AAMServerAddress, username: icomUsername, password: icomPassword, clientId: clientId)
+        let certStr = clientSH.getCertificate(aamUrl: AndroidLikeTests.AAMServerAddress, username: icomUsername, password: icomPassword, clientId: "clientId")
+        XCTAssert(certStr.hasPrefix("-----BEGIN CERTIFICATE-----"), "Wrong certificate string ")
     }
     
     func testPerformanceExample() {
