@@ -130,9 +130,11 @@ public class SecurityHandler {
     }
     
     /// declaration of this function in java is: public Certificate getCertificate(AAM homeAAM, String username, String password, String clientId)
-    public func getCertificate(aamUrl: String, username: String, password: String, clientId: String) -> String {
+    public func getCertificate(aam: Aam, username: String, password: String, clientId: String) -> String {
         var certyficateString = ""
-        let csr = buildPlatformCertificateSigningRequestPEM()
+        let cn = "\(username)@\(clientId)@\(aam.aamInstanceId)"
+        
+        let csr = buildPlatformCertificateSigningRequestPEM(cn: cn)
         
         let json: [String: Any] = [  "username" : username,
                                      "password" : password,
@@ -141,9 +143,8 @@ public class SecurityHandler {
         
         let jsonData = try? JSONSerialization.data(withJSONObject: json)
         
-        //url eg.
-        let url = URL(string: "https://symbiote-dev.man.poznan.pl/coreInterface/sign_certificate_request")
-        //let url = URL(string: aamUrl + SecurityConstants.AAM_SIGN_CERTIFICATE_REQUEST)
+        //url eg. URL(string: "https://symbiote-dev.man.poznan.pl/coreInterface/sign_certificate_request")
+        let url = URL(string: aam.aamAddress + SecurityConstants.AAM_SIGN_CERTIFICATE_REQUEST)
         let request = NSMutableURLRequest(url: url!)
         request.httpMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
@@ -171,8 +172,8 @@ public class SecurityHandler {
         return certyficateString
     }
     
-    
-    private func buildPlatformCertificateSigningRequestPEM(cn: String = "icom@clientId@SymbIoTe_Core_AAM") -> String {//(platformId, KeyPair keyPair)
+    /// - Parameters: cn eg. "icom@clientId@SymbIoTe_Core_AAM"
+    private func buildPlatformCertificateSigningRequestPEM(cn: String) -> String {
 
         var privateKey: SecKey?
         var publicKeyBits: Data?

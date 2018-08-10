@@ -50,11 +50,11 @@ class AndroidLikeTests: XCTestCase {
             log("coreAam.aamAddress=\(coreAamAddress)")
             XCTAssert(coreAamAddress.hasPrefix(AndroidLikeTests.AAMServerAddress), "Unexpected address of CoreAAM")
         }
-    }
-    
-    func testCSR() {
-        let certStr = clientSH.getCertificate(aamUrl: AndroidLikeTests.AAMServerAddress, username: icomUsername, password: icomPassword, clientId: "clientId")
-        XCTAssert(certStr.hasPrefix("-----BEGIN CERTIFICATE-----"), "Wrong certificate string ")
+
+        if let homeAam = coreAam {
+            let certStr = clientSH.getCertificate(aam: homeAam, username: icomUsername, password: icomPassword, clientId: "clientId")  //motyla noga - czy tu ma być "clientId"
+            XCTAssert(certStr.hasPrefix("-----BEGIN CERTIFICATE-----"), "Wrong certificate string ")
+        }
     }
     
     func testPerformanceExample() {
