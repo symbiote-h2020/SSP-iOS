@@ -57,6 +57,18 @@ class AndroidLikeTests: XCTestCase {
         }
     }
     
+    
+    func testGuestAccess() {
+        let coreAam = clientSH.getCoreAAMInstance()
+        if let aam = coreAam {
+            let token = clientSH.loginAsGuest(aam)
+            XCTAssert(token.count > 10, "GuestToken string should be long")
+        }
+        else {
+            XCTFail("No core AAM")
+        }
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {

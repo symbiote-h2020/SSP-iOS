@@ -45,6 +45,17 @@ public class SecurityHandler {
         self.platformId = platformId
     }
     
+    public func getCoreAAMInstance() -> Aam? {
+        if self.availableAams.count == 0 {
+            _ = getAvailableAams()
+        }
+        if let val = self.availableAams[SecurityConstants.CORE_AAM_INSTANCE_ID] {
+            return val
+        }
+        else {
+            return nil
+        }
+    }
     
     public func getAvailableAams() -> [String:Aam] {
         var aams = [String:Aam]()
@@ -57,13 +68,15 @@ public class SecurityHandler {
         return aams
     }
     
-    public func getCoreAAMInstance() -> Aam? {
-        if let val = self.availableAams[SecurityConstants.CORE_AAM_INSTANCE_ID] {
-            return val
+    public func getAvailableAams(homeAam: Aam) -> [String:Aam] {
+        var aams = [String:Aam]()
+        let semaphore = DispatchSemaphore(value: 0)  //1. create a counting semaphore
+        getAvailableAams(homeAam.aamAddress) {dictOfAams in
+            aams = dictOfAams
+            semaphore.signal()  //3. count it up
         }
-        else {
-            return nil
-        }
+        semaphore.wait()  //2. wait for finished counting
+        return aams
     }
     
     /**
@@ -201,5 +214,43 @@ public class SecurityHandler {
         
         return csrBuild2
         
+    }
+    
+    public func loginAsGuest(_ aam: Aam) -> String {
+        return getGuestToken(aam.aamAddress)
+    }
+    
+    public func getGuestToken(_ aamAddress: String) -> String {
+        let url = URL(string: aamAddress + SecurityConstants.AAM_GET_GUEST_TOKEN)!
+        let request = NSMutableURLRequest(url: url)
+        request.httpMethod = "POST"
+        
+        var guestToken: String = ""
+        let semaphore = DispatchSemaphore(value: 0)
+        let task = URLSession.shared.dataTask(with: request as URLRequest) { data,response,error in
+            if let err = error {
+                logError(error.debugDescription)
+                
+                let notiInfoObj  = NotificationInfo(type: ErrorType.connection, info: err.localizedDescription)
+                NotificationCenter.default.postNotificationName(SymNotificationName.SecurityTokenCore, object: notiInfoObj)
+            }
+            else {
+                if let httpResponse = response as? HTTPURLResponse
+                {
+                    //logVerbose("response header for guest_token request:  \(httpResponse.allHeaderFields)")
+                    if let xAuthToken = httpResponse.allHeaderFields["x-auth-token"] as? String {
+                        //log("core gouest_token = \(xAuthToken)")
+                        guestToken = xAuthToken
+                        NotificationCenter.default.postNotificationName(SymNotificationName.SecurityTokenCore)
+                    }
+                }
+            }
+            semaphore.signal()
+        }
+        
+        task.resume()
+        semaphore.wait()
+        
+        return guestToken
     }
 }
