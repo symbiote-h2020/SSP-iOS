@@ -63,6 +63,7 @@ class AndroidLikeTests: XCTestCase {
         if let aam = coreAam {
             let token = clientSH.loginAsGuest(aam)
             XCTAssert(token.count > 10, "GuestToken string should be long")
+            
         }
         else {
             XCTFail("No core AAM")

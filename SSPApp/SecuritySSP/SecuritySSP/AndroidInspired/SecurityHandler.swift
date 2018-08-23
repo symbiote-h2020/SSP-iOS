@@ -249,8 +249,21 @@ public class SecurityHandler {
         }
         
         task.resume()
-        semaphore.wait()
-        
+        semaphore.wait()        
         return guestToken
     }
+    
+    public func prepareRequestWithGuestToken(_ strUrl: String) -> NSMutableURLRequest{
+        let url = URL(string: strUrl)
+        let request = NSMutableURLRequest(url: url!)
+        request.httpMethod = "POST"
+        request.setValue("\(DateTime.Now.unixEpochTime()*1000)", forHTTPHeaderField: "x-auth-timestamp")
+        request.setValue("1", forHTTPHeaderField: "x-auth-size")
+        request.setValue(GuestTokensManager.shared.makeXAuth1SSPRequestHeader(), forHTTPHeaderField: "x-auth-1")
+        
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        return request
+    }
+    
 }
