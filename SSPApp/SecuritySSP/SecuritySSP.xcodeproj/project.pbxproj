@@ -14,6 +14,7 @@
 		763D1B422100D3210041B49E /* JWTClaims.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763D1B412100D3210041B49E /* JWTClaims.swift */; };
 		763D1B442101CEC20041B49E /* JWTEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763D1B432101CEC20041B49E /* JWTEngine.swift */; };
 		7666D15720E4F74800340DE6 /* SecuritySSP.h in Headers */ = {isa = PBXBuildFile; fileRef = 7666D15520E4F74800340DE6 /* SecuritySSP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7669BDD32130481A00B0CBAD /* AAMClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7669BDD22130481A00B0CBAD /* AAMClient.swift */; };
 		76904F0A212EF3FE0026B5C6 /* DateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76904F07212EF3FE0026B5C6 /* DateTime.swift */; };
 		76BA3B94210F446B0096A532 /* Epoch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BA3B90210F446B0096A532 /* Epoch.swift */; };
 		76BA3B95210F446B0096A532 /* JWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BA3B93210F446B0096A532 /* JWT.swift */; };
@@ -78,6 +79,7 @@
 		7666D15220E4F74800340DE6 /* SecuritySSP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SecuritySSP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7666D15520E4F74800340DE6 /* SecuritySSP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecuritySSP.h; sourceTree = "<group>"; };
 		7666D15620E4F74800340DE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7669BDD22130481A00B0CBAD /* AAMClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AAMClient.swift; sourceTree = "<group>"; };
 		76904F07212EF3FE0026B5C6 /* DateTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTime.swift; sourceTree = "<group>"; };
 		76BA3B90210F446B0096A532 /* Epoch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Epoch.swift; sourceTree = "<group>"; };
 		76BA3B93210F446B0096A532 /* JWT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWT.swift; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				76BA3BB1211894CB0096A532 /* SecurityHandler.swift */,
+				7669BDD22130481A00B0CBAD /* AAMClient.swift */,
 			);
 			path = AndroidInspired;
 			sourceTree = "<group>";
@@ -533,6 +536,7 @@
 				76BA3B94210F446B0096A532 /* Epoch.swift in Sources */,
 				763D1B1220FDF5D70041B49E /* LwspManager.swift in Sources */,
 				76BA3B95210F446B0096A532 /* JWT.swift in Sources */,
+				7669BDD32130481A00B0CBAD /* AAMClient.swift in Sources */,
 				763D1B312100C6CE0041B49E /* LocalAAM_Manager.swift in Sources */,
 				76F98A4B20E66CA100C68BAE /* NotificationInfo.swift in Sources */,
 				76BA3BAD211884900096A532 /* HomeTokenManager.swift in Sources */,

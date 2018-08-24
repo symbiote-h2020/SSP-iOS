@@ -217,41 +217,11 @@ public class SecurityHandler {
     }
     
     public func loginAsGuest(_ aam: Aam) -> String {
-        return getGuestToken(aam.aamAddress)
+        let aamClient = AAMClient(aam.aamAddress)
+        return aamClient.getGuestToken()
     }
     
-    public func getGuestToken(_ aamAddress: String) -> String {
-        let url = URL(string: aamAddress + SecurityConstants.AAM_GET_GUEST_TOKEN)!
-        let request = NSMutableURLRequest(url: url)
-        request.httpMethod = "POST"
-        
-        var guestToken: String = ""
-        let semaphore = DispatchSemaphore(value: 0)
-        let task = URLSession.shared.dataTask(with: request as URLRequest) { data,response,error in
-            if let err = error {
-                logError(error.debugDescription)
-                
-                let notiInfoObj  = NotificationInfo(type: ErrorType.connection, info: err.localizedDescription)
-                NotificationCenter.default.postNotificationName(SymNotificationName.SecurityTokenCore, object: notiInfoObj)
-            }
-            else {
-                if let httpResponse = response as? HTTPURLResponse
-                {
-                    //logVerbose("response header for guest_token request:  \(httpResponse.allHeaderFields)")
-                    if let xAuthToken = httpResponse.allHeaderFields["x-auth-token"] as? String {
-                        //log("core gouest_token = \(xAuthToken)")
-                        guestToken = xAuthToken
-                        NotificationCenter.default.postNotificationName(SymNotificationName.SecurityTokenCore)
-                    }
-                }
-            }
-            semaphore.signal()
-        }
-        
-        task.resume()
-        semaphore.wait()        
-        return guestToken
-    }
+
     
     public func prepareRequestWithGuestToken(_ strUrl: String) -> NSMutableURLRequest{
         let url = URL(string: strUrl)
@@ -266,4 +236,9 @@ public class SecurityHandler {
         return request
     }
     
+    public func login(_ aam: Aam) -> String {
+        
+        
+        return ""
+    }
 }
