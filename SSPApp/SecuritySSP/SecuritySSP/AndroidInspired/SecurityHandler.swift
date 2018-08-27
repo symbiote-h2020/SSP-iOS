@@ -237,7 +237,8 @@ public class SecurityHandler {
     }
     
     public func login(_ aam: Aam) -> String {
-        
+        let aamClient = AAMClient(aam.aamAddress)
+        let address = aam.aamAddress
         
         return ""
     }
