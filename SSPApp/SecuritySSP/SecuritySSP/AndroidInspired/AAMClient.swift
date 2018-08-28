@@ -47,4 +47,8 @@ public class AAMClient {
         semaphore.wait()
         return guestToken
     }
+    
+    func getHomeToken(_ loginRequest: String) -> String {
+        return "TODO"
+    }
 }

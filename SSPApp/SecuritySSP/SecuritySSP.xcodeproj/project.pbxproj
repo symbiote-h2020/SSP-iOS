@@ -18,6 +18,7 @@
 		7669BDD72134343800B0CBAD /* HomeCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7669BDD62134343800B0CBAD /* HomeCredentials.swift */; };
 		7669BDD9213434FC00B0CBAD /* Certificate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7669BDD8213434FC00B0CBAD /* Certificate.swift */; };
 		7669BDDB213435AD00B0CBAD /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7669BDDA213435AD00B0CBAD /* Token.swift */; };
+		7669BDDD213583F700B0CBAD /* CryptoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7669BDDC213583F700B0CBAD /* CryptoHelper.swift */; };
 		76904F0A212EF3FE0026B5C6 /* DateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76904F07212EF3FE0026B5C6 /* DateTime.swift */; };
 		76BA3B94210F446B0096A532 /* Epoch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BA3B90210F446B0096A532 /* Epoch.swift */; };
 		76BA3B95210F446B0096A532 /* JWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BA3B93210F446B0096A532 /* JWT.swift */; };
@@ -86,6 +87,7 @@
 		7669BDD62134343800B0CBAD /* HomeCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCredentials.swift; sourceTree = "<group>"; };
 		7669BDD8213434FC00B0CBAD /* Certificate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Certificate.swift; sourceTree = "<group>"; };
 		7669BDDA213435AD00B0CBAD /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		7669BDDC213583F700B0CBAD /* CryptoHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoHelper.swift; sourceTree = "<group>"; };
 		76904F07212EF3FE0026B5C6 /* DateTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTime.swift; sourceTree = "<group>"; };
 		76BA3B90210F446B0096A532 /* Epoch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Epoch.swift; sourceTree = "<group>"; };
 		76BA3B93210F446B0096A532 /* JWT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWT.swift; sourceTree = "<group>"; };
@@ -229,6 +231,7 @@
 				7669BDD62134343800B0CBAD /* HomeCredentials.swift */,
 				7669BDD8213434FC00B0CBAD /* Certificate.swift */,
 				7669BDDA213435AD00B0CBAD /* Token.swift */,
+				7669BDDC213583F700B0CBAD /* CryptoHelper.swift */,
 			);
 			path = AndroidInspired;
 			sourceTree = "<group>";
@@ -550,6 +553,7 @@
 				763D1B312100C6CE0041B49E /* LocalAAM_Manager.swift in Sources */,
 				76F98A4B20E66CA100C68BAE /* NotificationInfo.swift in Sources */,
 				76BA3BAD211884900096A532 /* HomeTokenManager.swift in Sources */,
+				7669BDDD213583F700B0CBAD /* CryptoHelper.swift in Sources */,
 				763D1B442101CEC20041B49E /* JWTEngine.swift in Sources */,
 				7669BDDB213435AD00B0CBAD /* Token.swift in Sources */,
 				76F98A4020E66B3C00C68BAE /* GlobalSettings.swift in Sources */,

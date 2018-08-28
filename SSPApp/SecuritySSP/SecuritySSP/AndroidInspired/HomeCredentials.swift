@@ -30,6 +30,7 @@ public class HomeCredentials {
      * Certificate of this client
      */
     public var certificate: Certificate;
+    
     /**
      * matching the public key in the certificate
      */
@@ -45,6 +46,15 @@ public class HomeCredentials {
         self.clientIdentifier = clientIdentifier
         self.certificate = cert
     }
+    
+    ///sets some default test values
+    init() {
+        self.homeAAM = Aam()
+        self.username = ""
+        self.clientIdentifier = ""
+        self.certificate = Certificate()
+    }
+    
 //    init(AAM homeAAM, String username, String clientIdentifier, Certificate certificate, PrivateKey
 //    privateKey) {
 //    this.homeAAM = homeAAM;
