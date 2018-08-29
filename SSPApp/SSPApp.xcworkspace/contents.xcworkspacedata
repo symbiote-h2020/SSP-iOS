@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:SecuritySSP/SecuritySSP.xcodeproj">
+      location = "group:../../SymbioteSecurity4iOS/SecuritySSP.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:SymAgent/SymAgent.xcodeproj">

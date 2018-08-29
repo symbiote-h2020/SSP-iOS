@@ -20,7 +20,6 @@
 		76486BDC1F4D6DC500D9702D /* DeviceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76486BDB1F4D6DC500D9702D /* DeviceTableViewCell.swift */; };
 		76486BDF1F4D832D00D9702D /* Observations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76486BDE1F4D832D00D9702D /* Observations.storyboard */; };
 		76486BE11F4D835C00D9702D /* ObservationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76486BE01F4D835C00D9702D /* ObservationsVC.swift */; };
-		76486BE81F4D979200D9702D /* observations.json in Resources */ = {isa = PBXBuildFile; fileRef = 76486BE71F4D979200D9702D /* observations.json */; };
 		76486BEE1F4DCD2B00D9702D /* ObservationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76486BED1F4DCD2B00D9702D /* ObservationTableViewCell.swift */; };
 		76486BF01F4EBA5B00D9702D /* ObservationsChartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76486BEF1F4EBA5B00D9702D /* ObservationsChartVC.swift */; };
 		76486BF51F4EED9600D9702D /* DrawerOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76486BF41F4EED9600D9702D /* DrawerOption.swift */; };
@@ -30,9 +29,6 @@
 		7666B2DB1F27716900675435 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7666B2D91F27716900675435 /* LaunchScreen.storyboard */; };
 		767A91EB1F60357B006BEACC /* Actuators.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 767A91EA1F60357B006BEACC /* Actuators.storyboard */; };
 		767A91ED1F60359E006BEACC /* ActuatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767A91EC1F60359E006BEACC /* ActuatorVC.swift */; };
-		767A91F31F62DEEA006BEACC /* observationsFromSSP.json in Resources */ = {isa = PBXBuildFile; fileRef = 767A91F01F62DEEA006BEACC /* observationsFromSSP.json */; };
-		767A91F41F62DEEA006BEACC /* listOfDevicesFromSSP.json in Resources */ = {isa = PBXBuildFile; fileRef = 767A91F11F62DEEA006BEACC /* listOfDevicesFromSSP.json */; };
-		767A91F51F62DEEA006BEACC /* listOfDevicesFromCloud.json in Resources */ = {isa = PBXBuildFile; fileRef = 767A91F21F62DEEA006BEACC /* listOfDevicesFromCloud.json */; };
 		767A91F71F682255006BEACC /* ActuatorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767A91F61F682255006BEACC /* ActuatorTableViewCell.swift */; };
 		768B56071F28C7AC00E8D075 /* SearchDevices.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 768B56061F28C7AC00E8D075 /* SearchDevices.storyboard */; };
 		768B56091F28C7EA00E8D075 /* SearchDevicesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B56081F28C7EA00E8D075 /* SearchDevicesVC.swift */; };
@@ -85,7 +81,6 @@
 		76486BDB1F4D6DC500D9702D /* DeviceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeviceTableViewCell.swift; path = Views/SearchDevices/DeviceTableViewCell.swift; sourceTree = "<group>"; };
 		76486BDE1F4D832D00D9702D /* Observations.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Observations.storyboard; path = Views/Observations/Observations.storyboard; sourceTree = "<group>"; };
 		76486BE01F4D835C00D9702D /* ObservationsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObservationsVC.swift; path = Views/Observations/ObservationsVC.swift; sourceTree = "<group>"; };
-		76486BE71F4D979200D9702D /* observations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = observations.json; path = ../../tmp_tests/observations.json; sourceTree = "<group>"; };
 		76486BED1F4DCD2B00D9702D /* ObservationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObservationTableViewCell.swift; path = Views/Observations/ObservationTableViewCell.swift; sourceTree = "<group>"; };
 		76486BEF1F4EBA5B00D9702D /* ObservationsChartVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObservationsChartVC.swift; path = Views/Observations/ObservationsChartVC.swift; sourceTree = "<group>"; };
 		76486BF41F4EED9600D9702D /* DrawerOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawerOption.swift; path = Views/Drawer/DrawerOption.swift; sourceTree = "<group>"; };
@@ -97,9 +92,6 @@
 		7666B2DC1F27716900675435 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		767A91EA1F60357B006BEACC /* Actuators.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Actuators.storyboard; path = Views/Actuators/Actuators.storyboard; sourceTree = "<group>"; };
 		767A91EC1F60359E006BEACC /* ActuatorVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActuatorVC.swift; path = Views/Actuators/ActuatorVC.swift; sourceTree = "<group>"; };
-		767A91F01F62DEEA006BEACC /* observationsFromSSP.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = observationsFromSSP.json; path = ../../tmp_tests/observationsFromSSP.json; sourceTree = "<group>"; };
-		767A91F11F62DEEA006BEACC /* listOfDevicesFromSSP.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = listOfDevicesFromSSP.json; path = ../../tmp_tests/listOfDevicesFromSSP.json; sourceTree = "<group>"; };
-		767A91F21F62DEEA006BEACC /* listOfDevicesFromCloud.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = listOfDevicesFromCloud.json; path = ../../tmp_tests/listOfDevicesFromCloud.json; sourceTree = "<group>"; };
 		767A91F61F682255006BEACC /* ActuatorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActuatorTableViewCell.swift; path = Views/Actuators/ActuatorTableViewCell.swift; sourceTree = "<group>"; };
 		768B56061F28C7AC00E8D075 /* SearchDevices.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SearchDevices.storyboard; path = Views/SearchDevices/SearchDevices.storyboard; sourceTree = "<group>"; };
 		768B56081F28C7EA00E8D075 /* SearchDevicesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchDevicesVC.swift; path = Views/SearchDevices/SearchDevicesVC.swift; sourceTree = "<group>"; };
@@ -182,17 +174,6 @@
 			name = Observations;
 			sourceTree = "<group>";
 		};
-		76486BE61F4D977200D9702D /* assets */ = {
-			isa = PBXGroup;
-			children = (
-				767A91F01F62DEEA006BEACC /* observationsFromSSP.json */,
-				767A91F11F62DEEA006BEACC /* listOfDevicesFromSSP.json */,
-				767A91F21F62DEEA006BEACC /* listOfDevicesFromCloud.json */,
-				76486BE71F4D979200D9702D /* observations.json */,
-			);
-			name = assets;
-			sourceTree = "<group>";
-		};
 		7666B2C41F27716900675435 = {
 			isa = PBXGroup;
 			children = (
@@ -219,7 +200,6 @@
 		7666B2CF1F27716900675435 /* SSPApp */ = {
 			isa = PBXGroup;
 			children = (
-				76486BE61F4D977200D9702D /* assets */,
 				76162EC81F2780910043285D /* Views */,
 				7666B2D01F27716900675435 /* AppDelegate.swift */,
 				7666B2D71F27716900675435 /* Assets.xcassets */,
@@ -383,17 +363,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76486BE81F4D979200D9702D /* observations.json in Resources */,
 				7666B2DB1F27716900675435 /* LaunchScreen.storyboard in Resources */,
 				767A91EB1F60357B006BEACC /* Actuators.storyboard in Resources */,
-				767A91F31F62DEEA006BEACC /* observationsFromSSP.json in Resources */,
-				767A91F41F62DEEA006BEACC /* listOfDevicesFromSSP.json in Resources */,
 				76162ED21F28923A0043285D /* Drawer.storyboard in Resources */,
 				7666B2D81F27716900675435 /* Assets.xcassets in Resources */,
 				76486BDF1F4D832D00D9702D /* Observations.storyboard in Resources */,
 				768B560C1F29D1B200E8D075 /* Main.storyboard in Resources */,
 				768B56071F28C7AC00E8D075 /* SearchDevices.storyboard in Resources */,
-				767A91F51F62DEEA006BEACC /* listOfDevicesFromCloud.json in Resources */,
 				769C82651F70DF4100139A9C /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
