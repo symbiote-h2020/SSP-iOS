@@ -8,6 +8,7 @@
 
 import UIKit
 import SymAgent
+import SymbioteIosUtils
 
 protocol DevicesListViewControllerDelegate {
     func childViewControllerDidPressButton(_ childViewController:DevicesListVC)

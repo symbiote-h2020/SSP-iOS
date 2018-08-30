@@ -8,6 +8,7 @@
 
 import UIKit
 import SymAgent
+import SymbioteIosUtils
 
 class DeviceDetailsVC: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!

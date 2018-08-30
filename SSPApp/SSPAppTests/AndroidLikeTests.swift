@@ -6,7 +6,12 @@
 //  Copyright © 2018 PSNC. All rights reserved.
 //
 
+
+///TODO move to cocoapod library example app
+
 import XCTest
+/*
+
 @testable import SecuritySSP
 
 
@@ -86,3 +91,5 @@ class AndroidLikeTests: XCTestCase {
     }
     
 }
+
+ */

@@ -9,6 +9,7 @@
 import UIKit
 import Charts
 import SymAgent
+import SymbioteIosUtils
 
 class ObservationsChartVC: UIViewController {
  

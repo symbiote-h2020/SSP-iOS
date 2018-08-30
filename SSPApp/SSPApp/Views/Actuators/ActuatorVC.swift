@@ -8,6 +8,7 @@
 
 import UIKit
 import SymAgent
+import SymbioteIosUtils
 
 class ActuatorVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!

@@ -8,6 +8,7 @@
 
 import UIKit
 import SymAgent
+import SymbioteIosUtils
 
 class ObservationsVC: UIViewController {
     
