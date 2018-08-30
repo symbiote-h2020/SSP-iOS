@@ -8,6 +8,7 @@
 
 import Foundation
 import SwiftyJSON
+import SymbioteIosUtils
 
 public class ObservationsManager {
     public init() {}

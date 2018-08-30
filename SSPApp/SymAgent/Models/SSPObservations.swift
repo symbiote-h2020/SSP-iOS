@@ -8,6 +8,7 @@
 
 import Foundation
 import SwiftyJSON
+import SymbioteIosUtils
 
 /// use only in SSP bacause JSON format for observations differs
 public class Observation {

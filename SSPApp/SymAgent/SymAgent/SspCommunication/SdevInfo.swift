@@ -8,6 +8,7 @@
 
 import Foundation
 import SwiftyJSON
+import SymbioteIosUtils
 
 class SdevInfo {
     var symId: String = ""

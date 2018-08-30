@@ -10,6 +10,7 @@ import Foundation
 import AVFoundation
 import CoreAudio
 import Foundation
+import SymbioteIosUtils
 
 class SoundLevelMeter {
     

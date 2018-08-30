@@ -8,6 +8,7 @@
 
 import Foundation
 import SensingKit
+import SymbioteIosUtils
 
 class Magnetometer {
     //MARK: ------------   SensingKit

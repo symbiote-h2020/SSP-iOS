@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7605A2131F97323E0096964F /* SymAgent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76D2D6121F91042900677088 /* SymAgent.framework */; };
-		7605A2141F97323E0096964F /* SymAgent.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 76D2D6121F91042900677088 /* SymAgent.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		76162ECC1F2892040043285D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76162ECB1F2892040043285D /* MainViewController.swift */; };
 		76162ED21F28923A0043285D /* Drawer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76162ECE1F28923A0043285D /* Drawer.storyboard */; };
 		76162ED31F28923A0043285D /* DrawerMenuTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76162ECF1F28923A0043285D /* DrawerMenuTableVC.swift */; };
@@ -24,6 +22,8 @@
 		76486BF01F4EBA5B00D9702D /* ObservationsChartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76486BEF1F4EBA5B00D9702D /* ObservationsChartVC.swift */; };
 		76486BF51F4EED9600D9702D /* DrawerOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76486BF41F4EED9600D9702D /* DrawerOption.swift */; };
 		76486BF71F4EEE6B00D9702D /* NavigationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76486BF61F4EEE6B00D9702D /* NavigationProtocol.swift */; };
+		7657EF922137D23A00770043 /* SymAgent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7657EF912137D23A00770043 /* SymAgent.framework */; };
+		7657EF932137D23A00770043 /* SymAgent.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7657EF912137D23A00770043 /* SymAgent.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7666B2D11F27716900675435 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7666B2D01F27716900675435 /* AppDelegate.swift */; };
 		7666B2D81F27716900675435 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7666B2D71F27716900675435 /* Assets.xcassets */; };
 		7666B2DB1F27716900675435 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7666B2D91F27716900675435 /* LaunchScreen.storyboard */; };
@@ -36,8 +36,6 @@
 		769C82651F70DF4100139A9C /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 769C82641F70DF4100139A9C /* Settings.storyboard */; };
 		769C82671F70DF5B00139A9C /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769C82661F70DF5B00139A9C /* SettingsVC.swift */; };
 		76BA3BA12110475B0096A532 /* SSPAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BA3BA02110475B0096A532 /* SSPAppTests.swift */; };
-		76BA3BAA2112EDB20096A532 /* SecuritySSP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76BA3BA92112EDB20096A532 /* SecuritySSP.framework */; };
-		76BA3BAB2112EDB20096A532 /* SecuritySSP.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 76BA3BA92112EDB20096A532 /* SecuritySSP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		76BA3BC421189DAF0096A532 /* AndroidLikeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BA3BC321189DAF0096A532 /* AndroidLikeTests.swift */; };
 		EEF88BDC63FE38CBD748549B /* Pods_SSPApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B4D6CB0A2C850EEF642ED40 /* Pods_SSPApp.framework */; };
 /* End PBXBuildFile section */
@@ -53,14 +51,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		7605A2151F97323E0096964F /* Embed Frameworks */ = {
+		7657EF942137D23B00770043 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7605A2141F97323E0096964F /* SymAgent.framework in Embed Frameworks */,
-				76BA3BAB2112EDB20096A532 /* SecuritySSP.framework in Embed Frameworks */,
+				7657EF932137D23A00770043 /* SymAgent.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,6 +82,10 @@
 		76486BEF1F4EBA5B00D9702D /* ObservationsChartVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObservationsChartVC.swift; path = Views/Observations/ObservationsChartVC.swift; sourceTree = "<group>"; };
 		76486BF41F4EED9600D9702D /* DrawerOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawerOption.swift; path = Views/Drawer/DrawerOption.swift; sourceTree = "<group>"; };
 		76486BF61F4EEE6B00D9702D /* NavigationProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationProtocol.swift; path = Views/Drawer/NavigationProtocol.swift; sourceTree = "<group>"; };
+		7657EF912137D23A00770043 /* SymAgent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SymAgent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7658D5AF2136E04C001CDAFA /* Pods_SecuritySSP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_SecuritySSP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7658D5B12136E09B001CDAFA /* SecuritySSP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SecuritySSP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7658D5B32136E0C4001CDAFA /* SymAgent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SymAgent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7666B2CD1F27716900675435 /* SSPApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSPApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7666B2D01F27716900675435 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7666B2D71F27716900675435 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -101,9 +102,7 @@
 		76BA3B9E2110475B0096A532 /* SSPAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SSPAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76BA3BA02110475B0096A532 /* SSPAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSPAppTests.swift; sourceTree = "<group>"; };
 		76BA3BA22110475B0096A532 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		76BA3BA92112EDB20096A532 /* SecuritySSP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SecuritySSP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76BA3BC321189DAF0096A532 /* AndroidLikeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndroidLikeTests.swift; sourceTree = "<group>"; };
-		76D2D6121F91042900677088 /* SymAgent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SymAgent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EBCCB6CCEC240CBD7C93E95 /* Pods-SSPApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSPApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SSPApp/Pods-SSPApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,8 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76BA3BAA2112EDB20096A532 /* SecuritySSP.framework in Frameworks */,
-				7605A2131F97323E0096964F /* SymAgent.framework in Frameworks */,
+				7657EF922137D23A00770043 /* SymAgent.framework in Frameworks */,
 				EEF88BDC63FE38CBD748549B /* Pods_SSPApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,8 +175,7 @@
 		7666B2C41F27716900675435 = {
 			isa = PBXGroup;
 			children = (
-				76BA3BA92112EDB20096A532 /* SecuritySSP.framework */,
-				76D2D6121F91042900677088 /* SymAgent.framework */,
+				7657EF912137D23A00770043 /* SymAgent.framework */,
 				7666B2CF1F27716900675435 /* SSPApp */,
 				768B56011F28A5DC00E8D075 /* Extensions */,
 				76BA3B9F2110475B0096A532 /* SSPAppTests */,
@@ -270,6 +267,9 @@
 		B6A084357F55C20DE9CACBA6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7658D5B32136E0C4001CDAFA /* SymAgent.framework */,
+				7658D5B12136E09B001CDAFA /* SecuritySSP.framework */,
+				7658D5AF2136E04C001CDAFA /* Pods_SecuritySSP.framework */,
 				3B4D6CB0A2C850EEF642ED40 /* Pods_SSPApp.framework */,
 			);
 			name = Frameworks;
@@ -287,8 +287,7 @@
 				7666B2CA1F27716900675435 /* Frameworks */,
 				7666B2CB1F27716900675435 /* Resources */,
 				1F4557ECC01B98450C9C7A74 /* [CP] Embed Pods Frameworks */,
-				8C42955AEC07FE0BFBA5B013 /* [CP] Copy Pods Resources */,
-				7605A2151F97323E0096964F /* Embed Frameworks */,
+				7657EF942137D23B00770043 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -390,28 +389,26 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SSPApp/Pods-SSPApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AsyncSwift/Async.framework",
+				"${BUILT_PRODUCTS_DIR}/SensingKit/SensingKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/SymbioteIosUtils/SymbioteIosUtils.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/DrawerController/DrawerController.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Async.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SensingKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SymbioteIosUtils.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DrawerController.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SSPApp/Pods-SSPApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8C42955AEC07FE0BFBA5B013 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SSPApp/Pods-SSPApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B38BE3E5755EB3DAD5E4D880 /* [CP] Check Pods Manifest.lock */ = {
@@ -420,13 +417,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SSPApp-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

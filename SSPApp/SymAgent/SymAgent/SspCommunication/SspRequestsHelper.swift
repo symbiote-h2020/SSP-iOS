@@ -8,6 +8,7 @@
 
 import Foundation
 import SwiftyJSON
+import SymbioteIosUtils
 
 /// Documentation for RestAPI https://colab.intracom-telecom.com/pages/viewpage.action?spaceKey=SYM&title=Interface+Innkeeper
 class SspRequestsHelper {

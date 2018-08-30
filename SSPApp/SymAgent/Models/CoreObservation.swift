@@ -8,6 +8,7 @@
 
 import Foundation
 import SwiftyJSON
+import SymbioteIosUtils
 
 @available(*, deprecated, message: "SSP Observations are unified now")
 public class CoreObservation {

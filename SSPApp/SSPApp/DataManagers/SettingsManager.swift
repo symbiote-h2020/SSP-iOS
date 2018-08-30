@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import SymbioteIosUtils
 
 public class SettingsManager {
     public var allSettings: GlobalSettingsContainer = GlobalSettingsContainer()

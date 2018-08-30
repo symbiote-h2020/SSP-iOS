@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import SymbioteIosUtils
 
 //methods to implement  https://colab.intracom-telecom.com/display/SYM/Interface:+messages+sent+to+SSP
 

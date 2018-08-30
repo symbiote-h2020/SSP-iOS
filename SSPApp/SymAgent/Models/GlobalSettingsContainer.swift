@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SymbioteIosUtils
 
 private struct Keys {
     static let restApiUrl: String = "restApiUrl"

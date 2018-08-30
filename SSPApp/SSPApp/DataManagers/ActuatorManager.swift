@@ -8,7 +8,7 @@
 
 import Foundation
 import SwiftyJSON
-
+import SymbioteIosUtils
 
 public class ActuatorManager {
     public init() {}

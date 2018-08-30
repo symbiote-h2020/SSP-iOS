@@ -9,19 +9,19 @@ pod 'AsyncSwift'
 pod 'SensingKit'
 #pod 'RxSwift',    '~> 4.0'
 #pod 'RxCocoa',    '~> 4.0'
+pod 'SymbioteIosUtils'
 
 #Security
-target :SecuritySSP do
-    project 'SecuritySSP/SecuritySSP.xcodeproj'
-   
-pod 'SwiftyJSON'
-pod 'AsyncSwift'
-end
+#target :SecuritySSP do
+#    project 'SecuritySSP/SecuritySSP.xcodeproj'
+#
+#pod 'SwiftyJSON'
+#pod 'AsyncSwift'
+#end
 
 # SymAgent
 target :SymAgent do
     project 'SymAgent/SymAgent.xcodeproj'
-    
 end
 
 

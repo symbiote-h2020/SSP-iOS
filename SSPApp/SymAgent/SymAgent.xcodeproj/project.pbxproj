@@ -15,23 +15,17 @@
 		7605A2211F9784760096964F /* ObservationLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A21A1F9784760096964F /* ObservationLocation.swift */; };
 		7605A2221F9784760096964F /* ObservationValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A21B1F9784760096964F /* ObservationValue.swift */; };
 		7605A2231F9784760096964F /* CoreSmartDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A21C1F9784760096964F /* CoreSmartDevice.swift */; };
-		7605A2261F9785420096964F /* DateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A2251F9785420096964F /* DateTime.swift */; };
 		7605A22C1FA0C76C0096964F /* SearchDevicesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A2271FA0C76C0096964F /* SearchDevicesManager.swift */; };
 		7605A22D1FA0C76C0096964F /* ObservationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A2281FA0C76C0096964F /* ObservationsManager.swift */; };
 		7605A22E1FA0C76C0096964F /* ActuatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A2291FA0C76C0096964F /* ActuatorManager.swift */; };
 		7605A22F1FA0C76C0096964F /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A22A1FA0C76C0096964F /* SettingsManager.swift */; };
+		760649322137E57C0092669D /* GuestTokensManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760649312137E57C0092669D /* GuestTokensManager.swift */; };
 		760E43281FD1A7AD00F6320E /* Magnetometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760E43271FD1A7AD00F6320E /* Magnetometer.swift */; };
 		760E432A1FD1A7D300F6320E /* SoundLevelMeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760E43291FD1A7D300F6320E /* SoundLevelMeter.swift */; };
 		7613D67A1FE41A2B003568D2 /* AbstractInnkeeperConntector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7613D6791FE41A2B003568D2 /* AbstractInnkeeperConntector.swift */; };
 		763310DA1FF6694C00B71734 /* HttpMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763310D91FF6694C00B71734 /* HttpMessage.swift */; };
 		763D1AFD20FCC7D70041B49E /* SspRequestsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763D1AFC20FCC7D70041B49E /* SspRequestsHelper.swift */; };
 		763D1AFF20FCD0250041B49E /* SdevInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763D1AFE20FCD0240041B49E /* SdevInfo.swift */; };
-		763D1B1E20FDF60A0041B49E /* GuestTokensManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763D1B1D20FDF6090041B49E /* GuestTokensManager.swift */; };
-		763D1B2020FDF6180041B49E /* LwspManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763D1B1F20FDF6180041B49E /* LwspManager.swift */; };
-		7644073C20ED040400DF522C /* NotificationCenter+names.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7644073820ED040400DF522C /* NotificationCenter+names.swift */; };
-		7644073D20ED040400DF522C /* GlobalSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7644073920ED040400DF522C /* GlobalSettings.swift */; };
-		7644073E20ED040400DF522C /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7644073A20ED040400DF522C /* Logger.swift */; };
-		7644073F20ED040400DF522C /* NotificationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7644073B20ED040400DF522C /* NotificationInfo.swift */; };
 		76875C4720AB2F10007BF3E2 /* SSPSmartDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76875C4620AB2F10007BF3E2 /* SSPSmartDevice.swift */; };
 		76875C4D20B2C3C9007BF3E2 /* SSPObservations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76875C4C20B2C3C9007BF3E2 /* SSPObservations.swift */; };
 		76875C4F20B579B5007BF3E2 /* AbstractSmartDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76875C4E20B579B5007BF3E2 /* AbstractSmartDevice.swift */; };
@@ -55,23 +49,17 @@
 		7605A21A1F9784760096964F /* ObservationLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObservationLocation.swift; path = Models/ObservationLocation.swift; sourceTree = SOURCE_ROOT; };
 		7605A21B1F9784760096964F /* ObservationValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObservationValue.swift; path = Models/ObservationValue.swift; sourceTree = SOURCE_ROOT; };
 		7605A21C1F9784760096964F /* CoreSmartDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreSmartDevice.swift; path = Models/CoreSmartDevice.swift; sourceTree = SOURCE_ROOT; };
-		7605A2251F9785420096964F /* DateTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateTime.swift; path = ../SecuritySSP/SecuritySSP/Common/DateTime.swift; sourceTree = SOURCE_ROOT; };
 		7605A2271FA0C76C0096964F /* SearchDevicesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchDevicesManager.swift; path = DataManagers/SearchDevicesManager.swift; sourceTree = "<group>"; };
 		7605A2281FA0C76C0096964F /* ObservationsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObservationsManager.swift; path = DataManagers/ObservationsManager.swift; sourceTree = "<group>"; };
 		7605A2291FA0C76C0096964F /* ActuatorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActuatorManager.swift; path = DataManagers/ActuatorManager.swift; sourceTree = "<group>"; };
 		7605A22A1FA0C76C0096964F /* SettingsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsManager.swift; path = DataManagers/SettingsManager.swift; sourceTree = "<group>"; };
+		760649312137E57C0092669D /* GuestTokensManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestTokensManager.swift; sourceTree = "<group>"; };
 		760E43271FD1A7AD00F6320E /* Magnetometer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magnetometer.swift; sourceTree = "<group>"; };
 		760E43291FD1A7D300F6320E /* SoundLevelMeter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundLevelMeter.swift; sourceTree = "<group>"; };
 		7613D6791FE41A2B003568D2 /* AbstractInnkeeperConntector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractInnkeeperConntector.swift; sourceTree = "<group>"; };
 		763310D91FF6694C00B71734 /* HttpMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMessage.swift; sourceTree = "<group>"; };
 		763D1AFC20FCC7D70041B49E /* SspRequestsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SspRequestsHelper.swift; sourceTree = "<group>"; };
 		763D1AFE20FCD0240041B49E /* SdevInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SdevInfo.swift; sourceTree = "<group>"; };
-		763D1B1D20FDF6090041B49E /* GuestTokensManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GuestTokensManager.swift; path = ../../../SecuritySSP/SecuritySSP/GuestToken/GuestTokensManager.swift; sourceTree = "<group>"; };
-		763D1B1F20FDF6180041B49E /* LwspManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LwspManager.swift; path = ../../../SecuritySSP/SecuritySSP/LightweightSecurityProtocol/LwspManager.swift; sourceTree = "<group>"; };
-		7644073820ED040400DF522C /* NotificationCenter+names.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NotificationCenter+names.swift"; path = "../../../SecuritySSP/SecuritySSP/Common/NotificationCenter+names.swift"; sourceTree = "<group>"; };
-		7644073920ED040400DF522C /* GlobalSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobalSettings.swift; path = ../../../SecuritySSP/SecuritySSP/Common/GlobalSettings.swift; sourceTree = "<group>"; };
-		7644073A20ED040400DF522C /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = ../../../SecuritySSP/SecuritySSP/Common/Logger.swift; sourceTree = "<group>"; };
-		7644073B20ED040400DF522C /* NotificationInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationInfo.swift; path = ../../../SecuritySSP/SecuritySSP/Common/NotificationInfo.swift; sourceTree = "<group>"; };
 		76875C4620AB2F10007BF3E2 /* SSPSmartDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SSPSmartDevice.swift; path = Models/SSPSmartDevice.swift; sourceTree = SOURCE_ROOT; };
 		76875C4C20B2C3C9007BF3E2 /* SSPObservations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SSPObservations.swift; path = Models/SSPObservations.swift; sourceTree = SOURCE_ROOT; };
 		76875C4E20B579B5007BF3E2 /* AbstractSmartDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AbstractSmartDevice.swift; path = Models/AbstractSmartDevice.swift; sourceTree = SOURCE_ROOT; };
@@ -136,8 +124,8 @@
 		7605A2241F97851F0096964F /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				7605A2251F9785420096964F /* DateTime.swift */,
 				76D2AE251FA1D65B00DB8ACD /* SSPColors.swift */,
+				760649312137E57C0092669D /* GuestTokensManager.swift */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -191,26 +179,6 @@
 			path = SspCommunication;
 			sourceTree = "<group>";
 		};
-		7644073720ED03E700DF522C /* CommonWithSecurity */ = {
-			isa = PBXGroup;
-			children = (
-				7644073920ED040400DF522C /* GlobalSettings.swift */,
-				7644073A20ED040400DF522C /* Logger.swift */,
-				7644073820ED040400DF522C /* NotificationCenter+names.swift */,
-				7644073B20ED040400DF522C /* NotificationInfo.swift */,
-			);
-			path = CommonWithSecurity;
-			sourceTree = "<group>";
-		};
-		7644074020ED042200DF522C /* SecuritySSP */ = {
-			isa = PBXGroup;
-			children = (
-				763D1B1F20FDF6180041B49E /* LwspManager.swift */,
-				763D1B1D20FDF6090041B49E /* GuestTokensManager.swift */,
-			);
-			path = SecuritySSP;
-			sourceTree = "<group>";
-		};
 		76D2D5FD1F91040F00677088 = {
 			isa = PBXGroup;
 			children = (
@@ -234,10 +202,8 @@
 			isa = PBXGroup;
 			children = (
 				7605A2241F97851F0096964F /* Common */,
-				7644073720ED03E700DF522C /* CommonWithSecurity */,
 				7605A2021F9731360096964F /* Models */,
 				7605A22B1FA0C76C0096964F /* DataManagers */,
-				7644074020ED042200DF522C /* SecuritySSP */,
 				760E43261FD1A78E00F6320E /* Sensors */,
 				7613D6781FE415F0003568D2 /* SensorsDataSender */,
 				763D1AFB20FCC7890041B49E /* SspCommunication */,
@@ -279,7 +245,6 @@
 				76D2D6031F91040F00677088 /* Frameworks */,
 				76D2D6041F91040F00677088 /* Headers */,
 				76D2D6051F91040F00677088 /* Resources */,
-				6EA9F4DAB20EB7389A7B55C7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -335,34 +300,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6EA9F4DAB20EB7389A7B55C7 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-SymAgent/Pods-SymAgent-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		CCE3E2955E4D8E5B07CE288A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SymAgent-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -381,26 +334,20 @@
 				76875C5520BD5E67007BF3E2 /* Capability.swift in Sources */,
 				7605A21E1F9784760096964F /* ActuatorsValue.swift in Sources */,
 				7613D67A1FE41A2B003568D2 /* AbstractInnkeeperConntector.swift in Sources */,
-				763D1B2020FDF6180041B49E /* LwspManager.swift in Sources */,
-				7644073D20ED040400DF522C /* GlobalSettings.swift in Sources */,
-				7644073E20ED040400DF522C /* Logger.swift in Sources */,
 				760E432A1FD1A7D300F6320E /* SoundLevelMeter.swift in Sources */,
 				7605A2211F9784760096964F /* ObservationLocation.swift in Sources */,
 				7605A2221F9784760096964F /* ObservationValue.swift in Sources */,
 				7605A2231F9784760096964F /* CoreSmartDevice.swift in Sources */,
 				760E43281FD1A7AD00F6320E /* Magnetometer.swift in Sources */,
-				763D1B1E20FDF60A0041B49E /* GuestTokensManager.swift in Sources */,
 				7605A21F1F9784760096964F /* GlobalSettingsContainer.swift in Sources */,
 				76875C4720AB2F10007BF3E2 /* SSPSmartDevice.swift in Sources */,
 				7605A22E1FA0C76C0096964F /* ActuatorManager.swift in Sources */,
-				7644073C20ED040400DF522C /* NotificationCenter+names.swift in Sources */,
-				7644073F20ED040400DF522C /* NotificationInfo.swift in Sources */,
 				76965F9E200CE71800613785 /* MagnetometerMessage.swift in Sources */,
 				763D1AFF20FCD0250041B49E /* SdevInfo.swift in Sources */,
 				7605A22C1FA0C76C0096964F /* SearchDevicesManager.swift in Sources */,
+				760649322137E57C0092669D /* GuestTokensManager.swift in Sources */,
 				7605A22F1FA0C76C0096964F /* SettingsManager.swift in Sources */,
 				76D2AE2A1FA1D65B00DB8ACD /* SSPColors.swift in Sources */,
-				7605A2261F9785420096964F /* DateTime.swift in Sources */,
 				763310DA1FF6694C00B71734 /* HttpMessage.swift in Sources */,
 				7605A2201F9784760096964F /* CoreObservation.swift in Sources */,
 			);
