@@ -2,11 +2,11 @@
 //  SKSensorManager.h
 //  SensingKit
 //
-//  Copyright (c) 2016. Queen Mary University of London
-//  Kleomenis Katevas, k.katevas@qmul.ac.uk
+//  Copyright (c) 2016. Kleomenis Katevas
+//  Kleomenis Katevas, k.katevas@imperial.ac.uk
 //
 //  This file is part of SensingKit-iOS library.
-//  For more information, please visit http://www.sensingkit.org
+//  For more information, please visit https://www.sensingkit.org
 //
 //  SensingKit-iOS is free software: you can redistribute it and/or modify
 //  it under the terms of the GNU Lesser General Public License as published by
@@ -49,6 +49,7 @@ FOUNDATION_EXPORT const unsigned char SensingKitVersionString[];
 #import <SensingKit/SKAltimeterData.h>
 #import <SensingKit/SKBatteryData.h>
 #import <SensingKit/SKLocationData.h>
+#import <SensingKit/SKHeadingData.h>
 #import <SensingKit/SKProximityData.h>
 #import <SensingKit/SKiBeaconDeviceData.h>
 #import <SensingKit/SKEddystoneProximityData.h>
@@ -64,6 +65,7 @@ FOUNDATION_EXPORT const unsigned char SensingKitVersionString[];
 #import <SensingKit/SKAltimeterConfiguration.h>
 #import <SensingKit/SKBatteryConfiguration.h>
 #import <SensingKit/SKLocationConfiguration.h>
+#import <SensingKit/SKHeadingConfiguration.h>
 #import <SensingKit/SKiBeaconProximityConfiguration.h>
 #import <SensingKit/SKEddystoneProximityConfiguration.h>
 #import <SensingKit/SKMicrophoneConfiguration.h>

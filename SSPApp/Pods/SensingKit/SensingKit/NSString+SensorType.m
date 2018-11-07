@@ -2,11 +2,11 @@
 //  NSString+SensorType.h
 //  SensingKit
 //
-//  Copyright (c) 2014. Queen Mary University of London
-//  Kleomenis Katevas, k.katevas@qmul.ac.uk
+//  Copyright (c) 2014. Kleomenis Katevas
+//  Kleomenis Katevas, k.katevas@imperial.ac.uk
 //
 //  This file is part of SensingKit-iOS library.
-//  For more information, please visit http://www.sensingkit.org
+//  For more information, please visit https://www.sensingkit.org
 //
 //  SensingKit-iOS is free software: you can redistribute it and/or modify
 //  it under the terms of the GNU Lesser General Public License as published by
@@ -36,6 +36,7 @@ static const NSString *SENSOR_STRINGS[] = {
     @"Altimeter",
     @"Battery",
     @"Location",
+    @"Heading",
     @"iBeacon™ Proximity",
     @"Eddystone™ Proximity",
     @"Microphone"
@@ -51,6 +52,7 @@ static const NSString *NONSPACED_SENSOR_STRINGS[] = {
     @"Altimeter",
     @"Battery",
     @"Location",
+    @"Heading",
     @"iBeaconProximity",
     @"EddystoneProximity",
     @"Microphone"

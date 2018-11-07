@@ -9,12 +9,10 @@
 /* Begin PBXBuildFile section */
 		6C3C24674B67B705EA0329FB /* Pods_SymAgent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D931D50813761836BED51380 /* Pods_SymAgent.framework */; };
 		7605A2121F97320D0096964F /* Pods_SymAgent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7605A2111F97320D0096964F /* Pods_SymAgent.framework */; };
-		7605A21E1F9784760096964F /* ActuatorsValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A2171F9784760096964F /* ActuatorsValue.swift */; };
 		7605A21F1F9784760096964F /* GlobalSettingsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A2181F9784760096964F /* GlobalSettingsContainer.swift */; };
 		7605A2201F9784760096964F /* CoreObservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A2191F9784760096964F /* CoreObservation.swift */; };
 		7605A2211F9784760096964F /* ObservationLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A21A1F9784760096964F /* ObservationLocation.swift */; };
 		7605A2221F9784760096964F /* ObservationValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A21B1F9784760096964F /* ObservationValue.swift */; };
-		7605A2231F9784760096964F /* CoreSmartDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A21C1F9784760096964F /* CoreSmartDevice.swift */; };
 		7605A22C1FA0C76C0096964F /* SearchDevicesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A2271FA0C76C0096964F /* SearchDevicesManager.swift */; };
 		7605A22D1FA0C76C0096964F /* ObservationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A2281FA0C76C0096964F /* ObservationsManager.swift */; };
 		7605A22E1FA0C76C0096964F /* ActuatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605A2291FA0C76C0096964F /* ActuatorManager.swift */; };
@@ -26,11 +24,8 @@
 		763310DA1FF6694C00B71734 /* HttpMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763310D91FF6694C00B71734 /* HttpMessage.swift */; };
 		763D1AFD20FCC7D70041B49E /* SspRequestsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763D1AFC20FCC7D70041B49E /* SspRequestsHelper.swift */; };
 		763D1AFF20FCD0250041B49E /* SdevInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763D1AFE20FCD0240041B49E /* SdevInfo.swift */; };
-		76875C4720AB2F10007BF3E2 /* SSPSmartDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76875C4620AB2F10007BF3E2 /* SSPSmartDevice.swift */; };
 		76875C4D20B2C3C9007BF3E2 /* SSPObservations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76875C4C20B2C3C9007BF3E2 /* SSPObservations.swift */; };
-		76875C4F20B579B5007BF3E2 /* AbstractSmartDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76875C4E20B579B5007BF3E2 /* AbstractSmartDevice.swift */; };
 		76875C5320BC10BC007BF3E2 /* CapabilitiesParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76875C5220BC10BC007BF3E2 /* CapabilitiesParameters.swift */; };
-		76875C5520BD5E67007BF3E2 /* Capability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76875C5420BD5E67007BF3E2 /* Capability.swift */; };
 		76965F9C200CE70500613785 /* SoundLevelMeterMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76965F9B200CE70500613785 /* SoundLevelMeterMessage.swift */; };
 		76965F9E200CE71800613785 /* MagnetometerMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76965F9D200CE71800613785 /* MagnetometerMessage.swift */; };
 		76D2AE2A1FA1D65B00DB8ACD /* SSPColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D2AE251FA1D65B00DB8ACD /* SSPColors.swift */; };
@@ -43,12 +38,10 @@
 		7605A20B1F9731670096964F /* Pods_SSPApp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_SSPApp.framework; path = "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/Pods/../build/Debug-iphoneos/Pods_SSPApp.framework"; sourceTree = "<absolute>"; };
 		7605A20F1F9731FF0096964F /* Pods_SymAgent.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_SymAgent.framework; path = "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/Pods/../build/Debug-iphoneos/Pods_SymAgent.framework"; sourceTree = "<absolute>"; };
 		7605A2111F97320D0096964F /* Pods_SymAgent.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_SymAgent.framework; path = "/Users/konrri/Work/git_stash/Symbiote/SSP-iOS/SSPApp/Pods/../build/Debug-iphoneos/Pods_SymAgent.framework"; sourceTree = "<absolute>"; };
-		7605A2171F9784760096964F /* ActuatorsValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActuatorsValue.swift; path = Models/ActuatorsValue.swift; sourceTree = SOURCE_ROOT; };
 		7605A2181F9784760096964F /* GlobalSettingsContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobalSettingsContainer.swift; path = Models/GlobalSettingsContainer.swift; sourceTree = SOURCE_ROOT; };
 		7605A2191F9784760096964F /* CoreObservation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreObservation.swift; path = Models/CoreObservation.swift; sourceTree = SOURCE_ROOT; };
 		7605A21A1F9784760096964F /* ObservationLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObservationLocation.swift; path = Models/ObservationLocation.swift; sourceTree = SOURCE_ROOT; };
 		7605A21B1F9784760096964F /* ObservationValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObservationValue.swift; path = Models/ObservationValue.swift; sourceTree = SOURCE_ROOT; };
-		7605A21C1F9784760096964F /* CoreSmartDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreSmartDevice.swift; path = Models/CoreSmartDevice.swift; sourceTree = SOURCE_ROOT; };
 		7605A2271FA0C76C0096964F /* SearchDevicesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchDevicesManager.swift; path = DataManagers/SearchDevicesManager.swift; sourceTree = "<group>"; };
 		7605A2281FA0C76C0096964F /* ObservationsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObservationsManager.swift; path = DataManagers/ObservationsManager.swift; sourceTree = "<group>"; };
 		7605A2291FA0C76C0096964F /* ActuatorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActuatorManager.swift; path = DataManagers/ActuatorManager.swift; sourceTree = "<group>"; };
@@ -60,11 +53,8 @@
 		763310D91FF6694C00B71734 /* HttpMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMessage.swift; sourceTree = "<group>"; };
 		763D1AFC20FCC7D70041B49E /* SspRequestsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SspRequestsHelper.swift; sourceTree = "<group>"; };
 		763D1AFE20FCD0240041B49E /* SdevInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SdevInfo.swift; sourceTree = "<group>"; };
-		76875C4620AB2F10007BF3E2 /* SSPSmartDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SSPSmartDevice.swift; path = Models/SSPSmartDevice.swift; sourceTree = SOURCE_ROOT; };
 		76875C4C20B2C3C9007BF3E2 /* SSPObservations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SSPObservations.swift; path = Models/SSPObservations.swift; sourceTree = SOURCE_ROOT; };
-		76875C4E20B579B5007BF3E2 /* AbstractSmartDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AbstractSmartDevice.swift; path = Models/AbstractSmartDevice.swift; sourceTree = SOURCE_ROOT; };
 		76875C5220BC10BC007BF3E2 /* CapabilitiesParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CapabilitiesParameters.swift; path = Models/CapabilitiesParameters.swift; sourceTree = SOURCE_ROOT; };
-		76875C5420BD5E67007BF3E2 /* Capability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Capability.swift; path = Models/Capability.swift; sourceTree = SOURCE_ROOT; };
 		76965F9B200CE70500613785 /* SoundLevelMeterMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundLevelMeterMessage.swift; sourceTree = "<group>"; };
 		76965F9D200CE71800613785 /* MagnetometerMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnetometerMessage.swift; sourceTree = "<group>"; };
 		76D2AE251FA1D65B00DB8ACD /* SSPColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SSPColors.swift; path = Common/SSPColors.swift; sourceTree = SOURCE_ROOT; };
@@ -93,16 +83,11 @@
 		7605A2021F9731360096964F /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				76875C5420BD5E67007BF3E2 /* Capability.swift */,
-				7605A2171F9784760096964F /* ActuatorsValue.swift */,
 				7605A2181F9784760096964F /* GlobalSettingsContainer.swift */,
 				7605A2191F9784760096964F /* CoreObservation.swift */,
 				7605A21A1F9784760096964F /* ObservationLocation.swift */,
 				7605A21B1F9784760096964F /* ObservationValue.swift */,
-				7605A21C1F9784760096964F /* CoreSmartDevice.swift */,
-				76875C4620AB2F10007BF3E2 /* SSPSmartDevice.swift */,
 				76875C4C20B2C3C9007BF3E2 /* SSPObservations.swift */,
-				76875C4E20B579B5007BF3E2 /* AbstractSmartDevice.swift */,
 				76875C5220BC10BC007BF3E2 /* CapabilitiesParameters.swift */,
 			);
 			name = Models;
@@ -325,22 +310,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76875C4F20B579B5007BF3E2 /* AbstractSmartDevice.swift in Sources */,
 				76875C4D20B2C3C9007BF3E2 /* SSPObservations.swift in Sources */,
 				76965F9C200CE70500613785 /* SoundLevelMeterMessage.swift in Sources */,
 				76875C5320BC10BC007BF3E2 /* CapabilitiesParameters.swift in Sources */,
 				7605A22D1FA0C76C0096964F /* ObservationsManager.swift in Sources */,
 				763D1AFD20FCC7D70041B49E /* SspRequestsHelper.swift in Sources */,
-				76875C5520BD5E67007BF3E2 /* Capability.swift in Sources */,
-				7605A21E1F9784760096964F /* ActuatorsValue.swift in Sources */,
 				7613D67A1FE41A2B003568D2 /* AbstractInnkeeperConntector.swift in Sources */,
 				760E432A1FD1A7D300F6320E /* SoundLevelMeter.swift in Sources */,
 				7605A2211F9784760096964F /* ObservationLocation.swift in Sources */,
 				7605A2221F9784760096964F /* ObservationValue.swift in Sources */,
-				7605A2231F9784760096964F /* CoreSmartDevice.swift in Sources */,
 				760E43281FD1A7AD00F6320E /* Magnetometer.swift in Sources */,
 				7605A21F1F9784760096964F /* GlobalSettingsContainer.swift in Sources */,
-				76875C4720AB2F10007BF3E2 /* SSPSmartDevice.swift in Sources */,
 				7605A22E1FA0C76C0096964F /* ActuatorManager.swift in Sources */,
 				76965F9E200CE71800613785 /* MagnetometerMessage.swift in Sources */,
 				763D1AFF20FCD0250041B49E /* SdevInfo.swift in Sources */,

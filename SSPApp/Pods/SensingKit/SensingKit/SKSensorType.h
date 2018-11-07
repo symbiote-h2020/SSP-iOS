@@ -2,11 +2,11 @@
 //  SKSensorType.h
 //  SensingKit
 //
-//  Copyright (c) 2014. Queen Mary University of London
-//  Kleomenis Katevas, k.katevas@qmul.ac.uk
+//  Copyright (c) 2014. Kleomenis Katevas
+//  Kleomenis Katevas, k.katevas@imperial.ac.uk
 //
 //  This file is part of SensingKit-iOS library.
-//  For more information, please visit http://www.sensingkit.org
+//  For more information, please visit https://www.sensingkit.org
 //
 //  SensingKit-iOS is free software: you can redistribute it and/or modify
 //  it under the terms of the GNU Lesser General Public License as published by
@@ -27,7 +27,7 @@
 /**
  *  Total number of sensors supported by SensingKit-iOS.
  */
-static NSUInteger const TOTAL_SENSORS = 12;
+static NSUInteger const TOTAL_SENSORS = 13;
 
 /**
  *  These constants indicate the type of the sensor.
@@ -45,7 +45,7 @@ typedef NS_ENUM(NSUInteger, SKSensorType)
     Gyroscope,
     
     /**
-     *  Magnetometer (also known as Compass or Magnetic Field Sensor) is a sensor that measures the actual orientation of the device in relation to the Magnetic North.
+     *  Magnetometer (also known as Compass or Magnetic Field Sensor) is a sensor that measures the strength of the magnetic field surrounding the device.
      */
     Magnetometer,
     
@@ -74,11 +74,15 @@ typedef NS_ENUM(NSUInteger, SKSensorType)
      */
     Battery,
     
-    
     /**
      *  Location sensor determines the current location of the device using a combination of Cellular, Wi‑Fi, Bluetooth and GPS sensors. It provides 2D geographical coordinate information (latitude, longitude), as well as the altitude of the device.
      */
     Location,
+    
+    /**
+     *  Heading is a sensor that reports the device's orientation relative to magnetic and true north.
+     */
+    Heading,
     
     /**
      *  iBeacon™ Proximity sensor uses Apple's iBeacon™ technology to estimate the proximity of the current device with other iBeacons in range.

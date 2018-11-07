@@ -2,11 +2,11 @@
 //  SKSensorManager.m
 //  SensingKit
 //
-//  Copyright (c) 2014. Queen Mary University of London
-//  Kleomenis Katevas, k.katevas@qmul.ac.uk
+//  Copyright (c) 2014. Kleomenis Katevas
+//  Kleomenis Katevas, k.katevas@imperial.ac.uk
 //
 //  This file is part of SensingKit-iOS library.
-//  For more information, please visit http://www.sensingkit.org
+//  For more information, please visit https://www.sensingkit.org
 //
 //  SensingKit-iOS is free software: you can redistribute it and/or modify
 //  it under the terms of the GNU Lesser General Public License as published by
@@ -37,6 +37,7 @@
 #import "SKAltimeter.h"
 #import "SKBattery.h"
 #import "SKLocation.h"
+#import "SKHeading.h"
 #import "SKiBeaconProximity.h"
 #import "SKEddystoneProximity.h"
 #import "SKMicrophone.h"
@@ -51,6 +52,7 @@
 #import "SKAltimeterData.h"
 #import "SKBatteryData.h"
 #import "SKLocationData.h"
+#import "SKHeadingData.h"
 #import "SKiBeaconDeviceData.h"
 #import "SKEddystoneProximityData.h"
 #import "SKMicrophoneData.h"
@@ -65,6 +67,7 @@
 #import "SKAltimeterConfiguration.h"
 #import "SKBatteryConfiguration.h"
 #import "SKLocationConfiguration.h"
+#import "SKHeadingConfiguration.h"
 #import "SKiBeaconProximityConfiguration.h"
 #import "SKEddystoneProximityConfiguration.h"
 #import "SKMicrophoneConfiguration.h"
@@ -126,6 +129,9 @@
             
         case Location:
             return [SKLocation isSensorAvailable];
+        
+        case Heading:
+            return [SKHeading isSensorAvailable];
             
         case iBeaconProximity:
             return [SKiBeaconProximity isSensorAvailable];
@@ -404,6 +410,9 @@
             
         case Location:
             return [SKLocationData csvHeader];
+        
+        case Heading:
+            return [SKHeadingData csvHeader];
             
         case iBeaconProximity:
             return [SKiBeaconDeviceData csvHeader];
@@ -615,6 +624,10 @@
         case Location:
             sensor = [[SKLocation alloc] initWithConfiguration:(SKLocationConfiguration *)configuration];
             break;
+        
+        case Heading:
+            sensor = [[SKHeading alloc] initWithConfiguration:(SKHeadingConfiguration *)configuration];
+            break;
             
         case iBeaconProximity:
             sensor = [[SKiBeaconProximity alloc] initWithConfiguration:(SKiBeaconProximityConfiguration *)configuration];
@@ -679,6 +692,10 @@
 
         case Location:
             configuration = [[SKLocationConfiguration alloc] init];
+            break;
+        
+        case Heading:
+            configuration = [[SKHeadingConfiguration alloc] init];
             break;
             
         case iBeaconProximity:

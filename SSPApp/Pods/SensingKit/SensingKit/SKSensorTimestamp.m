@@ -2,11 +2,11 @@
 //  SKSensorTimestamp.m
 //  SensingKit
 //
-//  Copyright (c) 2014. Queen Mary University of London
-//  Kleomenis Katevas, k.katevas@qmul.ac.uk
+//  Copyright (c) 2014. Kleomenis Katevas
+//  Kleomenis Katevas, k.katevas@imperial.ac.uk
 //
 //  This file is part of SensingKit-iOS library.
-//  For more information, please visit http://www.sensingkit.org
+//  For more information, please visit https://www.sensingkit.org
 //
 //  SensingKit-iOS is free software: you can redistribute it and/or modify
 //  it under the terms of the GNU Lesser General Public License as published by
@@ -23,19 +23,21 @@
 //
 
 #import "SKSensorTimestamp.h"
+#include <sys/sysctl.h>
 
 @implementation SKSensorTimestamp
 
 + (instancetype)sensorTimestampFromDate:(NSDate *)date
 {
-    NSTimeInterval timeInterval = date.timeIntervalSince1970 - [SKSensorTimestamp dateOfLastBoot].timeIntervalSince1970;
-    return [[SKSensorTimestamp alloc] initWithDate:date withTimeInterval:timeInterval];
+    return [[SKSensorTimestamp alloc] initWithDate:date withTimeInterval:date.timeIntervalSince1970];
 }
 
 + (instancetype)sensorTimestampFromTimeInterval:(NSTimeInterval)timeInterval
 {
-    NSDate *date = [NSDate dateWithTimeInterval:timeInterval sinceDate:[SKSensorTimestamp dateOfLastBoot]];
-    return [[SKSensorTimestamp alloc] initWithDate:date withTimeInterval:timeInterval];
+    NSTimeInterval timestampOffset = [SKSensorTimestamp timestampOffset];
+    NSTimeInterval fixedInterval = timeInterval + timestampOffset;
+    NSDate *date = [NSDate dateWithTimeIntervalSince1970:fixedInterval];
+    return [[SKSensorTimestamp alloc] initWithDate:date withTimeInterval:fixedInterval];
 }
 
 - (instancetype)initWithDate:(NSDate *)date
@@ -49,25 +51,19 @@
     return self;
 }
 
++ (NSTimeInterval)timestampOffset
+{
+    NSTimeInterval upTime = [NSProcessInfo processInfo].systemUptime;
+    NSTimeInterval nowTimeIntervalSince1970 = [[NSDate date] timeIntervalSince1970];
+    return nowTimeIntervalSince1970 - upTime;
+}
+
 - (id)copyWithZone:(NSZone *)zone
 {
     SKSensorTimestamp *sensorTimestamp = [[[self class] alloc] initWithDate:_timestamp
                                                            withTimeInterval:_timeIntervalSinceLastBoot];
     
     return sensorTimestamp;
-}
-
-+ (NSDate *)dateOfLastBoot
-{
-    static NSDate *lastBoot;
-    
-    if (!lastBoot)
-    {
-        NSTimeInterval systemUptime = [NSProcessInfo processInfo].systemUptime;
-        NSTimeInterval timeIntervalSince1970 = [NSDate date].timeIntervalSince1970;
-        lastBoot = [NSDate dateWithTimeIntervalSince1970:timeIntervalSince1970 - systemUptime];
-    }
-    return lastBoot;
 }
 
 + (NSDateFormatter *)dateFormatter
