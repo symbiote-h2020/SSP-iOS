@@ -22,17 +22,13 @@ class DevicesListVC: ViewControllerWithDrawerMenu {
     var devicesListDelegate: DevicesListViewControllerDelegate?
     var selectedDevice: SmartDevice?
     
+    let searchController = UISearchController(searchResultsController: nil)
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.title = "Devices List"
-    
-        
-        // Debug test
-//        if sdm.devicesList.count == 0 {
-//            sdm.getBackupTestData()
-//        }
-        
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -43,9 +39,15 @@ class DevicesListVC: ViewControllerWithDrawerMenu {
         
         sdm.getCoreResourceList()
         sdm.getSSPResourceList()
+        
+        searchController.searchResultsUpdater = self
+        searchController.dimsBackgroundDuringPresentation = false
+        searchController.hidesNavigationBarDuringPresentation = false //nie chowaj, bo może chcę nawigować do prezentacji danej osoby
+        tableView.tableHeaderView = searchController.searchBar
     }
     
     deinit {
+        searchController.view.removeFromSuperview()
         NotificationCenter.default.removeObserver(self)
     }
     
@@ -130,5 +132,32 @@ extension DevicesListVC: UITableViewDataSource, UITableViewDelegate {
             // delegate not empty - list is embedded with viewController
             self.devicesListDelegate?.childViewControllerDidPressButton(self)
         }
+    }
+    
+    
+    // MARK: filter
+    
+    func filterContentForSearchText(_ text: String, scope: String = "All") {
+        let searchText = text.folding(options: .diacriticInsensitive, locale: Locale.current) //remove diacritics
+//        filteredPeople = self.containerValue.people.filter({( person : C4Person) -> Bool in
+//            return person.searchableStringWithoutAccents().containsIgnoringCase(searchText)
+//            
+//        })
+//        peopleTableView.reloadData()
+    }
+}
+
+
+extension DevicesListVC: UISearchBarDelegate {
+    // MARK: - UISearchBar Delegate
+    func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
+       // filterContentForSearchText(searchBar.text!, scope: searchBar.scopeButtonTitles![selectedScope])
+    }
+}
+
+extension DevicesListVC: UISearchResultsUpdating {
+    // MARK: - UISearchResultsUpdating Delegate
+    func updateSearchResults(for searchController: UISearchController) {
+       // filterContentForSearchText(searchController.searchBar.text!)
     }
 }
