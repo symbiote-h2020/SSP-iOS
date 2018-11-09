@@ -18,6 +18,7 @@ class DevicesListVC: ViewControllerWithDrawerMenu {
     
     @IBOutlet weak var tableView: UITableView!
     var deviceObjects = [SmartDevice]()
+    var filteredDevices = [SmartDevice]()
     let sdm = SearchDevicesManager()
     var devicesListDelegate: DevicesListViewControllerDelegate?
     var selectedDevice: SmartDevice?
@@ -108,20 +109,32 @@ extension DevicesListVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if searchController.isActive && searchController.searchBar.text != "" {
+            return filteredDevices.count
+        }
         return deviceObjects.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! DeviceTableViewCell
         
-        let object = deviceObjects[indexPath.row]
-        //cell.textLabel!.text = object.name
+        var object: SmartDevice
+        if searchController.isActive && searchController.searchBar.text != "" {
+            object = filteredDevices[indexPath.row]
+        } else {
+            object = deviceObjects[indexPath.row]
+        }
+        
         cell.setCell(object)
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
-        self.selectedDevice = deviceObjects[indexPath.row]
+        if searchController.isActive && searchController.searchBar.text != "" {
+            self.selectedDevice = filteredDevices[indexPath.row]
+        } else {
+            self.selectedDevice = deviceObjects[indexPath.row]
+        }
         
         if (self.devicesListDelegate == nil) {
             let vc = DeviceDetailsVC.getViewController()
@@ -139,11 +152,11 @@ extension DevicesListVC: UITableViewDataSource, UITableViewDelegate {
     
     func filterContentForSearchText(_ text: String, scope: String = "All") {
         let searchText = text.folding(options: .diacriticInsensitive, locale: Locale.current) //remove diacritics
-//        filteredPeople = self.containerValue.people.filter({( person : C4Person) -> Bool in
-//            return person.searchableStringWithoutAccents().containsIgnoringCase(searchText)
-//            
-//        })
-//        peopleTableView.reloadData()
+        filteredDevices = self.deviceObjects.filter({( person : SmartDevice) -> Bool in
+            return person.name.contains(searchText)  //containsIgnoringCase(searchText)
+            
+        })
+        tableView.reloadData()
     }
 }
 
@@ -151,13 +164,13 @@ extension DevicesListVC: UITableViewDataSource, UITableViewDelegate {
 extension DevicesListVC: UISearchBarDelegate {
     // MARK: - UISearchBar Delegate
     func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
-       // filterContentForSearchText(searchBar.text!, scope: searchBar.scopeButtonTitles![selectedScope])
+       filterContentForSearchText(searchBar.text!, scope: searchBar.scopeButtonTitles![selectedScope])
     }
 }
 
 extension DevicesListVC: UISearchResultsUpdating {
     // MARK: - UISearchResultsUpdating Delegate
     func updateSearchResults(for searchController: UISearchController) {
-       // filterContentForSearchText(searchController.searchBar.text!)
+       filterContentForSearchText(searchController.searchBar.text!)
     }
 }
